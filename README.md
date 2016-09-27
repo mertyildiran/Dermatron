@@ -10,5 +10,6 @@ sudo apt-get install nodejs nodejs-legacy npm
 
 ```Shell
 cd Dermatron/
-npm install && npm start
+npm install
+npm start
 ```
