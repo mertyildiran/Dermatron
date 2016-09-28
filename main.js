@@ -29,20 +29,22 @@ function createLoadingWindow () {
 }
 
 function createMainWindow () {
+  loadingWindow.hide();
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 1280, height: 768, transparent: true, frame: false})
+  mainWindow = new BrowserWindow({width: 1920, height: 1080, transparent: true, frame: false})
 
   // and load the index.html of the app.
-  mainWindow.loadURL(`file://${__dirname}/index.html`)
+  mainWindow.loadURL(`file://${__dirname}/scheduler.html`)
 
   // Open the DevTools.
-  //indexWindow.webContents.openDevTools()
+  mainWindow.webContents.openDevTools()
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {
     // Dereference the window object, usually you would store windows
     // in an array if your app supports multi windows, this is the time
     // when you should delete the corresponding element.
+    loadingWindow.close();
     mainWindow = null
   })
 }
