@@ -523,7 +523,8 @@ function create_project
     cd "${PROJECT_NAME}"
     # delete default generated files
     rm "${PROJECT_NAME}".*
-
+    rm client/main.*
+    
     colored "Project ${PROJECT_NAME} has been created" green
 }
 #------------------------------------------------------------------------------#

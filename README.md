@@ -13,11 +13,14 @@ Alien is a bash script for creating Meteor Apps with MVC-like directory structur
 
 ```Shell
 ./alien project PROJECT_NAME
+cp alien PROJECT_NAME/
+cd PROJECT_NAME/
 ./alien scaffold person name:string registered:date isAdmin:boolean
 ./alien links
+meteor
 ```
 
-Supported HTML controls: string, text, number, date, boolean, password, url, tel, email, file, color and select.
+Supported HTML controls are string, text, number, date, boolean, password, url, tel, email, file, color and select.
 
 ```Shell
 ./alien project PROJECT_NAME packages [PACKAGE_NAME] [PACKAGE_NAME] ...
