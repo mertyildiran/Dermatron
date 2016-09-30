@@ -110,66 +110,29 @@ HEADER="<template name=\"header\">
 "
 
 FOOTER="<template name=\"footer\">
-    <!--bootstrap footer classes delete otherwise-->
-    <div class=\"footer\">
-        <div class=\"container\">
-            <p class=\"text-muted\">Place sticky footer content here.</p>
-        </div>
+
+  <footer class=\"page-footer\">
+    <div class=\"footer-copyright\">
+      <div class=\"container\">
+      © 2016 Dermatron
+      <a class=\"grey-text text-lighten-4 right\" href=\"http://mertyildiran.com/\">mertyildiran.com</a>
+      </div>
     </div>
-</template>"
+  </footer>
+  
+</template>
+"
 
 STICKY_FOOTBAR="
-/* Sticky footer styles
-this file is used with Bootstrap 3 for the known sticky footer.
-You can delete the file if Bootstrap 3 is not used or you do not want
-a sticky footer.
--------------------------------------------------- */
-html {
-    position: relative;
-    min-height: 100%;
-}
 body {
-    /* Margin bottom by footer height */
-    margin-bottom: 60px;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    /* Set the fixed height of the footer here */
-    height: 60px;
-    background-color: #f5f5f5;
+.container {
+    flex: 1 0 auto;
 }
-
-
-/* Custom page CSS
--------------------------------------------------- */
-/* Not required for template or sticky footer method. */
-
-body > .container {
-    padding: 60px 15px 0;
-}
-.container .text-muted {
-    margin: 20px 0;
-}
-
-.footer > .container {
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-code {
-    font-size: 80%;
-}
-
-/* space for checkboxes in generated scaffold tables */
-.space-left {
-    margin-left:10px!important;
-}
-
-.space-right {
-    margin-right:10px!important;
-}"
+"
 
 
 # router.js basic contents
