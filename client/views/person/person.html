@@ -1,0 +1,63 @@
+<template name="person">
+    <div class="container">
+        <h3>All person(s)</h3>
+        <p><pre>{{tpl_info}}</pre>
+        you can delete this message from the template and/or the helper</p>
+            <div class="table-responsive">
+                <table class="table table-hover table-condensed table-bordered">
+                    <thead>
+                        <tr>
+                            <th colspan="50">
+                                <form class="form-inline">
+                                        <div class="form-group">
+                                            <label for="input_title">Filter: </label>
+                                            <input type="text" class="form-control"
+                                                   placeholder="filter text"
+                                                   id="filter_field">
+                                        </div>
+                                </form>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>name</th>
+                            <th>registered</th>
+                            <th>isAdmin</th>
+                            <th colspan="4">
+                                <form class="form-inline">
+                                        <div class="form-group">
+                                            <input type="checkbox" class="space-left space-right"
+                                                id="checkAll">
+                                            <a class="btn btn-danger btn-xs space-right"
+                                                href="" id="deleteAll">Delete selected</a>
+                                        </div>
+                                </form>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {{#each person}}
+                        <tr id="{{_id}}">
+                            <td>{{name}}</td>
+                            <td>{{registered}}</td>
+                            <td>{{isAdmin}}</td>
+                            <td>
+                                <input type="checkbox"
+                                    class="space-left space-right checkthis">
+                            </td>
+                            <td>
+                                <a class="btn btn-default btn-xs" href="{{pathFor 'show_person'}}"  id="show">Show </a>
+                            </td>
+                            <td>
+                                <a class="btn btn-primary btn-xs" href="{{pathFor 'edit_person'}}"  id="edit"> Edit</a>
+                            </td>
+                            <td>
+                                <a class="btn btn-danger btn-xs" href="" id="delete">Delete</a>
+                            </td>
+                        </tr>
+                    {{/each}}
+                    </tbody>
+               </table>
+            </div>
+            <a class="btn btn-success btn-xs" href="{{pathFor 'new_person'}}">New person</a>
+        </div>
+</template>

@@ -1,0 +1,16 @@
+<template name="show_person">
+    <div class="container">
+        <h3>Viewing person</h3>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                    <p><strong>name :</strong><br>
+                    {{name}}</p>
+                    <p><strong>registered :</strong><br>
+                    {{registered}}</p>
+                    <p><strong>isAdmin :</strong><br>
+                    {{isAdmin}}</p>
+            </div>
+        </div>
+        <a class="btn btn-default btn-xs" href="{{pathFor 'person'}}">Back</a>
+    </div>
+</template>

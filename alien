@@ -1,0 +1,1679 @@
+#!/usr/bin/env bash
+# The MIT License (MIT)
+#
+# Copyright (c) 2014 stef kariotidis <stef[dot]kariotidis[at]gmail[dot]com>
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
+# Structured Meteor projects generator for
+# Meteor version 1.0
+# Tested on: Ubuntu 14.04 with
+# GNU bash, version 4.3.11(1)-release (x86_64-pc-linux-gnu)
+# the name of this script
+readonly script="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
+readonly version="0.7"
+## Variables, Files - Directories
+# project's name do not edit
+PROJECT_NAME=""
+# how many fixtures you want to creat for each collection
+NUMBER_OF_FIXTURES=5
+# an array for scaffolding fields
+declare field_names
+declare field_types
+readonly ROOT_DIRECTORIES="client server lib collections public tests"
+readonly CLIENT_DIRECTORIES="lib stylesheets views views/layout"
+# files
+readonly CLIENT_STYLESHEETS="client/stylesheets/style.css client/stylesheets/sticky_footer.css"
+
+# additional .gitignore currently contains .idea directory
+readonly GIT_IGNORE=".idea
+*.sublime-project"
+
+# Packages can be installed during project creation
+# currenlty some defaults are bundled.
+# Default packages can be edited, leave space for each package
+PACKAGES=("iron:router" "mizzao:bootstrap-3")
+
+## End of variables declarations ##
+## File templates ##
+# index.html template
+INDEX="<template name=\"index\">
+<h2>Home page content</h2>
+<h3>I am the Index page, find me at client/views/index.html</h3>
+</template>"
+
+# main.html (iron router layout)
+MAIN="<template name=\"main\">
+    <body>
+        {{> header}}
+        <!--bootstrap container class delete otherwise-->
+        <div class=\"container\">
+            {{> yield}}
+        </div>
+        {{> footer}}
+    </body>
+</template>"
+
+MAIN_HELPER="// This is the main template helper
+// here you can handle some top level events,
+// e.g: an event from the nav which may be global
+Template.main.events ({
+
+});
+
+Template.main.helpers ({
+
+});"
+
+# head
+HEAD="<head>
+    <!-- Bootstrap responsive meta -->
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1\">
+    <title>PROJECT_NAME_HERE</title>
+</head>"
+
+LINKS="<template name=\"site_links\">
+
+</template>"
+
+# header.html
+HEADER="<template name=\"header\">
+    <!--bootstrap related classes delete otherwise-->
+    <div class=\"navbar navbar-default navbar-fixed-top\" role=\"navigation\">
+        <div class=\"container\">
+            <div class=\"navbar-header\">
+                <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\".navbar-collapse\">
+                    <span class=\"sr-only\">Toggle navigation</span>
+                    <span class=\"icon-bar\"></span>
+                    <span class=\"icon-bar\"></span>
+                    <span class=\"icon-bar\"></span>
+                </button>
+                <a class=\"navbar-brand\" >PROJECT_NAME_HERE</a>
+            </div>
+            <div class=\"collapse navbar-collapse\">
+                <ul class=\"nav navbar-nav\">
+                    <li class=\"active\"><a href=\"{{pathFor 'index'}}\">Home</a></li>
+                    <li><a href=\"#about\">About</a></li>
+                    {{> site_links}}
+                    <!--{{> loginButtons}} if accounts-password meteor package is used-->
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+</template>"
+
+FOOTER="<template name=\"footer\">
+    <!--bootstrap footer classes delete otherwise-->
+    <div class=\"footer\">
+        <div class=\"container\">
+            <p class=\"text-muted\">Place sticky footer content here.</p>
+        </div>
+    </div>
+</template>"
+
+STICKY_FOOTBAR="
+/* Sticky footer styles
+this file is used with Bootstrap 3 for the known sticky footer.
+You can delete the file if Bootstrap 3 is not used or you do not want
+a sticky footer.
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+    padding: 60px 15px 0;
+}
+.container .text-muted {
+    margin: 20px 0;
+}
+
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+code {
+    font-size: 80%;
+}
+
+/* space for checkboxes in generated scaffold tables */
+.space-left {
+    margin-left:10px!important;
+}
+
+.space-right {
+    margin-right:10px!important;
+}"
+
+
+# router.js basic contents
+ROUTER="Router.configure({
+  layoutTemplate: 'main'
+});
+
+Router.onAfterAction(function() {
+    var projectName='PROJECT_NAME_HERE';
+    try {
+        if (Router.current().route.getName() !== \"index\"){
+            try {
+                document.title = projectName + ' | ' +
+                    Router.current().route.getName().replace(/_/g, ' ');
+            }
+            catch (e) {
+                // do nothing we probably trying to set title to a destroyed template
+            }
+        }
+        else {
+            try {
+                document.title = projectName;
+            }
+            catch (e) {
+                // do nothing we probably trying to set title to a destroyed template
+            }
+        }
+    }
+    catch (e){
+        // do nothing we probably trying to set title to a server side route
+    }
+});
+
+// map the home page (index) to / path
+Router.route('index', {
+    path: '/'
+});
+"
+
+SUBSCRIPTIONS="//Meteor.subscribe('a_collection');"
+
+METHODS="Meteor.methods({
+
+});"
+
+PUBLICATIONS="//Meteor.publish('a_collection', function(){
+//    return 'a_collection'.find();
+//});"
+
+FIXTURES="//if (a_collection.find().count() === 0) {
+    //
+//}"
+
+## End of template declarations ##
+#
+## Function declarations ##
+#------------------------------------------------------------------------------#
+# colored echo
+# usage: colored "text" [color] [n for no new line]
+# this function is taken from:
+# http://stackoverflow.com/a/23006365/307826
+function colored()
+{
+    local exp=$1;
+    local color=$2;
+    local newline=$3;
+    if ! [[ $color =~ ^[0-9]$ ]] ; then
+       case $(echo "${color}" | tr '[:upper:]' '[:lower:]') in
+        black) color=0 ;;
+        red) color=1 ;;
+        green) color=2 ;;
+        yellow) color=3 ;;
+        blue) color=4 ;;
+        magenta) color=5 ;;
+        cyan) color=6 ;;
+        white|*) color=7 ;; # white or invalid color
+       esac
+    fi
+    tput setaf $color;
+    # if third arg is n then print and do not change line
+    if [[ ${newline} = "n" ]]; then
+        echo -n "${exp}";
+    else
+        echo "${exp}";
+    fi
+    tput sgr0;
+}
+#------------------------------------------------------------------------------#
+# prints script's version and help message
+# params: optional one of the available commands to print specific to the command
+#         help
+function help
+{
+    colored "--------------------------------------------------------------------------------" blue
+    if [[ ! -z $1 ]]; then
+        if [[ $1 = "project" ]]; then
+            colored "$1 command " magenta n
+            colored "creates a new Meteor project" cyan
+            colored "Usage: \$${script} project [PROJECT_NAME]" cyan n
+            colored " OR " magenta
+            colored "\$${script} [project_name] packages [package_name] [package_name] ..." cyan
+        elif [[ $1 = "new" ]]; then
+            colored "$1 command " magenta n
+            colored "generates a view or collection" magenta
+            colored "type: \$${script} new view or \$${script} new collection" cyan
+        elif [[ $1 = "new view" ]]; then
+            colored "$1 command " magenta n
+            colored "generates a new view (a template, a helper and a route)" cyan
+            colored "Usage: \$${script} new view [VIEW_NAME]" cyan
+        elif [[ $1 = "new collection" ]]; then
+            colored "$1 command " magenta n
+            colored "generates a new collection" cyan
+            colored "Usage: \$${script} new collection [COLLECTION_NAME]" cyan
+        elif [[ $1 = "scaffold" ]]; then
+            colored "$1 command " magenta n
+            colored "generates a new collection, a fixture, a view, an edit view & their helpers" cyan
+            colored "Usage: \$${script} scaffold [COLLECTION_NAME] [FIELD:TYPE] [FIELD:TYPE] ..." cyan
+            colored "Available fields: string, text, number, date boolean, password" cyan
+            colored "url, tel, email, file, color and select" cyan
+        elif [[ $1 = "create links" ]]; then
+            colored "$1 command" magenta n
+            colored "generates links for all the views in the project" cyan
+            colored "Usage: \$${script} links" cyan
+        fi
+    else
+        colored "${script} version: ${version}" magenta
+        colored "A tool to create Meteor projects, views, collections and scaffolds" cyan
+        colored "Available commands: project, new view, new collection, scaffold, links" cyan
+        colored "All commands (except project) must be invoked from project's root directory" cyan
+    fi
+    colored "--------------------------------------------------------------------------------" blue
+}
+#------------------------------------------------------------------------------#
+# checks user input and invokes the respective generator(s)
+function user_input
+{
+    # collect user input
+
+    # Empty args
+    if [[ -z "$1" ]]; then
+        colored "Error: command is missing" red
+        help "$@"
+    # project creation
+    elif [[ "$1" = "project" ]]; then
+        if [[ -z "$2" ]]; then
+            colored "Error: project name is missing" red
+            help "project"
+        else
+            eval PROJECT_NAME="$2"
+
+            create_project
+
+            create_project_root_dirs
+
+            create_project_root_files
+
+            create_client_dirs
+
+            create_client_files
+
+            create_server_files
+
+            create_virtual_host "$2"
+
+            create_upstart_config "$2"
+            # check for additional packages
+            if [[ "${#}" -gt 3 ]]; then
+                for package in "${@:4}"; do
+                    PACKAGES=("${PACKAGES[@]}" " ${package}")
+                done
+            fi
+            install_packages
+            colored "removing autopublish package since subscriptions are being automatically created" yellow
+            meteor remove autopublish
+            colored "cd into project ${PROJECT_NAME} to start working" yellow
+        fi
+    elif [[ "$1" = "new" ]]; then
+                if [[ -z "$2" ]]; then
+                    colored "Error: generator name is missing" red
+                    help "$1"
+
+                elif [[ "$2" = "view" ]]; then
+                    if [[ -z "$3" ]]; then
+                        colored "Error: view name is missing" red
+                        help "new view"
+                    else
+                        create_view "$3"
+                    fi
+
+                elif [[ "$2" = "collection" ]]; then
+                    if [[ -z "$3" ]]; then
+                        colored "Error: collection name is missing" red
+                        help "new collection"
+                    else
+                        create_collection "$3" && \
+                        create_fixture "$3" && \
+                        register_subscriptions "$3"
+                    fi
+
+                else
+                    colored "Error unknown generator" red
+                    help "$1"
+                fi
+    elif [[ "$1" = "scaffold" ]]; then
+        # check for collection name and a valid array of fields:types
+        if [[ ! -z "$2" ]]; then
+            # pass arguments after the collection name
+            args="${@:3}"
+            if fields_pairs_are_valid "${args}"; then
+                if field_types_are_valid "${args}";then
+                    pack_fields "${args}"
+                    # start scaffolding
+                    do_scaffold "$2"
+                else
+                    colored "Error: wrong types provided" red
+                    help "scaffold"
+                fi
+            else
+                colored "Error: wrong key:value pairs" red
+                help "scaffold"
+            fi
+        else
+            colored "Error: collection (model) name is missing" red
+            help "scaffold"
+        fi
+    elif [[ "$1" = "links" ]]; then
+        create_links
+    else
+        colored "Error unknown command" red
+        help ""
+    fi
+}
+#------------------------------------------------------------------------------#
+# checks if for all passed fields there is a respective type
+# params: an array/string of fields:types [field1:type field2:type, ...]
+# returns: true if array contains pairs only, false otherwise
+function fields_pairs_are_valid
+{
+    old_ifs=$IFS
+    IFS=" "
+    item_number=""
+    for pair in $1; do
+        pair_number=$(( pair_number + 1 ))
+        IFS=":"
+        for item in ${pair[*]}; do
+            item_number=$(( item_number + 1 ))
+        done
+    done
+    if [ "$(( item_number % 2 ))" -eq 0 ] ; then
+        IFS=$old_ifs
+        return 0
+    else
+        IFS=$old_ifs
+        return 1
+    fi
+
+    IFS=$old_ifs
+}
+#------------------------------------------------------------------------------#
+# check if all passed types for a scaffold are valid
+# params: an array/string of field:type pairs
+# remarks: available types are: string, text, number, date
+function field_types_are_valid
+{
+    old_ifs=$IFS
+    IFS=" "
+    result=0
+
+    for pair in $1; do
+        IFS=":"
+        index=0
+        for item in ${pair};do
+            index=$(( index + 1 ))
+            if (( index == 2 )); then
+                case "${item}" in
+                    "string" )
+                        break;;
+                    "text" )
+                        break;;
+                    "number" )
+                        break;;
+                    "date" )
+                        break;;
+                    "boolean" )
+                        break;;
+                    "password" )
+                        break;;
+                    "url" )
+                        break;;
+                    "tel" )
+                        break;;
+                    "color" )
+                        break;;
+                    "file" )
+                        break;;
+                    "select" )
+                        break;;
+                    "email" )
+                        break;;
+                    # if nothing matched return error
+                    * )
+                        result=1
+                esac
+            fi
+        done
+    done
+
+    return ${result}
+    IFS=$old_ifs
+}
+#------------------------------------------------------------------------------#
+# separates field names and types and saves them into
+# the field_names and field_types arrays
+# params: an array/string of field:type pairs
+function pack_fields
+{
+    old_ifs=$IFS
+    IFS=" "
+    for pair in $1; do
+        IFS=":"
+        index=0
+        for item in ${pair};do
+            index=$(( index + 1 ))
+            if (( index == 1 )); then
+                field_names+=( "${item}" )
+            else
+                field_types+=( "${item}" )
+            fi
+        done
+    done
+
+    IFS=$old_ifs
+}
+#------------------------------------------------------------------------------#
+# creates a Meteor project
+function create_project
+{
+    colored "Creating project: ${PROJECT_NAME}" yellow
+    # create project
+    meteor create "${PROJECT_NAME}" >/dev/null
+
+    cd "${PROJECT_NAME}"
+    # delete default generated files
+    rm "${PROJECT_NAME}".*
+
+    colored "Project ${PROJECT_NAME} has been created" green
+}
+#------------------------------------------------------------------------------#
+# installs Meteor packages
+function install_packages
+{
+    if [[ -n "${PACKAGES[*]}" ]]; then
+        colored "Installing packages:" yellow
+        colored "${PACKAGES[*]}" yellow
+        for package in ${PACKAGES[*]}; do
+            meteor add "${package}"
+        done
+        colored "${#PACKAGES[@]} packages have been installed" green
+    fi
+}
+#------------------------------------------------------------------------------#
+# creates project's root directories
+function create_project_root_dirs
+{
+    # project's root directories
+    colored "Creating project's root directories" yellow
+    for directory in ${ROOT_DIRECTORIES}; do
+        mkdir "${directory}"
+    done
+    colored "Project's root directories have been created" green
+}
+
+#------------------------------------------------------------------------------#
+# creates project's root files
+function create_project_root_files
+{
+    colored "Creating project's root files" yellow
+    # additonal top level gitignore for editors - IDEs
+    echo "${GIT_IGNORE}" > .gitignore
+
+    echo "${ROUTER}" > "lib/router.js"
+
+    colored "All root files have been created" green
+}
+#------------------------------------------------------------------------------#
+# creates client's directory structure
+function create_client_dirs
+{
+    colored "Creating client's directory structure" yellow
+    for directory in ${CLIENT_DIRECTORIES};do
+        mkdir "client/${directory}"
+    done
+    colored "Client's directory structure have been created" green
+}
+#------------------------------------------------------------------------------#
+# creates client's files
+function create_client_files
+{
+    colored "Creating client files" yellow
+    echo "${INDEX}" > "client/views/index.html"
+    echo "${MAIN}" > "client/views/layout/main.html"
+    echo "${HEADER}" > "client/views/layout/header.html"
+    echo "${FOOTER}" > "client/views/layout/footer.html"
+    echo "${HEAD}" > "client/views/layout/head.html"
+    echo "${LINKS}" > "client/views/layout/site_links.html"
+
+    for file in ${CLIENT_STYLESHEETS};do
+        touch "${file}"
+    done
+
+    echo "${STICKY_FOOTBAR}" > "client/stylesheets/sticky_footer.css"
+    echo "${SUBSCRIPTIONS}" > "client/lib/subscriptions.js"
+    echo "${MAIN_HELPER}" > "client/views/layout/main.js"
+
+    # replace placeholders in  templates with the actual project name
+    sed -i "s/PROJECT_NAME_HERE/${PROJECT_NAME}/g" "client/views/layout/head.html"
+    sed -i "s/PROJECT_NAME_HERE/${PROJECT_NAME}/g" "client/views/layout/header.html"
+    sed -i "s/PROJECT_NAME_HERE/${PROJECT_NAME}/g" "lib/router.js"
+    colored "All client's files have been created" green
+}
+#------------------------------------------------------------------------------#
+# creates server's files
+function create_server_files
+{
+    colored "Creating server files" yellow
+    echo "${METHODS}" > "server/methods.js"
+    echo "${PUBLICATIONS}" > "server/publications.js"
+    echo "${FIXTURES}" > "server/fixtures.js"
+    colored "All server files have been created" green
+}
+#------------------------------------------------------------------------------#
+# creates an Nginx virtual host
+# params project's name
+function create_virtual_host
+{
+    tpl="# Nginx Virtual Host configuration for $(basename "$1") Meteor project
+# Put this configuration in /etc/nginx/sites-available directory
+# error and access logs are loged in /var/log/nginx directory
+
+# Note: if you want to run multiple meteor apps on the same server,
+# make sure you define a separate port for each.
+
+# for more info check http://wiki.iccode.net/meteor/ubuntu_deployment
+
+# Upstreams
+upstream $(basename "$1") {
+    server 127.0.0.1:51999;
+}
+
+# HTTP Server
+server {
+    listen 0.0.0.0:80;
+    # you must add the domain suffix ec. .com .net, etc
+    # access from both http://$(basename "$1") and http://www.$(basename "$1")
+    server_name $(basename "$1") www.$(basename "$1");
+
+    # Access and Error log location
+    access_log /var/log/nginx/$(basename "$1")_access.log;
+    error_log /var/log/nginx/$(basename "$1")_error.log;
+
+    location / {
+        proxy_pass http://$(basename "$1")/;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection \"upgrade\";
+        proxy_set_header Host $http_host;
+
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forward-Proto http;
+        proxy_set_header X-Nginx-Proxy true;
+
+        proxy_redirect off;
+    }
+}"
+
+    echo "${tpl}" > $(basename "$1").nginx
+}
+#------------------------------------------------------------------------------#
+# creates an upstart configuration file for the current project
+# params project's name
+function create_upstart_config
+{
+    tpl="description \"Upstart job for $(basename "$1")\"
+
+# Upstart configuration for $(basename "$1") Meteor project, based on forever CLI
+# tool, see https://github.com/nodejitsu/forever
+
+# Put this file in /etc/init as $(basename "$1").conf e.g: /etc/init/$(basename "$1").conf
+# check project name - server ports to match with Nginx and MongoDB
+
+# for more info check http://wiki.iccode.net/meteor/ubuntu_deployment
+
+
+# During system startup, we want the app to start after system's filesystem
+# and network are up and functional
+# do not use start on startup see http://serverfault.com/a/279966/168560
+start on filesystem and started networking
+
+# stop on system shutdown
+stop on shutdown
+
+expect fork
+#------------------------------------------------------------------------------#
+# Environment variables
+# CHANGE THE PATH TO WHERE YOU WILL PUT THE APP FOLDER
+chdir /some/path/$(basename "$1")
+env PWD=\"/some/path/$(basename "$1")\"
+env HOME=\"/some/path/$(basename "$1")\"
+
+env PATH=\"/opt/local/bin:/opt/local/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"
+env NODE_PATH=\"/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript\"
+# set ROOT_URL env variable
+#------------------------------------------------------------------------------#
+# Domain - IP - Ports
+# CHANGE THE DOMAIN SUFFIX
+env ROOT_URL=\"http://$(basename "$1").com\"
+
+# this allows Meteor to figure out correct IP address of visitors
+env HTTP_FORWARDED_COUNT=1
+env APP_PATH=$HOME
+
+# leave as 127.0.0.1 for security
+env BIND_IP=127.0.0.1
+
+# the port nginx is proxying requests to
+# CHANGE THE PORT TO MATCH WITH NGINX VIRTUAL HOST CONFIG
+env PORT=51999
+#------------------------------------------------------------------------------#
+# Database related
+# MongoDB connection string using app_name, user name and password as defined
+# CHANGE THE USER AND THE PASSWORD AND PORT IF NEEDED FOR MONGODB
+# NOTE A MONGODB DATABASE MUST BE ALREADY CREATED
+env MONGO_URL=mongodb://user:password@127.0.0.1:27017/$(basename "$1")
+#------------------------------------------------------------------------------#
+# Execute script
+script
+  # Shell trick to re-direct this script's STDOUT/STDERR
+  exec 2>> $(basename "$1")_forever.log 1>> $(basename "$1")_forever.log
+  # You forgot the 'start' command. Without it, it doesn't fork.
+  exec forever start -a -l $(basename "$1")_forever.log -o $(basename "$1")_out.log -e $(basename "$1")_err.log main.js
+end script
+
+# Clean up jobs before shutting down
+pre-stop script
+  # Shell trick to re-direct this script's STDOUT/STDERR
+  exec 2>> $(basename "$1")_forever.log 1>> $(basename "$1")_forever.log
+  exec forever stop main.js
+end script
+"
+
+    echo "${tpl}" > $(basename "$1").conf
+}
+#------------------------------------------------------------------------------#
+# check if this script is invoked from a valid Meteor project root
+# by checking if .meteor directory exists
+# returns: true if in a valid project root, false otherwise
+function in_project_dir
+{
+    if [[ -d ".meteor" ]]; then
+        return 0
+    else
+        return 1
+    fi
+}
+#------------------------------------------------------------------------------#
+# checks if a directory exists
+# returns: true if directory exists, false otherwise
+function dir_exists
+{
+    if [[ -d "$1" ]]; then
+        return 0
+    else
+        return 1
+    fi
+}
+#------------------------------------------------------------------------------#
+function file_exists
+{
+    if [[ -f "$1" ]]; then
+        return 0
+    else
+        return 1
+    fi
+}
+#------------------------------------------------------------------------------#
+# check if a directory contains template files (except index.html)
+# params: directory path
+# returns: true if is contains tempates, false otherwise
+function dir_contains_templates
+{
+    if [[ -n "$1" ]]; then
+        local found=$(find "$1/" -maxdepth 1 -not -name "index.html" -name "*.html" | wc -l)
+        if (( found > 0 )); then
+            return 0
+        else
+            return 1
+        fi
+    fi
+}
+#------------------------------------------------------------------------------#
+# Creates a new collection
+# params: collection's name
+function create_collection
+{
+    if in_project_dir; then
+        if [[ -z "$1" ]]; then
+            colored "Error: collection name is missing" red
+            colored "Usage: \$${script} new model [model name]" cyan
+        else
+            if file_exists "collections/$(basename "$1").js";then
+                colored "The collection $1 allready exists!" red
+                return 1
+            else
+                tpl="$(basename "$1") = new Mongo.Collection('$(basename "$1")');"
+
+                echo "${tpl}" > "collections/$(basename "$1").js"
+
+                colored "The collection $1 has been created at collections/$(basename "$1").js" green
+            fi
+        fi
+    else
+        colored "Error: not valid Meteor project directory" red
+        colored "This command must be called from project's root directory" cyan
+        return 1
+    fi
+}
+#------------------------------------------------------------------------------#
+# creates a fixture for a given collection
+# params: collection's name
+#       : keyword scaffold (optional)
+# remarks: if scaffold keyword is given then the
+#          function looks the fields array to get
+#          all available field names and types
+function create_fixture
+{
+    # generate NUMBER_OF_FIXTURES
+    tpl="if ($(basename "$1").find().count() === 0) {
+    for (var $(basename "$1")_index = 0; $(basename "$1")_index < ${NUMBER_OF_FIXTURES}; $(basename "$1")_index++) {
+        $(basename "$1").insert({"
+
+    tpl_end="
+        });
+    }
+}"
+
+    tpl_mid=""
+    if [[ "$2" = "scaffold" ]]; then
+            for (( j = 0; j < ${#field_names[*]}; j++ )); do
+                # generate a field value according to it's type
+                local val
+                if [[ ${field_types[j]} = "number" ]]; then
+                    val="$(basename $1)_index"
+                elif [[ ${field_types[j]} = "string" ]]; then
+                    val="'short string ' + $(basename $1)_index"
+                elif [[ ${field_types[j]} = "text" ]]; then
+                    val="'this is a long text ' + $(basename $1)_index"
+                elif [[ ${field_types[j]} = "date" ]]; then
+                    # the format for the date is limited by the
+                    # w3 documentation for the date input field
+                    # http://www.w3.org/TR/html-markup/input.date.html#input.date.attrs.value
+                    val=\'$(date "+%Y-%m-%d")\'
+                elif [[ ${field_types[j]} = "boolean" ]]; then
+                    val="true"
+                elif [[ ${field_types[j]} = "url" ]]; then
+                    val="'http://www.foobar.foo'"
+                elif [[ ${field_types[j]} = "tel" ]]; then
+                    val="'+00 000 000 000'"
+                elif [[ ${field_types[j]} = "email" ]]; then
+                    val="'foobar@foo.bar'"
+                elif [[ ${field_types[j]} = "color" ]]; then
+                    val="'#000000'"
+                elif [[ ${field_types[j]} = "file" ]]; then
+                    val="'some/file/path'"
+                elif [[ ${field_types[j]} = "select" ]]; then
+                    val="'Option 1'"
+                elif [[ ${field_types[j]} = "password" ]]; then
+                    val="'super_secret@!pass#'"
+                fi
+                tpl_mid+="
+            ${field_names[j]}: ${val}"
+                # add comma to collection field if needed
+                if (( j+1 < ${#field_names[*]} )); then
+                    tpl_mid+=","
+                fi
+            done
+    # if not called during a scaffold create a simpler version
+    else
+        tpl_mid="
+            $(basename "$1"): '$(basename "$1") ' + $(basename "$1")_index"
+    fi
+
+    tpl+="${tpl_mid}${tpl_end}"
+    echo "" >> "server/fixtures.js"
+    echo "${tpl}" >> "server/fixtures.js"
+}
+#------------------------------------------------------------------------------#
+# Creates a new template
+# params: template's name
+function create_template
+{
+    if in_project_dir; then
+        if [[ -z "$1" ]]; then
+            colored "Error: template name is missing" red
+            colored "Usage: \$${script} new template [template name]" cyan
+        else
+            if file_exists "client/views/$1/$1.html";then
+                colored "The template $1 allready exists." red
+                return 1
+            else
+                tpl="<template name=\"$(basename "$1")\">
+<h3>$(basename "$1")</h3>
+</template>"
+                # deep directory tree
+                echo "${tpl}" > "client/views/$1/$(basename "$1").html"
+
+                colored "The template $1 has been created at 'client/views/$1/$(basename "$1").html'" green
+                return 0
+            fi
+        fi
+    else
+        colored "Error: not valid Meteor project directory" red
+        colored "This command must be called from project's root directory" cyan
+        return 1
+    fi
+}
+# creates templates for scaffolded collections
+# params: collection's name
+# remarks: the function assumes that the calling do_scaffold function
+# has checked that the directory does not exist
+#
+# this is a series of functions, each responsible to created one template
+function scaffold_template
+{
+    # create the directory
+    mkdir -p "client/views/$1"
+    scaffold_template_index "$1"
+    scaffold_template_show "$1"
+    scaffold_template_new "$1"
+    scaffold_template_edit "$1"
+    scaffold_form "$1"
+}
+#------------------------------------------------------------------------------#
+# creates the main template for the scaffold
+# params: collection's name
+function scaffold_template_index
+{
+    local tpl_index="<template name=\"$(basename "$1")\">
+    <div class=\"container\">
+        <h3>All $(basename "$1")(s)</h3>
+        <p><pre>{{tpl_info}}</pre>
+        you can delete this message from the template and/or the helper</p>
+            <div class=\"table-responsive\">
+                <table class=\"table table-hover table-condensed table-bordered\">
+                    <thead>
+                        <tr>"
+
+    local tpl_end="
+                    </tbody>
+               </table>
+            </div>
+            <a class=\"btn btn-success btn-xs\" href=\"{{pathFor 'new_$(basename "$1")'}}\">New $(basename "$1")</a>
+        </div>
+</template>"
+    # display the main content in a table where
+    # the number of columns = length of field_names array
+    local tpl_mid=""
+    tpl_mid+="
+                            <th colspan=\"50\">
+                                <form class=\"form-inline\">
+                                        <div class=\"form-group\">
+                                            <label for=\"input_title\">Filter: </label>
+                                            <input type=\"text\" class=\"form-control\"
+                                                   placeholder=\"filter text\"
+                                                   id=\"filter_field\">
+                                        </div>
+                                </form>
+                            </th>
+                        </tr>
+                        <tr>"
+    for col in ${field_names[*]}; do
+        tpl_mid+="
+                            <th>${col}</th>"
+    done
+    # filter input field (goes above table header and edit, delete buttons)
+    tpl_mid+="
+                            <th colspan=\"4\">
+                                <form class=\"form-inline\">
+                                        <div class=\"form-group\">
+                                            <input type=\"checkbox\" class=\"space-left space-right\"
+                                                id=\"checkAll\">
+                                            <a class=\"btn btn-danger btn-xs space-right\"
+                                                href=\"\" id=\"deleteAll\">Delete selected</a>
+                                        </div>
+                                </form>
+                            </th>"
+    # close the headers
+    tpl_mid+="
+                        </tr>"
+    tpl_mid+="
+                    </thead>"
+    tpl_mid+="
+                    <tbody>"
+
+    # show document values and show, edit, delete links
+    tpl_mid+="
+                    {{#each $(basename "$1")}}
+                        <tr id=\"{{_id}}\">"
+    for value in ${field_names[*]}; do
+        tpl_mid+="
+                            <td>{{${value}}}</td>"
+    done
+
+    # close table values
+    tpl_mid+="
+                            <td>
+                                <input type=\"checkbox\"
+                                    class=\"space-left space-right checkthis\">
+                            </td>
+                            <td>
+                                <a class=\"btn btn-default btn-xs\" \
+href=\"{{pathFor 'show_$(basename "$1")'}}\"  id=\"show\">Show </a>
+                            </td>
+                            <td>
+                                <a class=\"btn btn-primary btn-xs\" \
+href=\"{{pathFor 'edit_$(basename "$1")'}}\"  id=\"edit\"> Edit</a>
+                            </td>
+                            <td>
+                                <a class=\"btn btn-danger btn-xs\" \
+href=\"\" id=\"delete\">Delete</a>
+                            </td>
+                        </tr>
+                    {{/each}}"
+    # add all to first template before writting to file
+    tpl_index+="${tpl_mid}"
+    tpl_index+="${tpl_end}"
+
+    echo "${tpl_index}" > "client/views/$1/$(basename "$1").html"
+}
+#------------------------------------------------------------------------------#
+# creates the show template for a single document in a collection
+# params: collection's name
+function scaffold_template_show
+{
+    local tpl_show
+    local tpl_mid
+    local tpl_end
+    tpl_show="<template name=\"show_$(basename "$1")\">
+    <div class=\"container\">
+        <h3>Viewing $(basename "$1")</h3>
+        <div class=\"panel panel-default\">
+            <div class=\"panel-body\">"
+
+    tpl_end="
+            </div>
+        </div>
+        <a class=\"btn btn-default btn-xs\" href=\"{{pathFor '$(basename "$1")'}}\">Back</a>
+    </div>
+</template>"
+
+    for col in ${field_names[*]}; do
+        tpl_mid+="
+                    <p><strong>${col} :</strong><br>
+                    {{${col}}}</p>"
+    done
+
+    tpl_show+="${tpl_mid}"
+    tpl_show+="${tpl_end}"
+    echo "${tpl_show}" > "client/views/$1/show_$(basename "$1").html"
+}
+#------------------------------------------------------------------------------#
+# creates the new template for a collection
+# params: collection's name
+function scaffold_template_new
+{
+    local tpl_new="<template name=\"new_$(basename "$1")\">
+    <div class=\"container\">
+        <h3>New $(basename "$1")</h3>
+        {{> form_$(basename "$1")}}
+        <button type=\"button\" class=\"btn btn-primary btn-xs\" id=\"save\">Save</button>
+        <a class=\"btn btn-default btn-xs\"  href=\"{{pathFor '$(basename "$1")'}}\">Back</a>
+    </div>
+</template>"
+
+
+    echo "${tpl_new}" > "client/views/$1/new_$(basename "$1").html"
+}
+#------------------------------------------------------------------------------#
+# creates the edit template for a single document in a collection
+# params: collection's name
+function scaffold_template_edit
+{
+    local tpl_edit="<template name=\"edit_$(basename "$1")\">
+    <div class=\"container\">
+        <h3>Edit $(basename "$1")</h3>
+        {{> form_$(basename "$1")}}
+        <button type=\"button\" class=\"btn btn-primary btn-xs\" id=\"save\">Save</button>
+        <a class=\"btn btn-default btn-xs\"  href=\"{{pathFor '$(basename "$1")'}}\">Back</a>
+    </div>
+</template>"
+
+    echo "${tpl_edit}" > "client/views/$1/edit_$(basename "$1").html"
+}
+# creates a common form for use in new and edit templates
+# params: collection's name
+function scaffold_form
+{
+    local tpl_form
+    local tpl_mid
+    local tpl_end
+
+    tpl_form="<template name=\"form_$(basename "$1")\">
+    <form>"
+
+    tpl_end="
+    </form>
+</template>"
+
+    for (( i = 0; i < ${#field_names[*]}; i++ )); do
+        tpl_mid+="
+        <div class=\"form-group\">
+            <label for=\"input_${field_names["${i}"]}\">${field_names["${i}"]}</label>"
+        if [[ ${field_types["${i}"]} == "string" ]]; then
+            tpl_mid+="
+            <input type=\"text\" class=\"form-control\"
+                placeholder=\"${field_names["${i}"]} input\"
+                id=\"input_${field_names["${i}"]}\"
+                value=\"{{${field_names["${i}"]}}}\">"
+
+        elif [[ ${field_types["${i}"]} == "text" ]]; then
+            tpl_mid+="
+            <textarea class=\"form-control\" rows=\"3\"
+                id=\"input_${field_names["${i}"]}\">{{${field_names["${i}"]}}}</textarea>"
+
+        elif [[ ${field_types["${i}"]} == "number" ]]; then
+            tpl_mid+="
+            <input type=\"number\" class=\"form-control\"
+                placeholder=\"0\"
+                id=\"input_${field_names["${i}"]}\"
+                value=\"{{${field_names["${i}"]}}}\">"
+
+        elif [[ ${field_types["${i}"]} == "boolean" ]]; then
+            tpl_mid+="
+            <input type=\"checkbox\" class=\"form-control\"
+                id=\"input_${field_names["${i}"]}\"
+                value=\"{{${field_names["${i}"]}}}\">"
+
+        elif [[ ${field_types["${i}"]} == "password" ]]; then
+            tpl_mid+="
+            <input type=\"password\" class=\"form-control\"
+                placeholder=\"${field_names["${i}"]} input\"
+                id=\"input_${field_names["${i}"]}\"
+                value=\"{{${field_names["${i}"]}}}\">"
+
+        elif [[ ${field_types["${i}"]} == "date" ]]; then
+            tpl_mid+="
+            <input type=\"date\" class=\"form-control\"
+                placeholder=\"Date\"
+                id=\"input_${field_names["${i}"]}\"
+                value=\"{{${field_names["${i}"]}}}\">"
+
+        elif [[ ${field_types["${i}"]} == "url" ]]; then
+            tpl_mid+="
+            <input type=\"url\" class=\"form-control\"
+                placeholder=\"http://www.foobar.foo\"
+                id=\"input_${field_names["${i}"]}\"
+                value=\"{{${field_names["${i}"]}}}\">"
+
+        elif [[ ${field_types["${i}"]} == "email" ]]; then
+            tpl_mid+="
+            <input type=\"email\" class=\"form-control\"
+                placeholder=\"foo@foobar.bar\"
+                id=\"input_${field_names["${i}"]}\"
+                value=\"{{${field_names["${i}"]}}}\">"
+
+        elif [[ ${field_types["${i}"]} == "tel" ]]; then
+            tpl_mid+="
+            <input type=\"tel\" class=\"form-control\"
+                placeholder=\"+00 000 000 000\"
+                id=\"input_${field_names["${i}"]}\"
+                value=\"{{${field_names["${i}"]}}}\">"
+
+        elif [[ ${field_types["${i}"]} == "color" ]]; then
+            tpl_mid+="
+            <input type=\"color\" class=\"form-control\"
+                placeholder=\"#000000\"
+                id=\"input_${field_names["${i}"]}\"
+                value=\"{{${field_names["${i}"]}}}\">"
+
+        elif [[ ${field_types["${i}"]} == "file" ]]; then
+            tpl_mid+="
+            <input type=\"file\" class=\"form-control\"
+                id=\"input_${field_names["${i}"]}\"
+                value=\"\">"
+
+        elif [[ ${field_types["${i}"]} == "select" ]]; then
+            tpl_mid+="
+            <select class=\"form-control\" id=\"input_${field_names["${i}"]}\">"
+            tpl_mid+="
+                <option selected=\"{{selected_${field_names["${i}"]}}}\">
+                    {{${field_names["${i}"]}}}
+                </option>"
+            tpl_mid+="
+            </select>"
+        fi
+
+
+        tpl_mid+="
+        </div>"
+    done # form groups loop
+
+    tpl_form+="${tpl_mid}"
+    tpl_form+="${tpl_end}"
+    echo "${tpl_form}" > "client/views/$1/form_$(basename "$1").html"
+}
+#------------------------------------------------------------------------------#
+# Creates a new helper
+# params: helper's name
+function create_helper
+{
+    if in_project_dir; then
+        if [[ -z "$1" ]]; then
+            colored "Error: helper name is missing" red
+            colored "Usage: \$${script} new helper [helper name] <-- must match with a view name" cyan
+            return 1
+        else
+            if file_exists "client/views/$1/$1.js";then
+                colored "The helper $1 allready exists" red
+                return 1
+            else
+
+                local tpl="Template.$(basename "$1").helpers ({
+
+    // controllers
+    tpl_info: function() {
+        return 'This is $(basename "$1") template, find me at client/views/$1'
+    }
+
+});
+
+Template.$(basename "$1").events ({
+
+    // event handlers
+    'click #delete': function() {
+        //
+    }
+
+});
+"
+                echo "${tpl}" > "client/views/$1/$(basename "$1").js"
+                colored "The template helper $1 has been created at client/views/$1/$(basename "$1").js" green
+                return 0
+            fi
+        fi
+    else
+        colored "Error: not valid Meteor project directory" red
+        colored "This command must be called from project's root directory" cyan
+        return 1
+    fi
+}
+#------------------------------------------------------------------------------#
+# creates a series of helpers for a given scaffold
+# params: collection's name
+# remarks: this function assumes that the caller function do_scaffold has checked
+# for already existing views (directories)
+function scaffold_helper
+{
+    scaffold_helper_index "$1"
+    scaffold_helper_show "$1"
+    scaffold_helper_new "$1"
+    scaffold_helper_edit "$1"
+}
+#------------------------------------------------------------------------------#
+# creates the helper for the main (index) page of the scaffold
+# params: collection's name
+function scaffold_helper_index
+{
+    local tpl="Template.$(basename "$1").helpers ({
+
+    // controllers
+    tpl_info: function() {
+        return 'This is $(basename "$1") template, find me at client/views/$1';
+    },
+
+    $(basename "$1"): function() {
+        return $(basename "$1").find().fetch();
+    }
+
+});
+
+Template.$(basename "$1").events ({
+
+    // event handlers
+    // delete the selected object
+    'click #delete': function(evt, tpl) {
+        Meteor.call('delete_$(basename "$1")', this._id);
+    },
+
+    // filter function
+    'keyup #filter_field': function (evt, tpl) {
+        \$(\"td\").filter(function () {
+            var word = tpl.find('#filter_field').value;
+            if (word !== '') {
+                \$('.table-responsive tbody>tr').hide();
+                \$('.table-responsive td').filter(function () {
+                    return \$(this).text().toLowerCase().indexOf(word.toLowerCase()) > -1
+                }).parent('tr').show();
+            }
+            else {
+                \$('.table-responsive tbody>tr').show();
+            }
+            return false;
+        })
+    },
+
+    'click #checkAll': function (evt, tpl) {
+        \$('.checkthis').prop('checked', evt.target.checked);
+    },
+
+    'click #deleteAll': function () {
+        // get the id of the checked rows
+        \$('input:checkbox:checked').filter(function(){
+            var selectedIds = \$(this).closest('tr').attr('id');
+            if (selectedIds !== undefined) {
+                Meteor.call('delete_selected_$(basename "$1")', selectedIds);
+            }
+        });
+    }
+
+});
+"
+    echo "${tpl}" > "client/views/$1/$(basename "$1").js"
+}
+#------------------------------------------------------------------------------#
+# creates the helper for the show template for a single document in a collection
+# params: collection's name
+function scaffold_helper_show
+{
+    local tpl="Template.show_$(basename "$1").helpers ({
+
+    // controllers
+    //$(basename "$1"): function() {
+        //
+    //}
+
+});
+
+Template.show_$(basename "$1").events ({
+
+    // event handlers
+    //'click #': function(evt, tpl) {
+        //
+    //}
+
+});
+"
+
+    echo "${tpl}" > "client/views/$1/show_$(basename "$1").js"
+}
+#------------------------------------------------------------------------------#
+# creates a helper for the new template for a single document in a collection
+# params: collection's name
+function scaffold_helper_new
+{
+    local tpl_new="Template.new_$(basename "$1").helpers ({
+
+    // controllers
+    //$(basename "$1"): function() {
+        //
+    //}
+
+});
+
+Template.new_$(basename "$1").events ({
+    // event handlers
+    'click #save': function(evt, tpl) {
+        evt.preventDefault();
+"
+
+    tpl_end="    }
+
+});
+"
+    local tpl_mid="
+        var new_$(basename "$1") = {"
+
+    for (( i = 0; i < ${#field_names[*]}; i++ )); do
+        tpl_mid+="
+            ${field_names[${i}]}: tpl.find('#input_${field_names[${i}]}').value"
+        if (( i < ${#field_names[*]} )); then
+            tpl_mid+=","
+        fi
+    done
+
+    tpl_mid+="
+        };
+
+        // the method returns the new object id after saving it into the db
+        Meteor.call('insert_$(basename "$1")', new_$(basename "$1"));
+        Router.go('$(basename "$1")');
+
+"
+
+    tpl_new+="${tpl_mid}"
+    tpl_new+="${tpl_end}"
+    echo "${tpl_new}" > "client/views/$1/new_$(basename "$1").js"
+}
+#------------------------------------------------------------------------------#
+# creates a helper for the edit template for a single document in a collection
+# params: collection's name
+function scaffold_helper_edit
+{
+    local tpl_edit="Template.edit_$(basename "$1").helpers ({
+
+    // controllers
+    //$(basename "$1"): function() {
+        //
+    //}
+
+});
+
+Template.edit_$(basename "$1").events ({
+    // event handlers
+    'click #save': function(evt, tpl) {
+        evt.preventDefault();
+"
+
+    tpl_end="    }
+
+});
+"
+    local tpl_mid="
+        var updated_$(basename "$1") = {"
+
+    for (( i = 0; i < ${#field_names[*]}; i++ )); do
+        tpl_mid+="
+            ${field_names[${i}]}: tpl.find('#input_${field_names[${i}]}').value"
+        if (( i < ${#field_names[*]} )); then
+            tpl_mid+=","
+        fi
+    done
+
+    tpl_mid+="
+        };
+
+        // the method returns the new object id after saving it into the db
+        Meteor.call('update_$(basename "$1")', this._id, updated_$(basename "$1"));
+        Router.go('$(basename "$1")');
+
+"
+
+    tpl_edit+="${tpl_mid}"
+    tpl_edit+="${tpl_end}"
+    echo "${tpl_edit}" > "client/views/$1/edit_$(basename "$1").js"
+}
+#------------------------------------------------------------------------------#
+# creates a series of methods for a given scaffold
+# params: collection's name
+# remarks: this function assumes that the caller function do_scaffold has checked
+# for any pitfalls
+function scaffold_method
+{
+    scaffold_method_insert "$1"
+    scaffold_method_delete "$1"
+    scaffold_method_update "$1"
+    scaffold_method_delete_selected "$1"
+}
+#------------------------------------------------------------------------------#
+# creates a save method for a given collection name
+# params: collection's name
+function scaffold_method_insert
+{
+    local pattern="Meteor.methods"
+    local tpl="\\    insert_$(basename "$1"): function(object_$(basename "$1")) { \\
+        var $(basename "$1")Id = $(basename "$1").insert(object_$(basename "$1")); \\
+        return $(basename "$1")Id; \\
+    },"
+
+    sed -i "/$pattern/a $tpl\ " "server/methods.js"
+    sed -i "/$pattern/a \ " "server/methods.js"
+}
+# creates an update method for a given collection name
+# params: collection's name
+function scaffold_method_update
+{
+    local pattern="Meteor.methods"
+    local tpl="\\    update_$(basename "$1"): function(id, object_$(basename "$1")) { \\
+        $(basename "$1").update({_id: id}, {\$set: object_$(basename "$1") }); \\
+    },"
+
+    sed -i "/$pattern/a $tpl\ " "server/methods.js"
+    sed -i "/$pattern/a \ " "server/methods.js"
+}
+#------------------------------------------------------------------------------#
+# creates a delete method for a given collection
+# params: collection's name
+function scaffold_method_delete
+{
+    local pattern="Meteor.methods"
+    local tpl="\\    delete_$(basename "$1"): function($(basename "$1")Id) { \\
+        $(basename "$1").remove($(basename "$1")Id); \\
+    },"
+
+    sed -i "/$pattern/a $tpl\ " "server/methods.js"
+    sed -i "/$pattern/a \ " "server/methods.js"
+}
+# creates delete selected method
+# params: an array of _ids
+function scaffold_method_delete_selected
+{
+    local pattern="Meteor.methods"
+    local tpl="\\    delete_selected_$(basename "$1"): function(selectedIds) { \\
+        $(basename "$1").remove(selectedIds); \\
+    },"
+
+    sed -i "/$pattern/a $tpl\ " "server/methods.js"
+    sed -i "/$pattern/a \ " "server/methods.js"
+}
+#------------------------------------------------------------------------------#
+# Adds a new route into router.js
+# params: view's name
+#       : scaffold (just the word)
+function add_route
+{
+    if [[ -z $1 ]]; then
+        # do nothing for now
+        :
+    else
+        # if is a simple view creation
+        # show all documents in collection
+        local tpl="
+Router.route('$(basename "$1")', {
+    path: '/$1/',
+    template: '$(basename "$1")'
+});"
+
+        # append to router file
+        echo "${tpl}" >> "lib/router.js"
+
+        # if we are scaffolding
+            if [[ $2 = "scaffold" ]]; then
+                #--------------------------------------------------------------#
+                # new document
+                local tpl_new="
+Router.route('new_$(basename "$1")', {
+    path: '/$1/new/',
+    template: 'new_$(basename "$1")'
+});"
+                echo "${tpl_new}" >> "lib/router.js"
+                #--------------------------------------------------------------#
+                # edit a document by id
+                local tpl_edit="
+Router.route('edit_$(basename "$1")', {
+    path: '/$1/:_id/edit/',
+    template: 'edit_$(basename "$1")',
+    data: function() { return $(basename "$1").findOne(this.params._id); }
+});"
+                echo "${tpl_edit}" >> "lib/router.js"
+                #--------------------------------------------------------------#
+                # view a document by id
+                local tpl_show="
+Router.route('show_$(basename "$1")', {
+    path: '/$1/:_id/',
+    template: 'show_$(basename "$1")',
+    data: function() { return $(basename "$1").findOne(this.params._id); }
+});"
+                echo "${tpl_show}" >> "lib/router.js"
+        fi
+    fi
+}
+#------------------------------------------------------------------------------#
+# Creates a combination of a template and a helper
+# params: view's name
+function create_view
+{
+    if in_project_dir; then
+        if [[ -z $1 ]]; then
+            colored "Error: view name is missing" red
+            colored "Usage: \$${script} new [view name]" cyan
+        else
+            if dir_exists "client/views/$1" && dir_contains_templates "client/views/$1";then
+                colored "Error: The view $1 allready exists!" red
+            else
+                mkdir -p "client/views/$1"
+                create_template "$1"
+                create_helper "$1"
+                add_route "$1"
+                colored "The view $1 has been created at client/views/$1" green
+                colored "and registered as route /$1/" green
+            fi
+        fi
+    else
+        colored "Error: not valid Meteor project directory" red
+        colored "This command must be called from project's root directory" cyan
+    fi
+}
+# generates links and link hierarchies for all views
+function create_links
+{
+    local tpl_links="<template name=\"site_links\">
+    <li class=\"dropdown\">
+        <a href=\"\" class=\"dropdown-toggle\"
+                data-toggle=\"dropdown\">Views <span class=\"caret\"></span></a>
+            <ul class=\"dropdown-menu\" role=\"menu\">"
+    local tpl_mid
+    local tpl_end="
+            </ul>
+    </li>
+</template>"
+
+    if in_project_dir; then
+        # get all subdirectories inside client's views
+        root_dirs=$(cd client/views/; find . -maxdepth 1 -not -iname ".*" -type d)
+        for dir in $(find "client/views/" -not -iname ".*" -not -iname "layout" -not -name "index.html" -type d);do
+            if dir_contains_templates "${dir}" == 1; then
+                tpl_mid+="
+                <li><a href=\"{{pathFor '$(basename "${dir}")'}}\">$(basename "${dir}")</a></li>"
+            fi
+        done
+        tpl_links+="${tpl_mid}"
+        tpl_links+="${tpl_end}"
+
+        echo "${tpl_links}" > "client/views/layout/site_links.html"
+        return 0
+    else
+        colored "Error: not valid Meteor project directory" red
+        colored "This command must be called from project's root directory" cyan
+        return 1
+    fi
+}
+# registers each a new collection to server's publications and
+# client's subscriptions files
+# params: collection's name
+function register_subscriptions
+{
+    if [[ ! -z "$1" ]]; then
+        local tpl_sub="
+Meteor.subscribe('$(basename "$1")');"
+
+        local tpl_pub="
+Meteor.publish('$(basename "$1")', function(){
+    return $(basename "$1").find();
+});"
+
+        echo "${tpl_sub}" >> "client/lib/subscriptions.js"
+        echo "${tpl_pub}" >> "server/publications.js"
+        return 0
+    else
+        return 1
+    fi
+}
+
+#------------------------------------------------------------------------------#
+# creates a collection, view and edit templates with their helpers
+# their routes and fixtures
+# params: model's name which is the same as the view's name
+#       : fields names:types
+# example: do_scaffold blogpost title:text created:datetime posted:boolean
+function do_scaffold
+{
+    if in_project_dir; then
+        if [[ -z $1 ]]; then
+            colored "Error: view name is missing" red
+            colored "Usage: \$${script} new [view name]" cyan
+            return 1
+        else
+            if dir_exists "client/views/$1" && dir_contains_templates "client/views/$1";then
+                colored "Error: The view $1 allready exists!" red
+                return 1
+            else
+                # scaffold here
+                create_collection "$1" > /dev/null
+                add_route "$1" "scaffold"
+                create_fixture "$1" "scaffold"
+                register_subscriptions "$1"
+                scaffold_template "$1"
+                scaffold_helper "$1"
+                scaffold_method "$1"
+                colored "The scaffold for $1 has been created at client/views/$1" green
+                return 0
+            fi
+        fi
+    else
+        colored "Error: not valid Meteor project directory" red
+        colored "This command must be called from project's root directory" cyan
+        return 1
+    fi
+}
+#------------------------------------------------------------------------------#
+function main
+{
+    user_input "$@"
+}
+
+## End of functions declarations ##
+#------------------------------------------------------------------------------#
+# invoke the main function
+main "$@"

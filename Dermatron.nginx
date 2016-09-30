@@ -1,0 +1,40 @@
+# Nginx Virtual Host configuration for Dermatron Meteor project
+# Put this configuration in /etc/nginx/sites-available directory
+# error and access logs are loged in /var/log/nginx directory
+
+# Note: if you want to run multiple meteor apps on the same server,
+# make sure you define a separate port for each.
+
+# for more info check http://wiki.iccode.net/meteor/ubuntu_deployment
+
+# Upstreams
+upstream Dermatron {
+    server 127.0.0.1:51999;
+}
+
+# HTTP Server
+server {
+    listen 0.0.0.0:80;
+    # you must add the domain suffix ec. .com .net, etc
+    # access from both http://Dermatron and http://www.Dermatron
+    server_name Dermatron www.Dermatron;
+
+    # Access and Error log location
+    access_log /var/log/nginx/Dermatron_access.log;
+    error_log /var/log/nginx/Dermatron_error.log;
+
+    location / {
+        proxy_pass http://Dermatron/;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade ;
+        proxy_set_header Connection "upgrade";
+        proxy_set_header Host ;
+
+        proxy_set_header X-Real-IP ;
+        proxy_set_header X-Forward-For ;
+        proxy_set_header X-Forward-Proto http;
+        proxy_set_header X-Nginx-Proxy true;
+
+        proxy_redirect off;
+    }
+}
