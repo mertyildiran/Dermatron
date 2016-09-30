@@ -36,7 +36,7 @@ NUMBER_OF_FIXTURES=5
 # an array for scaffolding fields
 declare field_names
 declare field_types
-readonly ROOT_DIRECTORIES="client server lib collections public tests"
+readonly ROOT_DIRECTORIES="lib collections public tests"
 readonly CLIENT_DIRECTORIES="lib stylesheets views views/layout"
 # files
 readonly CLIENT_STYLESHEETS="client/stylesheets/style.css client/stylesheets/sticky_footer.css"
@@ -519,8 +519,6 @@ function create_project
     meteor create "${PROJECT_NAME}" >/dev/null
 
     cd "${PROJECT_NAME}"
-    # delete default generated files
-    rm "${PROJECT_NAME}".*
     rm client/main.*
     colored "main.js main.html main.css have been removed from under client/ directory" magenta
 
