@@ -944,8 +944,9 @@ function scaffold_template_index
                             <th colspan=\"4\">
                                 <form class=\"form-inline\">
                                         <div class=\"form-group\">
-                                            <input type=\"checkbox\" class=\"space-left space-right\"
-                                                id=\"checkAll\">
+                                        <input type=\"checkbox\" class=\"space-left space-right filled-in\"
+                                            id=\"checkAll\">
+                                            <label for=\"checkAll\"></label>
                                             <a class=\"btn btn-danger btn-xs space-right\"
                                                 href=\"\" id=\"deleteAll\">Delete selected</a>
                                         </div>
@@ -971,8 +972,9 @@ function scaffold_template_index
     # close table values
     tpl_mid+="
                             <td>
-                                <input type=\"checkbox\"
-                                    class=\"space-left space-right checkthis\">
+                            <input type=\"checkbox\"
+                                class=\"space-left space-right checkthis filled-in\" id=\"row_{{_id}}\">
+                                <label for=\"row_{{_id}}\"></label>
                             </td>
                             <td>
                                 <a class=\"btn btn-default btn-xs\" \
@@ -1098,9 +1100,10 @@ function scaffold_form
 
         elif [[ ${field_types["${i}"]} == "boolean" ]]; then
             tpl_mid+="
-            <input type=\"checkbox\" class=\"form-control\"
+            <input type=\"checkbox\" class=\"form-control filled-in\"
                 id=\"input_${field_names["${i}"]}\"
-                value=\"{{${field_names["${i}"]}}}\">"
+                value=\"true\">
+                <label for=\"input_${field_names["${i}"]}\"></label>"
 
         elif [[ ${field_types["${i}"]} == "password" ]]; then
             tpl_mid+="
