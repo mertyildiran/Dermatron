@@ -55,7 +55,7 @@ PACKAGES=("iron:router" "fourseven:scss" "poetic:materialize-scss")
 # index.html template
 INDEX="<template name=\"index\">
 <h2>Greetings Earthlings!</h2>
-<center><img src="http://i.imgur.com/LwTHNZ7.png" alt="Alien" style="height:200px;"></center>
+<center><img src=\"http://i.imgur.com/LwTHNZ7.png\" alt=\"Alien\" style=\"height:300px;\"></center>
 <h3>I am the Index page, find me at client/views/index.html</h3>
 </template>"
 
@@ -186,6 +186,12 @@ PUBLICATIONS="//Meteor.publish('a_collection', function(){
 FIXTURES="//if (a_collection.find().count() === 0) {
     //
 //}"
+
+PLURALIZE_PY_SCRIPT="
+import inflect
+i = inflect.engine()
+print i.plural(\"$2\")
+"
 
 ## End of template declarations ##
 #
@@ -352,8 +358,16 @@ function user_input
             if fields_pairs_are_valid "${args}"; then
                 if field_types_are_valid "${args}";then
                     pack_fields "${args}"
+
+                    # pluralize the collection name
+                    wget https://raw.githubusercontent.com/pwdyson/inflect.py/master/inflect.py
+                    local collection_singular=$2
+                    local collection_plural=$(python -c $PLURALIZE_PY_SCRIPT)
+                    rm inflect.py*
+                    colored "Collection name $collection_singular pluralized to $collection_plural" magenta
+
                     # start scaffolding
-                    do_scaffold "$2"
+                    do_scaffold "$collection_plural"
                 else
                     colored "Error: wrong types provided" red
                     help "scaffold"
