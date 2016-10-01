@@ -1620,8 +1620,11 @@ function do_scaffold
             return 1
         else
             if dir_exists "client/views/$1" && dir_contains_templates "client/views/$1";then
-                colored "Error: The view $1 allready exists!" red
-                return 1
+                rm -rf client/views/$1
+                scaffold_template "$1" "$2"
+                scaffold_helper "$1"
+                colored "The scaffold for $1 has been updated. You need to update fixtures manually if you will use them." green
+                return 0
             else
                 # scaffold here
                 create_collection "$1" > /dev/null

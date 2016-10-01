@@ -7,9 +7,13 @@ sudo apt-get install nodejs nodejs-legacy npm
 curl https://install.meteor.com/ | sh
 ```
 
-## Electrified Iron Meteor with Alien Recipe
+## Electrified & Materialized Iron Meteor with Alien Recipe
 
 Alien is a bash script for creating Meteor Apps with MVC-like directory structure & a scaffolding tool.
+
+<p align="center">
+  <img src="http://i.imgur.com/Uy5YAUT.png" alt="Alien" height="40%"/>
+</p>
 
 ```Shell
 ./alien project PROJECT_NAME
@@ -19,6 +23,14 @@ cd PROJECT_NAME/
 ./alien links
 meteor
 ```
+
+Later on if you want to update one of your scaffolds just regenerate again:
+
+```Shell
+./alien scaffold person name:string surname:string registered:date isAdmin:boolean
+```
+
+Thanks to MongoDB's schema-less architecture you don't need to migrate anything. Templates and helpers will be regenerated automatically.
 
 Supported HTML controls are string, text, number, date, boolean, password, url, tel, email, file, color and select.
 
