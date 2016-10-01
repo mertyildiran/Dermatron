@@ -12,7 +12,7 @@ curl https://install.meteor.com/ | sh
 Alien is a bash script for creating Meteor Apps with MVC-like directory structure & a scaffolding tool.
 
 <p align="center">
-  <img src="http://i.imgur.com/Uy5YAUT.png" alt="Alien" height="40%"/>
+  <img src="http://i.imgur.com/Uy5YAUT.png" alt="Alien" height="300px"/>
 </p>
 
 ```Shell

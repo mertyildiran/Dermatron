@@ -849,8 +849,8 @@ function create_fixture
     fi
 
     tpl+="${tpl_mid}${tpl_end}"
-    echo "" >> "server/fixtures.js"
-    echo "${tpl}" >> "server/fixtures.js"
+    echo "" >> "server/fixtures_$1.js"
+    echo "${tpl}" >> "server/fixtures_$1.js"
 }
 #------------------------------------------------------------------------------#
 # Creates a new template
@@ -1621,9 +1621,11 @@ function do_scaffold
         else
             if dir_exists "client/views/$1" && dir_contains_templates "client/views/$1";then
                 rm -rf client/views/$1
+                rm server/fixtures_$1.js
+                create_fixture "$1" "scaffold"
                 scaffold_template "$1" "$2"
                 scaffold_helper "$1"
-                colored "The scaffold for $1 has been updated. You need to update fixtures manually if you will use them." green
+                colored "The scaffold for $1 has been updated. If you want to see updated fixtures do meteor reset" green
                 return 0
             else
                 # scaffold here
