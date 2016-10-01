@@ -367,7 +367,7 @@ function user_input
                     colored "Collection name $collection_singular pluralized to $collection_plural" magenta
 
                     # start scaffolding
-                    do_scaffold "$collection_plural"
+                    do_scaffold "$collection_plural" "$collection_singular"
                 else
                     colored "Error: wrong types provided" red
                     help "scaffold"
@@ -891,10 +891,10 @@ function scaffold_template
 {
     # create the directory
     mkdir -p "client/views/$1"
-    scaffold_template_index "$1"
-    scaffold_template_show "$1"
-    scaffold_template_new "$1"
-    scaffold_template_edit "$1"
+    scaffold_template_index "$1" "$2"
+    scaffold_template_show "$1" "$2"
+    scaffold_template_new "$1" "$2"
+    scaffold_template_edit "$1" "$2"
     scaffold_form "$1"
 }
 #------------------------------------------------------------------------------#
@@ -904,7 +904,7 @@ function scaffold_template_index
 {
     local tpl_index="<template name=\"$(basename "$1")\">
     <div class=\"container\">
-        <h3>All $(basename "$1")(s)</h3>
+        <h3>All $(basename "$1")</h3>
         <p><pre>{{tpl_info}}</pre>
         you can delete this message from the template and/or the helper</p>
             <div class=\"table-responsive\">
@@ -926,7 +926,7 @@ function scaffold_template_index
                             <th colspan=\"50\">
                                 <form class=\"form-inline\">
                                         <div class=\"form-group\">
-                                            <label for=\"input_title\">Filter: </label>
+                                            <label for=\"input_title\">Search: </label>
                                             <input type=\"text\" class=\"form-control\"
                                                    placeholder=\"filter text\"
                                                    id=\"filter_field\">
@@ -1004,7 +1004,7 @@ function scaffold_template_show
     local tpl_end
     tpl_show="<template name=\"show_$(basename "$1")\">
     <div class=\"container\">
-        <h3>Viewing $(basename "$1")</h3>
+        <h3>Viewing a/an $(basename "$2")</h3>
         <div class=\"panel panel-default\">
             <div class=\"panel-body\">"
 
@@ -1032,7 +1032,7 @@ function scaffold_template_new
 {
     local tpl_new="<template name=\"new_$(basename "$1")\">
     <div class=\"container\">
-        <h3>New $(basename "$1")</h3>
+        <h3>New $(basename "$2")</h3>
         {{> form_$(basename "$1")}}
         <button type=\"button\" class=\"btn btn-primary btn-xs\" id=\"save\">Save</button>
         <a class=\"btn btn-default btn-xs\"  href=\"{{pathFor '$(basename "$1")'}}\">Back</a>
@@ -1049,7 +1049,7 @@ function scaffold_template_edit
 {
     local tpl_edit="<template name=\"edit_$(basename "$1")\">
     <div class=\"container\">
-        <h3>Edit $(basename "$1")</h3>
+        <h3>Edit this $(basename "$2")</h3>
         {{> form_$(basename "$1")}}
         <button type=\"button\" class=\"btn btn-primary btn-xs\" id=\"save\">Save</button>
         <a class=\"btn btn-default btn-xs\"  href=\"{{pathFor '$(basename "$1")'}}\">Back</a>
@@ -1624,7 +1624,7 @@ function do_scaffold
                 add_route "$1" "scaffold"
                 create_fixture "$1" "scaffold"
                 register_subscriptions "$1"
-                scaffold_template "$1"
+                scaffold_template "$1" "$2"
                 scaffold_helper "$1"
                 scaffold_method "$1"
                 colored "The scaffold for $1 has been created at client/views/$1" green
