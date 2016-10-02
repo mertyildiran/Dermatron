@@ -1252,8 +1252,6 @@ function scaffold_helper_index
 
 });
 
-loadedRecords = 0;
-
 Template.$(basename "$1").events ({
 
     // event handlers
@@ -1295,16 +1293,15 @@ Template.$(basename "$1").events ({
 
     'click #loadMore': function () {
         paginatedSubscription.loadNextPage();
-        if (loadedRecords == paginatedSubscription.loaded()){
-            \$('#loadMore').hide();
+        if (paginatedSubscription.loaded() != people.find().count()){
+            \$('#loadMore').fadeOut();
         }
-        loadedRecords = paginatedSubscription.loaded();
+
     },
 
     'click #loadReset': function () {
-        loadedRecords = 0;
         paginatedSubscription.reset();
-        \$('#loadMore').show();
+        \$('#loadMore').fadeIn();
     }
 
 });
