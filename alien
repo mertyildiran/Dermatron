@@ -32,7 +32,8 @@ readonly version="0.7"
 # project's name do not edit
 PROJECT_NAME=""
 # how many fixtures you want to creat for each collection
-NUMBER_OF_FIXTURES=5
+NUMBER_OF_FIXTURES=50
+RECORDS_PER_PAGE=10
 # an array for scaffolding fields
 declare field_names
 declare field_types
@@ -48,7 +49,7 @@ readonly GIT_IGNORE=".idea
 # Packages can be installed during project creation
 # currenlty some defaults are bundled.
 # Default packages can be edited, leave space for each package
-PACKAGES=("iron:router" "fourseven:scss" "poetic:materialize-scss")
+PACKAGES=("iron:router" "fourseven:scss" "poetic:materialize-scss" "percolate:paginated-subscription")
 
 ## End of variables declarations ##
 ## File templates ##
@@ -918,6 +919,8 @@ function scaffold_template_index
                </table>
             </div>
             <a class=\"btn btn-success btn-xs\" href=\"{{pathFor 'new_$(basename "$1")'}}\">New $(basename "$1")</a>
+            <button class=\"btn btn-primary\" id=\"loadMore\">Load More</button>
+            <button class=\"btn btn-primary\" id=\"loadReset\">Reset</button>
         </div>
 </template>"
     # display the main content in a table where
@@ -1249,6 +1252,8 @@ function scaffold_helper_index
 
 });
 
+loadedRecords = 0;
+
 Template.$(basename "$1").events ({
 
     // event handlers
@@ -1286,6 +1291,20 @@ Template.$(basename "$1").events ({
                 Meteor.call('delete_selected_$(basename "$1")', selectedIds);
             }
         });
+    },
+
+    'click #loadMore': function () {
+        paginatedSubscription.loadNextPage();
+        if (loadedRecords == paginatedSubscription.loaded()){
+            \$('#loadMore').hide();
+        }
+        loadedRecords = paginatedSubscription.loaded();
+    },
+
+    'click #loadReset': function () {
+        loadedRecords = 0;
+        paginatedSubscription.reset();
+        \$('#loadMore').show();
     }
 
 });
@@ -1589,12 +1608,12 @@ function create_links
 function register_subscriptions
 {
     if [[ ! -z "$1" ]]; then
-        local tpl_sub="
-Meteor.subscribe('$(basename "$1")');"
+        local tpl_sub="Deps.autorun(function() {
+    paginatedSubscription = Meteor.subscribeWithPagination('$(basename "$1")', ${RECORDS_PER_PAGE});
+});"
 
-        local tpl_pub="
-Meteor.publish('$(basename "$1")', function(){
-    return $(basename "$1").find();
+        local tpl_pub="Meteor.publish('$(basename "$1")', function(limit) {
+    return $(basename "$1").find({}, {limit: limit});
 });"
 
         echo "${tpl_sub}" >> "client/lib/subscriptions.js"
