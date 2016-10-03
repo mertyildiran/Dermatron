@@ -49,7 +49,7 @@ readonly GIT_IGNORE=".idea
 # Packages can be installed during project creation
 # currenlty some defaults are bundled.
 # Default packages can be edited, leave space for each package
-PACKAGES=("iron:router" "fourseven:scss" "poetic:materialize-scss")
+PACKAGES=("iron:router" "fourseven:scss" "poetic:materialize-scss" "reactive-var")
 
 ## End of variables declarations ##
 ## File templates ##
@@ -905,6 +905,7 @@ function scaffold_template
 function scaffold_template_index
 {
     local tpl_index="<template name=\"$(basename "$1")\">
+    {{invokeBeforeLoad${1^}}}
     <div class=\"container\">
         <h3>All $(basename "$1")</h3>
         <p><pre>{{tpl_info}}</pre>
@@ -1252,6 +1253,10 @@ Template.$(basename "$1").helpers ({
     $(basename "$1"): function() {
         _deps.depend();
         return $(basename "$1").find({}, options).fetch();
+    },
+
+    invokeBeforeLoad${1^}: function () {
+        searchText${1^}.set('');
     }
 
 });
@@ -1266,19 +1271,15 @@ Template.$(basename "$1").events ({
 
     // filter function
     'keyup #filter_field': function (evt, tpl) {
-        \$(\"td\").filter(function () {
-            var word = tpl.find('#filter_field').value;
-            if (word !== '') {
-                \$('.table-responsive tbody>tr').hide();
-                \$('.table-responsive td').filter(function () {
-                    return \$(this).text().toLowerCase().indexOf(word.toLowerCase()) > -1
-                }).parent('tr').show();
-            }
-            else {
-                \$('.table-responsive tbody>tr').show();
-            }
-            return false;
-        })
+            searchText${1^}.set(\$('#filter_field').val());
+            /*if (options['limit'] >= people.find().count()){
+                $('#loadMore').text('Done');
+                $('#loadMore').fadeOut();
+            } else {
+                $('#loadMore').text('Load More');
+                $('#loadMore').fadeIn();
+            }*/
+
     },
 
     'click #checkAll': function (evt, tpl) {
@@ -1308,6 +1309,8 @@ Template.$(basename "$1").events ({
     'click #loadReset': function () {
         options['limit'] = ${RECORDS_PER_PAGE};
         _deps.changed();
+        \$('#filter_field').val('');
+        searchText${1^}.set('');
         \$('#loadMore').text('Load More');
         \$('#loadMore').fadeIn();
     }
@@ -1613,10 +1616,17 @@ function create_links
 function register_subscriptions
 {
     if [[ ! -z "$1" ]]; then
-        local tpl_sub="Meteor.subscribe('$(basename "$1")');"
+        local tpl_sub="searchText${1^} = new ReactiveVar();
+searchText${1^}.set('');
+Tracker.autorun(function() {
+    Meteor.subscribe('$1', searchText${1^}.get());
+});"
 
-        local tpl_pub="Meteor.publish('$(basename "$1")', function() {
-    return $(basename "$1").find();
+        local tpl_pub="Meteor.publish('$1', function(searchText) {
+    if (!searchText) {
+        return $1.find();
+    }
+    return $1.find( { \$or: [ {name: { \$regex: searchText }}, {registered: { \$regex: searchText }} ] }, {} );
 });"
 
         echo "${tpl_sub}" >> "client/lib/subscriptions.js"
