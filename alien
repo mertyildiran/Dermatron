@@ -137,6 +137,18 @@ body {
 }
 "
 
+GRADIENT_BACKGROUND="body {
+  background: rgba(212,212,212,1);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(212,212,212,1) 0%, rgba(237,237,237,1) 0%, rgba(204,204,204,1) 43%, rgba(194,194,194,1) 60%, rgba(194,194,194,1) 75%, rgba(194,194,194,1) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(212,212,212,1)), color-stop(0%, rgba(237,237,237,1)), color-stop(43%, rgba(204,204,204,1)), color-stop(60%, rgba(194,194,194,1)), color-stop(75%, rgba(194,194,194,1)), color-stop(100%, rgba(194,194,194,1)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(212,212,212,1) 0%, rgba(237,237,237,1) 0%, rgba(204,204,204,1) 43%, rgba(194,194,194,1) 60%, rgba(194,194,194,1) 75%, rgba(194,194,194,1) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(212,212,212,1) 0%, rgba(237,237,237,1) 0%, rgba(204,204,204,1) 43%, rgba(194,194,194,1) 60%, rgba(194,194,194,1) 75%, rgba(194,194,194,1) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(212,212,212,1) 0%, rgba(237,237,237,1) 0%, rgba(204,204,204,1) 43%, rgba(194,194,194,1) 60%, rgba(194,194,194,1) 75%, rgba(194,194,194,1) 100%);
+  background: radial-gradient(ellipse at center, rgba(212,212,212,1) 0%, rgba(237,237,237,1) 0%, rgba(204,204,204,1) 43%, rgba(194,194,194,1) 60%, rgba(194,194,194,1) 75%, rgba(194,194,194,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4d4d4', endColorstr='#c2c2c2', GradientType=1 );
+}
+"
+
 
 # router.js basic contents
 ROUTER="Router.configure({
@@ -568,6 +580,7 @@ function create_client_files
     done
 
     echo "${STICKY_FOOTBAR}" > "client/stylesheets/sticky_footer.css"
+    echo "${GRADIENT_BACKGROUND}" > "client/stylesheets/style.css"
     echo "${SUBSCRIPTIONS}" > "client/lib/subscriptions.js"
     echo "${MAIN_HELPER}" > "client/views/layout/main.js"
 
@@ -942,7 +955,7 @@ function scaffold_template_index
                         <tr>"
     for col in ${field_names[*]}; do
         tpl_mid+="
-                            <th>${col}</th>"
+                            <th id="header-${col}">${col}</th>"
     done
     # filter input field (goes above table header and edit, delete buttons)
     tpl_mid+="
@@ -1241,7 +1254,7 @@ function scaffold_helper
 function scaffold_helper_index
 {
     local tpl="var _deps = new Tracker.Dependency;
-var options = {limit: ${RECORDS_PER_PAGE}};
+var options = {limit: ${RECORDS_PER_PAGE}, sort: { ${field_names[0]}: -1} };
 
 Template.$(basename "$1").helpers ({
 
@@ -1271,15 +1284,9 @@ Template.$(basename "$1").events ({
 
     // filter function
     'keyup #filter_field': function (evt, tpl) {
-            searchText${1^}.set(\$('#filter_field').val());
-            /*if (options['limit'] >= people.find().count()){
-                $('#loadMore').text('Done');
-                $('#loadMore').fadeOut();
-            } else {
-                $('#loadMore').text('Load More');
-                $('#loadMore').fadeIn();
-            }*/
-
+        searchText${1^}.set(\$('#filter_field').val());
+        \$('#loadMore').text('Load More');
+        \$('#loadMore').fadeIn();
     },
 
     'click #checkAll': function (evt, tpl) {
@@ -1313,7 +1320,37 @@ Template.$(basename "$1").events ({
         searchText${1^}.set('');
         \$('#loadMore').text('Load More');
         \$('#loadMore').fadeIn();
-    }
+    },
+
+    'click th': function () {"
+
+    for field_name in ${field_names[*]}; do
+    tpl+="
+        if (\$('#header-$field_name').text()[\$('#header-$field_name').text().length - 1] == '▲' || \$('#header-$field_name').text()[\$('#header-$field_name').text().length - 1] == '▼') {
+            \$('#header-$field_name').text(\$('#header-$field_name').text().slice(0,-1));
+        }"
+    done
+
+    tpl+="
+  },"
+
+  for field_name in ${field_names[*]}; do
+  tpl+="
+
+    'click #header-$field_name': function () {
+        if (options['sort']['$field_name'] == -1) {
+            \$('#header-$field_name').text('$field_name▲');
+            options['sort'] = { $field_name: 1};
+            _deps.changed();
+        } else {
+            \$('#header-$field_name').text('$field_name▼');
+            options['sort'] = { $field_name: -1};
+            _deps.changed();
+        }
+    },"
+  done
+
+    tpl+="
 
 });
 "
@@ -1626,7 +1663,13 @@ Tracker.autorun(function() {
     if (!searchText) {
         return $1.find();
     }
-    return $1.find( { \$or: [ {name: { \$regex: searchText }}, {registered: { \$regex: searchText }} ] }, {} );
+    return $1.find( { \$or: [ "
+
+    for field_name in ${field_names[*]}; do
+        tpl_pub+="{$field_name: { \$regex: searchText }}, "
+    done
+
+    tpl_pub+=" ] }, {} );
 });"
 
         echo "${tpl_sub}" >> "client/lib/subscriptions.js"
