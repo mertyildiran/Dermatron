@@ -49,7 +49,7 @@ readonly GIT_IGNORE=".idea
 # Packages can be installed during project creation
 # currenlty some defaults are bundled.
 # Default packages can be edited, leave space for each package
-PACKAGES=("iron:router" "fourseven:scss" "poetic:materialize-scss" "percolate:paginated-subscription")
+PACKAGES=("iron:router" "fourseven:scss" "poetic:materialize-scss" "percolate:paginated-subscription" "tmeasday:publish-counts")
 
 ## End of variables declarations ##
 ## File templates ##
@@ -1243,7 +1243,7 @@ function scaffold_helper_index
 
     // controllers
     tpl_info: function() {
-        return 'This is $(basename "$1") template, find me at client/views/$1';
+        return Counts.get('$(basename "$1")-all-counter') + ' records found. This is $(basename "$1") template, find me at client/views/$1';
     },
 
     $(basename "$1"): function() {
@@ -1292,15 +1292,17 @@ Template.$(basename "$1").events ({
     },
 
     'click #loadMore': function () {
-        paginatedSubscription.loadNextPage();
-        if (paginatedSubscription.loaded() != people.find().count()){
+        paginatedSubs${1^}.loadNextPage();
+        if (paginatedSubs${1^}.loaded() == Counts.get('$(basename "$1")-all-counter')){
+            \$('#loadMore').text('Done');
             \$('#loadMore').fadeOut();
         }
 
     },
 
     'click #loadReset': function () {
-        paginatedSubscription.reset();
+        paginatedSubs${1^}.reset();
+        \$('#loadMore').text('Load More');
         \$('#loadMore').fadeIn();
     }
 
@@ -1606,11 +1608,17 @@ function register_subscriptions
 {
     if [[ ! -z "$1" ]]; then
         local tpl_sub="Deps.autorun(function() {
-    paginatedSubscription = Meteor.subscribeWithPagination('$(basename "$1")', ${RECORDS_PER_PAGE});
-});"
+    paginatedSubs${1^} = Meteor.subscribeWithPagination('$(basename "$1")', ${RECORDS_PER_PAGE});
+});
+
+Meteor.subscribe('$(basename "$1")-all-count');"
 
         local tpl_pub="Meteor.publish('$(basename "$1")', function(limit) {
     return $(basename "$1").find({}, {limit: limit});
+});
+
+Meteor.publish('$(basename "$1")-all-count', function() {
+    Counts.publish(this, '$(basename "$1")-all-counter', $(basename "$1").find());
 });"
 
         echo "${tpl_sub}" >> "client/lib/subscriptions.js"
