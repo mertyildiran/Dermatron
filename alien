@@ -49,7 +49,7 @@ readonly GIT_IGNORE=".idea
 # Packages can be installed during project creation
 # currenlty some defaults are bundled.
 # Default packages can be edited, leave space for each package
-PACKAGES=("iron:router" "fourseven:scss" "poetic:materialize-scss" "percolate:paginated-subscription" "tmeasday:publish-counts")
+PACKAGES=("iron:router" "fourseven:scss" "poetic:materialize-scss")
 
 ## End of variables declarations ##
 ## File templates ##
@@ -1239,15 +1239,19 @@ function scaffold_helper
 # params: collection's name
 function scaffold_helper_index
 {
-    local tpl="Template.$(basename "$1").helpers ({
+    local tpl="var _deps = new Tracker.Dependency;
+var options = {limit: ${RECORDS_PER_PAGE}};
+
+Template.$(basename "$1").helpers ({
 
     // controllers
     tpl_info: function() {
-        return Counts.get('$(basename "$1")-all-counter') + ' records found. This is $(basename "$1") template, find me at client/views/$1';
+        return $(basename "$1").find().count() + ' records found. This is $(basename "$1") template, find me at client/views/$1';
     },
 
     $(basename "$1"): function() {
-        return $(basename "$1").find().fetch();
+        _deps.depend();
+        return $(basename "$1").find({}, options).fetch();
     }
 
 });
@@ -1292,8 +1296,9 @@ Template.$(basename "$1").events ({
     },
 
     'click #loadMore': function () {
-        paginatedSubs${1^}.loadNextPage();
-        if (paginatedSubs${1^}.loaded() == Counts.get('$(basename "$1")-all-counter')){
+        options['limit'] += ${RECORDS_PER_PAGE};
+        _deps.changed();
+        if (options['limit'] >= $(basename "$1").find().count()){
             \$('#loadMore').text('Done');
             \$('#loadMore').fadeOut();
         }
@@ -1301,7 +1306,8 @@ Template.$(basename "$1").events ({
     },
 
     'click #loadReset': function () {
-        paginatedSubs${1^}.reset();
+        options['limit'] = ${RECORDS_PER_PAGE};
+        _deps.changed();
         \$('#loadMore').text('Load More');
         \$('#loadMore').fadeIn();
     }
@@ -1607,18 +1613,10 @@ function create_links
 function register_subscriptions
 {
     if [[ ! -z "$1" ]]; then
-        local tpl_sub="Deps.autorun(function() {
-    paginatedSubs${1^} = Meteor.subscribeWithPagination('$(basename "$1")', ${RECORDS_PER_PAGE});
-});
+        local tpl_sub="Meteor.subscribe('$(basename "$1")');"
 
-Meteor.subscribe('$(basename "$1")-all-count');"
-
-        local tpl_pub="Meteor.publish('$(basename "$1")', function(limit) {
-    return $(basename "$1").find({}, {limit: limit});
-});
-
-Meteor.publish('$(basename "$1")-all-count', function() {
-    Counts.publish(this, '$(basename "$1")-all-counter', $(basename "$1").find());
+        local tpl_pub="Meteor.publish('$(basename "$1")', function() {
+    return $(basename "$1").find();
 });"
 
         echo "${tpl_sub}" >> "client/lib/subscriptions.js"
