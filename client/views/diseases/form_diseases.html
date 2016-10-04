@@ -1,0 +1,23 @@
+<template name="form_diseases">
+    <form>
+        <div class="form-group">
+            <label for="input_createdAt">createdAt</label>
+            <input type="date" class="form-control"
+                placeholder="Date"
+                id="input_createdAt"
+                value="{{createdAt}}">
+        </div>
+        <div class="form-group">
+            <label for="input_name">name</label>
+            <input type="text" class="form-control"
+                placeholder="name input"
+                id="input_name"
+                value="{{name}}">
+        </div>
+        <div class="form-group">
+            <label for="input_description">description</label>
+            <textarea class="form-control" rows="3"
+                id="input_description">{{description}}</textarea>
+        </div>
+    </form>
+</template>

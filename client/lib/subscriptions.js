@@ -9,3 +9,13 @@ searchTextAppointments.set('');
 Tracker.autorun(function() {
     Meteor.subscribe('appointments', searchTextAppointments.get());
 });
+searchTextDiseases = new ReactiveVar();
+searchTextDiseases.set('');
+Tracker.autorun(function() {
+    Meteor.subscribe('diseases', searchTextDiseases.get());
+});
+searchTextMedicines = new ReactiveVar();
+searchTextMedicines.set('');
+Tracker.autorun(function() {
+    Meteor.subscribe('medicines', searchTextMedicines.get());
+});

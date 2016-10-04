@@ -13,3 +13,15 @@ Meteor.publish('appointments', function(searchText) {
     }
     return appointments.find( { $or: [ {createdAt: { $regex: searchText }}, {patientId: { $regex: searchText }}, {appointmentDate: { $regex: searchText }}, {appointmentTime: { $regex: searchText }}, {appointmentReason: { $regex: searchText }}, {symptoms: { $regex: searchText }}, {diagnosis: { $regex: searchText }}, {treatment: { $regex: searchText }}, {status: { $regex: searchText }},  ] }, {} );
 });
+Meteor.publish('diseases', function(searchText) {
+    if (!searchText) {
+        return diseases.find();
+    }
+    return diseases.find( { $or: [ {createdAt: { $regex: searchText }}, {name: { $regex: searchText }}, {description: { $regex: searchText }},  ] }, {} );
+});
+Meteor.publish('medicines', function(searchText) {
+    if (!searchText) {
+        return medicines.find();
+    }
+    return medicines.find( { $or: [ {createdAt: { $regex: searchText }}, {name: { $regex: searchText }}, {description: { $regex: searchText }}, {brand: { $regex: searchText }},  ] }, {} );
+});

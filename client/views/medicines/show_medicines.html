@@ -1,0 +1,18 @@
+<template name="show_medicines">
+    <div class="container">
+        <h3>Viewing a/an medicine</h3>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                    <p><strong>createdAt :</strong><br>
+                    {{createdAt}}</p>
+                    <p><strong>name :</strong><br>
+                    {{name}}</p>
+                    <p><strong>description :</strong><br>
+                    {{description}}</p>
+                    <p><strong>brand :</strong><br>
+                    {{brand}}</p>
+            </div>
+        </div>
+        <a class="btn btn-default btn-xs" href="{{pathFor 'medicines'}}">Back</a>
+    </div>
+</template>
