@@ -1,0 +1,36 @@
+<template name="show_patients">
+    <div class="container">
+        <h3>Viewing a/an patient</h3>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                    <p><strong>createdAt :</strong><br>
+                    {{createdAt}}</p>
+                    <p><strong>name :</strong><br>
+                    {{name}}</p>
+                    <p><strong>surname :</strong><br>
+                    {{surname}}</p>
+                    <p><strong>gender :</strong><br>
+                    {{gender}}</p>
+                    <p><strong>birthDate :</strong><br>
+                    {{birthDate}}</p>
+                    <p><strong>nationalId :</strong><br>
+                    {{nationalId}}</p>
+                    <p><strong>socialSecurityType :</strong><br>
+                    {{socialSecurityType}}</p>
+                    <p><strong>socialSecurityNumber :</strong><br>
+                    {{socialSecurityNumber}}</p>
+                    <p><strong>isPatientDisabled :</strong><br>
+                    {{isPatientDisabled}}</p>
+                    <p><strong>bloodGroup :</strong><br>
+                    {{bloodGroup}}</p>
+                    <p><strong>email :</strong><br>
+                    {{email}}</p>
+                    <p><strong>phone :</strong><br>
+                    {{phone}}</p>
+                    <p><strong>address :</strong><br>
+                    {{address}}</p>
+            </div>
+        </div>
+        <a class="btn btn-default btn-xs" href="{{pathFor 'patients'}}">Back</a>
+    </div>
+</template>

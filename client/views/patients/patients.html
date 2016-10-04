@@ -1,0 +1,88 @@
+<template name="patients">
+    {{invokeBeforeLoadPatients}}
+    <div class="container">
+        <h3>All patients</h3>
+        <p><pre>{{tpl_info}}</pre>
+        you can delete this message from the template and/or the helper</p>
+            <div class="table-responsive">
+                <table class="table table-hover table-condensed table-bordered">
+                    <thead>
+                        <tr>
+                            <th colspan="50">
+                                <form class="form-inline">
+                                        <div class="form-group">
+                                            <label for="input_title">Search: </label>
+                                            <input type="text" class="form-control"
+                                                   placeholder="filter text"
+                                                   id="filter_field">
+                                        </div>
+                                </form>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th id=header-createdAt>createdAt</th>
+                            <th id=header-name>name</th>
+                            <th id=header-surname>surname</th>
+                            <th id=header-gender>gender</th>
+                            <th id=header-birthDate>birthDate</th>
+                            <th id=header-nationalId>nationalId</th>
+                            <th id=header-socialSecurityType>socialSecurityType</th>
+                            <th id=header-socialSecurityNumber>socialSecurityNumber</th>
+                            <th id=header-isPatientDisabled>isPatientDisabled</th>
+                            <th id=header-bloodGroup>bloodGroup</th>
+                            <th id=header-email>email</th>
+                            <th id=header-phone>phone</th>
+                            <th id=header-address>address</th>
+                            <th colspan="4">
+                                <form class="form-inline">
+                                        <div class="form-group">
+                                        <input type="checkbox" class="space-left space-right filled-in"
+                                            id="checkAll">
+                                            <label for="checkAll"></label>
+                                            <a class="btn btn-danger btn-xs space-right"
+                                                href="" id="deleteAll">Delete selected</a>
+                                        </div>
+                                </form>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {{#each patients}}
+                        <tr id="{{_id}}">
+                            <td>{{createdAt}}</td>
+                            <td>{{name}}</td>
+                            <td>{{surname}}</td>
+                            <td>{{gender}}</td>
+                            <td>{{birthDate}}</td>
+                            <td>{{nationalId}}</td>
+                            <td>{{socialSecurityType}}</td>
+                            <td>{{socialSecurityNumber}}</td>
+                            <td>{{isPatientDisabled}}</td>
+                            <td>{{bloodGroup}}</td>
+                            <td>{{email}}</td>
+                            <td>{{phone}}</td>
+                            <td>{{address}}</td>
+                            <td>
+                            <input type="checkbox"
+                                class="space-left space-right checkthis filled-in" id="row_{{_id}}">
+                                <label for="row_{{_id}}"></label>
+                            </td>
+                            <td>
+                                <a class="btn btn-default btn-xs" href="{{pathFor 'show_patients'}}"  id="show">Show </a>
+                            </td>
+                            <td>
+                                <a class="btn btn-primary btn-xs" href="{{pathFor 'edit_patients'}}"  id="edit"> Edit</a>
+                            </td>
+                            <td>
+                                <a class="btn btn-danger btn-xs" href="" id="delete">Delete</a>
+                            </td>
+                        </tr>
+                    {{/each}}
+                    </tbody>
+               </table>
+            </div>
+            <a class="btn btn-success btn-xs" href="{{pathFor 'new_patients'}}">New patients</a>
+            <button class="btn btn-primary" id="loadMore">Load More</button>
+            <button class="btn btn-primary" id="loadReset">Reset</button>
+        </div>
+</template>

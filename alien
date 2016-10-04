@@ -1260,7 +1260,7 @@ Template.$(basename "$1").helpers ({
 
     // controllers
     tpl_info: function() {
-        return $(basename "$1").find().count() + ' records found. This is $(basename "$1") template, find me at client/views/$1';
+        return $(basename "$1").find().count() + ' record(s) found. This is $(basename "$1") template, find me at client/views/$1';
     },
 
     $(basename "$1"): function() {

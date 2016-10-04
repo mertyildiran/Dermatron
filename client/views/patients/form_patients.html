@@ -1,0 +1,96 @@
+<template name="form_patients">
+    <form>
+        <div class="form-group">
+            <label for="input_createdAt">createdAt</label>
+            <input type="date" class="form-control"
+                placeholder="Date"
+                id="input_createdAt"
+                value="{{createdAt}}">
+        </div>
+        <div class="form-group">
+            <label for="input_name">name</label>
+            <input type="text" class="form-control"
+                placeholder="name input"
+                id="input_name"
+                value="{{name}}">
+        </div>
+        <div class="form-group">
+            <label for="input_surname">surname</label>
+            <input type="text" class="form-control"
+                placeholder="surname input"
+                id="input_surname"
+                value="{{surname}}">
+        </div>
+        <div class="form-group">
+            <label for="input_gender">gender</label>
+            <select class="form-control" id="input_gender">
+                <option selected="{{selected_gender}}">
+                    {{gender}}
+                </option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="input_birthDate">birthDate</label>
+            <input type="date" class="form-control"
+                placeholder="Date"
+                id="input_birthDate"
+                value="{{birthDate}}">
+        </div>
+        <div class="form-group">
+            <label for="input_nationalId">nationalId</label>
+            <input type="text" class="form-control"
+                placeholder="nationalId input"
+                id="input_nationalId"
+                value="{{nationalId}}">
+        </div>
+        <div class="form-group">
+            <label for="input_socialSecurityType">socialSecurityType</label>
+            <select class="form-control" id="input_socialSecurityType">
+                <option selected="{{selected_socialSecurityType}}">
+                    {{socialSecurityType}}
+                </option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="input_socialSecurityNumber">socialSecurityNumber</label>
+            <input type="text" class="form-control"
+                placeholder="socialSecurityNumber input"
+                id="input_socialSecurityNumber"
+                value="{{socialSecurityNumber}}">
+        </div>
+        <div class="form-group">
+            <label for="input_isPatientDisabled">isPatientDisabled</label>
+            <input type="checkbox" class="form-control filled-in"
+                id="input_isPatientDisabled"
+                value="true">
+                <label for="input_isPatientDisabled"></label>
+        </div>
+        <div class="form-group">
+            <label for="input_bloodGroup">bloodGroup</label>
+            <select class="form-control" id="input_bloodGroup">
+                <option selected="{{selected_bloodGroup}}">
+                    {{bloodGroup}}
+                </option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="input_email">email</label>
+            <input type="email" class="form-control"
+                placeholder="foo@foobar.bar"
+                id="input_email"
+                value="{{email}}">
+        </div>
+        <div class="form-group">
+            <label for="input_phone">phone</label>
+            <input type="tel" class="form-control"
+                placeholder="+00 000 000 000"
+                id="input_phone"
+                value="{{phone}}">
+        </div>
+        <div class="form-group">
+            <label for="input_address">address</label>
+            <textarea class="form-control" rows="3"
+                id="input_address">{{address}}</textarea>
+        </div>
+    </form>
+</template>
