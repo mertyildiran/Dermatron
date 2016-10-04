@@ -80,6 +80,18 @@ Template.appointments.events ({
         if ($('#header-appointmentTime').text()[$('#header-appointmentTime').text().length - 1] == '▲' || $('#header-appointmentTime').text()[$('#header-appointmentTime').text().length - 1] == '▼') {
             $('#header-appointmentTime').text($('#header-appointmentTime').text().slice(0,-1));
         }
+        if ($('#header-appointmentReason').text()[$('#header-appointmentReason').text().length - 1] == '▲' || $('#header-appointmentReason').text()[$('#header-appointmentReason').text().length - 1] == '▼') {
+            $('#header-appointmentReason').text($('#header-appointmentReason').text().slice(0,-1));
+        }
+        if ($('#header-symptoms').text()[$('#header-symptoms').text().length - 1] == '▲' || $('#header-symptoms').text()[$('#header-symptoms').text().length - 1] == '▼') {
+            $('#header-symptoms').text($('#header-symptoms').text().slice(0,-1));
+        }
+        if ($('#header-diagnosis').text()[$('#header-diagnosis').text().length - 1] == '▲' || $('#header-diagnosis').text()[$('#header-diagnosis').text().length - 1] == '▼') {
+            $('#header-diagnosis').text($('#header-diagnosis').text().slice(0,-1));
+        }
+        if ($('#header-treatment').text()[$('#header-treatment').text().length - 1] == '▲' || $('#header-treatment').text()[$('#header-treatment').text().length - 1] == '▼') {
+            $('#header-treatment').text($('#header-treatment').text().slice(0,-1));
+        }
         if ($('#header-status').text()[$('#header-status').text().length - 1] == '▲' || $('#header-status').text()[$('#header-status').text().length - 1] == '▼') {
             $('#header-status').text($('#header-status').text().slice(0,-1));
         }
@@ -129,6 +141,54 @@ Template.appointments.events ({
         } else {
             $('#header-appointmentTime').text('appointmentTime▼');
             options['sort'] = { appointmentTime: -1};
+            _deps.changed();
+        }
+    },
+
+    'click #header-appointmentReason': function () {
+        if (options['sort']['appointmentReason'] == -1) {
+            $('#header-appointmentReason').text('appointmentReason▲');
+            options['sort'] = { appointmentReason: 1};
+            _deps.changed();
+        } else {
+            $('#header-appointmentReason').text('appointmentReason▼');
+            options['sort'] = { appointmentReason: -1};
+            _deps.changed();
+        }
+    },
+
+    'click #header-symptoms': function () {
+        if (options['sort']['symptoms'] == -1) {
+            $('#header-symptoms').text('symptoms▲');
+            options['sort'] = { symptoms: 1};
+            _deps.changed();
+        } else {
+            $('#header-symptoms').text('symptoms▼');
+            options['sort'] = { symptoms: -1};
+            _deps.changed();
+        }
+    },
+
+    'click #header-diagnosis': function () {
+        if (options['sort']['diagnosis'] == -1) {
+            $('#header-diagnosis').text('diagnosis▲');
+            options['sort'] = { diagnosis: 1};
+            _deps.changed();
+        } else {
+            $('#header-diagnosis').text('diagnosis▼');
+            options['sort'] = { diagnosis: -1};
+            _deps.changed();
+        }
+    },
+
+    'click #header-treatment': function () {
+        if (options['sort']['treatment'] == -1) {
+            $('#header-treatment').text('treatment▲');
+            options['sort'] = { treatment: 1};
+            _deps.changed();
+        } else {
+            $('#header-treatment').text('treatment▼');
+            options['sort'] = { treatment: -1};
             _deps.changed();
         }
     },

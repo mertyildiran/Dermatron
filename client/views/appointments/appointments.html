@@ -24,6 +24,10 @@
                             <th id=header-patientId>patientId</th>
                             <th id=header-appointmentDate>appointmentDate</th>
                             <th id=header-appointmentTime>appointmentTime</th>
+                            <th id=header-appointmentReason>appointmentReason</th>
+                            <th id=header-symptoms>symptoms</th>
+                            <th id=header-diagnosis>diagnosis</th>
+                            <th id=header-treatment>treatment</th>
                             <th id=header-status>status</th>
                             <th colspan="4">
                                 <form class="form-inline">
@@ -45,6 +49,10 @@
                             <td>{{patientId}}</td>
                             <td>{{appointmentDate}}</td>
                             <td>{{appointmentTime}}</td>
+                            <td>{{appointmentReason}}</td>
+                            <td>{{symptoms}}</td>
+                            <td>{{diagnosis}}</td>
+                            <td>{{treatment}}</td>
                             <td>{{status}}</td>
                             <td>
                             <input type="checkbox"
@@ -65,7 +73,7 @@
                     </tbody>
                </table>
             </div>
-            <a class="btn btn-success btn-xs" href="{{pathFor 'new_appointments'}}">New appointments</a>
+            <a class="btn btn-success btn-xs" href="{{pathFor 'new_appointments'}}">New appointment</a>
             <button class="btn btn-primary" id="loadMore">Load More</button>
             <button class="btn btn-primary" id="loadReset">Reset</button>
         </div>

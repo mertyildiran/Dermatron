@@ -11,5 +11,5 @@ Meteor.publish('appointments', function(searchText) {
     if (!searchText) {
         return appointments.find();
     }
-    return appointments.find( { $or: [ {createdAt: { $regex: searchText }}, {patientId: { $regex: searchText }}, {appointmentDate: { $regex: searchText }}, {appointmentTime: { $regex: searchText }}, {status: { $regex: searchText }},  ] }, {} );
+    return appointments.find( { $or: [ {createdAt: { $regex: searchText }}, {patientId: { $regex: searchText }}, {appointmentDate: { $regex: searchText }}, {appointmentTime: { $regex: searchText }}, {appointmentReason: { $regex: searchText }}, {symptoms: { $regex: searchText }}, {diagnosis: { $regex: searchText }}, {treatment: { $regex: searchText }}, {status: { $regex: searchText }},  ] }, {} );
 });

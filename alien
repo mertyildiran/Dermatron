@@ -932,7 +932,7 @@ function scaffold_template_index
                     </tbody>
                </table>
             </div>
-            <a class=\"btn btn-success btn-xs\" href=\"{{pathFor 'new_$(basename "$1")'}}\">New $(basename "$1")</a>
+            <a class=\"btn btn-success btn-xs\" href=\"{{pathFor 'new_$(basename "$1")'}}\">New $2</a>
             <button class=\"btn btn-primary\" id=\"loadMore\">Load More</button>
             <button class=\"btn btn-primary\" id=\"loadReset\">Reset</button>
         </div>
