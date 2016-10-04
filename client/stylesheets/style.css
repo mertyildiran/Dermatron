@@ -1,0 +1,11 @@
+body {
+  background: rgba(212,212,212,1);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(212,212,212,1) 0%, rgba(237,237,237,1) 0%, rgba(204,204,204,1) 43%, rgba(194,194,194,1) 60%, rgba(194,194,194,1) 75%, rgba(194,194,194,1) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(212,212,212,1)), color-stop(0%, rgba(237,237,237,1)), color-stop(43%, rgba(204,204,204,1)), color-stop(60%, rgba(194,194,194,1)), color-stop(75%, rgba(194,194,194,1)), color-stop(100%, rgba(194,194,194,1)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(212,212,212,1) 0%, rgba(237,237,237,1) 0%, rgba(204,204,204,1) 43%, rgba(194,194,194,1) 60%, rgba(194,194,194,1) 75%, rgba(194,194,194,1) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(212,212,212,1) 0%, rgba(237,237,237,1) 0%, rgba(204,204,204,1) 43%, rgba(194,194,194,1) 60%, rgba(194,194,194,1) 75%, rgba(194,194,194,1) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(212,212,212,1) 0%, rgba(237,237,237,1) 0%, rgba(204,204,204,1) 43%, rgba(194,194,194,1) 60%, rgba(194,194,194,1) 75%, rgba(194,194,194,1) 100%);
+  background: radial-gradient(ellipse at center, rgba(212,212,212,1) 0%, rgba(237,237,237,1) 0%, rgba(204,204,204,1) 43%, rgba(194,194,194,1) 60%, rgba(194,194,194,1) 75%, rgba(194,194,194,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4d4d4', endColorstr='#c2c2c2', GradientType=1 );
+}
+

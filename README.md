@@ -9,7 +9,7 @@ curl https://install.meteor.com/ | sh
 
 ## Electrified & Materialized Iron Meteor with Alien Recipe
 
-Alien is a bash script for creating Meteor Apps with MVC-like directory structure & a scaffolding tool.
+Alien is a bash script for creating Meteor Apps with well organized directory structure & a scaffolding tool.
 
 <p align="center">
   <img src="http://i.imgur.com/Uy5YAUT.png" alt="Alien" height="300px"/>
@@ -40,11 +40,7 @@ Supported HTML controls are string, text, number, date, boolean, password, url, 
 
 Alien additionally downloads and installs all `[PACKAGE_NAME]`s given as arguments.
 
-To change the default packages look for the line bellow:
-
-```Shell
-PACKAGES=("iron:router" "mizzao:bootstrap-3")
-```
+To change the default packages look for the `PACKAGES` constant and change it. But this action will cause several breaking changes so you will need to retouch the codes.
 
 ### Then Electrify it
 
