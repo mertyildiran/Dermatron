@@ -834,9 +834,6 @@ function create_fixture
             for (( j = 0; j < ${#field_names[*]}; j++ )); do
                 # generate a field value according to it's type
                 local val
-                if [[ ${field_types[j]} == "datetime" ]]; then
-                    val=\'$(date "+%Y-%m-%d %H:%M:%S")\'
-                fi
                 if [[ ${field_types[j]} = "number" ]]; then
                     val="$(basename $1)_index"
                 elif [[ ${field_types[j]} = "string" ]]; then
@@ -848,6 +845,8 @@ function create_fixture
                     # w3 documentation for the date input field
                     # http://www.w3.org/TR/html-markup/input.date.html#input.date.attrs.value
                     val=\'$(date "+%Y-%m-%d")\'
+                elif [[ ${field_types[j]} == "datetime" ]]; then
+                    val=\'$(date "+%Y-%m-%d %H:%M:%S")\'
                 elif [[ ${field_types[j]} = "boolean" ]]; then
                     val="true"
                 elif [[ ${field_types[j]} = "url" ]]; then
@@ -1110,7 +1109,7 @@ function scaffold_form
 </template>"
 
     for (( i = 0; i < ${#field_names[*]}; i++ )); do
-        if [[ ${field_types["${i}"]} == "datetime" ]]; then
+        if [[ ${field_names["${i}"]} == "createdAt" ]]; then
             continue
         fi
         tpl_mid+="
@@ -1152,6 +1151,13 @@ function scaffold_form
         elif [[ ${field_types["${i}"]} == "date" ]]; then
             tpl_mid+="
             <input type=\"date\" class=\"form-control\"
+                placeholder=\"Date\"
+                id=\"input_${field_names["${i}"]}\"
+                value=\"{{${field_names["${i}"]}}}\">"
+
+        elif [[ ${field_types["${i}"]} == "datetime" ]]; then
+            tpl_mid+="
+            <input type=\"datetime-local\" class=\"form-control\"
                 placeholder=\"Date\"
                 id=\"input_${field_names["${i}"]}\"
                 value=\"{{${field_names["${i}"]}}}\">"
@@ -1426,7 +1432,7 @@ Template.new_$(basename "$1").events ({
         var new_$(basename "$1") = {"
 
     for (( i = 0; i < ${#field_names[*]}; i++ )); do
-      if [[ ${field_types["${i}"]} == "datetime" ]]; then
+      if [[ ${field_names["${i}"]} == "createdAt" ]]; then
           continue
       fi
         tpl_mid+="
@@ -1477,6 +1483,9 @@ Template.edit_$(basename "$1").events ({
         var updated_$(basename "$1") = {"
 
     for (( i = 0; i < ${#field_names[*]}; i++ )); do
+        if [[ ${field_names["${i}"]} == "createdAt" ]]; then
+            continue
+        fi
         tpl_mid+="
             ${field_names[${i}]}: tpl.find('#input_${field_names[${i}]}').value"
         if (( i < ${#field_names[*]} )); then

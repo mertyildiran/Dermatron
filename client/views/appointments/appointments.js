@@ -15,6 +15,10 @@ Template.appointments.helpers ({
 
     invokeBeforeLoadAppointments: function () {
         searchTextAppointments.set('');
+    },
+
+    patientLookup: function(patientId) {
+        return patients.find( { "_id": patientId } ).fetch()[0].name + patients.find( { "_id": patientId } ).fetch()[0].surname;
     }
 
 });
@@ -74,9 +78,6 @@ Template.appointments.events ({
         if ($('#header-patientId').text()[$('#header-patientId').text().length - 1] == '▲' || $('#header-patientId').text()[$('#header-patientId').text().length - 1] == '▼') {
             $('#header-patientId').text($('#header-patientId').text().slice(0,-1));
         }
-        if ($('#header-patientName').text()[$('#header-patientName').text().length - 1] == '▲' || $('#header-patientName').text()[$('#header-patientName').text().length - 1] == '▼') {
-            $('#header-patientName').text($('#header-patientName').text().slice(0,-1));
-        }
         if ($('#header-appointmentDatetime').text()[$('#header-appointmentDatetime').text().length - 1] == '▲' || $('#header-appointmentDatetime').text()[$('#header-appointmentDatetime').text().length - 1] == '▼') {
             $('#header-appointmentDatetime').text($('#header-appointmentDatetime').text().slice(0,-1));
         }
@@ -117,18 +118,6 @@ Template.appointments.events ({
         } else {
             $('#header-patientId').text('patientId▼');
             options['sort'] = { patientId: -1};
-            _deps.changed();
-        }
-    },
-
-    'click #header-patientName': function () {
-        if (options['sort']['patientName'] == -1) {
-            $('#header-patientName').text('patientName▲');
-            options['sort'] = { patientName: 1};
-            _deps.changed();
-        } else {
-            $('#header-patientName').text('patientName▼');
-            options['sort'] = { patientName: -1};
             _deps.changed();
         }
     },
@@ -206,4 +195,3 @@ Template.appointments.events ({
     },
 
 });
-
