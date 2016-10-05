@@ -15,8 +15,8 @@ Template.edit_appointments.events ({
         var updated_appointments = {
             createdAt: tpl.find('#input_createdAt').value,
             patientId: tpl.find('#input_patientId').value,
-            appointmentDate: tpl.find('#input_appointmentDate').value,
-            appointmentTime: tpl.find('#input_appointmentTime').value,
+            patientName: tpl.find('#input_patientName').value,
+            appointmentDatetime: tpl.find('#input_appointmentDatetime').value,
             appointmentReason: tpl.find('#input_appointmentReason').value,
             symptoms: tpl.find('#input_symptoms').value,
             diagnosis: tpl.find('#input_diagnosis').value,
@@ -31,4 +31,3 @@ Template.edit_appointments.events ({
     }
 
 });
-

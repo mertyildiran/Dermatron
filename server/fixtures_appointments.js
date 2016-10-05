@@ -2,10 +2,10 @@
 if (appointments.find().count() === 0) {
     for (var appointments_index = 0; appointments_index < 50; appointments_index++) {
         appointments.insert({
-            createdAt: '2016-10-05 05:28:04',
+            createdAt: '2016-10-05 06:51:14',
             patientId: 'short string ' + appointments_index,
-            appointmentDate: '2016-10-04',
-            appointmentTime: 'short string ' + appointments_index,
+            patientName: 'short string ' + appointments_index,
+            appointmentDatetime: '2016-10-05 06:51:14',
             appointmentReason: 'this is a long text ' + appointments_index,
             symptoms: 'this is a long text ' + appointments_index,
             diagnosis: 'this is a long text ' + appointments_index,
