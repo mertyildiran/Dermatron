@@ -7,23 +7,6 @@ Template.new_appointments.helpers ({
 
 });
 
-Template.form_appointments.helpers ({
-
-    patients: function() {
-        return patients.find().fetch();
-    },
-
-    invokeAfterLoadFormAppointments: function () {
-        $(document).ready(function() {
-          function materialSelect() {
-              $('select').material_select();
-          };
-          setTimeout(materialSelect, 500);
-        });
-    }
-
-});
-
 Template.new_appointments.events ({
     // event handlers
     'click #save': function(evt, tpl) {
