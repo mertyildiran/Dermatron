@@ -13,7 +13,6 @@ Template.new_medicines.events ({
         evt.preventDefault();
 
         var new_medicines = {
-            createdAt: tpl.find('#input_createdAt').value,
             name: tpl.find('#input_name').value,
             description: tpl.find('#input_description').value,
             brand: tpl.find('#input_brand').value,
@@ -26,4 +25,3 @@ Template.new_medicines.events ({
     }
 
 });
-

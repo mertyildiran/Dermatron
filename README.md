@@ -17,22 +17,23 @@ Alien is a bash script for creating Meteor Apps with well organized directory st
 
 ```Shell
 ./alien project PROJECT_NAME
-cp alien PROJECT_NAME/
 cd PROJECT_NAME/
-./alien scaffold person name:string registered:date isAdmin:boolean
+./alien scaffold person createdAt:datetime name:string registered:date isAdmin:boolean
 ./alien links
 meteor
 ```
 
+By scaffolding Alien generates templates, helpers, events and server-side methods automatically. In server-side methods for `insert_document` function Alien adds `createdAt` field and timestamps it default. It's good practice to generate your scaffolds always with `createdAt:datetime` as first field.
+
 Later on if you want to update one of your scaffolds just regenerate again:
 
 ```Shell
-./alien scaffold person name:string surname:string registered:date isAdmin:boolean
+./alien scaffold person createdAt:date name:string surname:string registered:date isAdmin:boolean
 ```
 
-Thanks to MongoDB's schema-less architecture you don't need to migrate anything. Templates and helpers will be regenerated automatically.
+Thanks to MongoDB's schema-less architecture you don't need to migrate anything. Templates,helpers and events will be regenerated automatically.
 
-Supported HTML controls are string, text, number, date, boolean, password, url, tel, email, file, color and select.
+Supported HTML controls are `string`, `text`, `number`, `date`, `boolean`, `password`, `url`, `tel`, `email`, `file`, `color` and `select`. `datetime` also supported but only for server-side usage purposes.
 
 ```Shell
 ./alien project PROJECT_NAME packages [PACKAGE_NAME] [PACKAGE_NAME] ...

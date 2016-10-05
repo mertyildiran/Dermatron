@@ -452,6 +452,8 @@ function field_types_are_valid
                         break;;
                     "date" )
                         break;;
+                    "datetime" )
+                        break;;
                     "boolean" )
                         break;;
                     "password" )
@@ -510,6 +512,7 @@ function create_project
     # create project
     meteor create "${PROJECT_NAME}" >/dev/null
 
+    cp "$0" "${PROJECT_NAME}"
     cd "${PROJECT_NAME}"
     rm client/main.*
     colored "main.js main.html main.css have been removed from under client/ directory" magenta
@@ -821,6 +824,9 @@ function create_fixture
             for (( j = 0; j < ${#field_names[*]}; j++ )); do
                 # generate a field value according to it's type
                 local val
+                if [[ ${field_types[j]} == "datetime" ]]; then
+                    val=\'$(date "+%Y-%m-%d %H:%M:%S")\'
+                fi
                 if [[ ${field_types[j]} = "number" ]]; then
                     val="$(basename $1)_index"
                 elif [[ ${field_types[j]} = "string" ]]; then
@@ -1094,6 +1100,9 @@ function scaffold_form
 </template>"
 
     for (( i = 0; i < ${#field_names[*]}; i++ )); do
+        if [[ ${field_types["${i}"]} == "datetime" ]]; then
+            continue
+        fi
         tpl_mid+="
         <div class=\"form-group\">
             <label for=\"input_${field_names["${i}"]}\">${field_names["${i}"]}</label>"
@@ -1410,6 +1419,9 @@ Template.new_$(basename "$1").events ({
         var new_$(basename "$1") = {"
 
     for (( i = 0; i < ${#field_names[*]}; i++ )); do
+      if [[ ${field_types["${i}"]} == "datetime" ]]; then
+          continue
+      fi
         tpl_mid+="
             ${field_names[${i}]}: tpl.find('#input_${field_names[${i}]}').value"
         if (( i < ${#field_names[*]} )); then
@@ -1497,6 +1509,10 @@ function scaffold_method_insert
 {
     local pattern="Meteor.methods"
     local tpl="\\    insert_$(basename "$1"): function(object_$(basename "$1")) { \\
+        var today = new Date(); \\
+        var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate(); \\
+        var time = today.getHours() + \":\" + today.getMinutes() + \":\" + today.getSeconds(); \\
+        object_$(basename "$1").createdAt = date+' '+time; \\
         var $(basename "$1")Id = $(basename "$1").insert(object_$(basename "$1")); \\
         return $(basename "$1")Id; \\
     },"

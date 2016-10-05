@@ -2,7 +2,7 @@
 if (patients.find().count() === 0) {
     for (var patients_index = 0; patients_index < 50; patients_index++) {
         patients.insert({
-            createdAt: '2016-10-04',
+            createdAt: '2016-10-05 05:28:04',
             name: 'short string ' + patients_index,
             surname: 'short string ' + patients_index,
             gender: 'Option 1',

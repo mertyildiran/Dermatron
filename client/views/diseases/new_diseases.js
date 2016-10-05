@@ -13,7 +13,6 @@ Template.new_diseases.events ({
         evt.preventDefault();
 
         var new_diseases = {
-            createdAt: tpl.find('#input_createdAt').value,
             name: tpl.find('#input_name').value,
             description: tpl.find('#input_description').value,
         };
@@ -25,4 +24,3 @@ Template.new_diseases.events ({
     }
 
 });
-

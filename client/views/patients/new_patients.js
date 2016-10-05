@@ -13,7 +13,6 @@ Template.new_patients.events ({
         evt.preventDefault();
 
         var new_patients = {
-            createdAt: tpl.find('#input_createdAt').value,
             name: tpl.find('#input_name').value,
             surname: tpl.find('#input_surname').value,
             gender: tpl.find('#input_gender').value,
@@ -35,4 +34,3 @@ Template.new_patients.events ({
     }
 
 });
-

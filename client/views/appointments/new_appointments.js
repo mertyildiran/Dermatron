@@ -13,7 +13,6 @@ Template.new_appointments.events ({
         evt.preventDefault();
 
         var new_appointments = {
-            createdAt: tpl.find('#input_createdAt').value,
             patientId: tpl.find('#input_patientId').value,
             appointmentDate: tpl.find('#input_appointmentDate').value,
             appointmentTime: tpl.find('#input_appointmentTime').value,
@@ -31,4 +30,3 @@ Template.new_appointments.events ({
     }
 
 });
-
