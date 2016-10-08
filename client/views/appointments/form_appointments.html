@@ -46,9 +46,10 @@
         <div class="form-group">
             <label for="input_status">status</label>
             <select class="form-control" id="input_status">
-                <option selected="{{selected_status}}">
-                    {{status}}
-                </option>
+                <option value="{{status}}" selected>{{status}}</option>
+                <option value="Upcoming">Upcoming</option>
+                <option value="Right now">Right now</option>
+                <option value="Past">Past</option>
             </select>
         </div>
     </form>

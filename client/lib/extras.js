@@ -5,14 +5,17 @@ Template.form_appointments.helpers ({
     },
 
     patientLookup: function(patientId) {
-        return patients.find( { "_id": patientId } ).fetch()[0].name + patients.find( { "_id": patientId } ).fetch()[0].surname;
+        return patients.findOne(patientId).name + ' ' + patients.findOne(patientId).surname;
     }
 
 });
 
 Template.form_appointments.onRendered(function () {
 
+    blazeDate = $('.datepicker').val();
+
     $('.datepicker').pickadate({
+      format: 'yyyy-mm-dd',
       selectMonths: true, // Creates a dropdown to control month
       selectYears: 15 // Creates a dropdown of 15 years to control year
     });
@@ -25,5 +28,7 @@ Template.form_appointments.onRendered(function () {
     $(document).ready(function() {
       $('select').material_select();
     });
+
+    $('.datepicker').val(appointments.findOne(Router.current().params._id).appointmentDate);
 
 });

@@ -18,7 +18,7 @@ Template.appointments.helpers ({
     },
 
     patientLookup: function(patientId) {
-        return patients.find( { "_id": patientId } ).fetch()[0].name + patients.find( { "_id": patientId } ).fetch()[0].surname;
+        return patients.findOne(patientId).name + ' ' + patients.findOne(patientId).surname;
     }
 
 });
@@ -126,25 +126,29 @@ Template.appointments.events ({
     },
 
     'click #header-appointmentDate': function () {
-        if (options['sort']['appointmentDate'] == -1) {
+        if (options['sort']['appointmentDate'] == 1) {
+            $('#header-appointmentTime').text('appointmentTime▲');
             $('#header-appointmentDate').text('appointmentDate▲');
-            options['sort'] = { appointmentDate: 1};
+            options['sort'] = { appointmentDate: -1, appointmentTime: 1};
             _deps.changed();
         } else {
+            $('#header-appointmentTime').text('appointmentTime▼');
             $('#header-appointmentDate').text('appointmentDate▼');
-            options['sort'] = { appointmentDate: -1};
+            options['sort'] = { appointmentDate: 1, appointmentTime: -1};
             _deps.changed();
         }
     },
 
     'click #header-appointmentTime': function () {
-        if (options['sort']['appointmentTime'] == -1) {
+        if (options['sort']['appointmentDate'] == 1) {
             $('#header-appointmentTime').text('appointmentTime▲');
-            options['sort'] = { appointmentTime: 1};
+            $('#header-appointmentDate').text('appointmentDate▲');
+            options['sort'] = { appointmentDate: -1, appointmentTime: 1};
             _deps.changed();
         } else {
             $('#header-appointmentTime').text('appointmentTime▼');
-            options['sort'] = { appointmentTime: -1};
+            $('#header-appointmentDate').text('appointmentDate▼');
+            options['sort'] = { appointmentDate: 1, appointmentTime: -1};
             _deps.changed();
         }
     },
