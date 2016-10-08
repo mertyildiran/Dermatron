@@ -10,11 +10,20 @@ Template.form_appointments.helpers ({
 
 });
 
-Router.onRun(function () {
-    $(document).ready(function() {
-      function materialSelect() {
-          $('select').material_select();
-      };
-      setTimeout(materialSelect, 10);
+Template.form_appointments.onRendered(function () {
+
+    $('.datepicker').pickadate({
+      selectMonths: true, // Creates a dropdown to control month
+      selectYears: 15 // Creates a dropdown of 15 years to control year
     });
+
+    $('.timepicker').pickatime({
+      autoclose: false,
+      twelvehour: false
+    });
+
+    $(document).ready(function() {
+      $('select').material_select();
+    });
+
 });

@@ -14,7 +14,8 @@ Template.new_appointments.events ({
 
         var new_appointments = {
             patientId: tpl.find('#input_patientId').value,
-            appointmentDatetime: tpl.find('#input_appointmentDatetime').value,
+            appointmentDate: tpl.find('#input_appointmentDate').value,
+            appointmentTime: tpl.find('#input_appointmentTime').value,
             appointmentReason: tpl.find('#input_appointmentReason').value,
             symptoms: tpl.find('#input_symptoms').value,
             diagnosis: tpl.find('#input_diagnosis').value,

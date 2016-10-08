@@ -78,8 +78,11 @@ Template.appointments.events ({
         if ($('#header-patientId').text()[$('#header-patientId').text().length - 1] == '▲' || $('#header-patientId').text()[$('#header-patientId').text().length - 1] == '▼') {
             $('#header-patientId').text($('#header-patientId').text().slice(0,-1));
         }
-        if ($('#header-appointmentDatetime').text()[$('#header-appointmentDatetime').text().length - 1] == '▲' || $('#header-appointmentDatetime').text()[$('#header-appointmentDatetime').text().length - 1] == '▼') {
-            $('#header-appointmentDatetime').text($('#header-appointmentDatetime').text().slice(0,-1));
+        if ($('#header-appointmentDate').text()[$('#header-appointmentDate').text().length - 1] == '▲' || $('#header-appointmentDate').text()[$('#header-appointmentDate').text().length - 1] == '▼') {
+            $('#header-appointmentDate').text($('#header-appointmentDate').text().slice(0,-1));
+        }
+        if ($('#header-appointmentTime').text()[$('#header-appointmentTime').text().length - 1] == '▲' || $('#header-appointmentTime').text()[$('#header-appointmentTime').text().length - 1] == '▼') {
+            $('#header-appointmentTime').text($('#header-appointmentTime').text().slice(0,-1));
         }
         if ($('#header-appointmentReason').text()[$('#header-appointmentReason').text().length - 1] == '▲' || $('#header-appointmentReason').text()[$('#header-appointmentReason').text().length - 1] == '▼') {
             $('#header-appointmentReason').text($('#header-appointmentReason').text().slice(0,-1));
@@ -122,14 +125,26 @@ Template.appointments.events ({
         }
     },
 
-    'click #header-appointmentDatetime': function () {
-        if (options['sort']['appointmentDatetime'] == -1) {
-            $('#header-appointmentDatetime').text('appointmentDatetime▲');
-            options['sort'] = { appointmentDatetime: 1};
+    'click #header-appointmentDate': function () {
+        if (options['sort']['appointmentDate'] == -1) {
+            $('#header-appointmentDate').text('appointmentDate▲');
+            options['sort'] = { appointmentDate: 1};
             _deps.changed();
         } else {
-            $('#header-appointmentDatetime').text('appointmentDatetime▼');
-            options['sort'] = { appointmentDatetime: -1};
+            $('#header-appointmentDate').text('appointmentDate▼');
+            options['sort'] = { appointmentDate: -1};
+            _deps.changed();
+        }
+    },
+
+    'click #header-appointmentTime': function () {
+        if (options['sort']['appointmentTime'] == -1) {
+            $('#header-appointmentTime').text('appointmentTime▲');
+            options['sort'] = { appointmentTime: 1};
+            _deps.changed();
+        } else {
+            $('#header-appointmentTime').text('appointmentTime▼');
+            options['sort'] = { appointmentTime: -1};
             _deps.changed();
         }
     },

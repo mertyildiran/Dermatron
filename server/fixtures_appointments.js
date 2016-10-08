@@ -4,7 +4,8 @@ if (appointments.find().count() === 0) {
         appointments.insert({
             createdAt: '2016-10-05 06:51:14',
             patientId: 'short string ' + appointments_index,
-            appointmentDatetime: '2016-10-05 06:51:14',
+            appointmentDate: '2016-10-05',
+            appointmentTime: '06:51',
             appointmentReason: 'this is a long text ' + appointments_index,
             symptoms: 'this is a long text ' + appointments_index,
             diagnosis: 'this is a long text ' + appointments_index,
