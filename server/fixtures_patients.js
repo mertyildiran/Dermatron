@@ -11,7 +11,7 @@ if (patients.find().count() === 0) {
             socialSecurityType: 'Option 1',
             socialSecurityNumber: 'short string ' + patients_index,
             isPatientDisabled: true,
-            bloodGroup: 'Option 1',
+            bloodType: 'Option 1',
             email: 'foobar@foo.bar',
             phone: '+00 000 000 000',
             address: 'this is a long text ' + patients_index

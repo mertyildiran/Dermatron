@@ -13,7 +13,6 @@ Template.edit_patients.events ({
         evt.preventDefault();
 
         var updated_patients = {
-            createdAt: tpl.find('#input_createdAt').value,
             name: tpl.find('#input_name').value,
             surname: tpl.find('#input_surname').value,
             gender: tpl.find('#input_gender').value,
@@ -21,8 +20,8 @@ Template.edit_patients.events ({
             nationalId: tpl.find('#input_nationalId').value,
             socialSecurityType: tpl.find('#input_socialSecurityType').value,
             socialSecurityNumber: tpl.find('#input_socialSecurityNumber').value,
-            isPatientDisabled: tpl.find('#input_isPatientDisabled').value,
-            bloodGroup: tpl.find('#input_bloodGroup').value,
+            isPatientDisabled: $('#input_isPatientDisabled').prop('checked') ? 'Yes' : 'No',
+            bloodType: tpl.find('#input_bloodType').value,
             email: tpl.find('#input_email').value,
             phone: tpl.find('#input_phone').value,
             address: tpl.find('#input_address').value,
@@ -35,4 +34,3 @@ Template.edit_patients.events ({
     }
 
 });
-

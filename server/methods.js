@@ -15,7 +15,7 @@ Meteor.methods({
     insert_medicines: function(object_medicines) {
         var today = new Date();
         var date = today.getFullYear()+'-'+("0" + (today.getMonth() + 1)).slice(-2)+'-'+("0" + today.getDate()).slice(-2);
-        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        var time = ("0" + today.getHours()).slice(-2) + ":" + ("0" + today.getMinutes()).slice(-2) + ":" + today.getSeconds();
         object_medicines.createdAt = date+' '+time;
         var medicinesId = medicines.insert(object_medicines);
         return medicinesId;
@@ -36,7 +36,7 @@ Meteor.methods({
     insert_diseases: function(object_diseases) {
         var today = new Date();
         var date = today.getFullYear()+'-'+("0" + (today.getMonth() + 1)).slice(-2)+'-'+("0" + today.getDate()).slice(-2);
-        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        var time = ("0" + today.getHours()).slice(-2) + ":" + ("0" + today.getMinutes()).slice(-2) + ":" + today.getSeconds();
         object_diseases.createdAt = date+' '+time;
         var diseasesId = diseases.insert(object_diseases);
         return diseasesId;
@@ -57,7 +57,7 @@ Meteor.methods({
     insert_appointments: function(object_appointments) {
         var today = new Date();
         var date = today.getFullYear()+'-'+("0" + (today.getMonth() + 1)).slice(-2)+'-'+("0" + today.getDate()).slice(-2);
-        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        var time = ("0" + today.getHours()).slice(-2) + ":" + ("0" + today.getMinutes()).slice(-2) + ":" + today.getSeconds();
         object_appointments.createdAt = date+' '+time;
         var appointmentsId = appointments.insert(object_appointments);
         return appointmentsId;
@@ -78,7 +78,7 @@ Meteor.methods({
     insert_patients: function(object_patients) {
         var today = new Date();
         var date = today.getFullYear()+'-'+("0" + (today.getMonth() + 1)).slice(-2)+'-'+("0" + today.getDate()).slice(-2);
-        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        var time = ("0" + today.getHours()).slice(-2) + ":" + ("0" + today.getMinutes()).slice(-2) + ":" + today.getSeconds();
         object_patients.createdAt = date+' '+time;
         var patientsId = patients.insert(object_patients);
         return patientsId;

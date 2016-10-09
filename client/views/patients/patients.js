@@ -95,8 +95,8 @@ Template.patients.events ({
         if ($('#header-isPatientDisabled').text()[$('#header-isPatientDisabled').text().length - 1] == '▲' || $('#header-isPatientDisabled').text()[$('#header-isPatientDisabled').text().length - 1] == '▼') {
             $('#header-isPatientDisabled').text($('#header-isPatientDisabled').text().slice(0,-1));
         }
-        if ($('#header-bloodGroup').text()[$('#header-bloodGroup').text().length - 1] == '▲' || $('#header-bloodGroup').text()[$('#header-bloodGroup').text().length - 1] == '▼') {
-            $('#header-bloodGroup').text($('#header-bloodGroup').text().slice(0,-1));
+        if ($('#header-bloodType').text()[$('#header-bloodType').text().length - 1] == '▲' || $('#header-bloodType').text()[$('#header-bloodType').text().length - 1] == '▼') {
+            $('#header-bloodType').text($('#header-bloodType').text().slice(0,-1));
         }
         if ($('#header-email').text()[$('#header-email').text().length - 1] == '▲' || $('#header-email').text()[$('#header-email').text().length - 1] == '▼') {
             $('#header-email').text($('#header-email').text().slice(0,-1));
@@ -217,14 +217,14 @@ Template.patients.events ({
         }
     },
 
-    'click #header-bloodGroup': function () {
-        if (options['sort']['bloodGroup'] == -1) {
-            $('#header-bloodGroup').text('bloodGroup▲');
-            options['sort'] = { bloodGroup: 1};
+    'click #header-bloodType': function () {
+        if (options['sort']['bloodType'] == -1) {
+            $('#header-bloodType').text('bloodType▲');
+            options['sort'] = { bloodType: 1};
             _deps.changed();
         } else {
-            $('#header-bloodGroup').text('bloodGroup▼');
-            options['sort'] = { bloodGroup: -1};
+            $('#header-bloodType').text('bloodType▼');
+            options['sort'] = { bloodType: -1};
             _deps.changed();
         }
     },

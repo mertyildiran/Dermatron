@@ -17,14 +17,14 @@
         <div class="form-group">
             <label for="input_gender">gender</label>
             <select class="form-control" id="input_gender">
-                <option selected="{{selected_gender}}">
-                    {{gender}}
-                </option>
+                <option value="{{gender}}" selected>{{gender}}</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
             </select>
         </div>
         <div class="form-group">
             <label for="input_birthDate">birthDate</label>
-            <input type="date" class="form-control"
+            <input type="date" class="form-control datepicker"
                 placeholder="Date"
                 id="input_birthDate"
                 value="{{birthDate}}">
@@ -39,9 +39,9 @@
         <div class="form-group">
             <label for="input_socialSecurityType">socialSecurityType</label>
             <select class="form-control" id="input_socialSecurityType">
-                <option selected="{{selected_socialSecurityType}}">
-                    {{socialSecurityType}}
-                </option>
+                <option value="{{socialSecurityType}}" selected>{{socialSecurityType}}</option>
+                <option value="State Insurance">State Insurance</option>
+                <option value="Private Insurance">Private Insurance</option>
             </select>
         </div>
         <div class="form-group">
@@ -59,11 +59,17 @@
                 <label for="input_isPatientDisabled"></label>
         </div>
         <div class="form-group">
-            <label for="input_bloodGroup">bloodGroup</label>
-            <select class="form-control" id="input_bloodGroup">
-                <option selected="{{selected_bloodGroup}}">
-                    {{bloodGroup}}
-                </option>
+            <label for="input_bloodType">bloodType</label>
+            <select class="form-control" id="input_bloodType">
+                <option value="{{bloodType}}" selected>{{bloodType}}</option>
+                <option value="0 Rh(-)">0 Rh(-)</option>
+                <option value="0 Rh(+)">0 Rh(+)</option>
+                <option value="A Rh(-)">A Rh(-)</option>
+                <option value="A Rh(+)">A Rh(+)</option>
+                <option value="B Rh(-)">B Rh(-)</option>
+                <option value="B Rh(+)">B Rh(+)</option>
+                <option value="AB Rh(-)">AB Rh(-)</option>
+                <option value="AB Rh(+)">AB Rh(+)</option>
             </select>
         </div>
         <div class="form-group">
