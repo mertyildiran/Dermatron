@@ -5,7 +5,20 @@ Template.form_appointments.helpers ({
     },
 
     patientLookup: function(patientId) {
+        if ( (patientId == null) && globalPatientIdForNewAppointment ) {
+          $('#input_patientId option:selected').val(globalPatientIdForNewAppointment);
+          patientId = globalPatientIdForNewAppointment;
+          globalPatientIdForNewAppointment = '';
+        }
         return patients.findOne(patientId).name + ' ' + patients.findOne(patientId).surname;
+    },
+
+    patientId: function(patientId) {
+        if ( (patientId == null) && globalPatientIdForNewAppointment ) {
+            return globalPatientIdForNewAppointment
+        } else {
+            return patientId
+        }
     }
 
 });

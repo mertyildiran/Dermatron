@@ -127,13 +127,13 @@ Template.appointments.events ({
 
     'click #header-appointmentDate': function () {
         if (options['sort']['appointmentDate'] == 1) {
-            $('#header-appointmentTime').text('appointmentTime▲');
-            $('#header-appointmentDate').text('appointmentDate▲');
+            $('#header-appointmentTime').text('appointmentTime▼');
+            $('#header-appointmentDate').text('appointmentDate▼');
             options['sort'] = { appointmentDate: -1, appointmentTime: 1};
             _deps.changed();
         } else {
-            $('#header-appointmentTime').text('appointmentTime▼');
-            $('#header-appointmentDate').text('appointmentDate▼');
+            $('#header-appointmentTime').text('appointmentTime▲');
+            $('#header-appointmentDate').text('appointmentDate▲');
             options['sort'] = { appointmentDate: 1, appointmentTime: -1};
             _deps.changed();
         }
@@ -141,13 +141,13 @@ Template.appointments.events ({
 
     'click #header-appointmentTime': function () {
         if (options['sort']['appointmentDate'] == 1) {
-            $('#header-appointmentTime').text('appointmentTime▲');
-            $('#header-appointmentDate').text('appointmentDate▲');
+            $('#header-appointmentTime').text('appointmentTime▼');
+            $('#header-appointmentDate').text('appointmentDate▼');
             options['sort'] = { appointmentDate: -1, appointmentTime: 1};
             _deps.changed();
         } else {
-            $('#header-appointmentTime').text('appointmentTime▼');
-            $('#header-appointmentDate').text('appointmentDate▼');
+            $('#header-appointmentTime').text('appointmentTime▲');
+            $('#header-appointmentDate').text('appointmentDate▲');
             options['sort'] = { appointmentDate: 1, appointmentTime: -1};
             _deps.changed();
         }

@@ -3,7 +3,7 @@
         <div class="form-group">
             <label for="input_patientId">patientName</label>
             <select class="form-control" id="input_patientId">
-              <option value="{{patientId}}" selected>{{patientLookup patientId}}</option>
+              <option value="{{patientId patientId}}" selected>{{patientLookup patientId}}</option>
               {{#each patients}}
                   <option value="{{_id}}">{{name}} {{surname}}</option>
               {{/each}}
