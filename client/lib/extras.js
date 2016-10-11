@@ -59,3 +59,11 @@ Template.form_patients.onRendered(function () {
     $('.datepicker').val(patients.findOne(Router.current().params._id).birthDate);
 
 });
+
+Template.index.onRendered(function () {
+
+    scheduler.config.xml_date="%Y-%m-%d %H:%i";
+    scheduler.init("scheduler_here", new Date());
+    scheduler.load("./appointments.xml");
+
+});
