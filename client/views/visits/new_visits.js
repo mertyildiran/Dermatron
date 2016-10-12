@@ -17,10 +17,9 @@ Template.new_visits.events ({
             visitDate: tpl.find('#input_visitDate').value,
             visitTime: tpl.find('#input_visitTime').value,
             reasonToVisit: tpl.find('#input_reasonToVisit').value,
-            symptoms: tpl.find('#input_symptoms').value,
+            symptoms: $('#input_symptoms').val(),
             diagnosis: tpl.find('#input_diagnosis').value,
             treatment: tpl.find('#input_treatment').value,
-            status: tpl.find('#input_status').value,
         };
 
         // the method returns the new object id after saving it into the db
