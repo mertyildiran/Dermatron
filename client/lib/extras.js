@@ -86,10 +86,12 @@ Template.index.onRendered(function () {
 	];
 
 	scheduler.config.full_day = true;
-    scheduler.config.first_hour = 7;
-    scheduler.config.last_hour = 19;
+    //scheduler.config.first_hour = 7;
+    //scheduler.config.last_hour = 19;
 
     scheduler.xy.scale_height=30;
+
+    scheduler.config.dblclick_create = false
 
     scheduler.config.xml_date="%Y-%m-%d %H:%i";
     scheduler.init("scheduler_here", new Date());
