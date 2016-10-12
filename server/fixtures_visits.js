@@ -1,4 +1,4 @@
-
+/*
 if (visits.find().count() === 0) {
     for (var visits_index = 0; visits_index < 50; visits_index++) {
         visits.insert({
@@ -14,3 +14,4 @@ if (visits.find().count() === 0) {
         });
     }
 }
+*/

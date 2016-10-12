@@ -1,4 +1,4 @@
-
+/*
 if (patients.find().count() === 0) {
     for (var patients_index = 0; patients_index < 50; patients_index++) {
         patients.insert({
@@ -18,3 +18,4 @@ if (patients.find().count() === 0) {
         });
     }
 }
+*/
