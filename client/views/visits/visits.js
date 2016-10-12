@@ -1,20 +1,20 @@
 var _deps = new Tracker.Dependency;
 var options = {limit: 10, sort: { createdAt: -1} };
 
-Template.appointments.helpers ({
+Template.visits.helpers ({
 
     // controllers
     tpl_info: function() {
-        return appointments.find().count() + ' record(s) found. This is appointments template, find me at client/views/appointments';
+        return visits.find().count() + ' record(s) found. This is visits template, find me at client/views/visits';
     },
 
-    appointments: function() {
+    visits: function() {
         _deps.depend();
-        return appointments.find({}, options).fetch();
+        return visits.find({}, options).fetch();
     },
 
-    invokeBeforeLoadAppointments: function () {
-        searchTextAppointments.set('');
+    invokeBeforeLoadVisits: function () {
+        searchTextVisits.set('');
     },
 
     patientLookup: function(patientId) {
@@ -23,17 +23,17 @@ Template.appointments.helpers ({
 
 });
 
-Template.appointments.events ({
+Template.visits.events ({
 
     // event handlers
     // delete the selected object
     'click #delete': function(evt, tpl) {
-        Meteor.call('delete_appointments', this._id);
+        Meteor.call('delete_visits', this._id);
     },
 
     // filter function
     'keyup #filter_field': function (evt, tpl) {
-        searchTextAppointments.set($('#filter_field').val());
+        searchTextVisits.set($('#filter_field').val());
         $('#loadMore').text('Load More');
         $('#loadMore').fadeIn();
     },
@@ -47,7 +47,7 @@ Template.appointments.events ({
         $('input:checkbox:checked').filter(function(){
             var selectedIds = $(this).closest('tr').attr('id');
             if (selectedIds !== undefined) {
-                Meteor.call('delete_selected_appointments', selectedIds);
+                Meteor.call('delete_selected_visits', selectedIds);
             }
         });
     },
@@ -55,7 +55,7 @@ Template.appointments.events ({
     'click #loadMore': function () {
         options['limit'] += 10;
         _deps.changed();
-        if (options['limit'] >= appointments.find().count()){
+        if (options['limit'] >= visits.find().count()){
             $('#loadMore').text('Done');
             $('#loadMore').fadeOut();
         }
@@ -66,7 +66,7 @@ Template.appointments.events ({
         options['limit'] = 10;
         _deps.changed();
         $('#filter_field').val('');
-        searchTextAppointments.set('');
+        searchTextVisits.set('');
         $('#loadMore').text('Load More');
         $('#loadMore').fadeIn();
     },
@@ -78,14 +78,14 @@ Template.appointments.events ({
         if ($('#header-patientId').text()[$('#header-patientId').text().length - 1] == '▲' || $('#header-patientId').text()[$('#header-patientId').text().length - 1] == '▼') {
             $('#header-patientId').text($('#header-patientId').text().slice(0,-1));
         }
-        if ($('#header-appointmentDate').text()[$('#header-appointmentDate').text().length - 1] == '▲' || $('#header-appointmentDate').text()[$('#header-appointmentDate').text().length - 1] == '▼') {
-            $('#header-appointmentDate').text($('#header-appointmentDate').text().slice(0,-1));
+        if ($('#header-visitDate').text()[$('#header-visitDate').text().length - 1] == '▲' || $('#header-visitDate').text()[$('#header-visitDate').text().length - 1] == '▼') {
+            $('#header-visitDate').text($('#header-visitDate').text().slice(0,-1));
         }
-        if ($('#header-appointmentTime').text()[$('#header-appointmentTime').text().length - 1] == '▲' || $('#header-appointmentTime').text()[$('#header-appointmentTime').text().length - 1] == '▼') {
-            $('#header-appointmentTime').text($('#header-appointmentTime').text().slice(0,-1));
+        if ($('#header-visitTime').text()[$('#header-visitTime').text().length - 1] == '▲' || $('#header-visitTime').text()[$('#header-visitTime').text().length - 1] == '▼') {
+            $('#header-visitTime').text($('#header-visitTime').text().slice(0,-1));
         }
-        if ($('#header-appointmentReason').text()[$('#header-appointmentReason').text().length - 1] == '▲' || $('#header-appointmentReason').text()[$('#header-appointmentReason').text().length - 1] == '▼') {
-            $('#header-appointmentReason').text($('#header-appointmentReason').text().slice(0,-1));
+        if ($('#header-reasonToVisit').text()[$('#header-reasonToVisit').text().length - 1] == '▲' || $('#header-reasonToVisit').text()[$('#header-reasonToVisit').text().length - 1] == '▼') {
+            $('#header-reasonToVisit').text($('#header-reasonToVisit').text().slice(0,-1));
         }
         if ($('#header-symptoms').text()[$('#header-symptoms').text().length - 1] == '▲' || $('#header-symptoms').text()[$('#header-symptoms').text().length - 1] == '▼') {
             $('#header-symptoms').text($('#header-symptoms').text().slice(0,-1));
@@ -125,42 +125,42 @@ Template.appointments.events ({
         }
     },
 
-    'click #header-appointmentDate': function () {
-        if (options['sort']['appointmentDate'] == 1) {
-            $('#header-appointmentTime').text('appointmentTime▼');
-            $('#header-appointmentDate').text('appointmentDate▼');
-            options['sort'] = { appointmentDate: -1, appointmentTime: 1};
+    'click #header-visitDate': function () {
+        if (options['sort']['visitDate'] == 1) {
+            $('#header-visitTime').text('visitTime▼');
+            $('#header-visitDate').text('visitDate▼');
+            options['sort'] = { visitDate: -1, visitTime: 1};
             _deps.changed();
         } else {
-            $('#header-appointmentTime').text('appointmentTime▲');
-            $('#header-appointmentDate').text('appointmentDate▲');
-            options['sort'] = { appointmentDate: 1, appointmentTime: -1};
+            $('#header-visitTime').text('visitTime▲');
+            $('#header-visitDate').text('visitDate▲');
+            options['sort'] = { visitDate: 1, visitTime: -1};
             _deps.changed();
         }
     },
 
-    'click #header-appointmentTime': function () {
-        if (options['sort']['appointmentDate'] == 1) {
-            $('#header-appointmentTime').text('appointmentTime▼');
-            $('#header-appointmentDate').text('appointmentDate▼');
-            options['sort'] = { appointmentDate: -1, appointmentTime: 1};
+    'click #header-visitTime': function () {
+        if (options['sort']['visitDate'] == 1) {
+            $('#header-visitTime').text('visitTime▼');
+            $('#header-visitDate').text('visitDate▼');
+            options['sort'] = { visitDate: -1, visitTime: 1};
             _deps.changed();
         } else {
-            $('#header-appointmentTime').text('appointmentTime▲');
-            $('#header-appointmentDate').text('appointmentDate▲');
-            options['sort'] = { appointmentDate: 1, appointmentTime: -1};
+            $('#header-visitTime').text('visitTime▲');
+            $('#header-visitDate').text('visitDate▲');
+            options['sort'] = { visitDate: 1, visitTime: -1};
             _deps.changed();
         }
     },
 
-    'click #header-appointmentReason': function () {
-        if (options['sort']['appointmentReason'] == -1) {
-            $('#header-appointmentReason').text('appointmentReason▲');
-            options['sort'] = { appointmentReason: 1};
+    'click #header-reasonToVisit': function () {
+        if (options['sort']['reasonToVisit'] == -1) {
+            $('#header-reasonToVisit').text('reasonToVisit▲');
+            options['sort'] = { reasonToVisit: 1};
             _deps.changed();
         } else {
-            $('#header-appointmentReason').text('appointmentReason▼');
-            options['sort'] = { appointmentReason: -1};
+            $('#header-reasonToVisit').text('reasonToVisit▼');
+            options['sort'] = { reasonToVisit: -1};
             _deps.changed();
         }
     },

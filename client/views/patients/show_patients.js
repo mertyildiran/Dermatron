@@ -7,12 +7,12 @@ Template.show_patients.helpers ({
 
 });
 
-globalPatientIdForNewAppointment = "";
+globalPatientIdForNewVisit = "";
 
 Template.show_patients.events ({
 
-  'click #scheduleNewAppointment': function () {
-      globalPatientIdForNewAppointment = Router.current().params._id;
+  'click #scheduleNewVisit': function () {
+      globalPatientIdForNewVisit = Router.current().params._id;
   }
 
 });

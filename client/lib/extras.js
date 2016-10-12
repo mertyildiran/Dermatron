@@ -1,21 +1,21 @@
-Template.form_appointments.helpers ({
+Template.form_visits.helpers ({
 
     patients: function() {
         return patients.find().fetch();
     },
 
     patientLookup: function(patientId) {
-        if ( (patientId == null) && globalPatientIdForNewAppointment ) {
-          $('#input_patientId option:selected').val(globalPatientIdForNewAppointment);
-          patientId = globalPatientIdForNewAppointment;
-          globalPatientIdForNewAppointment = '';
+        if ( (patientId == null) && globalPatientIdForNewVisit ) {
+          $('#input_patientId option:selected').val(globalPatientIdForNewVisit);
+          patientId = globalPatientIdForNewVisit;
+          globalPatientIdForNewVisit = '';
         }
         return patients.findOne(patientId).name + ' ' + patients.findOne(patientId).surname;
     },
 
     patientId: function(patientId) {
-        if ( (patientId == null) && globalPatientIdForNewAppointment ) {
-            return globalPatientIdForNewAppointment
+        if ( (patientId == null) && globalPatientIdForNewVisit ) {
+            return globalPatientIdForNewVisit
         } else {
             return patientId
         }
@@ -23,7 +23,7 @@ Template.form_appointments.helpers ({
 
 });
 
-Template.form_appointments.onRendered(function () {
+Template.form_visits.onRendered(function () {
 
     $('.datepicker').pickadate({
       format: 'yyyy-mm-dd',
@@ -40,7 +40,7 @@ Template.form_appointments.onRendered(function () {
       $('select').material_select();
     });
 
-    $('.datepicker').val(appointments.findOne(Router.current().params._id).appointmentDate);
+    $('.datepicker').val(visits.findOne(Router.current().params._id).visitDate);
 
 });
 
@@ -95,6 +95,6 @@ Template.index.onRendered(function () {
 
     scheduler.config.xml_date="%Y-%m-%d %H:%i";
     scheduler.init("scheduler_here", new Date());
-    scheduler.load("./appointments.xml");
+    scheduler.load("./visits.xml");
 
 });

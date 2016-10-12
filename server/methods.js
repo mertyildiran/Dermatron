@@ -42,25 +42,25 @@ Meteor.methods({
         return diseasesId;
     },
 
-    delete_selected_appointments: function(selectedIds) {
-        appointments.remove(selectedIds);
+    delete_selected_visits: function(selectedIds) {
+        visits.remove(selectedIds);
     },
 
-    update_appointments: function(id, object_appointments) {
-        appointments.update({_id: id}, {$set: object_appointments });
+    update_visits: function(id, object_visits) {
+        visits.update({_id: id}, {$set: object_visits });
     },
 
-    delete_appointments: function(appointmentsId) {
-        appointments.remove(appointmentsId);
+    delete_visits: function(visitsId) {
+        visits.remove(visitsId);
     },
 
-    insert_appointments: function(object_appointments) {
+    insert_visits: function(object_visits) {
         var today = new Date();
         var date = today.getFullYear()+'-'+("0" + (today.getMonth() + 1)).slice(-2)+'-'+("0" + today.getDate()).slice(-2);
         var time = ("0" + today.getHours()).slice(-2) + ":" + ("0" + today.getMinutes()).slice(-2) + ":" + today.getSeconds();
-        object_appointments.createdAt = date+' '+time;
-        var appointmentsId = appointments.insert(object_appointments);
-        return appointmentsId;
+        object_visits.createdAt = date+' '+time;
+        var visitsId = visits.insert(object_visits);
+        return visitsId;
     },
 
     delete_selected_patients: function(selectedIds) {

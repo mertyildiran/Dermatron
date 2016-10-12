@@ -1,7 +1,7 @@
-<template name="appointments">
-    {{invokeBeforeLoadAppointments}}
+<template name="visits">
+    {{invokeBeforeLoadVisits}}
     <div class="container">
-        <h3>All appointments</h3>
+        <h3>All visits</h3>
         <p><pre>{{tpl_info}}</pre>
         you can delete this message from the template and/or the helper</p>
             <div class="table-responsive">
@@ -22,9 +22,9 @@
                         <tr>
                             <th id=header-createdAt>createdAt</th>
                             <th id=header-patientId>patientName</th>
-                            <th id=header-appointmentDate>appointmentDate</th>
-                            <th id=header-appointmentTime>appointmentTime</th>
-                            <th id=header-appointmentReason>appointmentReason</th>
+                            <th id=header-visitDate>visitDate</th>
+                            <th id=header-visitTime>visitTime</th>
+                            <th id=header-reasonToVisit>reasonToVisit</th>
                             <th id=header-symptoms>symptoms</th>
                             <th id=header-diagnosis>diagnosis</th>
                             <th id=header-treatment>treatment</th>
@@ -43,13 +43,13 @@
                         </tr>
                     </thead>
                     <tbody>
-                    {{#each appointments}}
+                    {{#each visits}}
                         <tr id="{{_id}}">
                             <td>{{createdAt}}</td>
                             <td>{{patientLookup patientId}}</td>
-                            <td>{{appointmentDate}}</td>
-                            <td>{{appointmentTime}}</td>
-                            <td>{{appointmentReason}}</td>
+                            <td>{{visitDate}}</td>
+                            <td>{{visitTime}}</td>
+                            <td>{{reasonToVisit}}</td>
                             <td>{{symptoms}}</td>
                             <td>{{diagnosis}}</td>
                             <td>{{treatment}}</td>
@@ -60,10 +60,10 @@
                                 <label for="row_{{_id}}"></label>
                             </td>
                             <td>
-                                <a class="btn btn-default btn-xs" href="{{pathFor 'show_appointments'}}"  id="show">Show </a>
+                                <a class="btn btn-default btn-xs" href="{{pathFor 'show_visits'}}"  id="show">Show </a>
                             </td>
                             <td>
-                                <a class="btn btn-primary btn-xs" href="{{pathFor 'edit_appointments'}}"  id="edit"> Edit</a>
+                                <a class="btn btn-primary btn-xs" href="{{pathFor 'edit_visits'}}"  id="edit"> Edit</a>
                             </td>
                             <td>
                                 <a class="btn btn-danger btn-xs" href="" id="delete">Delete</a>
@@ -73,7 +73,7 @@
                     </tbody>
                </table>
             </div>
-            <a class="btn btn-success btn-xs" href="{{pathFor 'new_appointments'}}">New appointment</a>
+            <a class="btn btn-success btn-xs" href="{{pathFor 'new_visits'}}">New visit</a>
             <button class="btn btn-primary" id="loadMore">Load More</button>
             <button class="btn btn-primary" id="loadReset">Reset</button>
         </div>

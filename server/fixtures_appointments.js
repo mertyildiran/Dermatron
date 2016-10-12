@@ -1,15 +1,15 @@
 
-if (appointments.find().count() === 0) {
-    for (var appointments_index = 0; appointments_index < 50; appointments_index++) {
-        appointments.insert({
+if (visits.find().count() === 0) {
+    for (var visits_index = 0; visits_index < 50; visits_index++) {
+        visits.insert({
             createdAt: '2016-10-05 06:51:14',
-            patientId: 'short string ' + appointments_index,
-            appointmentDate: '2016-10-05',
-            appointmentTime: '06:51',
-            appointmentReason: 'this is a long text ' + appointments_index,
-            symptoms: 'this is a long text ' + appointments_index,
-            diagnosis: 'this is a long text ' + appointments_index,
-            treatment: 'this is a long text ' + appointments_index,
+            patientId: 'short string ' + visits_index,
+            visitDate: '2016-10-05',
+            visitTime: '06:51',
+            reasonToVisit: 'this is a long text ' + visits_index,
+            symptoms: 'this is a long text ' + visits_index,
+            diagnosis: 'this is a long text ' + visits_index,
+            treatment: 'this is a long text ' + visits_index,
             status: 'Option 1'
         });
     }

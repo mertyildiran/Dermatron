@@ -1,22 +1,22 @@
-Template.edit_appointments.helpers ({
+Template.new_visits.helpers ({
 
     // controllers
-    //appointments: function() {
+    //visits: function() {
         //
     //}
 
 });
 
-Template.edit_appointments.events ({
+Template.new_visits.events ({
     // event handlers
     'click #save': function(evt, tpl) {
         evt.preventDefault();
 
-        var updated_appointments = {
+        var new_visits = {
             patientId: tpl.find('#input_patientId').value,
-            appointmentDate: tpl.find('#input_appointmentDate').value,
-            appointmentTime: tpl.find('#input_appointmentTime').value,
-            appointmentReason: tpl.find('#input_appointmentReason').value,
+            visitDate: tpl.find('#input_visitDate').value,
+            visitTime: tpl.find('#input_visitTime').value,
+            reasonToVisit: tpl.find('#input_reasonToVisit').value,
             symptoms: tpl.find('#input_symptoms').value,
             diagnosis: tpl.find('#input_diagnosis').value,
             treatment: tpl.find('#input_treatment').value,
@@ -24,8 +24,8 @@ Template.edit_appointments.events ({
         };
 
         // the method returns the new object id after saving it into the db
-        Meteor.call('update_appointments', this._id, updated_appointments);
-        Router.go('appointments');
+        Meteor.call('insert_visits', new_visits);
+        Router.go('visits');
 
     }
 

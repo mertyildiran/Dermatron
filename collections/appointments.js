@@ -1,1 +1,1 @@
-appointments = new Mongo.Collection('appointments');
+visits = new Mongo.Collection('visits');

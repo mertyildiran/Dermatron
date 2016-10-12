@@ -1,4 +1,4 @@
-<template name="form_appointments">
+<template name="form_visits">
     <form>
         <div class="form-group">
             <label for="input_patientId">patientName</label>
@@ -10,23 +10,23 @@
             </select>
         </div>
         <div class="form-group">
-            <label for="input_appointmentDate">appointmentDate</label>
+            <label for="input_visitDate">visitDate</label>
             <input type="date" class="form-control datepicker"
                 placeholder="Date"
-                id="input_appointmentDate"
-                value="{{appointmentDate}}">
+                id="input_visitDate"
+                value="{{visitDate}}">
         </div>
         <div class="form-group">
-            <label for="input_appointmentTime">appointmentTime</label>
+            <label for="input_visitTime">visitTime</label>
             <input type="time" class="form-control timepicker"
                 placeholder="Time"
-                id="input_appointmentTime"
-                value="{{appointmentTime}}">
+                id="input_visitTime"
+                value="{{visitTime}}">
         </div>
         <div class="form-group">
-            <label for="input_appointmentReason">appointmentReason</label>
+            <label for="input_reasonToVisit">reasonToVisit</label>
             <textarea class="form-control" rows="3"
-                id="input_appointmentReason">{{appointmentReason}}</textarea>
+                id="input_reasonToVisit">{{reasonToVisit}}</textarea>
         </div>
         <div class="form-group">
             <label for="input_symptoms">symptoms</label>

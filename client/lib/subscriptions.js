@@ -4,10 +4,10 @@ searchTextPatients.set('');
 Tracker.autorun(function() {
     Meteor.subscribe('patients', searchTextPatients.get());
 });
-searchTextAppointments = new ReactiveVar();
-searchTextAppointments.set('');
+searchTextVisits = new ReactiveVar();
+searchTextVisits.set('');
 Tracker.autorun(function() {
-    Meteor.subscribe('appointments', searchTextAppointments.get());
+    Meteor.subscribe('visits', searchTextVisits.get());
 });
 searchTextDiseases = new ReactiveVar();
 searchTextDiseases.set('');
