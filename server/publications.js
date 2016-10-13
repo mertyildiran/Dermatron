@@ -11,7 +11,7 @@ Meteor.publish('visits', function(searchText) {
     if (!searchText) {
         return visits.find();
     }
-    return visits.find( { $or: [ {createdAt: { $regex: searchText }}, {patientId: { $regex: searchText }}, {visitDate: { $regex: searchText }}, {visitTime: { $regex: searchText }}, {reasonToVisit: { $regex: searchText }}, {symptoms: { $regex: searchText }}, {diagnosis: { $regex: searchText }}, {treatment: { $regex: searchText }}, {status: { $regex: searchText }},  ] }, {} );
+    return visits.find( { $or: [ {createdAt: { $regex: searchText }}, {patientId: { $regex: searchText }}, {visitDate: { $regex: searchText }}, {visitTime: { $regex: searchText }}, {lesion: { $regex: searchText }}, {symptoms: { $regex: searchText }}, {pathophysiology: { $regex: searchText }}, {treatment: { $regex: searchText }}, {status: { $regex: searchText }},  ] }, {} );
 });
 Meteor.publish('diseases', function(searchText) {
     if (!searchText) {

@@ -6,9 +6,9 @@ if (visits.find().count() === 0) {
             patientId: 'short string ' + visits_index,
             visitDate: '2016-10-05',
             visitTime: '06:51',
-            reasonToVisit: 'this is a long text ' + visits_index,
+            lesion: 'this is a long text ' + visits_index,
             symptoms: 'this is a long text ' + visits_index,
-            diagnosis: 'this is a long text ' + visits_index,
+            pathophysiology: 'this is a long text ' + visits_index,
             treatment: 'this is a long text ' + visits_index,
             status: 'Option 1'
         });

@@ -102,14 +102,14 @@ Template.visits.events ({
         if ($('#header-visitTime').text()[$('#header-visitTime').text().length - 1] == '▲' || $('#header-visitTime').text()[$('#header-visitTime').text().length - 1] == '▼') {
             $('#header-visitTime').text($('#header-visitTime').text().slice(0,-1));
         }
-        if ($('#header-reasonToVisit').text()[$('#header-reasonToVisit').text().length - 1] == '▲' || $('#header-reasonToVisit').text()[$('#header-reasonToVisit').text().length - 1] == '▼') {
-            $('#header-reasonToVisit').text($('#header-reasonToVisit').text().slice(0,-1));
+        if ($('#header-lesion').text()[$('#header-lesion').text().length - 1] == '▲' || $('#header-lesion').text()[$('#header-lesion').text().length - 1] == '▼') {
+            $('#header-lesion').text($('#header-lesion').text().slice(0,-1));
         }
         if ($('#header-symptoms').text()[$('#header-symptoms').text().length - 1] == '▲' || $('#header-symptoms').text()[$('#header-symptoms').text().length - 1] == '▼') {
             $('#header-symptoms').text($('#header-symptoms').text().slice(0,-1));
         }
-        if ($('#header-diagnosis').text()[$('#header-diagnosis').text().length - 1] == '▲' || $('#header-diagnosis').text()[$('#header-diagnosis').text().length - 1] == '▼') {
-            $('#header-diagnosis').text($('#header-diagnosis').text().slice(0,-1));
+        if ($('#header-pathophysiology').text()[$('#header-pathophysiology').text().length - 1] == '▲' || $('#header-pathophysiology').text()[$('#header-pathophysiology').text().length - 1] == '▼') {
+            $('#header-pathophysiology').text($('#header-pathophysiology').text().slice(0,-1));
         }
         if ($('#header-treatment').text()[$('#header-treatment').text().length - 1] == '▲' || $('#header-treatment').text()[$('#header-treatment').text().length - 1] == '▼') {
             $('#header-treatment').text($('#header-treatment').text().slice(0,-1));
@@ -171,14 +171,14 @@ Template.visits.events ({
         }
     },
 
-    'click #header-reasonToVisit': function () {
-        if (options['sort']['reasonToVisit'] == -1) {
-            $('#header-reasonToVisit').text('reasonToVisit▲');
-            options['sort'] = { reasonToVisit: 1};
+    'click #header-lesion': function () {
+        if (options['sort']['lesion'] == -1) {
+            $('#header-lesion').text('lesion▲');
+            options['sort'] = { lesion: 1};
             _deps.changed();
         } else {
-            $('#header-reasonToVisit').text('reasonToVisit▼');
-            options['sort'] = { reasonToVisit: -1};
+            $('#header-lesion').text('lesion▼');
+            options['sort'] = { lesion: -1};
             _deps.changed();
         }
     },
@@ -195,14 +195,14 @@ Template.visits.events ({
         }
     },
 
-    'click #header-diagnosis': function () {
-        if (options['sort']['diagnosis'] == -1) {
-            $('#header-diagnosis').text('diagnosis▲');
-            options['sort'] = { diagnosis: 1};
+    'click #header-pathophysiology': function () {
+        if (options['sort']['pathophysiology'] == -1) {
+            $('#header-pathophysiology').text('pathophysiology▲');
+            options['sort'] = { pathophysiology: 1};
             _deps.changed();
         } else {
-            $('#header-diagnosis').text('diagnosis▼');
-            options['sort'] = { diagnosis: -1};
+            $('#header-pathophysiology').text('pathophysiology▼');
+            options['sort'] = { pathophysiology: -1};
             _deps.changed();
         }
     },
