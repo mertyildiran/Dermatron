@@ -13,7 +13,7 @@ Template.form_visits.helpers ({
         return patients.findOne(patientId).name + ' ' + patients.findOne(patientId).surname;
     },
 
-    patientId: function(patientId) {
+    patientIdFixer: function(patientId) {
         if ( (patientId == null) && globalPatientIdForNewVisit ) {
             return globalPatientIdForNewVisit
         } else {
@@ -35,6 +35,10 @@ Template.form_visits.onRendered(function () {
       autoclose: false,
       twelvehour: false
     });
+
+    if ($('.multiple-select option:selected').val() == "") {
+        $('.multiple-select option:selected').prop('disabled', true);
+    }
 
     $(document).ready(function() {
       $('select').material_select();
