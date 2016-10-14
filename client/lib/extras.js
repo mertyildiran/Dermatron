@@ -44,6 +44,8 @@ Template.form_visits.onRendered(function () {
       $('select').material_select();
     });
 
+    $('.anatomic-map').maphilight();
+
     $('.datepicker').val(visits.findOne(Router.current().params._id).visitDate);
 
 });

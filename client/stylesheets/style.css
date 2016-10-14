@@ -8,4 +8,3 @@ body {
   background: radial-gradient(ellipse at center, rgba(212,212,212,1) 0%, rgba(237,237,237,1) 0%, rgba(204,204,204,1) 43%, rgba(194,194,194,1) 60%, rgba(194,194,194,1) 75%, rgba(194,194,194,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4d4d4', endColorstr='#c2c2c2', GradientType=1 );
 }
-
