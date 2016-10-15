@@ -54,6 +54,15 @@ Template.form_visits.onRendered(function () {
 
     $('img.anatomic-map').maphilight();
 
+    var images = new Array()
+	function preload() {
+		for (i = 0; i < preload.arguments.length; i++) {
+			images[i] = new Image()
+			images[i].src = preload.arguments[i]
+		}
+	}
+    preload('/image-map/male-mesh/head.png');
+
 });
 
 Template.form_visits.events ({
