@@ -61,11 +61,13 @@ Template.form_visits.onRendered(function () {
 			images[i].src = preload.arguments[i]
 		}
 	}
-    preload('/image-map/male-mesh/head.png', '/image-map/male-mesh/full-body-back.png');
+    preload('/image-map/male-mesh/head.png', '/image-map/male-mesh/full-body-back.png', '/image-map/male-mesh/trunk.png', '/image-map/male-mesh/upper-limbs.png', '/image-map/male-mesh/anogenital-region.png', '/image-map/male-mesh/lower-limbs.png');
 
 });
 
 Template.form_visits.events ({
+
+    // Horizontal FAB Buttons START
 
     'click a#anatomicalLocationBackside': function () {
         $('#input_anatomicalLocation').val('');
@@ -81,11 +83,45 @@ Template.form_visits.events ({
         $('img.anatomic-map').maphilight();
     },
 
+    // Horizontal FAB Buttons END
+
+    // full-body START
+
     'click area#head': function () {
         $('#input_anatomicalLocation').val('Head');
         $('div.anatomic-map').remove();
-        $( '<img src="/image-map/male-mesh/head.png" class="anatomic-map" usemap="#male-full-body">' ).insertAfter( "input#input_anatomicalLocation" );
+        $( '<img src="/image-map/male-mesh/head.png" class="anatomic-map" usemap="#male-head">' ).insertAfter( "input#input_anatomicalLocation" );
+        $('img.anatomic-map').maphilight();
+    },
+
+    'click area#trunk': function () {
+        $('#input_anatomicalLocation').val('Trunk');
+        $('div.anatomic-map').remove();
+        $( '<img src="/image-map/male-mesh/trunk.png" class="anatomic-map" usemap="#male-full-body">' ).insertAfter( "input#input_anatomicalLocation" );
+        $('img.anatomic-map').maphilight();
+    },
+
+    'click area#upper-limbs': function () {
+        $('#input_anatomicalLocation').val('Upper Limbs');
+        $('div.anatomic-map').remove();
+        $( '<img src="/image-map/male-mesh/upper-limbs.png" class="anatomic-map" usemap="#male-full-body">' ).insertAfter( "input#input_anatomicalLocation" );
+        $('img.anatomic-map').maphilight();
+    },
+
+    'click area#anogenital-region': function () {
+        $('#input_anatomicalLocation').val('Anogenital Region');
+        $('div.anatomic-map').remove();
+        $( '<img src="/image-map/male-mesh/anogenital-region.png" class="anatomic-map" usemap="#male-full-body">' ).insertAfter( "input#input_anatomicalLocation" );
+        $('img.anatomic-map').maphilight();
+    },
+
+    'click area#lower-limbs': function () {
+        $('#input_anatomicalLocation').val('Lower Limbs');
+        $('div.anatomic-map').remove();
+        $( '<img src="/image-map/male-mesh/lower-limbs.png" class="anatomic-map" usemap="#male-full-body">' ).insertAfter( "input#input_anatomicalLocation" );
         $('img.anatomic-map').maphilight();
     }
+
+    // full-body END
 
 });

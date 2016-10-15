@@ -353,7 +353,7 @@
 		shadowY: 0,
 		shadowRadius: 100,
 		shadowColor: 'ffd700',
-		shadowOpacity: 0.8,
+		shadowOpacity: 1.0,
 		shadowPosition: 'outside',
 		shadowFrom: false
 	};
