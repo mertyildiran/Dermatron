@@ -61,13 +61,28 @@ Template.form_visits.onRendered(function () {
 			images[i].src = preload.arguments[i]
 		}
 	}
-    preload('/image-map/male-mesh/head.png');
+    preload('/image-map/male-mesh/head.png', '/image-map/male-mesh/full-body-back.png');
 
 });
 
 Template.form_visits.events ({
 
+    'click a#anatomicalLocationBackside': function () {
+        $('#input_anatomicalLocation').val('');
+        $('div.anatomic-map').remove();
+        $( '<img src="/image-map/male-mesh/full-body-back.png" class="anatomic-map" usemap="#male-full-body">' ).insertAfter( "input#input_anatomicalLocation" );
+        $('img.anatomic-map').maphilight();
+    },
+
+    'click a#anatomicalLocationReset': function () {
+        $('#input_anatomicalLocation').val('');
+        $('div.anatomic-map').remove();
+        $( '<img src="/image-map/male-mesh/full-body.png" class="anatomic-map" usemap="#male-full-body">' ).insertAfter( "input#input_anatomicalLocation" );
+        $('img.anatomic-map').maphilight();
+    },
+
     'click area#head': function () {
+        $('#input_anatomicalLocation').val('Head');
         $('div.anatomic-map').remove();
         $( '<img src="/image-map/male-mesh/head.png" class="anatomic-map" usemap="#male-full-body">' ).insertAfter( "input#input_anatomicalLocation" );
         $('img.anatomic-map').maphilight();
