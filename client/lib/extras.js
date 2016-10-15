@@ -10,7 +10,11 @@ Template.form_visits.helpers ({
           patientId = globalPatientIdForNewVisit;
           globalPatientIdForNewVisit = '';
         }
-        return patients.findOne(patientId).name + ' ' + patients.findOne(patientId).surname;
+        if (patientId) {
+            return patients.findOne(patientId).name + ' ' + patients.findOne(patientId).surname;
+        } else {
+            return "";
+        }
     },
 
     patientIdFixer: function(patientId) {
@@ -44,9 +48,21 @@ Template.form_visits.onRendered(function () {
       $('select').material_select();
     });
 
-    $('.anatomic-map').maphilight();
+    if (Router.current().params._id) {
+        $('.datepicker').val(visits.findOne(Router.current().params._id).visitDate);
+    }
 
-    $('.datepicker').val(visits.findOne(Router.current().params._id).visitDate);
+    $('img.anatomic-map').maphilight();
+
+});
+
+Template.form_visits.events ({
+
+    'click area#head': function () {
+        $('div.anatomic-map').remove();
+        $( '<img src="/image-map/male-mesh/head.png" class="anatomic-map" usemap="#male-full-body">' ).insertAfter( "input#input_anatomicalLocation" );
+        $('img.anatomic-map').maphilight();
+    }
 
 });
 
