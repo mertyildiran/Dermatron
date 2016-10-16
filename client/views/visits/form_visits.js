@@ -79,7 +79,7 @@ Template.form_visits.events ({
         $('div.anatomic-map').remove();
         $( '<img src="/image-map/male-mesh/full-body-back.png" class="anatomic-map" usemap="#male-full-body">' ).insertAfter( "input#input_anatomicalLocation" );
         $('img.anatomic-map').maphilight();
-        $('div.fixed-action-btn').css('bottom', '50px');
+        $('div.fixed-action-btn').css('bottom', '10px');
     },
 
     'click a#anatomicalLocationReset': function () {
@@ -87,7 +87,7 @@ Template.form_visits.events ({
         $('div.anatomic-map').remove();
         $( '<img src="/image-map/male-mesh/full-body.png" class="anatomic-map" usemap="#male-full-body">' ).insertAfter( "input#input_anatomicalLocation" );
         $('img.anatomic-map').maphilight();
-        $('div.fixed-action-btn').css('bottom', '50px');
+        $('div.fixed-action-btn').css('bottom', '10px');
     },
 
     // Horizontal FAB Buttons END
