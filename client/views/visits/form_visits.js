@@ -69,6 +69,11 @@ Template.form_visits.events ({
 
     // Horizontal FAB Buttons START
 
+    'click a#anatomicalLocationDone': function () {
+        $('div.anatomic-map').remove();
+        $('div.fixed-action-btn').css('bottom', '0px');
+    },
+
     'click a#anatomicalLocationBackside': function () {
         $('#input_anatomicalLocation').val('');
         $('div.anatomic-map').remove();
