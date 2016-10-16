@@ -1,3 +1,5 @@
+FORM_VISITS_GENDER = 'male';
+
 Template.form_visits.helpers ({
 
     patients: function() {
@@ -61,11 +63,42 @@ Template.form_visits.onRendered(function () {
 			images[i].src = preload.arguments[i]
 		}
 	}
+
     preload('/image-map/male-mesh/head.png', '/image-map/male-mesh/full-body-back.png', '/image-map/male-mesh/trunk.png', '/image-map/male-mesh/upper-limbs.png', '/image-map/male-mesh/anogenital-region.png', '/image-map/male-mesh/lower-limbs.png');
+
+    if ($('#input_patientId option:selected').val()) {
+        if ( patients.findOne($('#input_patientId option:selected').val()).gender == 'Female' ) {
+            FORM_VISITS_GENDER = 'female';
+        } else if ( patients.findOne($('#input_patientId option:selected').val()).gender == 'Male' ) {
+            FORM_VISITS_GENDER = 'male';
+        }
+    } else {
+        FORM_VISITS_GENDER = 'male';
+    }
+    $('#input_anatomicalLocation').val('');
+    $('div.anatomic-map').remove();
+    $( '<img src="/image-map/' + FORM_VISITS_GENDER + '-mesh/full-body.png" class="anatomic-map" usemap="#' + FORM_VISITS_GENDER + '-full-body">' ).insertAfter( "input#input_anatomicalLocation" );
+    $('img.anatomic-map').maphilight();
+    $('div.fixed-action-btn').css('bottom', '10px');
 
 });
 
 Template.form_visits.events ({
+
+    'change #input_patientId': function () {
+        if ($('#input_patientId option:selected').val()) {
+            if ( patients.findOne($('#input_patientId option:selected').val()).gender == 'Female' ) {
+                FORM_VISITS_GENDER = 'female';
+            } else if ( patients.findOne($('#input_patientId option:selected').val()).gender == 'Male' ) {
+                FORM_VISITS_GENDER = 'male';
+            }
+        }
+        $('#input_anatomicalLocation').val('');
+        $('div.anatomic-map').remove();
+        $( '<img src="/image-map/' + FORM_VISITS_GENDER + '-mesh/full-body.png" class="anatomic-map" usemap="#' + FORM_VISITS_GENDER + '-full-body">' ).insertAfter( "input#input_anatomicalLocation" );
+        $('img.anatomic-map').maphilight();
+        $('div.fixed-action-btn').css('bottom', '10px');
+    },
 
     // Horizontal FAB Buttons START
 
@@ -77,7 +110,7 @@ Template.form_visits.events ({
     'click a#anatomicalLocationBackside': function () {
         $('#input_anatomicalLocation').val('');
         $('div.anatomic-map').remove();
-        $( '<img src="/image-map/male-mesh/full-body-back.png" class="anatomic-map" usemap="#male-full-body-back">' ).insertAfter( "input#input_anatomicalLocation" );
+        $( '<img src="/image-map/' + FORM_VISITS_GENDER + '-mesh/full-body-back.png" class="anatomic-map" usemap="#' + FORM_VISITS_GENDER + '-full-body-back">' ).insertAfter( "input#input_anatomicalLocation" );
         $('img.anatomic-map').maphilight();
         $('div.fixed-action-btn').css('bottom', '10px');
     },
@@ -85,7 +118,7 @@ Template.form_visits.events ({
     'click a#anatomicalLocationReset': function () {
         $('#input_anatomicalLocation').val('');
         $('div.anatomic-map').remove();
-        $( '<img src="/image-map/male-mesh/full-body.png" class="anatomic-map" usemap="#male-full-body">' ).insertAfter( "input#input_anatomicalLocation" );
+        $( '<img src="/image-map/' + FORM_VISITS_GENDER + '-mesh/full-body.png" class="anatomic-map" usemap="#' + FORM_VISITS_GENDER + '-full-body">' ).insertAfter( "input#input_anatomicalLocation" );
         $('img.anatomic-map').maphilight();
         $('div.fixed-action-btn').css('bottom', '10px');
     },
@@ -97,7 +130,7 @@ Template.form_visits.events ({
     'click area.level1': function (event) {
         $('#input_anatomicalLocation').val(event.currentTarget.title);
         $('div.anatomic-map').remove();
-        $( '<img src="/image-map/male-mesh/' + event.currentTarget.id + '.png" class="anatomic-map" usemap="#male-' + event.currentTarget.id + '">' ).insertAfter( "input#input_anatomicalLocation" );
+        $( '<img src="/image-map/' + FORM_VISITS_GENDER + '-mesh/' + event.currentTarget.id + '.png" class="anatomic-map" usemap="#' + FORM_VISITS_GENDER + '-' + event.currentTarget.id + '">' ).insertAfter( "input#input_anatomicalLocation" );
         $('img.anatomic-map').maphilight();
     },
 
