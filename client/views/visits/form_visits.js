@@ -69,17 +69,17 @@ Template.form_visits.onRendered(function () {
     if ($('#input_patientId option:selected').val()) {
         if ( patients.findOne($('#input_patientId option:selected').val()).gender == 'Female' ) {
             FORM_VISITS_GENDER = 'female';
+            $('#input_anatomicalLocation').val('');
+            $('div.anatomic-map').remove();
+            $( '<img src="/image-map/' + FORM_VISITS_GENDER + '-mesh/full-body.png" class="anatomic-map" usemap="#' + FORM_VISITS_GENDER + '-full-body">' ).insertAfter( "input#input_anatomicalLocation" );
+            $('img.anatomic-map').maphilight();
+            $('div.fixed-action-btn').css('bottom', '10px');
         } else if ( patients.findOne($('#input_patientId option:selected').val()).gender == 'Male' ) {
             FORM_VISITS_GENDER = 'male';
         }
     } else {
         FORM_VISITS_GENDER = 'male';
     }
-    $('#input_anatomicalLocation').val('');
-    $('div.anatomic-map').remove();
-    $( '<img src="/image-map/' + FORM_VISITS_GENDER + '-mesh/full-body.png" class="anatomic-map" usemap="#' + FORM_VISITS_GENDER + '-full-body">' ).insertAfter( "input#input_anatomicalLocation" );
-    $('img.anatomic-map').maphilight();
-    $('div.fixed-action-btn').css('bottom', '10px');
 
 });
 
