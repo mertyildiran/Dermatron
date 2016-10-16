@@ -77,7 +77,7 @@ Template.form_visits.events ({
     'click a#anatomicalLocationBackside': function () {
         $('#input_anatomicalLocation').val('');
         $('div.anatomic-map').remove();
-        $( '<img src="/image-map/male-mesh/full-body-back.png" class="anatomic-map" usemap="#male-full-body">' ).insertAfter( "input#input_anatomicalLocation" );
+        $( '<img src="/image-map/male-mesh/full-body-back.png" class="anatomic-map" usemap="#male-full-body-back">' ).insertAfter( "input#input_anatomicalLocation" );
         $('img.anatomic-map').maphilight();
         $('div.fixed-action-btn').css('bottom', '10px');
     },
@@ -101,12 +101,17 @@ Template.form_visits.events ({
         $('img.anatomic-map').maphilight();
     },
 
+    'click area.level1-back': function (event) {
+        $('#input_anatomicalLocation').val(event.currentTarget.title);
+        $('div.anatomic-map').remove();
+        $('div.fixed-action-btn').css('bottom', '0px');
+    },
+
     'click area.level2': function (event) {
         $('#input_anatomicalLocation').val($('#input_anatomicalLocation').val() + ' > ' + event.currentTarget.title);
         $('div.anatomic-map').remove();
         $('div.fixed-action-btn').css('bottom', '0px');
     }
-
     // Generic area click events END
 
 });
