@@ -19,9 +19,3 @@ Meteor.publish('diseases', function(searchText) {
     }
     return diseases.find( { $or: [ {createdAt: { $regex: searchText }}, {name: { $regex: searchText }}, {description: { $regex: searchText }},  ] }, {} );
 });
-Meteor.publish('medicines', function(searchText) {
-    if (!searchText) {
-        return medicines.find();
-    }
-    return medicines.find( { $or: [ {createdAt: { $regex: searchText }}, {name: { $regex: searchText }}, {description: { $regex: searchText }}, {brand: { $regex: searchText }},  ] }, {} );
-});
