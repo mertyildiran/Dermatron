@@ -54,8 +54,6 @@ Template.form_visits.onRendered(function () {
         $('.datepicker').val(visits.findOne(Router.current().params._id).visitDate);
     }
 
-    $('img.anatomic-map').maphilight();
-
     var images = new Array()
 	function preload() {
 		for (i = 0; i < preload.arguments.length; i++) {
@@ -69,17 +67,16 @@ Template.form_visits.onRendered(function () {
     if ($('#input_patientId option:selected').val()) {
         if ( patients.findOne($('#input_patientId option:selected').val()).gender == 'Female' ) {
             FORM_VISITS_GENDER = 'female';
-            $('#input_anatomicalLocation').val('');
-            $('div.anatomic-map').remove();
-            $( '<img src="/image-map/' + FORM_VISITS_GENDER + '-mesh/full-body.png" class="anatomic-map" usemap="#' + FORM_VISITS_GENDER + '-full-body">' ).insertAfter( "input#input_anatomicalLocation" );
-            $('img.anatomic-map').maphilight();
-            $('div.fixed-action-btn').css('bottom', '10px');
         } else if ( patients.findOne($('#input_patientId option:selected').val()).gender == 'Male' ) {
             FORM_VISITS_GENDER = 'male';
         }
     } else {
         FORM_VISITS_GENDER = 'male';
     }
+
+    $( '<img src="/image-map/' + FORM_VISITS_GENDER + '-mesh/full-body.png" class="anatomic-map" usemap="#' + FORM_VISITS_GENDER + '-full-body">' ).insertAfter( "input#input_anatomicalLocation" );
+
+    $('img.anatomic-map').maphilight();
 
 });
 
@@ -145,6 +142,7 @@ Template.form_visits.events ({
         $('div.anatomic-map').remove();
         $('div.fixed-action-btn').css('bottom', '0px');
     }
+    
     // Generic area click events END
 
 });
