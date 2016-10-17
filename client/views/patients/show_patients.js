@@ -1,9 +1,9 @@
 Template.show_patients.helpers ({
 
     // controllers
-    //patients: function() {
-        //
-    //}
+    totalVisits: function(_id) {
+        return visits.find({ patientId: _id }).count();
+    }
 
 });
 

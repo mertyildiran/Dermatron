@@ -15,6 +15,10 @@ Template.patients.helpers ({
 
     invokeBeforeLoadPatients: function () {
         searchTextPatients.set('');
+    },
+
+    totalVisits: function(_id) {
+        return visits.find({ patientId: _id }).count();
     }
 
 });
