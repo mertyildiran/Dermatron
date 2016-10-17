@@ -24,15 +24,24 @@ Template.index.onRendered(function () {
 	];
 
 	scheduler.config.full_day = true;
-    //scheduler.config.first_hour = 7;
-    //scheduler.config.last_hour = 19;
+    scheduler.config.first_hour = 7;
+    scheduler.config.last_hour = 19;
 
     scheduler.xy.scale_height=30;
 
     scheduler.config.dblclick_create = false
+    scheduler.config.readonly = "true"
 
     scheduler.config.xml_date="%Y-%m-%d %H:%i";
     scheduler.init("scheduler_here", new Date());
     scheduler.load("./visits.xml");
+
+});
+
+Template.index.events ({
+
+    'click div.dhx_cal_event': function (event) {
+        Router.go('/visits/' + event.currentTarget.attributes[0].value);
+    },
 
 });
