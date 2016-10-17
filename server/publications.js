@@ -13,9 +13,3 @@ Meteor.publish('visits', function(searchText) {
     }
     return visits.find( { $or: [ {createdAt: { $regex: searchText }}, {patientId: { $regex: searchText }}, {visitDate: { $regex: searchText }}, {visitTime: { $regex: searchText }}, {lesion: { $regex: searchText }}, {symptoms: { $regex: searchText }}, {pathophysiology: { $regex: searchText }}, {anatomicalLocation: { $regex: searchText }}, {diagnosis: { $regex: searchText }}, {status: { $regex: searchText }},  ] }, {} );
 });
-Meteor.publish('diseases', function(searchText) {
-    if (!searchText) {
-        return diseases.find();
-    }
-    return diseases.find( { $or: [ {createdAt: { $regex: searchText }}, {name: { $regex: searchText }}, {description: { $regex: searchText }},  ] }, {} );
-});

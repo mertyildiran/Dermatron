@@ -9,8 +9,3 @@ searchTextVisits.set('');
 Tracker.autorun(function() {
     Meteor.subscribe('visits', searchTextVisits.get());
 });
-searchTextDiseases = new ReactiveVar();
-searchTextDiseases.set('');
-Tracker.autorun(function() {
-    Meteor.subscribe('diseases', searchTextDiseases.get());
-});
