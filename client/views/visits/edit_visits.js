@@ -19,7 +19,8 @@ Template.edit_visits.events ({
             lesion: $('#input_lesion').val(),
             symptoms: $('#input_symptoms').val(),
             pathophysiology: $('#input_pathophysiology').val(),
-            treatment: tpl.find('#input_treatment').value,
+            anatomicalLocation: tpl.find('#input_anatomicalLocation').value,
+            diagnosis: $('#input_diagnosis').val(),
         };
 
         // the method returns the new object id after saving it into the db

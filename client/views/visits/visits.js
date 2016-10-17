@@ -111,8 +111,11 @@ Template.visits.events ({
         if ($('#header-pathophysiology').text()[$('#header-pathophysiology').text().length - 1] == '▲' || $('#header-pathophysiology').text()[$('#header-pathophysiology').text().length - 1] == '▼') {
             $('#header-pathophysiology').text($('#header-pathophysiology').text().slice(0,-1));
         }
-        if ($('#header-treatment').text()[$('#header-treatment').text().length - 1] == '▲' || $('#header-treatment').text()[$('#header-treatment').text().length - 1] == '▼') {
-            $('#header-treatment').text($('#header-treatment').text().slice(0,-1));
+        if ($('#header-anatomicalLocation').text()[$('#header-anatomicalLocation').text().length - 1] == '▲' || $('#header-anatomicalLocation').text()[$('#header-anatomicalLocation').text().length - 1] == '▼') {
+            $('#header-anatomicalLocation').text($('#header-anatomicalLocation').text().slice(0,-1));
+        }
+        if ($('#header-diagnosis').text()[$('#header-diagnosis').text().length - 1] == '▲' || $('#header-diagnosis').text()[$('#header-diagnosis').text().length - 1] == '▼') {
+            $('#header-diagnosis').text($('#header-diagnosis').text().slice(0,-1));
         }
         if ($('#header-status').text()[$('#header-status').text().length - 1] == '▲' || $('#header-status').text()[$('#header-status').text().length - 1] == '▼') {
             $('#header-status').text($('#header-status').text().slice(0,-1));
@@ -207,14 +210,26 @@ Template.visits.events ({
         }
     },
 
-    'click #header-treatment': function () {
-        if (options['sort']['treatment'] == -1) {
-            $('#header-treatment').text('treatment▲');
-            options['sort'] = { treatment: 1};
+    'click #header-anatomicalLocation': function () {
+        if (options['sort']['anatomicalLocation'] == -1) {
+            $('#header-anatomicalLocation').text('anatomicalLocation▲');
+            options['sort'] = { anatomicalLocation: 1};
             _deps.changed();
         } else {
-            $('#header-treatment').text('treatment▼');
-            options['sort'] = { treatment: -1};
+            $('#header-anatomicalLocation').text('anatomicalLocation▼');
+            options['sort'] = { anatomicalLocation: -1};
+            _deps.changed();
+        }
+    },
+
+    'click #header-diagnosis': function () {
+        if (options['sort']['diagnosis'] == -1) {
+            $('#header-diagnosis').text('diagnosis▲');
+            options['sort'] = { diagnosis: 1};
+            _deps.changed();
+        } else {
+            $('#header-diagnosis').text('diagnosis▼');
+            options['sort'] = { diagnosis: -1};
             _deps.changed();
         }
     },

@@ -9,7 +9,7 @@ if (visits.find().count() === 0) {
             lesion: 'this is a long text ' + visits_index,
             symptoms: 'this is a long text ' + visits_index,
             pathophysiology: 'this is a long text ' + visits_index,
-            treatment: 'this is a long text ' + visits_index,
+            anatomicalLocation: 'this is a long text ' + visits_index,
             status: 'Option 1'
         });
     }
