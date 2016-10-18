@@ -40,7 +40,6 @@ footer {
 
 .main-container {
     margin-top: 80px;
-    margin-bottom: 100px;
     height: 100%;
 }
 
@@ -49,8 +48,21 @@ footer {
     margin-left: 5%;
     width: 80%;
     max-width: 100%;
+    margin-bottom: 140px;
 }
 
 iframe {
     -webkit-transform: scale(1.75);
+}
+
+.dhx_scale_bar, .dhx_cal_today_button {
+    font-size: 18px;
+}
+
+span.dhx_scale_h {
+    font-size: 26px;
+}
+
+span.dhx_scale_m {
+    font-size: 13px;
 }

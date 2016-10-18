@@ -1404,7 +1404,7 @@ div.dhx_menu_head, div.dhx_menu_icon {
     color: #454544;
     font-family: "Segoe UI", Arial;
     font-weight: lighter;
-    font-size: 22px;
+    font-size: 26px;
     text-align: center;
     top: 14px;
     position: absolute;
@@ -1436,7 +1436,7 @@ div.dhx_menu_head, div.dhx_menu_icon {
 }
 .dhx_cal_tab {
     color: #5780AD;
-    font-size: 13px;
+    font-size: 18px;
     font-weight: bolder;
     padding-top: 0;
     text-decoration: none;
