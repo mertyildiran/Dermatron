@@ -25,6 +25,7 @@ Template.new_patients.events ({
             email: tpl.find('#input_email').value,
             phone: tpl.find('#input_phone').value,
             address: tpl.find('#input_address').value,
+            dermatologicHistory: tpl.find('#input_dermatologicHistory').value,
         };
 
         // the method returns the new object id after saving it into the db
