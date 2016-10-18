@@ -47,4 +47,10 @@ footer {
 .container {
     margin: 0;
     margin-left: 5%;
+    width: 80%;
+    max-width: 100%;
+}
+
+iframe {
+    -webkit-transform: scale(1.75);
 }
