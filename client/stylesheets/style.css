@@ -66,3 +66,8 @@ span.dhx_scale_h {
 span.dhx_scale_m {
     font-size: 13px;
 }
+
+.dhx_body {
+    font-size: 16px !important;
+    height: 14px !important;
+}
