@@ -35,6 +35,13 @@ Template.index.onRendered(function () {
     scheduler.config.hour_size_px = 176;
 
     scheduler.config.xml_date="%Y-%m-%d %H:%i";
+
+    scheduler.templates.week_date_class=function(date,today){
+		if (date.getDay()==0)
+			return "weekday";
+		return "";
+	};
+
     scheduler.init("scheduler_here", new Date());
     scheduler.load("./visits.xml");
 

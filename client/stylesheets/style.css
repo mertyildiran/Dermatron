@@ -71,3 +71,16 @@ span.dhx_scale_m {
     font-size: 16px !important;
     height: 14px !important;
 }
+
+.dhx_scale_holder_now.weekday, .dhx_scale_holder.weekday{
+	background-image:url(./imgs_flat/week_bg.png);
+}
+
+table, div.panel-body, .btn, label {
+    font-size: 18px;
+}
+
+td, th {
+    padding: 20px 20px;
+    min-width: 150px;
+}
