@@ -23,4 +23,5 @@ iron:router
 fourseven:scss
 poetic:materialize-scss
 dhtmlx:scheduler
-mdg:camera
+less
+mdg:camera@1.4.1
