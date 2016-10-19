@@ -66,6 +66,13 @@
 
         </div>
         <div class="form-group">
+            <label for="input_image">image</label>
+            <br>
+            <a class="btn btn-default btn-xs" id="captureButton" nohref>Take a photo</a> <i style="color: #6e6e6e;">* Make sure you have connected your Dermatoscope via USB as primary camera</i>
+            <br>
+            <img id="capturedImage" src=""/>
+        </div>
+        <div class="form-group">
             <label for="input_diagnosis">diagnosis</label>
             <select class="form-control multiple-select" id="input_diagnosis" multiple>
                 <option value="{{diagnosis}}" selected>{{diagnosis}}</option>

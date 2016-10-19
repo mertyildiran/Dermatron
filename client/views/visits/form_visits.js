@@ -141,8 +141,19 @@ Template.form_visits.events ({
         $('#input_anatomicalLocation').val($('#input_anatomicalLocation').val() + ' > ' + event.currentTarget.title);
         $('div.anatomic-map').remove();
         $('div.fixed-action-btn').css('bottom', '0px');
-    }
-    
+    },
+
     // Generic area click events END
+
+    'click #captureButton': function () {
+        var cameraOptions = {
+          width: 800,
+          height: 600
+        };
+
+        MeteorCamera.getPicture(cameraOptions, function (error, data) {
+          $('img#capturedImage').attr('src', data);
+        });
+    }
 
 });
