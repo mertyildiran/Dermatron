@@ -32,7 +32,7 @@ Template.index.onRendered(function () {
     scheduler.config.dblclick_create = false
     scheduler.config.readonly = "true"
 
-    scheduler.config.hour_size_px = 176;
+    scheduler.config.hour_size_px = 528;
 
     scheduler.config.xml_date="%Y-%m-%d %H:%i";
 

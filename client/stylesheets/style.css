@@ -76,11 +76,19 @@ span.dhx_scale_m {
 	background-image:url(./imgs_flat/week_bg.png);
 }
 
-table, div.panel-body, .btn, label {
+table, div.panel-body, .btn, label, form {
     font-size: 18px;
 }
 
 td, th {
     padding: 20px 20px;
     min-width: 150px;
+}
+
+label {
+    color: #000000;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #6e6e6e;
 }
