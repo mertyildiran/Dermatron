@@ -45,3 +45,15 @@ $('#pathos > div > div > div > div > ul > li > label').each(function(index) {
 $('#diagnosis label').each(function(index) {
   result += '<option value="' + $(this).text() + '">' + $(this).text() + '</option>\n';
 });
+
+// Multiple Select Seperator Change Attempt
+
+'change select': function(event) {
+    //console.log($(event.currentTarget));
+    var string = $("option:selected", event.currentTarget).map(function () {
+        return $(this).text()
+    }).get().join(" | ");
+    console.log(string);
+    //$(event.currentTarget).val($(event.currentTarget).val() + string);
+    //console.log($(event.currentTarget).val());
+}

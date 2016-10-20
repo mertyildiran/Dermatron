@@ -77,7 +77,7 @@ span.dhx_scale_m {
 	background-image:url(./imgs_flat/week_bg.png);
 }
 
-table, div.panel-body, .btn, label, form, input, select, li, span {
+table, div.panel-body, .btn, label, form, input, select, li > span {
     font-size: 18px !important;
 }
 

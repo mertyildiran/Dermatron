@@ -150,7 +150,40 @@ Template.form_visits.events ({
         };
 
         MeteorCamera.getPicture(cameraOptions, function (error, data) {
-          $('img#capturedImage').attr('src', data);
+            $('img#capturedImage').attr('src', data);
+            if ($('#input_lesion').val() && $('#input_symptoms').val() && $('#input_pathophysiology').val() && $('#input_anatomicalLocation').val()) {
+
+                var lesionParams = $('#input_lesion').val().toString().split(',');
+                var lesionString = 'lesions=' + LESIONS_DICT[lesionParams[0]];
+                lesionParams.shift();
+                lesionParams.forEach(function(element, index, array) {
+                    lesionString += '|' + LESIONS_DICT[element];
+                });
+
+                var symptomsParams = $('#input_symptoms').val().toString().split(',');
+                var symptomsString = 'symptoms=' + SYMPTOMS_DICT[symptomsParams[0]];
+                symptomsParams.shift();
+                symptomsParams.forEach(function(element, index, array) {
+                    symptomsString += '|' + SYMPTOMS_DICT[element];
+                });
+
+                var pathosParams = $('#input_pathophysiology').val().toString().split(',');
+                var pathosString = 'pathos=' + PATHOS_DICT[pathosParams[0]];
+                pathosParams.shift();
+                pathosParams.forEach(function(element, index, array) {
+                    pathosString += '|' + PATHOS_DICT[element];
+                });
+
+                var anatomicalParams = $('#input_anatomicalLocation').val().toString().split(',');
+                var anatomicalString = 'localization=' + ANATOMICAL_DICT[anatomicalParams[0]];
+                anatomicalParams.shift();
+                anatomicalParams.forEach(function(element, index, array) {
+                    anatomicalString += '|' + ANATOMICAL_DICT[element];
+                });
+                var dermQuestUrl = 'https://www.dermquest.com/image-library/image-search/#image-search/' + lesionString + '&' + symptomsString + '&' + pathosString + '&' + anatomicalString + '&page=1';
+
+                $('div#suggestions').html('suggestions<br>' + dermQuestUrl);
+            }
         });
     }
 
