@@ -28,6 +28,15 @@ $('#body-part-selector label').each(function(index) {
     my_dict[key] = value;
 });
 
+$('#pathos > div > div > div > div > ul > li').each(function(index) {
+    key = $(this.children[1]).text();
+    value = $(this.children[1]).attr('for').substring(6);
+    my_dict[key] = value;
+    $(this.children[2]).find('li').each(function(index) {
+        my_dict[key] += '|' + $(this).attr('data-facet-id');
+    });
+});
+
 // New Select
 
 $('#lesions > div > div > div > div > ul > li > label').each(function(index) {
