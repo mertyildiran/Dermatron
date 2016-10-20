@@ -1,5 +1,3 @@
-FORM_VISITS_GENDER = 'male';
-
 Template.form_visits.helpers ({
 
     patients: function() {
