@@ -185,9 +185,19 @@ Template.form_visits.events ({
                 $('div#suggestions').html('suggestions<br>' + dermQuestUrl);
 
                 Meteor.call('cross_origin_request', dermQuestUrl, function(error, result) {
-                    console.log(result);
+                    var dJson = JSON.parse(result.content);
+                    var largeImageUrl = 'https://www.dermquest.com/imagelibrary/large/'
+                    dJson['Results'].forEach(function(element, index, array) {
+                        console.log(element);
+                        console.log(element.Name);
+                        console.log(element.FileName);
+                        console.log(element.diagnosis[0].Id);
+                        console.log(element.Description);
+                        console.log(element.Gender);
+                        console.log(element.DarkSkin);
+                    });
                 });
-                
+
             }
         });
     }
