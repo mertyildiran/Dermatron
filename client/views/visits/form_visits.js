@@ -180,18 +180,14 @@ Template.form_visits.events ({
                 anatomicalParams.forEach(function(element, index, array) {
                     anatomicalString += '|' + ANATOMICAL_DICT[element];
                 });
-                var dermQuestUrl = 'https://www.dermquest.com/image-library/image-search/#image-search/' + lesionString + '&' + symptomsString + '&' + pathosString + '&' + anatomicalString + '&page=1';
+                var dermQuestUrl = 'https://www.dermquest.com/Services/imageData.ashx?' + lesionString + '&' + symptomsString + '&' + pathosString + '&' + anatomicalString + '&page=1';
 
                 $('div#suggestions').html('suggestions<br>' + dermQuestUrl);
 
                 Meteor.call('cross_origin_request', dermQuestUrl, function(error, result) {
                     console.log(result);
                 });
-
-                /*$.get( dermQuestUrl, function( data ) {
-                    console.log(data);
-                    alert( "Load was performed." );
-                });*/
+                
             }
         });
     }
