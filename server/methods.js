@@ -42,4 +42,10 @@ Meteor.methods({
         return patientsId;
     },
 
+    cross_origin_request: function (url) {
+        process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0"; // Replace this line with rejectUnauthorized: false,
+        var result = HTTP.call("GET", url);
+        return result;
+    },
+
 });
