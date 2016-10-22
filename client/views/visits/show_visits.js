@@ -20,6 +20,30 @@ Template.show_visits.helpers ({
       } else {
           return "Now";
       }
+  },
+
+  placeImage: function(data) {
+      if (data) {
+          var image = '<figure> \
+              <img alt="This visit" src="' + data + '" /> \
+              <figcaption><p>This visit</p></figcaption> \
+          </figure>';
+          return image;
+      } else {
+          return '';
+      }
+  },
+
+  previousImage: function(givenId, date) {
+      if (givenId) {
+          var previousVisitImage = '<figure> \
+              <img alt="Previous visit" src="' + visits.findOne({ patientId: givenId, visitDate: {$lt: date} }, { sort: { visitDate: -1, visitTime: 1} }).image + '" /> \
+              <figcaption><p>Previous visit</p></figcaption> \
+          </figure>';
+          return previousVisitImage;
+      } else {
+          return '';
+      }
   }
 
 });

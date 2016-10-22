@@ -20,12 +20,7 @@
                     <p><strong>anatomicalLocation :</strong><br>
                     {{anatomicalLocation}}</p>
                     <p><strong>image :</strong><br>
-                    <div id="capturedImage">
-                        <figure>
-                            <img alt="Your Image" src="{{image}}" />
-                            <figcaption><p>Your Image</p></figcaption>
-                        </figure>
-                    </div></p>
+                    <div id="capturedImage">{{{placeImage image}}}{{{previousImage patientId visitDate}}}</div></p>
                     <p><strong>diagnosis :</strong><br>
                     {{diagnosis}}</p>
                     <p><strong>prescription :</strong><br>

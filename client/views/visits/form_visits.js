@@ -28,10 +28,22 @@ Template.form_visits.helpers ({
     placeImage: function(data) {
         if (data) {
             var image = '<figure> \
-                <img alt="Your Image" src="' + data + '" /> \
-                <figcaption><p>Your Image</p></figcaption> \
+                <img alt="This visit" src="' + data + '" /> \
+                <figcaption><p>This visit</p></figcaption> \
             </figure>';
             return image;
+        } else {
+            return '';
+        }
+    },
+
+    previousImage: function(givenId, date) {
+        if (givenId) {
+            var previousVisitImage = '<figure> \
+                <img alt="Previous visit" src="' + visits.findOne({ patientId: givenId, visitDate: {$lt: date} }, { sort: { visitDate: -1, visitTime: 1} }).image + '" /> \
+                <figcaption><p>Previous visit</p></figcaption> \
+            </figure>';
+            return previousVisitImage;
         } else {
             return '';
         }
@@ -163,10 +175,24 @@ Template.form_visits.events ({
 
         MeteorCamera.getPicture(cameraOptions, function (error, data) {
             var capturedImage = '<figure> \
-                <img alt="Your Image" src="' + data + '" /> \
-                <figcaption><p>Your Image</p></figcaption> \
+                <img alt="This visit" src="' + data + '" /> \
+                <figcaption><p>This visit</p></figcaption> \
             </figure>';
             $('div#capturedImage').html(capturedImage);
+
+            try {
+                if ($('#input_patientId').val()) {
+                    //var lastVisitImage = visits.findOne({ patientId: $('#input_patientId').val() }, { sort: { visitDate: -1, visitTime: 1} }).image;
+                    var lastVisitImage = '<figure style="display: none;"> \
+                        <img alt="Last Visit" src="' + visits.findOne({ patientId: $('#input_patientId').val() }, { sort: { visitDate: -1, visitTime: 1} }).image + '" /> \
+                        <figcaption><p>Last Visit</p></figcaption> \
+                    </figure>';
+                    $('div#capturedImage').append(lastVisitImage);
+                    $('figure').show('slow');
+                }
+            }
+            catch(err) {
+            }
 
             var lesionString = '';
             var symptomsString = '';
@@ -218,13 +244,14 @@ Template.form_visits.events ({
                 var largeImageUrl = 'https://www.dermquest.com/imagelibrary/large/'
                 var threeSample = _.sample(dJson['Results'], 3);
                 threeSample.forEach(function(element, index, array) {
-                    suggestionsDermQuest += '<figure> \
+                    suggestionsDermQuest += '<figure style="display: none;"> \
                         <img alt="' + DIAGNOSES_DICT_SWAP[element.diagnosis[0].Id] + '" value="' + element.diagnosis[0].Id + '" src="' + largeImageUrl + element.FileName + '" /> \
                         <figcaption><p>' + DIAGNOSES_DICT_SWAP[element.diagnosis[0].Id] + '</p></figcaption> \
                     </figure>';
                 });
                 if (threeSample != '') {
                     $('div#dermquest-suggestions').html(suggestionsDermQuest);
+                    $('figure').show('slow');
                 }
             });
 

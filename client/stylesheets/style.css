@@ -149,7 +149,7 @@ img#capturedImage {
     background-color: #2bbbad;
 }
 
-/* DermQuest Suggestions */
+/* Figures */
 
 figure {
   display: inline-block;
@@ -164,15 +164,18 @@ div#dermquest-suggestions figure {
   margin: 0;
   margin-right: 10px;
   cursor: pointer;
+  box-shadow: 0 0 50px #ee6e73;
 }
 
 div#capturedImage figure {
   border: solid 5px #26a69a;
-  width: 800px;
-  height: 600px;
+  width: 600px;
+  height: 450px;
   margin: 0;
   margin-right: 10px;
   cursor: crosshair;
+  /*box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);*/
+  box-shadow: 0 0 50px #26a69a;
 }
 
 figcaption {
@@ -212,4 +215,8 @@ div#dermquest-suggestions figure:hover img {
 	transform: scale(1.4);
 }
 
-/* DermQuest Suggestions */
+/* Figures */
+
+div.anatomic-map {
+    box-shadow: 0 0 50px #000000;
+}
