@@ -149,19 +149,15 @@ img#capturedImage {
     background-color: #2bbbad;
 }
 
-div#dermquest-suggestions img {
-    width: 400px;
-    -webkit-transition: all 300ms;
-	-moz-transition: all 300ms;
-	transition: all 300ms;
-}
-
 /* DermQuest Suggestions */
 
-div#dermquest-suggestions figure {
+figure {
   display: inline-block;
   position: relative;
   overflow: hidden;
+}
+
+div#dermquest-suggestions figure {
   border: solid 5px #ee6e73;
   width: 400px;
   height: 263px;
@@ -170,7 +166,16 @@ div#dermquest-suggestions figure {
   cursor: pointer;
 }
 
-div#dermquest-suggestions figcaption {
+div#capturedImage figure {
+  border: solid 5px #26a69a;
+  width: 800px;
+  height: 600px;
+  margin: 0;
+  margin-right: 10px;
+  cursor: crosshair;
+}
+
+figcaption {
   position: absolute;
   background: rgba(0,0,0,0.5);
   color: white;
@@ -184,17 +189,17 @@ div#dermquest-suggestions figcaption {
   -o-transition:      all 0.6s ease;
 }
 
-div#dermquest-suggestions figcaption p {
-    margin-bottom: 15px;
+figcaption p {
+    margin-bottom: 15px !important;
     font-weight: bold;
 }
 
-div#dermquest-suggestions figure:hover figcaption {
+figure:hover figcaption {
   opacity: 1;
   left: 0;
 }
 
-div#dermquest-suggestions img {
+figure img {
     max-width: 100%;
     -webkit-transition: all 300ms;
 	-moz-transition: all 300ms;

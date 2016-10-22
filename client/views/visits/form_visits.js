@@ -23,6 +23,18 @@ Template.form_visits.helpers ({
         } else {
             return patientId
         }
+    },
+
+    placeImage: function(data) {
+        if (data) {
+            var image = '<figure> \
+                <img alt="Your Image" src="' + data + '" /> \
+                <figcaption><p>Your Image</p></figcaption> \
+            </figure>';
+            return image;
+        } else {
+            return '';
+        }
     }
 
 });
@@ -150,7 +162,11 @@ Template.form_visits.events ({
         };
 
         MeteorCamera.getPicture(cameraOptions, function (error, data) {
-            $('img#capturedImage').attr('src', data);
+            var capturedImage = '<figure> \
+                <img alt="Your Image" src="' + data + '" /> \
+                <figcaption><p>Your Image</p></figcaption> \
+            </figure>';
+            $('div#capturedImage').html(capturedImage);
 
             var lesionString = '';
             var symptomsString = '';
@@ -207,7 +223,9 @@ Template.form_visits.events ({
                         <figcaption><p>' + DIAGNOSES_DICT_SWAP[element.diagnosis[0].Id] + '</p></figcaption> \
                     </figure>';
                 });
-                $('div#dermquest-suggestions').html(suggestionsDermQuest);
+                if (threeSample != '') {
+                    $('div#dermquest-suggestions').html(suggestionsDermQuest);
+                }
             });
 
         });

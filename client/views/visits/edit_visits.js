@@ -20,7 +20,7 @@ Template.edit_visits.events ({
             symptoms: $('#input_symptoms').val(),
             pathophysiology: $('#input_pathophysiology').val(),
             anatomicalLocation: tpl.find('#input_anatomicalLocation').value,
-            image: $('img#capturedImage').attr('src'),
+            image: $('div#capturedImage figure img').attr('src'),
             diagnosis: $('#input_diagnosis').val(),
             prescription: $('#input_prescription').val(),
         };
