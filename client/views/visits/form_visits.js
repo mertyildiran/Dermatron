@@ -181,21 +181,18 @@ Template.form_visits.events ({
                     anatomicalString += '|' + ANATOMICAL_DICT[element];
                 });
                 var dermQuestUrl = 'https://www.dermquest.com/Services/imageData.ashx?' + lesionString + '&' + symptomsString + '&' + pathosString + '&' + anatomicalString + '&page=1';
-
-                $('div#suggestions').html('suggestions<br>' + dermQuestUrl);
+                var suggestionsDermQuest = '<br><i>diagnosis suggestions from DermQuest.com:</i><br>';
 
                 Meteor.call('cross_origin_request', dermQuestUrl, function(error, result) {
                     var dJson = JSON.parse(result.content);
                     var largeImageUrl = 'https://www.dermquest.com/imagelibrary/large/'
                     dJson['Results'].forEach(function(element, index, array) {
-                        console.log(element);
-                        console.log(element.Name);
-                        console.log(element.FileName);
-                        console.log(element.diagnosis[0].Id);
-                        console.log(element.Description);
-                        console.log(element.Gender);
-                        console.log(element.DarkSkin);
+                        suggestionsDermQuest += '<figure> \
+                            <img alt="' + DIAGNOSES_DICT_SWAP[element.diagnosis[0].Id] + '" value="' + element.diagnosis[0].Id + '" src="' + largeImageUrl + element.FileName + '" /> \
+                            <figcaption><p>' + DIAGNOSES_DICT_SWAP[element.diagnosis[0].Id] + '</p></figcaption> \
+                        </figure>';
                     });
+                    $('div#dermquest-suggestions').html(suggestionsDermQuest);
                 });
 
             }
