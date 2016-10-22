@@ -186,6 +186,7 @@ div#dermquest-suggestions figcaption {
 
 div#dermquest-suggestions figcaption p {
     margin-bottom: 15px;
+    font-weight: bold;
 }
 
 div#dermquest-suggestions figure:hover figcaption {

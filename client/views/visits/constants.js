@@ -266,7 +266,7 @@ ANATOMICAL_DICT = {
       "Trunk > Chest": "108018",
       "Trunk > Decollete": "108019",
       "Trunk > Submammary": "108021",
-      "Trunk > Mammary Areolae": "108022",
+      "Trunk > Mammary Areola": "108022",
       "Trunk > Umbilicus": "108023",
       "Trunk > Shoulder": "108037",
   "Lower Limbs": "108039",
