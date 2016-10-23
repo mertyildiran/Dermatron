@@ -14,14 +14,14 @@
             <input type="date" class="form-control datepicker"
                 placeholder="Date"
                 id="input_visitDate"
-                value="{{visitDate}}">
+                value="{{visitDate visitDateTime}}">
         </div>
         <div class="form-group">
             <label for="input_visitTime">visitTime</label>
             <input type="time" class="form-control timepicker"
                 placeholder="Time"
                 id="input_visitTime"
-                value="{{visitTime}}">
+                value="{{visitTime visitDateTime}}">
         </div>
         <div class="form-group">
             <label for="input_lesion">lesion</label>
@@ -279,7 +279,7 @@
             <br>
             <a class="btn btn-default btn-xs" id="captureButton" nohref>Take a photo</a> <i style="color: #6e6e6e;">* Make sure you have connected your Dermatoscope via USB as the primary camera</i>
             <br>
-            <div id="capturedImage">{{{placeImage image}}}{{{previousImage patientId visitDate}}}</div>
+            <div id="capturedImage">{{{placeImage image}}}{{{previousImage patientId visitDateTime}}}</div>
             <br>
             <div id="dermquest-suggestions"></div>
             <br>

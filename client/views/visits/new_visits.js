@@ -14,8 +14,7 @@ Template.new_visits.events ({
 
         var new_visits = {
             patientId: tpl.find('#input_patientId').value,
-            visitDate: tpl.find('#input_visitDate').value,
-            visitTime: tpl.find('#input_visitTime').value,
+            visitDateTime: tpl.find('#input_visitDate').value + ' ' + tpl.find('#input_visitTime').value,
             lesion: $('#input_lesion').val(),
             symptoms: $('#input_symptoms').val(),
             pathophysiology: $('#input_pathophysiology').val(),

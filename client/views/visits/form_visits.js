@@ -25,6 +25,18 @@ Template.form_visits.helpers ({
         }
     },
 
+    visitDate: function(visitDateTime) {
+        if (visitDateTime) {
+            return visitDateTime.split(/ /)[0];
+        }
+    },
+
+    visitTime: function(visitDateTime) {
+        if (visitDateTime) {
+            return visitDateTime.split(/ /)[1];
+        }
+    },
+
     placeImage: function(data) {
         if (data) {
             var image = '<figure> \
@@ -37,10 +49,10 @@ Template.form_visits.helpers ({
         }
     },
 
-    previousImage: function(givenId, date) {
+    previousImage: function(givenId, dateTime) {
         if (givenId) {
             var previousVisitImage = '<figure> \
-                <img alt="Previous visit" src="' + visits.findOne({ patientId: givenId, visitDate: {$lt: date} }, { sort: { visitDate: -1, visitTime: 1} }).image + '" /> \
+                <img alt="Previous visit" src="' + visits.findOne({ patientId: givenId, visitDateTime: {$lt: dateTime} }, { sort: { visitDateTime: -1 } }).image + '" /> \
                 <figcaption><p>Previous visit</p></figcaption> \
             </figure>';
             return previousVisitImage;
@@ -73,7 +85,7 @@ Template.form_visits.onRendered(function () {
     });
 
     if (Router.current().params._id) {
-        $('.datepicker').val(visits.findOne(Router.current().params._id).visitDate);
+        $('.datepicker').val(visits.findOne(Router.current().params._id).visitDateTime.split(/ /)[0]);
     }
 
     var images = new Array()
@@ -174,87 +186,88 @@ Template.form_visits.events ({
         };
 
         MeteorCamera.getPicture(cameraOptions, function (error, data) {
-            var capturedImage = '<figure> \
-                <img alt="This visit" src="' + data + '" /> \
-                <figcaption><p>This visit</p></figcaption> \
-            </figure>';
-            $('div#capturedImage').html(capturedImage);
+            if (data) {
+                var capturedImage = '<figure> \
+                    <img alt="This visit" src="' + data + '" /> \
+                    <figcaption><p>This visit</p></figcaption> \
+                </figure>';
+                $('div#capturedImage').html(capturedImage);
 
-            try {
-                if ($('#input_patientId').val()) {
-                    //var lastVisitImage = visits.findOne({ patientId: $('#input_patientId').val() }, { sort: { visitDate: -1, visitTime: 1} }).image;
-                    var lastVisitImage = '<figure style="display: none;"> \
-                        <img alt="Last Visit" src="' + visits.findOne({ patientId: $('#input_patientId').val() }, { sort: { visitDate: -1, visitTime: 1} }).image + '" /> \
-                        <figcaption><p>Last Visit</p></figcaption> \
-                    </figure>';
-                    $('div#capturedImage').append(lastVisitImage);
-                    $('figure').show('slow');
+                try {
+                    if ($('#input_patientId').val()) {
+                        //var lastVisitImage = visits.findOne({ patientId: $('#input_patientId').val() }, { sort: { visitDate: -1, visitTime: 1} }).image;
+                        var lastVisitImage = '<figure style="display: none;"> \
+                            <img alt="Last Visit" src="' + visits.findOne({ patientId: $('#input_patientId').val() }, { sort: { visitDate: -1, visitTime: 1} }).image + '" /> \
+                            <figcaption><p>Last Visit</p></figcaption> \
+                        </figure>';
+                        $('div#capturedImage').append(lastVisitImage);
+                        $('figure').show('slow');
+                    }
                 }
-            }
-            catch(err) {
-            }
-
-            var lesionString = '';
-            var symptomsString = '';
-            var pathosString = '';
-            var anatomicalString = '';
-
-            if ( $('#input_lesion').val() != '' ) {
-                var lesionParams = $('#input_lesion').val().toString().split(',');
-                lesionString = 'lesions=' + LESIONS_DICT[lesionParams[0]];
-                lesionParams.shift();
-                lesionParams.forEach(function(element, index, array) {
-                    lesionString += '|' + LESIONS_DICT[element];
-                });
-            }
-
-            if ( $('#input_symptoms').val() != '' ) {
-                var symptomsParams = $('#input_symptoms').val().toString().split(',');
-                symptomsString = 'symptoms=' + SYMPTOMS_DICT[symptomsParams[0]];
-                symptomsParams.shift();
-                symptomsParams.forEach(function(element, index, array) {
-                    symptomsString += '|' + SYMPTOMS_DICT[element];
-                });
-            }
-
-            if ( $('#input_pathophysiology').val() != '' ) {
-                var pathosParams = $('#input_pathophysiology').val().toString().split(',');
-                pathosString = 'pathos=' + PATHOS_DICT[pathosParams[0]];
-                pathosParams.shift();
-                pathosParams.forEach(function(element, index, array) {
-                    pathosString += '|' + PATHOS_DICT[element];
-                });
-            }
-
-            if ( $('#input_anatomicalLocation').val() ) {
-                var anatomicalParams = $('#input_anatomicalLocation').val().toString().split(',');
-                anatomicalString = 'localization=' + ANATOMICAL_DICT[anatomicalParams[0]];
-                anatomicalParams.shift();
-                anatomicalParams.forEach(function(element, index, array) {
-                    anatomicalString += '|' + ANATOMICAL_DICT[element];
-                });
-            }
-
-            var dermQuestUrl = 'https://www.dermquest.com/Services/imageData.ashx?' + lesionString + '&' + symptomsString + '&' + pathosString + '&' + anatomicalString + '&page=1&perPage=100&sort=relevance';
-            var suggestionsDermQuest = '<br><i>diagnosis suggestions from DermQuest.com:</i><br>';
-            console.log(dermQuestUrl);
-
-            Meteor.call('cross_origin_request', dermQuestUrl, function(error, result) {
-                var dJson = JSON.parse(result.content);
-                var largeImageUrl = 'https://www.dermquest.com/imagelibrary/large/'
-                var threeSample = _.sample(dJson['Results'], 3);
-                threeSample.forEach(function(element, index, array) {
-                    suggestionsDermQuest += '<figure style="display: none;"> \
-                        <img alt="' + DIAGNOSES_DICT_SWAP[element.diagnosis[0].Id] + '" value="' + element.diagnosis[0].Id + '" src="' + largeImageUrl + element.FileName + '" /> \
-                        <figcaption><p>' + DIAGNOSES_DICT_SWAP[element.diagnosis[0].Id] + '</p></figcaption> \
-                    </figure>';
-                });
-                if (threeSample != '') {
-                    $('div#dermquest-suggestions').html(suggestionsDermQuest);
-                    $('figure').show('slow');
+                catch(err) {
                 }
-            });
 
+                var lesionString = '';
+                var symptomsString = '';
+                var pathosString = '';
+                var anatomicalString = '';
+
+                if ( $('#input_lesion').val() != '' ) {
+                    var lesionParams = $('#input_lesion').val().toString().split(',');
+                    lesionString = 'lesions=' + LESIONS_DICT[lesionParams[0]];
+                    lesionParams.shift();
+                    lesionParams.forEach(function(element, index, array) {
+                        lesionString += '|' + LESIONS_DICT[element];
+                    });
+                }
+
+                if ( $('#input_symptoms').val() != '' ) {
+                    var symptomsParams = $('#input_symptoms').val().toString().split(',');
+                    symptomsString = 'symptoms=' + SYMPTOMS_DICT[symptomsParams[0]];
+                    symptomsParams.shift();
+                    symptomsParams.forEach(function(element, index, array) {
+                        symptomsString += '|' + SYMPTOMS_DICT[element];
+                    });
+                }
+
+                if ( $('#input_pathophysiology').val() != '' ) {
+                    var pathosParams = $('#input_pathophysiology').val().toString().split(',');
+                    pathosString = 'pathos=' + PATHOS_DICT[pathosParams[0]];
+                    pathosParams.shift();
+                    pathosParams.forEach(function(element, index, array) {
+                        pathosString += '|' + PATHOS_DICT[element];
+                    });
+                }
+
+                if ( $('#input_anatomicalLocation').val() ) {
+                    var anatomicalParams = $('#input_anatomicalLocation').val().toString().split(',');
+                    anatomicalString = 'localization=' + ANATOMICAL_DICT[anatomicalParams[0]];
+                    anatomicalParams.shift();
+                    anatomicalParams.forEach(function(element, index, array) {
+                        anatomicalString += '|' + ANATOMICAL_DICT[element];
+                    });
+                }
+
+                var dermQuestUrl = 'https://www.dermquest.com/Services/imageData.ashx?' + lesionString + '&' + symptomsString + '&' + pathosString + '&' + anatomicalString + '&page=1&perPage=100&sort=relevance';
+                var suggestionsDermQuest = '<br><i>diagnosis suggestions from DermQuest.com:</i><br>';
+                console.log(dermQuestUrl);
+
+                Meteor.call('cross_origin_request', dermQuestUrl, function(error, result) {
+                    var dJson = JSON.parse(result.content);
+                    var largeImageUrl = 'https://www.dermquest.com/imagelibrary/large/'
+                    var threeSample = _.sample(dJson['Results'], 3);
+                    threeSample.forEach(function(element, index, array) {
+                        suggestionsDermQuest += '<figure style="display: none;"> \
+                            <img alt="' + DIAGNOSES_DICT_SWAP[element.diagnosis[0].Id] + '" value="' + element.diagnosis[0].Id + '" src="' + largeImageUrl + element.FileName + '" /> \
+                            <figcaption><p>' + DIAGNOSES_DICT_SWAP[element.diagnosis[0].Id] + '</p></figcaption> \
+                        </figure>';
+                    });
+                    if (threeSample != '') {
+                        $('div#dermquest-suggestions').html(suggestionsDermQuest);
+                        $('figure').show('slow');
+                    }
+                });
+            }
         });
     },
 

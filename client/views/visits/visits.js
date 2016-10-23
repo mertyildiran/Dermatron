@@ -23,8 +23,8 @@ Template.visits.helpers ({
 
     status: function(_id) {
         visit = visits.findOne(_id);
-        var time = visit.visitTime.split(/:/);
-        var date = visit.visitDate.split(/-/);
+        var time = visit.visitDateTime.split(/ /)[1].split(/:/);
+        var date = visit.visitDateTime.split(/ /)[0].split(/-/);
         var d = new Date(date[0], date[1]-1, date[2], time[0], time[1], 0, 0);
         var start = d;
         d.setMinutes(d.getMinutes() + 5);
@@ -96,11 +96,8 @@ Template.visits.events ({
         if ($('#header-patientId').text()[$('#header-patientId').text().length - 1] == '▲' || $('#header-patientId').text()[$('#header-patientId').text().length - 1] == '▼') {
             $('#header-patientId').text($('#header-patientId').text().slice(0,-1));
         }
-        if ($('#header-visitDate').text()[$('#header-visitDate').text().length - 1] == '▲' || $('#header-visitDate').text()[$('#header-visitDate').text().length - 1] == '▼') {
-            $('#header-visitDate').text($('#header-visitDate').text().slice(0,-1));
-        }
-        if ($('#header-visitTime').text()[$('#header-visitTime').text().length - 1] == '▲' || $('#header-visitTime').text()[$('#header-visitTime').text().length - 1] == '▼') {
-            $('#header-visitTime').text($('#header-visitTime').text().slice(0,-1));
+        if ($('#header-visitDateTime').text()[$('#header-visitDateTime').text().length - 1] == '▲' || $('#header-visitDateTime').text()[$('#header-visitDateTime').text().length - 1] == '▼') {
+            $('#header-visitDateTime').text($('#header-visitDateTime').text().slice(0,-1));
         }
         if ($('#header-lesion').text()[$('#header-lesion').text().length - 1] == '▲' || $('#header-lesion').text()[$('#header-lesion').text().length - 1] == '▼') {
             $('#header-lesion').text($('#header-lesion').text().slice(0,-1));
@@ -146,30 +143,14 @@ Template.visits.events ({
         }
     },
 
-    'click #header-visitDate': function () {
-        if (options['sort']['visitDate'] == 1) {
-            $('#header-visitTime').text('visitTime▼');
-            $('#header-visitDate').text('visitDate▼');
-            options['sort'] = { visitDate: -1, visitTime: 1};
+    'click #header-visitDateTime': function () {
+        if (options['sort']['visitDateTime'] == -1) {
+            $('#header-visitDateTime').text('visitDateTime▲');
+            options['sort'] = { visitDateTime: 1};
             _deps.changed();
         } else {
-            $('#header-visitTime').text('visitTime▲');
-            $('#header-visitDate').text('visitDate▲');
-            options['sort'] = { visitDate: 1, visitTime: -1};
-            _deps.changed();
-        }
-    },
-
-    'click #header-visitTime': function () {
-        if (options['sort']['visitDate'] == 1) {
-            $('#header-visitTime').text('visitTime▼');
-            $('#header-visitDate').text('visitDate▼');
-            options['sort'] = { visitDate: -1, visitTime: 1};
-            _deps.changed();
-        } else {
-            $('#header-visitTime').text('visitTime▲');
-            $('#header-visitDate').text('visitDate▲');
-            options['sort'] = { visitDate: 1, visitTime: -1};
+            $('#header-visitDateTime').text('visitDateTime▼');
+            options['sort'] = { visitDateTime: -1};
             _deps.changed();
         }
     },
