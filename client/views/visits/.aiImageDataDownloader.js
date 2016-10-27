@@ -5,10 +5,22 @@ var im = require('imagemagick');
 require('./constants.js');
 
 IMAGE_SIZE = '64';
+DIAGNOSES = [];
 
 for (var key in DIAGNOSES_DICT_SWAP) {
+    DIAGNOSES.push(key);
+}
 
-    var diagnosis_id = key;
+// CAUTION: This is a recursive function
+function downloader(nth) {
+
+    if (nth >= (DIAGNOSES.length - 1)) {
+        console.log('THE END');
+        return 1;
+    }
+
+    var diagnosis_id = DIAGNOSES[nth];
+    console.log(diagnosis_id + ':');
     if (!fs.existsSync(diagnosis_id)){
         fs.mkdirSync(diagnosis_id);
     }
@@ -21,9 +33,18 @@ for (var key in DIAGNOSES_DICT_SWAP) {
     request(dermQuestUrl, function (error, response, body) {
       if (!error && response.statusCode == 200) {
         var dJson = JSON.parse(body);
-        dJson['Results'].forEach(function(element, index, array) {
+        //dJson['Results'].forEach(function(element, index, array) {
+        function resultsrecur(rth) {
+            //console.log(rth);
+            if (rth >= (dJson['Results'].length)) {
+                console.log('Results END');
+                downloader(nth+1);
+                return 1;
+            }
 
-            console.log('Request: ' + element.FileName);
+            element = dJson['Results'][rth];
+
+            console.log('\tRequest: ' + element.FileName);
 
             var file = fs.createWriteStream(diagnosis_id + '/' + element.FileName);
             file.on('finish', function () {
@@ -31,19 +52,24 @@ for (var key in DIAGNOSES_DICT_SWAP) {
                 im.convert([diagnosis_id + '/' + element.FileName, '-resize', IMAGE_SIZE + 'x' + IMAGE_SIZE + '^', '-gravity', 'center', '-crop', IMAGE_SIZE + 'x' + IMAGE_SIZE + '+0+0', diagnosis_id + '/' + element.FileName],
                     function(err, stdout){
                       if (err) throw err;
-                      console.log('\t\tResize ' + IMAGE_SIZE + 'x' + IMAGE_SIZE + ': ' + element.FileName + ' ', stdout);
+                      console.log('\t\t\tResize ' + IMAGE_SIZE + 'x' + IMAGE_SIZE + ': ' + element.FileName + ' ', stdout);
+                      resultsrecur(rth+1);
                 });
             });
 
             https.get(largeImageUrl + element.FileName, function(response) {
                 if (!error && response.statusCode == 200) {
-                    console.log('\tPipe: ' + element.FileName);
+                    console.log('\t\tPipe: ' + element.FileName);
                     response.pipe(file);
                 }
             });
 
-        });
+        }
+        resultsrecur(0);
       }
     });
 
 }
+
+downloader(0);
+//console.log(typeof(DIAGNOSES[1]));
