@@ -39,7 +39,7 @@ function downloader(nth) {
         function resultsrecur(rth) {
             //console.log(rth);
             if (rth >= (fiftySample.length)) {
-                console.log('Results END');
+                console.log('\tEND');
                 downloader(nth+1);
                 return 1;
             }
@@ -53,8 +53,12 @@ function downloader(nth) {
                 //convert 010020VB.JPG -resize 64x64^ -gravity center -crop 64x64+0+0 result.jpg
                 im.convert([diagnosis_id + '/' + element.FileName, '-resize', IMAGE_SIZE + 'x' + IMAGE_SIZE + '^', '-gravity', 'center', '-crop', IMAGE_SIZE + 'x' + IMAGE_SIZE + '+0+0', diagnosis_id + '/' + element.FileName],
                     function(err, stdout){
-                      if (err) console.log(err);
-                      console.log('\t\t\tResize ' + IMAGE_SIZE + 'x' + IMAGE_SIZE + ': ' + element.FileName + ' ', stdout);
+                      if (err) {
+                          console.log('\t\t\tResize ' + IMAGE_SIZE + 'x' + IMAGE_SIZE + ': Failed!');
+                          console.log(err);
+                      } else {
+                          console.log('\t\t\tResize ' + IMAGE_SIZE + 'x' + IMAGE_SIZE + ': ' + element.FileName + ' ', stdout);
+                      }
                       resultsrecur(rth+1);
                 });
             });
@@ -64,6 +68,7 @@ function downloader(nth) {
                     console.log('\t\tPipe: ' + element.FileName);
                     response.pipe(file);
                 } else {
+                    console.log('\t\tPipe: Failed!');
                     resultsrecur(rth+1);
                 }
             });
