@@ -254,7 +254,7 @@ Template.form_visits.events ({
 
                 Meteor.call('cross_origin_request', dermQuestUrl, function(error, result) {
                     var dJson = JSON.parse(result.content);
-                    var largeImageUrl = 'https://www.dermquest.com/imagelibrary/large/'
+                    var largeImageUrl = 'https://www.dermquest.com/imagelibrary/large/';
                     var threeSample = _.sample(dJson['Results'], 3);
                     threeSample.forEach(function(element, index, array) {
                         suggestionsDermQuest += '<figure style="display: none;"> \
