@@ -2,6 +2,7 @@ var request = require('request');
 var fs = require('fs');
 var https = require('https');
 var im = require('imagemagick');
+var _ = require("underscore");
 require('./constants.js');
 
 IMAGE_SIZE = '64';
@@ -33,16 +34,17 @@ function downloader(nth) {
     request(dermQuestUrl, function (error, response, body) {
       if (!error && response.statusCode == 200) {
         var dJson = JSON.parse(body);
+        var fiftySample = _.sample(dJson['Results'], 50);
         //dJson['Results'].forEach(function(element, index, array) {
         function resultsrecur(rth) {
             //console.log(rth);
-            if (rth >= (dJson['Results'].length)) {
+            if (rth >= (fiftySample.length)) {
                 console.log('Results END');
                 downloader(nth+1);
                 return 1;
             }
 
-            element = dJson['Results'][rth];
+            element = fiftySample[rth];
 
             console.log('\tRequest: ' + element.FileName);
 
@@ -51,7 +53,7 @@ function downloader(nth) {
                 //convert 010020VB.JPG -resize 64x64^ -gravity center -crop 64x64+0+0 result.jpg
                 im.convert([diagnosis_id + '/' + element.FileName, '-resize', IMAGE_SIZE + 'x' + IMAGE_SIZE + '^', '-gravity', 'center', '-crop', IMAGE_SIZE + 'x' + IMAGE_SIZE + '+0+0', diagnosis_id + '/' + element.FileName],
                     function(err, stdout){
-                      if (err) throw err;
+                      if (err) console.log(err);
                       console.log('\t\t\tResize ' + IMAGE_SIZE + 'x' + IMAGE_SIZE + ': ' + element.FileName + ' ', stdout);
                       resultsrecur(rth+1);
                 });
@@ -61,6 +63,8 @@ function downloader(nth) {
                 if (!error && response.statusCode == 200) {
                     console.log('\t\tPipe: ' + element.FileName);
                     response.pipe(file);
+                } else {
+                    resultsrecur(rth+1);
                 }
             });
 
