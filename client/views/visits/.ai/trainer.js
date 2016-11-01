@@ -27,10 +27,10 @@ function getDataset(path) {
         var dict = {};
         var dict2 = {};
         //console.log('{input: asyncPngToMatrix.sync(null, "' + files[i] + '"), output: { ' + files[i].split("/")[files[i].split("/").length-2] + ': 1 } }');
-        dict['input'] = 'asyncPngToMatrix.sync(null, "' + files[i] + '")';
+        dict['input'] = asyncPngToMatrix.sync(null, files[i]);
         dict2[files[i].split("/")[files[i].split("/").length-2]] = 1;
         dict['output'] = dict2;
-        console.log(dict);
+        //console.log(dict);
         dataset.push(dict);
       }
       return dataset;
@@ -50,8 +50,7 @@ Sync(function(){
 
     var net = new brain.NeuralNetwork();
 
-    net.train([{input: asyncPngToMatrix.sync(null, "cat64.png"), output: { cat: 1 } },
-               {input: asyncPngToMatrix.sync(null, "dog64.png"), output: { dog: 1 } }],  {
+    net.train( getDataset('images') ,  {
                   errorThresh: 0.005,  // error threshold to reach
                   iterations: 20000,   // maximum training iterations
                   log: true,           // console.log() progress periodically
@@ -59,6 +58,7 @@ Sync(function(){
                   learningRate: 0.005    // learning rate
                 });
 
-    var output = net.run(asyncPngToMatrix.sync(null, "dog64.png"));  // [0.987]
+    console.log(getDataset('images')[0]['input']);
+    var output = net.run(getDataset('images')[0]['input']);  // [0.987]
     console.log(output);
 });
