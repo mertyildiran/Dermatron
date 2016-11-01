@@ -1,6 +1,7 @@
 var Sync = require('sync');
 const pngToMatrix = require('png-to-matrix');
 const brain = require("brain");
+var recursiveReadSync = require('recursive-readdir-sync');
 
 
 function asyncPngToMatrix(image_path, callback) {
@@ -15,6 +16,34 @@ function asyncPngToMatrix(image_path, callback) {
         console.log(image_path + " loaded.");
         callback(null, image);
     })
+}
+
+function getDataset(path) {
+    var files;
+    var dataset = [];
+    try {
+      files = recursiveReadSync(path);
+      for(var i = 0, len = files.length; i < len; i++){
+        var dict = {};
+        var dict2 = {};
+        //console.log('{input: asyncPngToMatrix.sync(null, "' + files[i] + '"), output: { ' + files[i].split("/")[files[i].split("/").length-2] + ': 1 } }');
+        dict['input'] = 'asyncPngToMatrix.sync(null, "' + files[i] + '")';
+        dict2[files[i].split("/")[files[i].split("/").length-2]] = 1;
+        dict['output'] = dict2;
+        console.log(dict);
+        dataset.push(dict);
+      }
+      return dataset;
+    } catch(err){
+      if(err.errno === 34){
+        console.log('Path does not exist');
+        return 0;
+      } else {
+        //something unrelated went wrong, rethrow
+        throw err;
+        return 0;
+      }
+    }
 }
 
 Sync(function(){
