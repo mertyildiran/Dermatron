@@ -2,6 +2,7 @@ var Sync = require('sync');
 const pngToMatrix = require('png-to-matrix');
 const brain = require("brain");
 var recursiveReadSync = require('recursive-readdir-sync');
+var jsonfile = require('jsonfile')
 
 
 function asyncPngToMatrix(image_path, callback) {
@@ -13,7 +14,7 @@ function asyncPngToMatrix(image_path, callback) {
         flattened.forEach(function(element, index, array) {
             image.push( (element['r'] * Math.pow(255, 2) + element['g'] * 255 + element['b']) / Math.pow(255, 3) );
         });
-        console.log(image_path + " loaded.");
+        //console.log(image_path + " loaded.");
         callback(null, image);
     })
 }
@@ -50,15 +51,33 @@ Sync(function(){
 
     var net = new brain.NeuralNetwork();
 
+    var start = new Date();
+    console.log(start);
     net.train( getDataset('images') ,  {
                   errorThresh: 0.005,  // error threshold to reach
                   iterations: 20000,   // maximum training iterations
                   log: true,           // console.log() progress periodically
-                  logPeriod: 10,       // number of iterations between logging
+                  logPeriod: 1,       // number of iterations between logging
                   learningRate: 0.005    // learning rate
                 });
+    end = new Date();
+    console.log(end);
 
-    console.log(getDataset('images')[0]['input']);
+    var json = net.toJSON();
+    var file = './net.json'
+    jsonfile.writeFile(file, json, function (err) {
+        if (err) {
+            console.error(err);
+        }
+    });
+
+    var elapsed = end - start;
+    var difference = new Date(elapsed);
+    console.log('\nElapsed time in seconds: ' + difference.getSeconds());
+
+    //console.log(getDataset('images')[0]['input']);
     var output = net.run(getDataset('images')[0]['input']);  // [0.987]
+    console.log('Number of classes: ' + Object.keys(output).length);
+    console.log('Number of samples: ' + getDataset('images').length + '\n');
     console.log(output);
 });

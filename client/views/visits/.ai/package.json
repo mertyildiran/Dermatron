@@ -1,0 +1,11 @@
+{
+  "name": "DermatronAI",
+  "version": "1.0.0",
+  "dependencies": {
+    "sync": "*",
+    "png-to-matrix": "*",
+    "brain": "*",
+    "recursive-readdir-sync": "*",
+    "jsonfile": "*"
+  }
+}
