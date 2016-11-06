@@ -54,8 +54,8 @@ Sync(function(){
     var start = new Date();
     console.log(start);
     net.train( getDataset('images') ,  {
-                  errorThresh: 0.005,  // error threshold to reach
-                  iterations: 20000,   // maximum training iterations
+                  errorThresh: 0.00005,  // error threshold to reach
+                  iterations: 2500,   // maximum training iterations
                   log: true,           // console.log() progress periodically
                   logPeriod: 1,       // number of iterations between logging
                   learningRate: 0.005    // learning rate
