@@ -49,7 +49,7 @@ function getDataset(path) {
 
 Sync(function(){
 
-    var net = new brain.NeuralNetwork();
+    var net = new brain.NeuralNetwork( { hiddenLayers: [64] } );
 
     var start = new Date();
     console.log(start);
