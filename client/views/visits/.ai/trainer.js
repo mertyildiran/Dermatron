@@ -72,8 +72,9 @@ Sync(function(){
     });
 
     var elapsed = end - start;
-    var difference = new Date(elapsed);
-    console.log('\nElapsed time in seconds: ' + difference.getSeconds());
+    var min = (elapsed/1000/60) << 0;
+    var sec = (elapsed/1000) % 60;
+    console.log('\nElapsed time in seconds: ' + min + ':' + sec);
 
     //console.log(getDataset('images')[0]['input']);
     var output = net.run(getDataset('images')[0]['input']);  // [0.987]
