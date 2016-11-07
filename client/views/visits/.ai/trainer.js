@@ -4,6 +4,8 @@ const brain = require("brain");
 var recursiveReadSync = require('recursive-readdir-sync');
 var jsonfile = require('jsonfile')
 
+var number_of_classes = 0;
+var number_of_samples = 0;
 
 function asyncPngToMatrix(image_path, callback) {
     pngToMatrix(image_path, (matrix) => {
@@ -22,6 +24,7 @@ function asyncPngToMatrix(image_path, callback) {
 function getDataset(path) {
     var files;
     var dataset = [];
+    var classes = {};
     try {
       files = recursiveReadSync(path);
       for(var i = 0, len = files.length; i < len; i++){
@@ -31,9 +34,12 @@ function getDataset(path) {
         dict['input'] = asyncPngToMatrix.sync(null, files[i]);
         dict2[files[i].split("/")[files[i].split("/").length-2]] = 1;
         dict['output'] = dict2;
+        classes[files[i].split("/")[files[i].split("/").length-2]] = 1;
         //console.log(dict);
         dataset.push(dict);
       }
+      number_of_classes = Object.keys(classes).length;
+      number_of_samples = dataset.length;
       return dataset;
     } catch(err){
       if(err.errno === 34){
@@ -49,22 +55,27 @@ function getDataset(path) {
 
 Sync(function(){
 
+    getDataset('images');
+    console.log('\nNumber of classes: ' + number_of_classes);
+    console.log('Number of samples: ' + number_of_samples + '\n');
+    console.log('Learning rate: ' + (1 / Math.sqrt( number_of_classes * number_of_samples ) ) );
+
     var net = new brain.NeuralNetwork( { hiddenLayers: [64] } );
 
     var start = new Date();
     console.log(start);
     net.train( getDataset('images') ,  {
-                  errorThresh: 0.00005,  // error threshold to reach
-                  iterations: 2500,   // maximum training iterations
+                  errorThresh: 0.005,  // error threshold to reach
+                  iterations: 20000,   // maximum training iterations
                   log: true,           // console.log() progress periodically
                   logPeriod: 1,       // number of iterations between logging
-                  learningRate: 0.005    // learning rate
+                  learningRate: (1 / Math.sqrt( number_of_classes * number_of_samples ) )    // learning rate
                 });
     end = new Date();
     console.log(end);
 
     var json = net.toJSON();
-    var file = './net.json'
+    var file = './net.json';
     jsonfile.writeFile(file, json, function (err) {
         if (err) {
             console.error(err);
