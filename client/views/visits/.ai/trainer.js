@@ -58,6 +58,7 @@ Sync(function(){
     getDataset('images');
     console.log('\nNumber of classes: ' + number_of_classes);
     console.log('Number of samples: ' + number_of_samples + '\n');
+    console.log('Iteration limit: ' + Math.sqrt( number_of_classes * number_of_samples ) + '\n');
     console.log('Learning rate: ' + (1 / Math.sqrt( number_of_classes * number_of_samples ) ) );
 
     var net = new brain.NeuralNetwork( { hiddenLayers: [16] } );
@@ -66,7 +67,7 @@ Sync(function(){
     console.log(start);
     net.train( getDataset('images') ,  {
                   errorThresh: (1 / Math.sqrt( number_of_classes * number_of_samples ) ),  // error threshold to reach
-                  iterations: ( Math.sqrt( number_of_classes * number_of_samples ) * number_of_classes),   // maximum training iterations
+                  iterations: Math.sqrt( number_of_classes * number_of_samples ),   // maximum training iterations
                   log: true,           // console.log() progress periodically
                   logPeriod: 1,       // number of iterations between logging
                   learningRate: (1 / Math.sqrt( number_of_classes * number_of_samples ) )    // learning rate
