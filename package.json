@@ -5,6 +5,8 @@
     "start": "meteor run"
   },
   "dependencies": {
-    "meteor-node-stubs": "~0.2.0"
+    "brain": "^0.7.0",
+    "meteor-node-stubs": "~0.2.0",
+    "png-to-matrix": "^1.0.5"
   }
 }
