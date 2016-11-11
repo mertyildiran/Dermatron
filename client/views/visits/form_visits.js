@@ -250,7 +250,7 @@ Template.form_visits.events ({
 
                 var dermQuestUrl = 'https://www.dermquest.com/Services/imageData.ashx?' + lesionString + '&' + symptomsString + '&' + pathosString + '&' + anatomicalString + '&page=1&perPage=100&sort=relevance';
                 var suggestionsDermQuest = '<br><i>diagnosis suggestions from DermQuest.com:</i><br>';
-                console.log(dermQuestUrl);
+                //console.log(dermQuestUrl);
 
                 Meteor.call('cross_origin_request', dermQuestUrl, function(error, result) {
                     var dJson = JSON.parse(result.content);
@@ -280,7 +280,7 @@ Template.form_visits.events ({
                         .resize(64, 64)
                         .quality(100)
                         .toDataURL(function(dataUrl) {
-                            console.log('cropped!');
+                            //console.log('cropped!');
                             //$('div#capturedImage img').attr('src', dataUrl);
 
                             pngToMatrix(dataUrl, (matrix) => {
@@ -292,7 +292,22 @@ Template.form_visits.events ({
                                     image.push( (element['r'] * Math.pow(255, 2) + element['g'] * 255 + element['b']) / Math.pow(255, 3) );
                                 });
 
-                                console.log(image.length);
+                                //console.log(image.length);
+
+                                var brain = require("brain");
+                                HTTP.get(Meteor.absoluteUrl("/net.json"), function(err,result) {
+                                    //console.log(result.data);
+                                    var net = new brain.NeuralNetwork( { hiddenLayers: [16] } );
+                                    net.fromJSON(result.data);
+                                    var output = net.run(image);
+                                    //console.log(output);
+                                    var maxKey = _.max(Object.keys(output), function (o) { return output[o]; });
+                                    //console.log(maxKey);
+                                    var answer = DIAGNOSES_DICT_SWAP[maxKey];
+                                    //console.log(answer);
+                                    $('div#ai-suggestions').html('<i>Artifical Intelligence thinks the diagnosis is</i> <b>' + answer + '</b>.');
+                                });
+
                             });
                         });
                     });

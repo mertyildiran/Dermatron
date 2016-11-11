@@ -2,7 +2,7 @@ var Sync = require('sync');
 const pngToMatrix = require('png-to-matrix');
 const brain = require("brain");
 var recursiveReadSync = require('recursive-readdir-sync');
-var jsonfile = require('jsonfile')
+var jsonfile = require('jsonfile');
 
 var number_of_classes = 0;
 var number_of_samples = 0;
