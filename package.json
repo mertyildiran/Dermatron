@@ -6,7 +6,9 @@
   },
   "dependencies": {
     "brain": "^0.7.0",
-    "meteor-node-stubs": "~0.2.0",
-    "png-to-matrix": "^1.0.5"
+    "image-clipper": "^0.4.3",
+    "meteor-node-stubs": "^0.2.3",
+    "png-to-matrix": "^1.0.5",
+    "smartcrop": "^1.1.1"
   }
 }

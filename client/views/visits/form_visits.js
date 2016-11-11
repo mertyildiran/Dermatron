@@ -267,6 +267,37 @@ Template.form_visits.events ({
                         $('figure').show('slow');
                     }
                 });
+
+                var pngToMatrix = require('png-to-matrix');
+                var smartcrop = require('smartcrop');
+                var Clipper = require('image-clipper');
+
+                var img = new Image();
+                img.src = data;
+                smartcrop.crop(img, {width: 64, height: 64}).then(function(smart){
+                  Clipper(data, function() {
+                        this.crop(smart.topCrop.x, smart.topCrop.y, smart.topCrop.height, smart.topCrop.width)
+                        .resize(64, 64)
+                        .quality(100)
+                        .toDataURL(function(dataUrl) {
+                            console.log('cropped!');
+                            //$('div#capturedImage img').attr('src', dataUrl);
+
+                            pngToMatrix(dataUrl, (matrix) => {
+                                var image = [];
+                                var flattened = [].concat.apply([], matrix);
+                                //console.log([].concat.apply([], flattened));
+
+                                flattened.forEach(function(element, index, array) {
+                                    image.push( (element['r'] * Math.pow(255, 2) + element['g'] * 255 + element['b']) / Math.pow(255, 3) );
+                                });
+
+                                console.log(image.length);
+                            });
+                        });
+                    });
+                });
+
             }
         });
     },
