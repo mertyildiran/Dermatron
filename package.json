@@ -9,6 +9,7 @@
     "image-clipper": "^0.4.3",
     "jsonfile": "^2.4.0",
     "meteor-node-stubs": "^0.2.3",
+    "pixfinder": "^0.2.4",
     "png-to-matrix": "^1.0.5",
     "smartcrop": "^1.1.1"
   }

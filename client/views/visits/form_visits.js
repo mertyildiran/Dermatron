@@ -188,10 +188,19 @@ Template.form_visits.events ({
         MeteorCamera.getPicture(cameraOptions, function (error, data) {
             if (data) {
                 var capturedImage = '<figure> \
-                    <img alt="This visit" src="' + data + '" /> \
-                    <figcaption><p>This visit</p></figcaption> \
+                    <canvas id="captured" width="600" height="450"></canvas> \
+                    <figcaption id="captured"><p></p></figcaption> \
                 </figure>';
                 $('div#capturedImage').html(capturedImage);
+                var canv = $('div#capturedImage canvas#captured')[0];
+                var ctx = canv.getContext("2d");
+                var img = new Image();
+                img.onload = function() {
+                    ctx.drawImage(img, 0, 0, canv.width, canv.height);
+                    $('div#capturedImage figcaption#captured p').html('Area: ' + drawContour(canv) + ' px<sup>2</sup>');
+                }
+                img.src = data;
+
 
                 try {
                     if ($('#input_patientId').val()) {
@@ -323,3 +332,52 @@ Template.form_visits.events ({
     }
 
 });
+
+function area(points) {
+    var l = points.length,
+        det = 0;
+    if (points[0] != points[points.length -1])
+        points = points.concat(points[0]);
+    for (var i = 0; i < l; i++)
+        det += points[i].x * points[i + 1].y - points[i].y * points[i + 1].x;
+    return Math.abs(det) / 2;
+}
+
+function rgbToHex(r, g, b) {
+    if (r > 255 || g > 255 || b > 255)
+        throw "Invalid color component";
+    return ((r << 16) | (g << 8) | b).toString(16);
+}
+
+function drawContour(canv){
+    var pix = require('pixfinder');
+
+    ctx = canv.getContext('2d');
+
+    var p = ctx.getImageData(canv.width/2, canv.height/2, 1, 1).data;
+    var hex = ("000000" + rgbToHex(p[0], p[1], p[2])).slice(-6);
+    //console.log(hex);
+    var dryShore = pix.find({
+        img: canv,
+        distance: 10,
+        tolerance: 100,
+        startPoint: {x: canv.width/2, y: canv.height/2},
+        colors: [hex]
+    });
+    //console.log(dryShore);
+
+    ctx.beginPath();
+    ctx.moveTo(dryShore[0].x, dryShore[0].y);
+    dryShore.forEach(function(point) {
+        ctx.lineTo(point.x, point.y);
+    });
+    ctx.closePath();
+    ctx.fillStyle = 'rgba(38,166,154,0.0)';
+    ctx.fill();
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = 'rgba(255,215,0,0.5)';
+    ctx.stroke();
+
+    return area(dryShore);
+
+}
