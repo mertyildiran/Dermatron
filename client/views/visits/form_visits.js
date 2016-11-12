@@ -197,7 +197,9 @@ Template.form_visits.events ({
                 var img = new Image();
                 img.onload = function() {
                     ctx.drawImage(img, 0, 0, canv.width, canv.height);
-                    $('div#capturedImage figcaption#captured p').html('Area: ' + drawContour(canv) + ' px<sup>2</sup>');
+                    areaOfCaptured = drawContour(canv);
+                    $('div#capturedImage figcaption#captured p').html('Area: ' + areaOfCaptured + ' px<sup>2</sup>');
+                    compareImages();
                 }
                 img.src = data;
 
@@ -206,10 +208,20 @@ Template.form_visits.events ({
                     if ($('#input_patientId').val()) {
                         //var lastVisitImage = visits.findOne({ patientId: $('#input_patientId').val() }, { sort: { visitDate: -1, visitTime: 1} }).image;
                         var lastVisitImage = '<figure style="display: none;"> \
-                            <img alt="Last Visit" src="' + visits.findOne({ patientId: $('#input_patientId').val() }, { sort: { visitDate: -1, visitTime: 1} }).image + '" /> \
-                            <figcaption><p>Last Visit</p></figcaption> \
+                            <canvas id="last-visit" width="600" height="450"></canvas> \
+                            <figcaption id="last-visit"><p></p></figcaption> \
                         </figure>';
                         $('div#capturedImage').append(lastVisitImage);
+                        var canv2 = $('div#capturedImage canvas#last-visit')[0];
+                        var ctx2 = canv2.getContext("2d");
+                        var img2 = new Image();
+                        img2.onload = function() {
+                            ctx2.drawImage(img2, 0, 0, canv2.width, canv2.height);
+                            areaOfLastVisit = drawContour(canv2);
+                            $('div#capturedImage figcaption#last-visit p').html('Area: ' + areaOfLastVisit + ' px<sup>2</sup>');
+                            compareImages();
+                        }
+                        img2.src = visits.findOne({ patientId: $('#input_patientId').val() }, { sort: { visitDate: -1, visitTime: 1} }).image;
                         $('figure').show('slow');
                     }
                 }
@@ -374,10 +386,28 @@ function drawContour(canv){
     ctx.closePath();
     ctx.fillStyle = 'rgba(38,166,154,0.0)';
     ctx.fill();
-    ctx.lineWidth = 2;
+    ctx.lineWidth = 3;
     ctx.strokeStyle = 'rgba(255,215,0,0.5)';
     ctx.stroke();
 
     return area(dryShore);
 
+}
+
+var imageCounter = 0;
+var areaOfCaptured;
+var areaOfLastVisit;
+
+function compareImages() {
+    imageCounter++;
+
+    if (imageCounter >= 2) {
+        if (areaOfCaptured > areaOfLastVisit) {
+            $('div#capturedImage figcaption#captured p').html( $('div#capturedImage figcaption#captured p').html() + ' (bigger)' );
+            $('div#capturedImage figcaption#last-visit p').html( $('div#capturedImage figcaption#last-visit p').html() + ' (smaller)' );
+        } else {
+            $('div#capturedImage figcaption#captured p').html( $('div#capturedImage figcaption#captured p').html() + ' (smaller)' );
+            $('div#capturedImage figcaption#last-visit p').html( $('div#capturedImage figcaption#last-visit p').html() + ' (bigger)' );
+        }
+    }
 }
