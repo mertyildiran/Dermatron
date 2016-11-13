@@ -5,7 +5,7 @@ Template.visits.helpers ({
 
     // controllers
     tpl_info: function() {
-        return visits.find().count() + ' record(s) found. This is visits template, find me at client/views/visits';
+        return visits.find().count() + translations.recordsFound[selectedLanguage];
     },
 
     visits: function() {

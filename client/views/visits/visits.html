@@ -1,9 +1,9 @@
 <template name="visits">
     {{invokeBeforeLoadVisits}}
     <div class="container">
-        <h3>All visits</h3>
+        <h3>{{tr "allVisits"}}</h3>
         <p><pre>{{tpl_info}}</pre>
-        you can delete this message from the template and/or the helper</p>
+        {{{tr "visitsMoreInfo"}}}</p>
             <div class="table-responsive">
                 <table class="table table-hover table-condensed table-bordered">
                     <thead>
@@ -11,31 +11,31 @@
                             <th colspan="50">
                                 <form class="form-inline">
                                         <div class="form-group">
-                                            <label for="input_title">Search: </label>
+                                            <label for="input_title">{{tr "Search"}}: </label>
                                             <input type="text" class="form-control"
-                                                   placeholder="filter text"
+                                                   placeholder="{{tr 'filterText'}}"
                                                    id="filter_field">
                                         </div>
                                 </form>
                             </th>
                         </tr>
                         <tr>
-                            <th id=header-createdAt>createdAt</th>
-                            <th id=header-patientId>patientName</th>
-                            <th id=header-visitDateTime>visitDateTime</th>
-                            <th id=header-lesion>lesion</th>
-                            <th id=header-symptoms>symptoms</th>
-                            <th id=header-pathophysiology>pathophysiology</th>
-                            <th id=header-anatomicalLocation>anatomicalLocation</th>
-                            <th id=header-diagnosis>diagnosis</th>
-                            <th id=header-status>status</th>
+                            <th id=header-createdAt>{{tr "createdAt"}}</th>
+                            <th id=header-patientId>{{tr "patientName"}}</th>
+                            <th id=header-visitDateTime>{{tr "visitDateTime"}}</th>
+                            <th id=header-lesion>{{tr "lesion"}}</th>
+                            <th id=header-symptoms>{{tr "symptoms"}}</th>
+                            <th id=header-pathophysiology>{{tr "pathophysiology"}}</th>
+                            <th id=header-anatomicalLocation>{{tr "anatomicalLocation"}}</th>
+                            <th id=header-diagnosis>{{tr "diagnosis"}}</th>
+                            <th id=header-status>{{tr "status"}}</th>
                             <th colspan="4">
                                 <form class="form-inline">
                                         <div class="form-group">
                                         <input type="checkbox" class="space-left space-right filled-in"
                                             id="checkAll">
                                             <label for="checkAll"></label>
-                                            <a class="btn btn-danger btn-xs space-right" href="" id="deleteAll" style="margin-left: 50px;">Delete selected</a>
+                                            <a class="btn btn-danger btn-xs space-right" href="" id="deleteAll" style="margin-left: 50px;">{{tr "deleteSelected"}}</a>
                                         </div>
                                 </form>
                             </th>
@@ -59,13 +59,13 @@
                                 <label for="row_{{_id}}"></label>
                             </td>
                             <td>
-                                <a class="btn btn-default btn-xs" href="{{pathFor 'show_visits'}}"  id="show">Show </a>
+                                <a class="btn btn-default btn-xs" href="{{pathFor 'show_visits'}}"  id="show">{{tr "show"}}</a>
                             </td>
                             <td>
-                                <a class="btn btn-primary btn-xs" href="{{pathFor 'edit_visits'}}"  id="edit"> Edit</a>
+                                <a class="btn btn-primary btn-xs" href="{{pathFor 'edit_visits'}}"  id="edit">{{tr "edit"}}</a>
                             </td>
                             <td>
-                                <a class="btn btn-danger btn-xs" href="" id="delete">Delete</a>
+                                <a class="btn btn-danger btn-xs" href="" id="delete">{{tr "delete"}}</a>
                             </td>
                         </tr>
                     {{/each}}
@@ -73,8 +73,8 @@
                </table>
             </div>
             <br>
-            <a class="btn btn-success btn-xs" href="{{pathFor 'new_visits'}}">New visit</a>
-            <button class="btn btn-primary" id="loadMore">Load More</button>
-            <button class="btn btn-primary" id="loadReset">Reset</button>
+            <a class="btn btn-success btn-xs" href="{{pathFor 'new_visits'}}">{{tr "newVisit"}}</a>
+            <button class="btn btn-primary" id="loadMore">{{tr "loadMore"}}</button>
+            <button class="btn btn-primary" id="loadReset">{{tr "reset"}}</button>
         </div>
 </template>
