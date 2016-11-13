@@ -143,51 +143,50 @@ LESIONS_DICT[translations["Xerosis"][selectedLanguage]] = "108247";
 LESIONS_DICT[translations["Yellowish Papules, Slightly Thickened Leather-Like Skin"][selectedLanguage]] = "108248";
 LESIONS_DICT[translations["Zosteriform Rash"][selectedLanguage]] = "108249";
 
-SYMPTOMS_DICT = {
-  "Anesthesia": "108251",
-  "Asymptomatic": "108252",
-  "Bad Smell": "108253",
-  "Bleeding": "108254",
-  "Blood Serum Exudate": "108255",
-  "Burning": "108256",
-  "Cosmetic Disfigurement": "108257",
-  "Cosmetic Disturbance": "108258",
-  "Difficulty Swallowing": "108259",
-  "Dry Skin": "108260",
-  "Dry Skin: Xerosis": "108261",
-  "ECTROPION": "108262",
-  "Excessive Growth of Coarse Thick Hair at the Beard and Moustache": "108263",
-  "Fever": "108264",
-  "Flaky,Discoloured Patch Over Back and Chest": "108265",
-  "Flushing": "108266",
-  "Hair Loss": "108267",
-  "Hoarseness": "108268",
-  "Increased Cold Sensitivity": "108269",
-  "Increased Light Sensitivity": "108270",
-  "Mild Pain": "108271",
-  "Mild Pruritus": "108272",
-  "Non Healing Wound With Recurring Episodes of Ulceration": "108273",
-  "Non Pruritic": "108274",
-  "None": "108275",
-  "Oily Skin": "108276",
-  "Pain": "108277",
-  "Pain Disproportionate to Skin Lesion in Early Stages": "108278",
-  "Pain,Swelling,Hottness and Reddness": "108279",
-  "Painful Nonhealing Ulcer": "108280",
-  "Painful Itchy Nodule": "108281",
-  "Paraesthesia Over Palms and Soles": "108282",
-  "Perianal itching&sensation of Small Papules Around Anus During Defecation": "108283",
-  "Photosensitivity": "108284",
-  "Pruritus (Itching)": "108285",
-  "Psychologically Disturbed": "108286",
-  "Purulent Discharge": "108287",
-  "Slow Growing of Yellowish Thickened Nails and Chronic Cough": "108288",
-  "Slowly Growing Nodules,Painful,With Presence of Comedones(black Heads)and Pustules in the Face": "108289",
-  "Stinging": "108290",
-  "Sweating": "108291",
-  "Undetermined": "108292",
-  "Weakness": "108293"
-};
+SYMPTOMS_DICT = {};
+SYMPTOMS_DICT[translations["Anesthesia"][selectedLanguage]] = "108251";
+SYMPTOMS_DICT[translations["Asymptomatic"][selectedLanguage]] = "108252";
+SYMPTOMS_DICT[translations["Bad Smell"][selectedLanguage]] = "108253";
+SYMPTOMS_DICT[translations["Bleeding"][selectedLanguage]] = "108254";
+SYMPTOMS_DICT[translations["Blood Serum Exudate"][selectedLanguage]] = "108255";
+SYMPTOMS_DICT[translations["Burning"][selectedLanguage]] = "108256";
+SYMPTOMS_DICT[translations["Cosmetic Disfigurement"][selectedLanguage]] = "108257";
+SYMPTOMS_DICT[translations["Cosmetic Disturbance"][selectedLanguage]] = "108258";
+SYMPTOMS_DICT[translations["Difficulty Swallowing"][selectedLanguage]] = "108259";
+SYMPTOMS_DICT[translations["Dry Skin"][selectedLanguage]] = "108260";
+SYMPTOMS_DICT[translations["Dry Skin: Xerosis"][selectedLanguage]] = "108261";
+SYMPTOMS_DICT[translations["Ectropion"][selectedLanguage]] = "108262";
+SYMPTOMS_DICT[translations["Excessive Growth of Coarse Thick Hair at the Beard and Moustache"][selectedLanguage]] = "108263";
+SYMPTOMS_DICT[translations["Fever"][selectedLanguage]] = "108264";
+SYMPTOMS_DICT[translations["Flaky, Discoloured Patch Over Back and Chest"][selectedLanguage]] = "108265";
+SYMPTOMS_DICT[translations["Flushing"][selectedLanguage]] = "108266";
+SYMPTOMS_DICT[translations["Hair Loss"][selectedLanguage]] = "108267";
+SYMPTOMS_DICT[translations["Hoarseness"][selectedLanguage]] = "108268";
+SYMPTOMS_DICT[translations["Increased Cold Sensitivity"][selectedLanguage]] = "108269";
+SYMPTOMS_DICT[translations["Increased Light Sensitivity"][selectedLanguage]] = "108270";
+SYMPTOMS_DICT[translations["Mild Pain"][selectedLanguage]] = "108271";
+SYMPTOMS_DICT[translations["Mild Pruritus"][selectedLanguage]] = "108272";
+SYMPTOMS_DICT[translations["Non Healing Wound With Recurring Episodes of Ulceration"][selectedLanguage]] = "108273";
+SYMPTOMS_DICT[translations["Non Pruritic"][selectedLanguage]] = "108274";
+SYMPTOMS_DICT[translations["None"][selectedLanguage]] = "108275";
+SYMPTOMS_DICT[translations["Oily Skin"][selectedLanguage]] = "108276";
+SYMPTOMS_DICT[translations["Pain"][selectedLanguage]] = "108277";
+SYMPTOMS_DICT[translations["Pain Disproportionate to Skin Lesion in Early Stages"][selectedLanguage]] = "108278";
+SYMPTOMS_DICT[translations["Pain, Swelling, Hotness and Redness"][selectedLanguage]] = "108279";
+SYMPTOMS_DICT[translations["Painful Nonhealing Ulcer"][selectedLanguage]] = "108280";
+SYMPTOMS_DICT[translations["Painful, Itchy Nodule"][selectedLanguage]] = "108281";
+SYMPTOMS_DICT[translations["Paraesthesia Over Palms and Soles"][selectedLanguage]] = "108282";
+SYMPTOMS_DICT[translations["Perianal itching and sensation of Small Papules Around Anus During Defecation"][selectedLanguage]] = "108283";
+SYMPTOMS_DICT[translations["Photosensitivity"][selectedLanguage]] = "108284";
+SYMPTOMS_DICT[translations["Pruritus (Itching)"][selectedLanguage]] = "108285";
+SYMPTOMS_DICT[translations["Psychologically Disturbed"][selectedLanguage]] = "108286";
+SYMPTOMS_DICT[translations["Purulent Discharge"][selectedLanguage]] = "108287";
+SYMPTOMS_DICT[translations["Slow Growing of Yellowish, Thickened Nails and Chronic Cough"][selectedLanguage]] = "108288";
+SYMPTOMS_DICT[translations["Slowly Growing Nodules, Painful, With Presence of Comedones(Black Heads)and Pustules in the Face"][selectedLanguage]] = "108289";
+SYMPTOMS_DICT[translations["Stinging"][selectedLanguage]] = "108290";
+SYMPTOMS_DICT[translations["Sweating"][selectedLanguage]] = "108291";
+SYMPTOMS_DICT[translations["Undetermined"][selectedLanguage]] = "108292";
+SYMPTOMS_DICT[translations["Weakness"][selectedLanguage]] = "108293";
 
 PATHOS_DICT = {
   "Acquired Disorders of the Dermis and Subcutaneous Tissue": "108295|108296|108297|108298|108299|108300|108301|108302|108303|108304|108305|108306|108307|108308|108309|108310|108311|108312|108313|108314|108315|108316|108317|108318|108319|108320|108321|108322|108323|108324|108325|108326|108327|108328",

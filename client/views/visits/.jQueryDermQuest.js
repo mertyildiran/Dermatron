@@ -69,8 +69,8 @@ $('#diagnosis label').each(function(index) {
 
 // ------ TRANSLATIONS ------
 
+// Dictionaries
 var str = "";
-
 $('#lesions > div > div > div > div > ul > li').each(function(index) {
     key = 'translations["' + $(this.children[1]).text() + '"][selectedLanguage]';
     value = $(this.children[1]).attr('for').substring(6);
@@ -79,5 +79,42 @@ $('#lesions > div > div > div > div > ul > li').each(function(index) {
     });
     str += 'LESIONS_DICT[' + key + '] = "' + value + '";\n';
 });
+$('#symptoms > div > div > div > div > ul > li').each(function(index) {
+    key = 'translations["' + $(this.children[1]).text() + '"][selectedLanguage]';
+    value = $(this.children[1]).attr('for').substring(6);
+    $(this.children[2]).find('li').each(function(index) {
+        value += '|' + $(this).attr('data-facet-id');
+    });
+    str += 'SYMPTOMS_DICT[' + key + '] = "' + value + '";\n';
+});
+copy(str);
 
+// Translations
+var str = "";
+$('#lesions > div > div > div > div > ul > li').each(function(index) {
+    key = $(this.children[1]).text();
+    str += '"' + key + '": {\n\
+        en_US: "' + key + '",\n\
+        en_GB: "' + key + '",\n\
+        tr_TR: "' + key + '"\n\
+    },';
+});
+$('#symptoms > div > div > div > div > ul > li').each(function(index) {
+    key = $(this.children[1]).text();
+    str += '"' + key + '": {\n\
+        en_US: "' + key + '",\n\
+        en_GB: "' + key + '",\n\
+        tr_TR: "' + key + '"\n\
+    },';
+});
+copy(str);
+
+// Selects
+var str = "";
+$('#lesions > div > div > div > div > ul > li > label').each(function(index) {
+    str += '<option value="{{tr "' + $(this).text() + '"}}">{{tr "' + $(this).text() + '"}}</option>\n';
+});
+$('#symptoms > div > div > div > div > ul > li > label').each(function(index) {
+    str += '<option value="{{tr "' + $(this).text() + '"}}">{{tr "' + $(this).text() + '"}}</option>\n';
+});
 copy(str);

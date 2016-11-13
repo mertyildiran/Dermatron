@@ -921,7 +921,229 @@ translations = {
         en_US: "Zosteriform Rash",
         en_GB: "Zosteriform Rash",
         tr_TR: "Zosteriform İsilik"
-    }
+    },
+
+    // ------ LESION ------
+
+    // ------ SYMPTOMS ------
+
+    "Anesthesia": {
+        en_US: "Anesthesia",
+        en_GB: "Anesthesia",
+        tr_TR: "Anestezi"
+    },
+    "Asymptomatic": {
+        en_US: "Asymptomatic",
+        en_GB: "Asymptomatic",
+        tr_TR: "Asemptomatik"
+    },
+    "Bad Smell": {
+        en_US: "Bad Smell",
+        en_GB: "Bad Smell",
+        tr_TR: "Kötü Koku"
+    },
+    "Bleeding": {
+        en_US: "Bleeding",
+        en_GB: "Bleeding",
+        tr_TR: "Kanama"
+    },
+    "Blood Serum Exudate": {
+        en_US: "Blood Serum Exudate",
+        en_GB: "Blood Serum Exudate",
+        tr_TR: "Kan Serumu Sızıntısı"
+    },
+    "Burning": {
+        en_US: "Burning",
+        en_GB: "Burning",
+        tr_TR: "Yanma"
+    },
+    "Cosmetic Disfigurement": {
+        en_US: "Cosmetic Disfigurement",
+        en_GB: "Cosmetic Disfigurement",
+        tr_TR: "Kozmetik Şekil Bozukluğu"
+    },
+    "Cosmetic Disturbance": {
+        en_US: "Cosmetic Disturbance",
+        en_GB: "Cosmetic Disturbance",
+        tr_TR: "Kozmetik Rahatsızlık"
+    },
+    "Difficulty Swallowing": {
+        en_US: "Difficulty Swallowing",
+        en_GB: "Difficulty Swallowing",
+        tr_TR: "Yutkunmada Zorluk"
+    },
+    "Dry Skin": {
+        en_US: "Dry Skin",
+        en_GB: "Dry Skin",
+        tr_TR: "Kuru Cilt"
+    },
+    "Dry Skin: Xerosis": {
+        en_US: "Dry Skin: Xerosis",
+        en_GB: "Dry Skin: Xerosis",
+        tr_TR: "Kuru Cilt: Kserozis"
+    },
+    "Ectropion": {
+        en_US: "Ectropion",
+        en_GB: "Ectropion",
+        tr_TR: "Göz Kapaklarının Dışarı Bükülmesi (Ektropiyon)"
+    },
+    "Excessive Growth of Coarse Thick Hair at the Beard and Moustache": {
+        en_US: "Excessive Growth of Coarse Thick Hair at the Beard and Moustache",
+        en_GB: "Excessive Growth of Coarse Thick Hair at the Beard and Moustache",
+        tr_TR: "Sakal veya Bıyıktaki Kalın Kılların Aşırı Büyümesi"
+    },
+    "Fever": {
+        en_US: "Fever",
+        en_GB: "Fever",
+        tr_TR: "Ateş"
+    },
+    "Flaky, Discoloured Patch Over Back and Chest": {
+        en_US: "Flaky, Discoloured Patch Over Back and Chest",
+        en_GB: "Flaky, Discoloured Patch Over Back and Chest",
+        tr_TR: "Sırtta veya Göğüste Renksiz, Pul Pul Yama"
+    },
+    "Flushing": {
+        en_US: "Flushing",
+        en_GB: "Flushing",
+        tr_TR: "Fışkırma"
+    },
+    "Hair Loss": {
+        en_US: "Hair Loss",
+        en_GB: "Hair Loss",
+        tr_TR: "Saç Dökülmesi"
+    },
+    "Hoarseness": {
+        en_US: "Hoarseness",
+        en_GB: "Hoarseness",
+        tr_TR: "Ses Kısıklığı"
+    },
+    "Increased Cold Sensitivity": {
+        en_US: "Increased Cold Sensitivity",
+        en_GB: "Increased Cold Sensitivity",
+        tr_TR: "Artan Soğuk Hassasiyeti"
+    },
+    "Increased Light Sensitivity": {
+        en_US: "Increased Light Sensitivity",
+        en_GB: "Increased Light Sensitivity",
+        tr_TR: "Artan Işık Hassasiyeti"
+    },
+    "Mild Pain": {
+        en_US: "Mild Pain",
+        en_GB: "Mild Pain",
+        tr_TR: "Hafif Ağrı"
+    },
+    "Mild Pruritus": {
+        en_US: "Mild Pruritus",
+        en_GB: "Mild Pruritus",
+        tr_TR: "Hafif Kaşıntı"
+    },
+    "Non Healing Wound With Recurring Episodes of Ulceration": {
+        en_US: "Non Healing Wound With Recurring Episodes of Ulceration",
+        en_GB: "Non Healing Wound With Recurring Episodes of Ulceration",
+        tr_TR: "Sürekli Nüks Eden Ülser ile Bir Türlü İyileşmeyen Yara"
+    },
+    "Non Pruritic": {
+        en_US: "Non Pruritic",
+        en_GB: "Non Pruritic",
+        tr_TR: "Kaşıntısız"
+    },
+    "None": {
+        en_US: "None",
+        en_GB: "None",
+        tr_TR: "Hiçbiri"
+    },
+    "Oily Skin": {
+        en_US: "Oily Skin",
+        en_GB: "Oily Skin",
+        tr_TR: "Yağlı Cilt"
+    },
+    "Pain": {
+        en_US: "Pain",
+        en_GB: "Pain",
+        tr_TR: "Ağrı"
+    },
+    "Pain Disproportionate to Skin Lesion in Early Stages": {
+        en_US: "Pain Disproportionate to Skin Lesion in Early Stages",
+        en_GB: "Pain Disproportionate to Skin Lesion in Early Stages",
+        tr_TR: "Cilt Lezyonunun Erken Aşamalarında Orantısız Ağrı"
+    },
+    "Pain, Swelling, Hotness and Redness": {
+        en_US: "Pain, Swelling, Hotness and Redness",
+        en_GB: "Pain, Swelling, Hotness and Redness",
+        tr_TR: "Ağrı, Şişlik, Sıcaklık ve Kızarıklık"
+    },
+    "Painful Nonhealing Ulcer": {
+        en_US: "Painful Nonhealing Ulcer",
+        en_GB: "Painful Nonhealing Ulcer",
+        tr_TR: "Ağrılı İyileşmeyen Ülser"
+    },
+    "Painful, Itchy Nodule": {
+        en_US: "Painful, Itchy Nodule",
+        en_GB: "Painful, Itchy Nodule",
+        tr_TR: "Ağrılı, Kaşıntılı Nodül"
+    },
+    "Paraesthesia Over Palms and Soles": {
+        en_US: "Paraesthesia Over Palms and Soles",
+        en_GB: "Paraesthesia Over Palms and Soles",
+        tr_TR: "Avuç İçi ya da Ayak Tabanında Karıncalanma"
+    },
+    "Perianal itching and sensation of Small Papules Around Anus During Defecation": {
+        en_US: "Perianal itching and sensation of Small Papules Around Anus During Defecation",
+        en_GB: "Perianal itching and sensation of Small Papules Around Anus During Defecation",
+        tr_TR: "Dışkılama Esnasında Makat Çevresinde Küçük Kabarcık Hissi ve Kaşınma"
+    },
+    "Photosensitivity": {
+        en_US: "Photosensitivity",
+        en_GB: "Photosensitivity",
+        tr_TR: "Işığa Duyarlılık"
+    },
+    "Pruritus (Itching)": {
+        en_US: "Pruritus (Itching)",
+        en_GB: "Pruritus (Itching)",
+        tr_TR: "Kaşıntı (Kaşınma)"
+    },
+    "Psychologically Disturbed": {
+        en_US: "Psychologically Disturbed",
+        en_GB: "Psychologically Disturbed",
+        tr_TR: "Psikolojik Olarak Rahatsız"
+    },
+    "Purulent Discharge": {
+        en_US: "Purulent Discharge",
+        en_GB: "Purulent Discharge",
+        tr_TR: "İltihap Boşalması"
+    },
+    "Slow Growing of Yellowish, Thickened Nails and Chronic Cough": {
+        en_US: "Slow Growing of Yellowish, Thickened Nails and Chronic Cough",
+        en_GB: "Slow Growing of Yellowish, Thickened Nails and Chronic Cough",
+        tr_TR: "Yavaş Büyüyen, Sarımtırak, Kalınlaşmış Tırnaklar ve Kronik Öksürük"
+    },
+    "Slowly Growing Nodules, Painful, With Presence of Comedones(Black Heads)and Pustules in the Face": {
+        en_US: "Slowly Growing Nodules, Painful, With Presence of Comedones(Black Heads)and Pustules in the Face",
+        en_GB: "Slowly Growing Nodules, Painful, With Presence of Comedones(Black Heads)and Pustules in the Face",
+        tr_TR: "Yavaşça Büyüyen Nodüller, Ağrılı, Komedonların(Siyah Başlı) Varlığı ve Yüzde Sivilceler"
+    },
+    "Stinging": {
+        en_US: "Stinging",
+        en_GB: "Stinging",
+        tr_TR: "Uyuşma / Sızlama"
+    },
+    "Sweating": {
+        en_US: "Sweating",
+        en_GB: "Sweating",
+        tr_TR: "Terleme"
+    },
+    "Undetermined": {
+        en_US: "Undetermined",
+        en_GB: "Undetermined",
+        tr_TR: "Belirsiz"
+    },
+    "Weakness": {
+        en_US: "Weakness",
+        en_GB: "Weakness",
+        tr_TR: "Halsizlik / Kuvvetsizlik"
+    },
+
+    // ------ SYMPTOMS ------
 }
 
 selectedLanguage = "en_US";
