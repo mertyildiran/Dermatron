@@ -22,11 +22,11 @@ Template.show_visits.helpers ({
       }
   },
 
-  placeImage: function(data) {
+  placeImage: function(data, captionImage) {
       if (data) {
           var image = '<figure> \
               <img alt="This visit" src="' + data + '" /> \
-              <figcaption><p>This visit</p></figcaption> \
+              <figcaption id="captured"><p>' + captionImage + '</p></figcaption> \
           </figure>';
           return image;
       } else {
@@ -34,11 +34,11 @@ Template.show_visits.helpers ({
       }
   },
 
-  previousImage: function(givenId, dateTime) {
+  previousImage: function(givenId, dateTime, captionLastVisit) {
       if (givenId) {
           var previousVisitImage = '<figure> \
               <img alt="Previous visit" src="' + visits.findOne({ patientId: givenId, visitDateTime: {$lt: dateTime} }, { sort: { visitDateTime: -1 } }).image + '" /> \
-              <figcaption><p>Previous visit</p></figcaption> \
+              <figcaption id="last-visit"><p>' + captionLastVisit + '</p></figcaption> \
           </figure>';
           return previousVisitImage;
       } else {

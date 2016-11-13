@@ -279,7 +279,7 @@
             <br>
             <a class="btn btn-default btn-xs" id="captureButton" nohref>Take a photo</a> <i style="color: #6e6e6e;">* Make sure you have connected your Dermatoscope via USB as the primary camera</i>
             <br>
-            <div id="capturedImage">{{{placeImage image}}}{{{previousImage patientId visitDateTime}}}</div>
+            <div id="capturedImage" value="{{image}}">{{{placeImage image captionImage}}}{{{previousImage patientId visitDateTime captionLastVisit}}}</div>
             <br>
             <div id="dermquest-suggestions"></div>
             <br>

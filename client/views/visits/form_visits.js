@@ -37,11 +37,11 @@ Template.form_visits.helpers ({
         }
     },
 
-    placeImage: function(data) {
+    placeImage: function(data, captionImage) {
         if (data) {
             var image = '<figure> \
                 <img alt="This visit" src="' + data + '" /> \
-                <figcaption><p>This visit</p></figcaption> \
+                <figcaption id="captured"><p>' + captionImage + '</p></figcaption> \
             </figure>';
             return image;
         } else {
@@ -49,11 +49,11 @@ Template.form_visits.helpers ({
         }
     },
 
-    previousImage: function(givenId, dateTime) {
+    previousImage: function(givenId, dateTime, captionLastVisit) {
         if (givenId) {
             var previousVisitImage = '<figure> \
                 <img alt="Previous visit" src="' + visits.findOne({ patientId: givenId, visitDateTime: {$lt: dateTime} }, { sort: { visitDateTime: -1 } }).image + '" /> \
-                <figcaption><p>Previous visit</p></figcaption> \
+                <figcaption id="last-visit"><p>' + captionLastVisit + '</p></figcaption> \
             </figure>';
             return previousVisitImage;
         } else {
@@ -187,6 +187,7 @@ Template.form_visits.events ({
 
         MeteorCamera.getPicture(cameraOptions, function (error, data) {
             if (data) {
+                imageCounter = 0;
                 var capturedImage = '<figure> \
                     <canvas id="captured" width="600" height="450"></canvas> \
                     <figcaption id="captured"><p></p></figcaption> \
@@ -202,10 +203,11 @@ Template.form_visits.events ({
                     compareImages();
                 }
                 img.src = data;
+                $('div#capturedImage').attr('value',data);
 
 
                 try {
-                    if ($('#input_patientId').val()) {
+                    if ( $('#input_patientId').val() && visits.findOne({ patientId: $('#input_patientId').val() }, { sort: { visitDateTime: -1 } }) ) {
                         //var lastVisitImage = visits.findOne({ patientId: $('#input_patientId').val() }, { sort: { visitDate: -1, visitTime: 1} }).image;
                         var lastVisitImage = '<figure style="display: none;"> \
                             <canvas id="last-visit" width="600" height="450"></canvas> \
@@ -221,7 +223,7 @@ Template.form_visits.events ({
                             $('div#capturedImage figcaption#last-visit p').html('Area: ' + areaOfLastVisit + ' px<sup>2</sup>');
                             compareImages();
                         }
-                        img2.src = visits.findOne({ patientId: $('#input_patientId').val() }, { sort: { visitDate: -1, visitTime: 1} }).image;
+                        img2.src = visits.findOne({ patientId: $('#input_patientId').val() }, { sort: { visitDateTime: -1 } }).image;
                         $('figure').show('slow');
                     }
                 }
@@ -405,9 +407,12 @@ function compareImages() {
         if (areaOfCaptured > areaOfLastVisit) {
             $('div#capturedImage figcaption#captured p').html( $('div#capturedImage figcaption#captured p').html() + ' (bigger)' );
             $('div#capturedImage figcaption#last-visit p').html( $('div#capturedImage figcaption#last-visit p').html() + ' (smaller)' );
-        } else {
+        } else if (areaOfCaptured < areaOfLastVisit) {
             $('div#capturedImage figcaption#captured p').html( $('div#capturedImage figcaption#captured p').html() + ' (smaller)' );
             $('div#capturedImage figcaption#last-visit p').html( $('div#capturedImage figcaption#last-visit p').html() + ' (bigger)' );
+        } else {
+            $('div#capturedImage figcaption#captured p').html( $('div#capturedImage figcaption#captured p').html() + ' (exactly equal)' );
+            $('div#capturedImage figcaption#last-visit p').html( $('div#capturedImage figcaption#last-visit p').html() + ' (exactly equal)' );
         }
     }
 }

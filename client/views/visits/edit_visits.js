@@ -19,7 +19,9 @@ Template.edit_visits.events ({
             symptoms: $('#input_symptoms').val(),
             pathophysiology: $('#input_pathophysiology').val(),
             anatomicalLocation: tpl.find('#input_anatomicalLocation').value,
-            image: $('div#capturedImage figure img').attr('src'),
+            image: $('div#capturedImage').attr('value'),
+            captionImage: $('div#capturedImage figcaption#captured p').html(),
+            captionLastVisit: $('div#capturedImage figcaption#last-visit p').html(),
             diagnosis: $('#input_diagnosis').val(),
             prescription: $('#input_prescription').val(),
         };
