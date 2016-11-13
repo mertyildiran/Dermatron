@@ -1,148 +1,147 @@
 FORM_VISITS_GENDER = 'male';
 
-LESIONS_DICT = {
-  "Absence of Skin": "108070",
-  "Alopecia": "108071|108072|108073",
-  "Anetoderma": "108074",
-  "Annular Plaque": "108075",
-  "Atrophy": "108076",
-  "Beaded Border": "108077",
-  "Beaded Papules Along the Eyelid Margins": "108078",
-  "Beau's Lines": "108079",
-  "Bleeding": "108080",
-  "Blue Black Huge Patch at the Back of Recently Born Baby": "108081",
-  "Blue Papules": "108082",
-  "Body Louse": "108083",
-  "Bulla": "108084|108085",
-  "Burrow": "108086",
-  "Chromosomal Aberration With Proliferation": "108087",
-  "Comedones": "108088",
-  "Crust": "108089",
-  "Cyanosis": "108090",
-  "Cyst": "108091",
-  "Cystic Nodule": "108092",
-  "Deep Purple Tumor": "108093",
-  "Deep Red Macule": "108094",
-  "Depigmented Patches": "108095",
-  "Dermographism": "108096",
-  "Dermoscopy": "108097",
-  "Diffuse Hair Shaft Disorder": "108098",
-  "Digitate Fibrous Polyp": "108099",
-  "Ecchymosis": "108100",
-  "Edema": "108101",
-  "Edematous ,Erythamatous,Tender Swelling at Both Ears Sparing Ear Lobules": "108102",
-  "Edematous, Erythematous, Tender Swelling": "108103",
-  "Erosion": "108104|108105",
-  "Erysipeloid Leishmaniasis": "108106",
-  "Erythema": "108107",
-  "Erythematous Macular Lesions With Sharply Demarkated Borders": "108108",
-  "Erythroderma": "108109",
-  "Evanescent, Erythematous, Edematous Plaques": "108110",
-  "Excoriation": "108111",
-  "Filiform Papillomas": "108112",
-  "Fissure": "108113",
-  "Flagellated Erythema and Blisters": "108114",
-  "Folds Vegitations": "108115",
-  "Follicular, Erythematous Hyperkeratotic Papules Coalescing to Make  Scaly Plaques": "108116",
-  "Fungating Mass": "108117",
-  "Geographic Tongue": "108118",
-  "Green Hair": "108119",
-  "Grouped Vesicles on Erythematous Base": "108120",
-  "Gumma": "108121",
-  "Heperpigmented Patch": "108122",
-  "Heperpigmented Patches": "108123",
-  "Hirstutism": "108124",
-  "Hirsutism": "108125",
-  "Hives": "108126",
-  "Horn": "108127",
-  "Horn-Like Projection": "108128",
-  "Hyperkeratosis": "108129",
-  "Hyperpigmentation": "108130",
-  "Hypertrichosis": "108131",
-  "Hypertrophy and Folding of the Skin of the Scalp": "108132",
-  "Hypopigmented": "108133",
-  "Hypopigmented Patches": "108134",
-  "Intertrigo": "108135",
-  "Itching": "108136",
-  "Jaundice": "108137",
-  "Large Indurated Nodule": "108138",
-  "Lax Skin": "108139",
-  "Leuconychia": "108140",
-  "Lichenification": "108141",
-  "Livedo Racemosa": "108142",
-  "Livedo Reticularis": "108143",
-  "Localized Hair Loss": "108144",
-  "Loss of Hair From Eyebrows(atrichia),Ichthyosis Follicularis All Over Body and Photophobia": "108145",
-  "Macule": "108146|108147|108148|108149|108150|108151|108152|108153",
-  "Mucosal Erosion": "108154",
-  "Nail Dystrophy": "108155",
-  "Nail Hyperpigmentation": "108156",
-  "Nail Pits": "108157",
-  "Nail Ridging": "108158",
-  "Nail Shedding": "108159",
-  "Necrosis": "108160",
-  "Nodule": "108161|108162|108163|108164|108165|108166",
-  "Nodules,Cysts,Pustules,Commedones Andscars": "108167",
-  "Nodules,Papules,Cysts,Pustules and Post Acne Scars at the Face and Back of the Trunks": "108168",
-  "OCULAR DAMAGE": "108169",
-  "Onychogryphosis": "108170",
-  "Onycholysis": "108171",
-  "Onychomadesis": "108172",
-  "Onychoschizia": "108173",
-  "Oozing": "108174",
-  "Open Comedones": "108175",
-  "Pachyonychia": "108176",
-  "Painful Scab": "108177",
-  "Papule": "108178|108179|108180|108181|108182|108183|108184|108185|108186|108187",
-  "Papules": "108188",
-  "Patch": "108189",
-  "Pigmentation": "108190",
-  "Pits": "108191",
-  "Plaque": "108192|108193|108194|108195|108196|108197|108198",
-  "Poikiloderma": "108199",
-  "Prurigo": "108200",
-  "Pterygium Unguis": "108201",
-  "Purple Nodule": "108202",
-  "Purplish Nodule": "108203",
-  "Purpura": "108204",
-  "Pustule": "108205|108206|108207",
-  "Raised With a Flat Surface": "108208",
-  "Round Papule With a Rough Surface Surrounded by a Collar  of Hyperkeratosis.": "108209",
-  "SCALING and FISSURING": "108210",
-  "Scar": "108211|108212|108213|108214|108215",
-  "Scar-Like Plaque": "108216",
-  "Scars From Third Degree Burns": "108217",
-  "Sclerosis": "108218",
-  "Severe Scaling": "108219",
-  "Sinus": "108220|108221",
-  "Skin Fragility": "108222",
-  "Skin-Colored Nodules.": "108223",
-  "Squames": "108224|108225",
-  "Striae": "108226",
-  "Superficial Spreading Melanoma": "108227",
-  "Supernumerary Digit": "108228",
-  "Swelling": "108229",
-  "Target Lesions": "108230",
-  "Telangiectasis": "108231",
-  "Tender Nodules on Trunk": "108232",
-  "Translucent Nodule": "108233",
-  "Tumour": "108234",
-  "Ulcer": "108235",
-  "Undetermined": "108236",
-  "Verrucous Papules": "108237",
-  "Verrucous Papules and Nodules": "108238",
-  "Verrucous Papules in Perianal Skin": "108239",
-  "Verrucous Plaque": "108240",
-  "Vesicles": "108241",
-  "Violaceous Papules": "108242",
-  "Well Circumscribed Patches of Intensely Itchy Lichenification With Hyperpigmentation": "108243",
-  "Wheal": "108244",
-  "Whitish Plaques": "108245",
-  "Wrinkles": "108246",
-  "Xerosis": "108247",
-  "Yellowish Papules , Slightly Thickened Leather-Like Skin": "108248",
-  "Zosteriform Rash": "108249"
-};
+LESIONS_DICT = {};
+LESIONS_DICT[translations["Absence of Skin"][selectedLanguage]] = "108070";
+LESIONS_DICT[translations["Alopecia"][selectedLanguage]] = "108071|108072|108073";
+LESIONS_DICT[translations["Anetoderma"][selectedLanguage]] = "108074";
+LESIONS_DICT[translations["Annular Plaque"][selectedLanguage]] = "108075";
+LESIONS_DICT[translations["Atrophy"][selectedLanguage]] = "108076";
+LESIONS_DICT[translations["Beaded Border"][selectedLanguage]] = "108077";
+LESIONS_DICT[translations["Beaded Papules Along the Eyelid Margins"][selectedLanguage]] = "108078";
+LESIONS_DICT[translations["Beaus Lines"][selectedLanguage]] = "108079";
+LESIONS_DICT[translations["Bleeding"][selectedLanguage]] = "108080";
+LESIONS_DICT[translations["Blue Black Huge Patch at the Back of Recently Born Baby"][selectedLanguage]] = "108081";
+LESIONS_DICT[translations["Blue Papules"][selectedLanguage]] = "108082";
+LESIONS_DICT[translations["Body Louse"][selectedLanguage]] = "108083";
+LESIONS_DICT[translations["Bulla"][selectedLanguage]] = "108084|108085";
+LESIONS_DICT[translations["Burrow"][selectedLanguage]] = "108086";
+LESIONS_DICT[translations["Chromosomal Aberration With Proliferation"][selectedLanguage]] = "108087";
+LESIONS_DICT[translations["Comedones"][selectedLanguage]] = "108088";
+LESIONS_DICT[translations["Crust"][selectedLanguage]] = "108089";
+LESIONS_DICT[translations["Cyanosis"][selectedLanguage]] = "108090";
+LESIONS_DICT[translations["Cyst"][selectedLanguage]] = "108091";
+LESIONS_DICT[translations["Cystic Nodule"][selectedLanguage]] = "108092";
+LESIONS_DICT[translations["Deep Purple Tumor"][selectedLanguage]] = "108093";
+LESIONS_DICT[translations["Deep Red Macule"][selectedLanguage]] = "108094";
+LESIONS_DICT[translations["Depigmented Patches"][selectedLanguage]] = "108095";
+LESIONS_DICT[translations["Dermographism"][selectedLanguage]] = "108096";
+LESIONS_DICT[translations["Dermoscopy"][selectedLanguage]] = "108097";
+LESIONS_DICT[translations["Diffuse Hair Shaft Disorder"][selectedLanguage]] = "108098";
+LESIONS_DICT[translations["Digitate Fibrous Polyp"][selectedLanguage]] = "108099";
+LESIONS_DICT[translations["Ecchymosis"][selectedLanguage]] = "108100";
+LESIONS_DICT[translations["Edema"][selectedLanguage]] = "108101";
+LESIONS_DICT[translations["Edematous, Erythamatous, Tender Swelling at Both Ears Sparing Ear Lobules"][selectedLanguage]] = "108102";
+LESIONS_DICT[translations["Edematous, Erythematous, Tender Swelling"][selectedLanguage]] = "108103";
+LESIONS_DICT[translations["Erosion"][selectedLanguage]] = "108104|108105";
+LESIONS_DICT[translations["Erysipeloid Leishmaniasis"][selectedLanguage]] = "108106";
+LESIONS_DICT[translations["Erythema"][selectedLanguage]] = "108107";
+LESIONS_DICT[translations["Erythematous Macular Lesions With Sharply Demarkated Borders"][selectedLanguage]] = "108108";
+LESIONS_DICT[translations["Erythroderma"][selectedLanguage]] = "108109";
+LESIONS_DICT[translations["Evanescent, Erythematous, Edematous Plaques"][selectedLanguage]] = "108110";
+LESIONS_DICT[translations["Excoriation"][selectedLanguage]] = "108111";
+LESIONS_DICT[translations["Filiform Papillomas"][selectedLanguage]] = "108112";
+LESIONS_DICT[translations["Fissure"][selectedLanguage]] = "108113";
+LESIONS_DICT[translations["Flagellated Erythema and Blisters"][selectedLanguage]] = "108114";
+LESIONS_DICT[translations["Folds Vegitations"][selectedLanguage]] = "108115";
+LESIONS_DICT[translations["Follicular, Erythematous Hyperkeratotic Papules Coalescing to Make  Scaly Plaques"][selectedLanguage]] = "108116";
+LESIONS_DICT[translations["Fungating Mass"][selectedLanguage]] = "108117";
+LESIONS_DICT[translations["Geographic Tongue"][selectedLanguage]] = "108118";
+LESIONS_DICT[translations["Green Hair"][selectedLanguage]] = "108119";
+LESIONS_DICT[translations["Grouped Vesicles on Erythematous Base"][selectedLanguage]] = "108120";
+LESIONS_DICT[translations["Gumma"][selectedLanguage]] = "108121";
+LESIONS_DICT[translations["Heperpigmented Patch"][selectedLanguage]] = "108122";
+LESIONS_DICT[translations["Heperpigmented Patches"][selectedLanguage]] = "108123";
+LESIONS_DICT[translations["Hirstutism"][selectedLanguage]] = "108124";
+LESIONS_DICT[translations["Hirsutism"][selectedLanguage]] = "108125";
+LESIONS_DICT[translations["Hives"][selectedLanguage]] = "108126";
+LESIONS_DICT[translations["Horn"][selectedLanguage]] = "108127";
+LESIONS_DICT[translations["Horn-Like Projection"][selectedLanguage]] = "108128";
+LESIONS_DICT[translations["Hyperkeratosis"][selectedLanguage]] = "108129";
+LESIONS_DICT[translations["Hyperpigmentation"][selectedLanguage]] = "108130";
+LESIONS_DICT[translations["Hypertrichosis"][selectedLanguage]] = "108131";
+LESIONS_DICT[translations["Hypertrophy and Folding of the Skin of the Scalp"][selectedLanguage]] = "108132";
+LESIONS_DICT[translations["Hypopigmented"][selectedLanguage]] = "108133";
+LESIONS_DICT[translations["Hypopigmented Patches"][selectedLanguage]] = "108134";
+LESIONS_DICT[translations["Intertrigo"][selectedLanguage]] = "108135";
+LESIONS_DICT[translations["Itching"][selectedLanguage]] = "108136";
+LESIONS_DICT[translations["Jaundice"][selectedLanguage]] = "108137";
+LESIONS_DICT[translations["Large Indurated Nodule"][selectedLanguage]] = "108138";
+LESIONS_DICT[translations["Lax Skin"][selectedLanguage]] = "108139";
+LESIONS_DICT[translations["Leuconychia"][selectedLanguage]] = "108140";
+LESIONS_DICT[translations["Lichenification"][selectedLanguage]] = "108141";
+LESIONS_DICT[translations["Livedo Racemosa"][selectedLanguage]] = "108142";
+LESIONS_DICT[translations["Livedo Reticularis"][selectedLanguage]] = "108143";
+LESIONS_DICT[translations["Localized Hair Loss"][selectedLanguage]] = "108144";
+LESIONS_DICT[translations["Loss of Hair From Eyebrows(atrichia),Ichthyosis Follicularis All Over Body and Photophobia"][selectedLanguage]] = "108145";
+LESIONS_DICT[translations["Macule"][selectedLanguage]] = "108146|108147|108148|108149|108150|108151|108152|108153";
+LESIONS_DICT[translations["Mucosal Erosion"][selectedLanguage]] = "108154";
+LESIONS_DICT[translations["Nail Dystrophy"][selectedLanguage]] = "108155";
+LESIONS_DICT[translations["Nail Hyperpigmentation"][selectedLanguage]] = "108156";
+LESIONS_DICT[translations["Nail Pits"][selectedLanguage]] = "108157";
+LESIONS_DICT[translations["Nail Ridging"][selectedLanguage]] = "108158";
+LESIONS_DICT[translations["Nail Shedding"][selectedLanguage]] = "108159";
+LESIONS_DICT[translations["Necrosis"][selectedLanguage]] = "108160";
+LESIONS_DICT[translations["Nodule"][selectedLanguage]] = "108161|108162|108163|108164|108165|108166";
+LESIONS_DICT[translations["Nodules,Cysts,Pustules,Commedones Andscars"][selectedLanguage]] = "108167";
+LESIONS_DICT[translations["Nodules,Papules,Cysts,Pustules and Post Acne Scars at the Face and Back of the Trunks"][selectedLanguage]] = "108168";
+LESIONS_DICT[translations["Ocular Damage"][selectedLanguage]] = "108169";
+LESIONS_DICT[translations["Onychogryphosis"][selectedLanguage]] = "108170";
+LESIONS_DICT[translations["Onycholysis"][selectedLanguage]] = "108171";
+LESIONS_DICT[translations["Onychomadesis"][selectedLanguage]] = "108172";
+LESIONS_DICT[translations["Onychoschizia"][selectedLanguage]] = "108173";
+LESIONS_DICT[translations["Oozing"][selectedLanguage]] = "108174";
+LESIONS_DICT[translations["Open Comedones"][selectedLanguage]] = "108175";
+LESIONS_DICT[translations["Pachyonychia"][selectedLanguage]] = "108176";
+LESIONS_DICT[translations["Painful Scab"][selectedLanguage]] = "108177";
+LESIONS_DICT[translations["Papule"][selectedLanguage]] = "108178|108179|108180|108181|108182|108183|108184|108185|108186|108187";
+LESIONS_DICT[translations["Papules"][selectedLanguage]] = "108188";
+LESIONS_DICT[translations["Patch"][selectedLanguage]] = "108189";
+LESIONS_DICT[translations["Pigmentation"][selectedLanguage]] = "108190";
+LESIONS_DICT[translations["Pits"][selectedLanguage]] = "108191";
+LESIONS_DICT[translations["Plaque"][selectedLanguage]] = "108192|108193|108194|108195|108196|108197|108198";
+LESIONS_DICT[translations["Poikiloderma"][selectedLanguage]] = "108199";
+LESIONS_DICT[translations["Prurigo"][selectedLanguage]] = "108200";
+LESIONS_DICT[translations["Pterygium Unguis"][selectedLanguage]] = "108201";
+LESIONS_DICT[translations["Purple Nodule"][selectedLanguage]] = "108202";
+LESIONS_DICT[translations["Purplish Nodule"][selectedLanguage]] = "108203";
+LESIONS_DICT[translations["Purpura"][selectedLanguage]] = "108204";
+LESIONS_DICT[translations["Pustule"][selectedLanguage]] = "108205|108206|108207";
+LESIONS_DICT[translations["Raised With a Flat Surface"][selectedLanguage]] = "108208";
+LESIONS_DICT[translations["Round Papule With a Rough Surface Surrounded by a Collar of Hyperkeratosis"][selectedLanguage]] = "108209";
+LESIONS_DICT[translations["Scaling and Fissuring"][selectedLanguage]] = "108210";
+LESIONS_DICT[translations["Scar"][selectedLanguage]] = "108211|108212|108213|108214|108215";
+LESIONS_DICT[translations["Scar-Like Plaque"][selectedLanguage]] = "108216";
+LESIONS_DICT[translations["Scars From Third Degree Burns"][selectedLanguage]] = "108217";
+LESIONS_DICT[translations["Sclerosis"][selectedLanguage]] = "108218";
+LESIONS_DICT[translations["Severe Scaling"][selectedLanguage]] = "108219";
+LESIONS_DICT[translations["Sinus"][selectedLanguage]] = "108220|108221";
+LESIONS_DICT[translations["Skin Fragility"][selectedLanguage]] = "108222";
+LESIONS_DICT[translations["Skin-Colored Nodules"][selectedLanguage]] = "108223";
+LESIONS_DICT[translations["Squames"][selectedLanguage]] = "108224|108225";
+LESIONS_DICT[translations["Striae"][selectedLanguage]] = "108226";
+LESIONS_DICT[translations["Superficial Spreading Melanoma"][selectedLanguage]] = "108227";
+LESIONS_DICT[translations["Supernumerary Digit"][selectedLanguage]] = "108228";
+LESIONS_DICT[translations["Swelling"][selectedLanguage]] = "108229";
+LESIONS_DICT[translations["Target Lesions"][selectedLanguage]] = "108230";
+LESIONS_DICT[translations["Telangiectasis"][selectedLanguage]] = "108231";
+LESIONS_DICT[translations["Tender Nodules on Trunk"][selectedLanguage]] = "108232";
+LESIONS_DICT[translations["Translucent Nodule"][selectedLanguage]] = "108233";
+LESIONS_DICT[translations["Tumour"][selectedLanguage]] = "108234";
+LESIONS_DICT[translations["Ulcer"][selectedLanguage]] = "108235";
+LESIONS_DICT[translations["Undetermined"][selectedLanguage]] = "108236";
+LESIONS_DICT[translations["Verrucous Papules"][selectedLanguage]] = "108237";
+LESIONS_DICT[translations["Verrucous Papules and Nodules"][selectedLanguage]] = "108238";
+LESIONS_DICT[translations["Verrucous Papules in Perianal Skin"][selectedLanguage]] = "108239";
+LESIONS_DICT[translations["Verrucous Plaque"][selectedLanguage]] = "108240";
+LESIONS_DICT[translations["Vesicles"][selectedLanguage]] = "108241";
+LESIONS_DICT[translations["Violaceous Papules"][selectedLanguage]] = "108242";
+LESIONS_DICT[translations["Well Circumscribed Patches of Intensely Itchy Lichenification With Hyperpigmentation"][selectedLanguage]] = "108243";
+LESIONS_DICT[translations["Wheal"][selectedLanguage]] = "108244";
+LESIONS_DICT[translations["Whitish Plaques"][selectedLanguage]] = "108245";
+LESIONS_DICT[translations["Wrinkles"][selectedLanguage]] = "108246";
+LESIONS_DICT[translations["Xerosis"][selectedLanguage]] = "108247";
+LESIONS_DICT[translations["Yellowish Papules, Slightly Thickened Leather-Like Skin"][selectedLanguage]] = "108248";
+LESIONS_DICT[translations["Zosteriform Rash"][selectedLanguage]] = "108249";
 
 SYMPTOMS_DICT = {
   "Anesthesia": "108251",

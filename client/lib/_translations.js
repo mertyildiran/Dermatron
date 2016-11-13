@@ -362,9 +362,9 @@ translations = {
         en_GB: "Edema",
         tr_TR: "Ödem"
     },
-    "Edematous ,Erythamatous,Tender Swelling at Both Ears Sparing Ear Lobules": {
-        en_US: "Edematous ,Erythamatous,Tender Swelling at Both Ears Sparing Ear Lobules",
-        en_GB: "Edematous ,Erythamatous,Tender Swelling at Both Ears Sparing Ear Lobules",
+    "Edematous, Erythamatous, Tender Swelling at Both Ears Sparing Ear Lobules": {
+        en_US: "Edematous, Erythamatous, Tender Swelling at Both Ears Sparing Ear Lobules",
+        en_GB: "Edematous, Erythamatous, Tender Swelling at Both Ears Sparing Ear Lobules",
         tr_TR: "Kulak Lopçuklarında Ödemli, Eritematöz, Yumuşak Şişlik"
     },
     "Edematous, Erythematous, Tender Swelling": {
@@ -632,9 +632,9 @@ translations = {
         en_GB: "Nodules,Papules,Cysts,Pustules and Post Acne Scars at the Face and Back of the Trunks",
         tr_TR: "Yüzde ve Sırtta Nodüller, Papüller, Kistler, Püstüller ve Akne Sonrası Yara İzleri"
     },
-    "OCULAR DAMAGE": {
-        en_US: "OCULAR DAMAGE",
-        en_GB: "OCULAR DAMAGE",
+    "Ocular Damage": {
+        en_US: "Ocular Damage",
+        en_GB: "Ocular Damage",
         tr_TR: "Oküler Hasar"
     },
     "Onychogryphosis": {
@@ -747,14 +747,14 @@ translations = {
         en_GB: "Raised With a Flat Surface",
         tr_TR: "Düz Yükselti"
     },
-    "Round Papule With a Rough Surface Surrounded by a Collar  of Hyperkeratosis.": {
-        en_US: "Round Papule With a Rough Surface Surrounded by a Collar  of Hyperkeratosis.",
-        en_GB: "Round Papule With a Rough Surface Surrounded by a Collar  of Hyperkeratosis.",
+    "Round Papule With a Rough Surface Surrounded by a Collar of Hyperkeratosis": {
+        en_US: "Round Papule With a Rough Surface Surrounded by a Collar of Hyperkeratosis",
+        en_GB: "Round Papule With a Rough Surface Surrounded by a Collar of Hyperkeratosis",
         tr_TR: "Hiperkeratoz ile Çevirili Pürüzlü Yüzeyli Yuvarlak Papül"
     },
-    "SCALING and FISSURING": {
-        en_US: "SCALING and FISSURING",
-        en_GB: "SCALING and FISSURING",
+    "Scaling and Fissuring": {
+        en_US: "Scaling and Fissuring",
+        en_GB: "Scaling and Fissuring",
         tr_TR: "Pullanma ve Fissür"
     },
     "Scar": {
@@ -792,9 +792,9 @@ translations = {
         en_GB: "Skin Fragility",
         tr_TR: "Cilt Kırılganlığı"
     },
-    "Skin-Colored Nodules.": {
-        en_US: "Skin-Colored Nodules.",
-        en_GB: "Skin-Colored Nodules.",
+    "Skin-Colored Nodules": {
+        en_US: "Skin-Colored Nodules",
+        en_GB: "Skin-Colored Nodules",
         tr_TR: "Ten Renginde Nodüller"
     },
     "Squames": {
@@ -912,9 +912,9 @@ translations = {
         en_GB: "Xerosis",
         tr_TR: "Kserozis"
     },
-    "Yellowish Papules , Slightly Thickened Leather-Like Skin": {
-        en_US: "Yellowish Papules , Slightly Thickened Leather-Like Skin",
-        en_GB: "Yellowish Papules , Slightly Thickened Leather-Like Skin",
+    "Yellowish Papules, Slightly Thickened Leather-Like Skin": {
+        en_US: "Yellowish Papules, Slightly Thickened Leather-Like Skin",
+        en_GB: "Yellowish Papules, Slightly Thickened Leather-Like Skin",
         tr_TR: "Sarımtırak Papüller, Hafifçe Kalınlaşmış Deri Benzeri Cilt"
     },
     "Zosteriform Rash": {

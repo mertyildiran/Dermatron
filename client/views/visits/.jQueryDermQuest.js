@@ -66,3 +66,18 @@ $('#diagnosis label').each(function(index) {
     //$(event.currentTarget).val($(event.currentTarget).val() + string);
     //console.log($(event.currentTarget).val());
 }
+
+// ------ TRANSLATIONS ------
+
+var str = "";
+
+$('#lesions > div > div > div > div > ul > li').each(function(index) {
+    key = 'translations["' + $(this.children[1]).text() + '"][selectedLanguage]';
+    value = $(this.children[1]).attr('for').substring(6);
+    $(this.children[2]).find('li').each(function(index) {
+        value += '|' + $(this).attr('data-facet-id');
+    });
+    str += 'LESIONS_DICT[' + key + '] = "' + value + '";\n';
+});
+
+copy(str);
