@@ -87,6 +87,14 @@ $('#symptoms > div > div > div > div > ul > li').each(function(index) {
     });
     str += 'SYMPTOMS_DICT[' + key + '] = "' + value + '";\n';
 });
+$('#pathos > div > div > div > div > ul > li').each(function(index) {
+    key = 'translations["' + $(this.children[1]).text() + '"][selectedLanguage]';
+    value = $(this.children[1]).attr('for').substring(6);
+    $(this.children[2]).find('li').each(function(index) {
+        value += '|' + $(this).attr('data-facet-id');
+    });
+    str += 'PATHOS_DICT[' + key + '] = "' + value + '";\n';
+});
 copy(str);
 
 // Translations
@@ -107,6 +115,14 @@ $('#symptoms > div > div > div > div > ul > li').each(function(index) {
         tr_TR: "' + key + '"\n\
     },';
 });
+$('#pathos > div > div > div > div > ul > li').each(function(index) {
+    key = $(this.children[1]).text();
+    str += '"' + key + '": {\n\
+        en_US: "' + key + '",\n\
+        en_GB: "' + key + '",\n\
+        tr_TR: "' + key + '"\n\
+    },';
+});
 copy(str);
 
 // Selects
@@ -115,6 +131,9 @@ $('#lesions > div > div > div > div > ul > li > label').each(function(index) {
     str += '<option value="{{tr "' + $(this).text() + '"}}">{{tr "' + $(this).text() + '"}}</option>\n';
 });
 $('#symptoms > div > div > div > div > ul > li > label').each(function(index) {
+    str += '<option value="{{tr "' + $(this).text() + '"}}">{{tr "' + $(this).text() + '"}}</option>\n';
+});
+$('#pathos > div > div > div > div > ul > li > label').each(function(index) {
     str += '<option value="{{tr "' + $(this).text() + '"}}">{{tr "' + $(this).text() + '"}}</option>\n';
 });
 copy(str);

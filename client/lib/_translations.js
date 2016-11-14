@@ -467,11 +467,6 @@ translations = {
         en_GB: "Heperpigmented Patches",
         tr_TR: "Hiperpigmente Yamalar"
     },
-    "Hirstutism": {
-        en_US: "Hirstutism",
-        en_GB: "Hirstutism",
-        tr_TR: "İstenmeyen Erkeksi Kıllanma (Hirsutizm)"
-    },
     "Hirsutism": {
         en_US: "Hirsutism",
         en_GB: "Hirsutism",
@@ -1144,6 +1139,124 @@ translations = {
     },
 
     // ------ SYMPTOMS ------
+
+    // ------ PATHOPHYSIOLOGY ------
+
+    "Acquired Disorders of the Dermis and Subcutaneous Tissue": {
+        en_US: "Acquired Disorders of the Dermis and Subcutaneous Tissue",
+        en_GB: "Acquired Disorders of the Dermis and Subcutaneous Tissue",
+        tr_TR: "Sonradan Kazanılmış Dermis ve Deri Altı Doku Bozuklukları"
+    },"Acquired Keratinizing Disorders": {
+        en_US: "Acquired Keratinizing Disorders",
+        en_GB: "Acquired Keratinizing Disorders",
+        tr_TR: "Sonradan Kazanılmış Keratinizleşme Bozuklukları"
+    },"Adverse Drug Reactions": {
+        en_US: "Adverse Drug Reactions",
+        en_GB: "Adverse Drug Reactions",
+        tr_TR: "Advers İlaç Reaksiyonları"
+    },"Auto-Immune Bullous Diseases": {
+        en_US: "Auto-Immune Bullous Diseases",
+        en_GB: "Auto-Immune Bullous Diseases",
+        tr_TR: "Otoimmün Büllü Hastalıklar"
+    },"Bites and Stings": {
+        en_US: "Bites and Stings",
+        en_GB: "Bites and Stings",
+        tr_TR: "Isırma ve Sokmalar"
+    },"Connective Tissue Diseases": {
+        en_US: "Connective Tissue Diseases",
+        en_GB: "Connective Tissue Diseases",
+        tr_TR: "Bağ Dokusu Hastalıkları"
+    },"Deposition Disorders": {
+        en_US: "Deposition Disorders",
+        en_GB: "Deposition Disorders",
+        tr_TR: "Birikim Bozuklukları"
+    },"Dermatitis and Eczematous Diseases": {
+        en_US: "Dermatitis and Eczematous Diseases",
+        en_GB: "Dermatitis and Eczematous Diseases",
+        tr_TR: "Dermatit ve Ekzematöz Hastalıklar"
+    },"Dermatoses Due to Physical Factors": {
+        en_US: "Dermatoses Due to Physical Factors",
+        en_GB: "Dermatoses Due to Physical Factors",
+        tr_TR: "Fiziksel Faktörlere Dayalı Dermatozlar"
+    },"Diseases of Unclear Origin": {
+        en_US: "Diseases of Unclear Origin",
+        en_GB: "Diseases of Unclear Origin",
+        tr_TR: "Kökeni Belirsiz Hastalıklar"
+    },"Genetic Disorders": {
+        en_US: "Genetic Disorders",
+        en_GB: "Genetic Disorders",
+        tr_TR: "Genetik Bozukluklar"
+    },"Granulomatous Disorders": {
+        en_US: "Granulomatous Disorders",
+        en_GB: "Granulomatous Disorders",
+        tr_TR: "Granülomatöz Bozukluklar"
+    },"Immunologic Diseases": {
+        en_US: "Immunologic Diseases",
+        en_GB: "Immunologic Diseases",
+        tr_TR: "İmmünolojik Hastalıklar"
+    },"Infectious Diseases": {
+        en_US: "Infectious Diseases",
+        en_GB: "Infectious Diseases",
+        tr_TR: "Bulaşıcı Hastalıklar"
+    },"Inflammatory Skin Appendage Disorders": {
+        en_US: "Inflammatory Skin Appendage Disorders",
+        en_GB: "Inflammatory Skin Appendage Disorders",
+        tr_TR: "İnflamatuar Deri Eklem Bozuklukları"
+    },"Lichen Planus and Lichenoid Disorders": {
+        en_US: "Lichen Planus and Lichenoid Disorders",
+        en_GB: "Lichen Planus and Lichenoid Disorders",
+        tr_TR: "Liken Planus ve Likenoid Bozukluklar"
+    },"Noninflammatory Skin Appendage Disorders": {
+        en_US: "Noninflammatory Skin Appendage Disorders",
+        en_GB: "Noninflammatory Skin Appendage Disorders",
+        tr_TR: "İnflamatuar Olmayan Deri Eklem Bozuklukları"
+    },"Nutritional, Metabolic and Endocrine Diseases": {
+        en_US: "Nutritional, Metabolic and Endocrine Diseases",
+        en_GB: "Nutritional, Metabolic and Endocrine Diseases",
+        tr_TR: "Beslenme, Metabolik ve Endokrin Hastalıklar"
+    },"Paraneoplastic Syndromes": {
+        en_US: "Paraneoplastic Syndromes",
+        en_GB: "Paraneoplastic Syndromes",
+        tr_TR: "Paraneoplastik Sendromlar"
+    },"Pigmentary Disorders": {
+        en_US: "Pigmentary Disorders",
+        en_GB: "Pigmentary Disorders",
+        tr_TR: "Pigmentatif Bozukluklar"
+    },"Pregnancy-Related Dermatoses": {
+        en_US: "Pregnancy-Related Dermatoses",
+        en_GB: "Pregnancy-Related Dermatoses",
+        tr_TR: "Gebelikle İlişkili Dermatozlar"
+    },"Psoriasis and Papulosquamous Diseases": {
+        en_US: "Psoriasis and Papulosquamous Diseases",
+        en_GB: "Psoriasis and Papulosquamous Diseases",
+        tr_TR: "Psoriyazis ve Papüloskuamöz Hastalıklar"
+    },"Psychocutaneous and Neurocutaneous Disorders": {
+        en_US: "Psychocutaneous and Neurocutaneous Disorders",
+        en_GB: "Psychocutaneous and Neurocutaneous Disorders",
+        tr_TR: "Psikokütanöz ve Nörokutanöz Bozukluklar"
+    },"Reactive Conditions": {
+        en_US: "Reactive Conditions",
+        en_GB: "Reactive Conditions",
+        tr_TR: "Reaktif Durumlar"
+    },"Rosacea": {
+        en_US: "Rosacea",
+        en_GB: "Rosacea",
+        tr_TR: "Rosacea (Yüzde Kızarıklık ve Şişme)"
+    },"Tumors and Proliferative Diseases": {
+        en_US: "Tumors and Proliferative Diseases",
+        en_GB: "Tumors and Proliferative Diseases",
+        tr_TR: "Tümörler ve Proliferatif Hastalıklar"
+    },"Urticaria": {
+        en_US: "Urticaria",
+        en_GB: "Urticaria",
+        tr_TR: "Ürtiker"
+    },"Vascular Disorders, Vasculitis and Purpuras": {
+        en_US: "Vascular Disorders, Vasculitis and Purpuras",
+        en_GB: "Vascular Disorders, Vasculitis and Purpuras",
+        tr_TR: "Vasküler Bozukluklar, Vaskülit ve Purpuralar"
+    },
+
+    // ------ PATHOPHYSIOLOGY ------
 }
 
 selectedLanguage = "en_US";
