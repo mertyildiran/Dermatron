@@ -278,1462 +278,1460 @@ ANATOMICAL_DICT[translations["Lower Limbs"][selectedLanguage]] = "108039";
     ANATOMICAL_DICT[translations["Lower Limbs"][selectedLanguage] + ' > ' + translations["Leg"][selectedLanguage]] = "108052";
     ANATOMICAL_DICT[translations["Lower Limbs"][selectedLanguage] + ' > ' + translations["Thigh"][selectedLanguage]] = "108053";
 
-DIAGNOSES_DICT = {
-  "Abrasion": "109487",
-  "Abscess": "109488",
-  "Acanthoma Fissuratum": "109489",
-  "Acanthosis Nigricans": "109490",
-  "Acne Excoriee": "109491",
-  "Acne Keloidalis Nuchae": "109492",
-  "Acne Vulgaris": "109493",
-  "Acral Fibrokeratoma": "109494",
-  "Acral Keratosis": "109495",
-  "Acral Lentiginous Melanoma": "109496",
-  "Acrochordon": "109497",
-  "Acrocyanosis": "109498",
-  "Acrodermatitis Enteropathica": "109499",
-  "Acrokeratosis Verruciformis": "109500",
-  "Actinic Atrophy": "109501",
-  "Actinic Keratosis": "109502",
-  "Actinic or Senile Damage or Atrophy": "109503",
-  "ACTINIC PRURIGO": "109504",
-  "Actinic/solar Damage": "109505",
-  "Actinic/solar Damage 5 FU Treatment": "109506",
-  "Actinic/solar Damage Actinex Treatment": "109507",
-  "Actinic/solar Damage Actinic Cheilitis": "109508",
-  "Actinic/solar Damage Actinic Keratosis": "109509",
-  "Actinic/solar Damage Atrophy": "109510",
-  "Actinic/solar Damage Cutis Rhomboidalis Nuchae": "109511",
-  "Actinic/solar Damage Dyspigmentation": "109512",
-  "Actinic/solar Damage Favre-Racouchot": "109513",
-  "Actinic/solar Damage Follicular Retention Cysts": "109514",
-  "Actinic/solar Damage Freckles": "109515",
-  "Actinic/solar Damage Hyperpigmentation": "109516",
-  "Actinic/solar Damage Milia": "109517",
-  "Actinic/solar Damage Photoaging": "109518",
-  "Actinic/solar Damage Pigmentation": "109519",
-  "Actinic/solar Damage Poikiloderma of Civatte": "109520",
-  "Actinic/solar Damage Skin Phototype I": "109521",
-  "Actinic/solar Damage Solar Elastosis": "109522",
-  "Actinic/solar Damage Solar Keratosis": "109523",
-  "Actinic/solar Damage Solar Lentigo": "109524",
-  "Actinic/solar Damage Solar Purpura": "109525",
-  "Actinic/solar Damage Stellate Pseudoscars": "109526",
-  "Actinic/solar Damage Suntan": "109527",
-  "Actinic/solar Damage Surgery": "109528",
-  "Actinic/solar Damage Telangiectasia": "109529",
-  "Actinic/solar Damage Tretinoin Treatment": "109530",
-  "Actinic/solar Damage Wrinkles": "109531",
-  "Acute Cutaneous Necrosis After Cardiac Catheterization": "109532",
-  "Acute Eczema": "109533",
-  "Adenoma Sebaceum": "109534",
-  "Allergic Contact Dermatitis": "109535",
-  "Alopecia": "109536",
-  "Alopecia Areata": "109537",
-  "Alopecia Mucinosa": "109538",
-  "Amyloidosis": "109539",
-  "Anagen Effluvium": "109540",
-  "Androgenetic Alopecia": "109541",
-  "Anetoderma": "109542",
-  "Angioedema": "109543",
-  "Angiofibroma": "109544",
-  "Angiokeratoma": "109545",
-  "Angiolymphoid Hyperplasia": "109546",
-  "Angioma": "109547",
-  "Angiosarcoma": "109548",
-  "Angular Cheilitis": "109549",
-  "Aphthous Ulcer": "109550",
-  "Aplasia Cutis": "109551",
-  "Apocrine Cystadenoma": "109552",
-  "Apocrine Hydrocystoma": "109553",
-  "Arsenical Keratosis": "109554",
-  "Arsenical Pigmentation": "109555",
-  "Ashy Dermatosis": "109556",
-  "Atopic Dermatitis": "109557",
-  "Atopic Dermatitis/eczema": "109558",
-  "Atrophie Blanche": "109559",
-  "Atrophoderma": "109560",
-  "Atypical Mycobacteria": "109561",
-  "Autosensitization Reaction": "109562",
-  "Avulsion Laceration": "109563",
-  "Balanitis Xerotica Obliterans": "109565",
-  "Basal Cell Carcinoma": "109566",
-  "Basal Cell Carcinoma and Seborrheic Keratosis": "109567",
-  "Basisquamous Carcinoma": "109568",
-  "Bazex's Syndrome": "109569",
-  "B-Cell Lymphoma": "109570",
-  "Beau's Lines": "109571",
-  "Becker's Nevus": "109572",
-  "Bed Bug Bite With Urticarial Reaction": "109573",
-  "Behcet's Syndrome": "109574",
-  "Benign Keratosis": "109575",
-  "Black Hairy Tongue": "109576",
-  "Black Madura": "109577",
-  "Blepharochalasia": "109578",
-  "Blister": "109579",
-  "Blue Nevus": "109580",
-  "Body Louse Infestation": "109581",
-  "Bowenoid Papulosis": "109582",
-  "Bowen's Disease": "109583",
-  "Brushfield's Spots": "109584",
-  "Bullous Impetigo": "109585",
-  "Bullous Pemphigoid": "109586",
-  "Burn": "109587",
-  "Bywater's Lesion": "109588",
-  "Cafe Au Lait Macule": "109590",
-  "Callus": "109591",
-  "Candida Balanitis": "109592",
-  "Candidiasis": "109593",
-  "Carbuncle": "109594",
-  "Cellulitis": "109595",
-  "Chalazion": "109596",
-  "Cheilitis": "109597",
-  "Cheilitis Granulomatosa": "109598",
-  "Cherry Angioma": "109599",
-  "Chilblains": "109600",
-  "Chondrodermatitis Nodularis Helicus": "109601",
-  "Chromomycosis": "109602",
-  "Chronic Bullous Disease of Childhood": "109603",
-  "Chronic Eczema": "109604",
-  "Chronic Venous Ulcer": "109605",
-  "Cicatricial Pemphigoid": "109606",
-  "Clavus": "109607",
-  "Clear Cell Acanthoma": "109608",
-  "Clubbing of Fingers": "109609",
-  "Cold Abscess": "109610",
-  "Collagen Nevus": "109611",
-  "Colloidion Baby": "109612",
-  "Combined Nevus": "109613",
-  "Compound Nevus": "109614",
-  "Compound Nevus/dysplastic Nevus": "109615",
-  "Condyloma Accuminata": "109616",
-  "Condyloma Acuminata": "109617",
-  "Congenital Hairy Melanocytic Nevus": "109618",
-  "Congenital Nevus": "109619",
-  "Congenital Vascular Malformation": "109620",
-  "Conjunctival Hemorrhage": "109621",
-  "Connective Tissue Nevus": "109622",
-  "Contact Dermatitis": "109623",
-  "Crowe's Sign": "109624",
-  "Cryofibrinogenemia": "109625",
-  "Cryosurgery": "109626",
-  "Curettage and Electrodesiccation": "109627",
-  "Cutanea Larva Migrans": "109628",
-  "Cutaneous Horn": "109629",
-  "Cutaneous Leishmaniasis": "109630",
-  "Cutaneous T-Cell Lymphoma": "109631",
-  "Cutis Marmorata": "109632",
-  "Cutis Rhomboidalis Nuchae": "109633",
-  "Cutis Verticis Gyrata": "109634",
-  "Cyanosis": "109635",
-  "Darier-White Disease": "109637",
-  "Delusions of Parasitosis": "109638",
-  "Dental Sinus": "109639",
-  "Dermatitis Herpetiformis": "109640",
-  "Dermatofibroma": "109641",
-  "Dermatofibrosarcoma Protuberans": "109642",
-  "Dermatoliposclerosis": "109643",
-  "Dermatomyositis": "109644",
-  "Dermatosis Papulosa Nigra": "109645",
-  "Dermographia": "109646",
-  "Dermographism": "109647",
-  "Dermoid Cyst": "109648",
-  "Desquamation": "109649",
-  "Diabetic Dermopathy": "109650",
-  "Diabetic Ulcer": "109651",
-  "Diaper Dermatitis": "109652",
-  "Digital Fibroma": "109653",
-  "Dilated Pore of Winer": "109654",
-  "Discoid Lupus Erythematosus": "109655",
-  "Dissecting Cellulitis of the Scalp": "109656",
-  "Dissecting Folliculitis": "109657",
-  "Disseminated Actinic Porokeratosis": "109658",
-  "Drug Eruption": "109659",
-  "Drug Induced Bullous Eruption": "109660",
-  "Drug Induced Pigmentary Changes": "109661",
-  "Drug-Induced Pigmentary Change": "109662",
-  "Dry Skin Eczema": "109663",
-  "Dupuytren's Contracture": "109664",
-  "Dyshidrosiform Eczema": "109665",
-  "Dyshidrosis": "109666",
-  "Dysplastic Nevus": "109667",
-  "Dystrophic Nail": "109668",
-  "Ecchymosis": "109670",
-  "Eccrine Hydrocystoma": "109671",
-  "Eccrine Poroma": "109672",
-  "Eccrine Spiradenoma": "109673",
-  "Ecthyma": "109674",
-  "Eczema": "109675",
-  "Eczema Herpeticum": "109676",
-  "Edema": "109677",
-  "Elephantiasis Nostras Verrucosa": "109678",
-  "Emboli": "109679",
-  "Endometriosis": "109680",
-  "Eosinophilic Granuloma": "109681",
-  "Epidermal Nevus": "109682",
-  "Epidermoid Cyst": "109683",
-  "Epidermolysis Bullosa": "109684",
-  "Epithelioma Adenoides Cysticum": "109685",
-  "Eruptive Vellus Hair Cysts": "109686",
-  "Erysipelas": "109687",
-  "Erythema Ab Igne": "109688",
-  "Erythema Annulare Centrifigum": "109689",
-  "Erythema Chronicum Migrans": "109690",
-  "Erythema Craquele": "109691",
-  "Erythema Gyratum Repens": "109692",
-  "Erythema Infectiosum": "109693",
-  "Erythema Multiforme": "109694",
-  "Erythema Nodosum": "109695",
-  "Erythema Nodosum Leprosum": "109696",
-  "Erythema Toxicum Neonatorum": "109697",
-  "Erythrasma": "109698",
-  "Erythroplasia of Queyrat": "109699",
-  "Euthyroid Grave's Ophthalmopathy": "109700",
-  "Excoriations": "109701",
-  "Exfoliative Erythroderma": "109702",
-  "Exophthalmos": "109703",
-  "Extensive Intertriginal Impetigo": "109704",
-  "Extramammary Paget's Disease": "109705",
-  "Factitial Dermatitis": "109707",
-  "Favre-Racouchot": "109708",
-  "Felon": "109709",
-  "Fibrohistiocytic Nodule": "109710",
-  "Fibroma": "109711",
-  "Fibroma Molle": "109712",
-  "Figurate Erythema": "109713",
-  "Fish Tank Granuloma": "109714",
-  "Fixed Drug Eruption": "109715",
-  "Fixed Erythema": "109716",
-  "Follicular Degeneration Syndrome": "109717",
-  "Follicular Mucinosis": "109718",
-  "Follicular Occlusion Syndrome": "109719",
-  "Follicular Retention Cyst": "109720",
-  "Folliculitis": "109721",
-  "Folliculitis Decalvans": "109722",
-  "Fordyce Spots": "109723",
-  "Foreign Body Granuloma": "109724",
-  "Fournier's Gangrene": "109725",
-  "Fox-Fordyce Disease": "109726",
-  "Frayed Cuticles in Dermatomyositis": "109727",
-  "Freckles": "109728",
-  "Frictional Lichenoid Dermatitis": "109729",
-  "Frost Bite": "109730",
-  "Fungal Culture": "109731",
-  "Furuncle": "109732",
-  "Furunculoid Myiasis": "109733",
-  "Fusarium Infection": "109734",
-  "Ganglion": "109736",
-  "Gangrene": "109737",
-  "Genital Herpes": "109738",
-  "Geographic Tongue": "109739",
-  "Gianotti-Crosti Syndrome": "109740",
-  "Giant Cell Tumor": "109741",
-  "Giant Comedone": "109742",
-  "Giant Condyloma Accuminata": "109743",
-  "Giant Conginital Melanocytic Nevus": "109744",
-  "Gingival Hyperpigmentation": "109745",
-  "Gingival Hyperplasia": "109746",
-  "Glomus Tumor": "109747",
-  "Glossodynia": "109748",
-  "Goiter": "109749",
-  "Gonorrhea": "109750",
-  "Gottron's Papules of Dermatomyositis": "109751",
-  "Gout": "109752",
-  "Granular Cell Myoblastoma": "109753",
-  "Granulation Tissue": "109754",
-  "Granuloma Annulare": "109755",
-  "Granuloma Faciale": "109756",
-  "Granuloma Inguinale": "109757",
-  "Green Hair": "109758",
-  "Green Nail": "109759",
-  "Group B Streptococcal Vaginitis": "109760",
-  "Grover's Disease": "109761",
-  "Guttate Psoriasis": "109762",
-  "Hailey-Hailey Disease": "109764",
-  "Hair Transplantation": "109765",
-  "Hairy Ears": "109766",
-  "Hairy Tongue": "109767",
-  "Half and Half Nail": "109768",
-  "Halo Nevus": "109769",
-  "Hand Foot Mouth Disease": "109770",
-  "Harlequin Fetus": "109771",
-  "Hemangioma": "109772",
-  "Hematoma": "109773",
-  "Hernia": "109774",
-  "Herpes Gestationis": "109775",
-  "Herpes Simplex Ear Infection": "109776",
-  "Herpes Simplex Virus": "109777",
-  "Herpes Simplex Virus Folliculitis": "109778",
-  "Herpes Simplex Virus of the Thenar Eminence": "109779",
-  "Herpes Zoster": "109780",
-  "Herpes Zoster and Allergic Contact Dermatitis": "109781",
-  "Heterochromia Iridis": "109782",
-  "Hidradenitis Suppurativa": "109783",
-  "Hirsutism": "109784",
-  "Histiocytosis X": "109785",
-  "Hot Tub Dermatitis": "109786",
-  "Hydrocystoma": "109787",
-  "Hyperhidrosis": "109788",
-  "Hyperkeratosis Palmaris Et Plantaris": "109789",
-  "Hyperpigmentation": "109790",
-  "Hypertrichosis": "109791",
-  "Hypertrophic Actinic Keratosis": "109792",
-  "Hypertrophic Scar": "109793",
-  "Hypopigmentation": "109794",
-  "Ichthyosis": "109796",
-  "Ichthyosis Follicularis Atrichia and photophobia(IFAP)Syndrome": "109797",
-  "Ichthyosis Hystrix": "109798",
-  "Ichthyosis Linearis Circumflexa": "109799",
-  "Ichthyosis Vulgaris": "109800",
-  "Id Reaction": "109801",
-  "Idiopathic Guttate Hypomelanosis": "109802",
-  "Impetigo": "109803",
-  "Impetigo of the Scalp Secondary to 5-FU Therapy": "109804",
-  "Impetigo of the Umbilicus": "109805",
-  "Incisional Biopsy": "109806",
-  "Infantile Atopic Dermatitis": "109807",
-  "Infantile Haemangioma": "109808",
-  "Infected Eczema": "109809",
-  "Ingrown Nail": "109810",
-  "Ink Spot Nevus": "109811",
-  "Insect Bite": "109812",
-  "Insect Sting": "109813",
-  "Intertrigo": "109814",
-  "Intradermal Nevus": "109815",
-  "Intraurethral Warts": "109816",
-  "Inverse Psoriasis": "109817",
-  "Irritant Contact Dermatitis": "109818",
-  "Irritant Dermatitis": "109819",
-  "Ischemia": "109820",
-  "Ixodes Tick Bite": "109821",
-  "Jaundice": "109823",
-  "Junction Nevus": "109824",
-  "Junction Nevus/dysplastic Nevus": "109825",
-  "Juvenile Xanthogranuloma": "109826",
-  "Kaposi's Sarcoma": "109828",
-  "Keloid": "109829",
-  "Keratin Granuloma": "109830",
-  "Keratoacanthoma": "109831",
-  "Keratoderma": "109832",
-  "Keratolysis Exfoliativa of Wende": "109833",
-  "Keratosis Pilaris": "109834",
-  "Kerion": "109835",
-  "Knuckle Pads": "109836",
-  "Koenen's Tumours in Tuberous Sclerosis ": "109837",
-  "Koilonychia": "109838",
-  "Kyrle's Disease": "109839",
-  "Labial Melanotic Macule": "109841",
-  "Leiomyoma": "109842",
-  "Leiomyosarcoma": "109843",
-  "Lentigo Maligna": "109844",
-  "Lentigo Maligna Melanoma": "109845",
-  "Lentigo Simplex": "109846",
-  "Leprosy": "109847",
-  "Leprosy Histoid Type": "109848",
-  "Leser-Trelat Sign": "109849",
-  "Leukemia Cutis": "109850",
-  "Leukocytoclastic Vasculitis": "109851",
-  "Leukonychia": "109852",
-  "Leukoplakia": "109853",
-  "Lichen Aureus": "109854",
-  "Lichen Nitidus": "109855",
-  "Lichen Planopilaris": "109856",
-  "Lichen Planus": "109857",
-  "Lichen Planus Actinicus": "109858",
-  "Lichen Planus Hypertrophicus": "109859",
-  "Lichen Sclerosis Et Atrophicus": "109860",
-  "Lichen Simplex Chronicus": "109861",
-  "Lichen Spinulosis": "109862",
-  "Lichen Striatus": "109863",
-  "Lichenoid Benign Keratosis": "109864",
-  "Linear and Whorled Hypomelanosis": "109865",
-  "Linear Epidermal Nevus": "109866",
-  "Linear Focal Elastolysis": "109867",
-  "Linear Lichen Planus": "109868",
-  "Linear Nigra": "109869",
-  "Lip Licker's Dermatitis": "109870",
-  "Lipodystrophy": "109871",
-  "Lipoid Proteinosis": "109872",
-  "Lipoma": "109873",
-  "Livedo Reticularis": "109874",
-  "Longtudinal Melanonychia": "109875",
-  "Lupus Profunda": "109876",
-  "Lupus Vulgaris": "109877",
-  "Lymphangioma": "109878",
-  "Lymphangioma Circumscriptum": "109879",
-  "Lymphangitis": "109880",
-  "Lymphedema": "109881",
-  "Lymphedema Praecox": "109882",
-  "Lymphocytic Infiltrate of Jessner": "109883",
-  "Lymphocytoma Cutis": "109884",
-  "Lymphomatoid Papulosis": "109885",
-  "Lymphosarcoma": "109886",
-  "Macular Amyloidosis": "109888",
-  "Maggots": "109889",
-  "Mal Perforans": "109890",
-  "Malignant Melanoma": "109891",
-  "Mastocytosis (Urticaria Pigmentosa)": "109892",
-  "Measles": "109893",
-  "Median Nail Dystrophy": "109894",
-  "Median Raphe Cyst": "109895",
-  "Median Rhomboid Glossitis": "109896",
-  "Melasma": "109897",
-  "Melkersson-Rosenthal Syndrome": "109898",
-  "Meningococcemia": "109899",
-  "Merkle Cell Tumor": "109900",
-  "Metastatic Carcinoma": "109901",
-  "Metastatic Melanoma": "109902",
-  "Miasis Cutanea Furunculoide": "109903",
-  "Milia": "109904",
-  "Molluscum Contagiosum": "109905",
-  "Mongolian Spot": "109906",
-  "Monilethrix": "109907",
-  "Mononucleosis": "109908",
-  "Morphea": "109909",
-  "Morton's Toe": "109910",
-  "Mosaic Plantar Wart": "109911",
-  "Mucha-Habermann Disease": "109912",
-  "Mucinosis": "109913",
-  "Mucinous Cyst/myxoma": "109914",
-  "Mucocele": "109915",
-  "Mucocutaneous Candidiasis": "109916",
-  "Mucous Cyst": "109917",
-  "Mucous Membrane Psoriasis": "109918",
-  "Muir-Torre Syndrome": "109919",
-  "Multiple Hemangioma of Infancy": "109920",
-  "Multiple Molluscum Contagiosum": "109921",
-  "Multiple Myxomas": "109922",
-  "Multiple Plantar Warts": "109923",
-  "Mycetoma (Nocardia Brasilensis)": "109924",
-  "Mycosis Fungoides": "109925",
-  "Myofibromatosis": "109926",
-  "Myxedema": "109927",
-  "Myxoid Cyst": "109928",
-  "Nail Beading": "109930",
-  "Nail Cosmesis": "109931",
-  "Nail Dystrophy": "109932",
-  "Nail Nevus": "109933",
-  "Nail Pigmentation": "109934",
-  "Nail Psoriasis": "109935",
-  "Nail Ridging": "109936",
-  "Nail Shedding": "109937",
-  "Nail Surgery": "109938",
-  "Nail Trauma": "109939",
-  "Necrobiosis Lipoidica Diabeticorum": "109940",
-  "Necrotising Fasciitis": "109941",
-  "Needle Tracks": "109942",
-  "Neonatal Acne": "109943",
-  "Neural Nevus": "109944",
-  "Neurodermatitis": "109945",
-  "Neurofibroma": "109946",
-  "Neurofibromatosis": "109947",
-  "Neuroma": "109948",
-  "Neurotic Excoriations": "109949",
-  "Nevus": "109950",
-  "Nevus Anemicus": "109951",
-  "Nevus Cell Nevus": "109952",
-  "Nevus Comedonicus": "109953",
-  "Nevus Flammeus": "109954",
-  "Nevus Incipiens": "109955",
-  "Nevus Lipomatosis": "109956",
-  "Nevus of Ota": "109957",
-  "Nevus Sebaceous of Jadassohn": "109958",
-  "Nevus Spilus": "109959",
-  "Nodulo - Cystic Acne Vulgaris": "109960",
-  "Nodulo Cystic Acne Vulgaris": "109961",
-  "Nodulocystic Acne": "109962",
-  "Nodulo-Cystic Acne Vulgaris": "109963",
-  "North American Blastomycosis": "109964",
-  "Notalgia Paresthetica": "109965",
-  "Nummular Eczema": "109966",
-  "Occupational Acne": "109968",
-  "Onychogryphosis": "109969",
-  "Onychogryphosis and Onychauxis": "109970",
-  "Onycholysis": "109971",
-  "Onychomycosis": "109972",
-  "Onychoschizia": "109973",
-  "Oral Fibroma": "109974",
-  "Orf": "109975",
-  "Orf & Erythema Multiforme": "109976",
-  "Osler-Weber-Rendu Syndrome": "109977",
-  "Osteoarthritis Arthritis": "109978",
-  "Osteoma Cutis": "109979",
-  "Pachyonychia Congenita": "109981",
-  "Paget's Disease": "109982",
-  "Palmar Erythema": "109983",
-  "Palmar Wart": "109984",
-  "Panniculitis": "109985",
-  "Papilloma": "109986",
-  "Papillomatosis of Gougerot and Carteaud": "109987",
-  "Paracoccidioidomycosis": "109988",
-  "Paronychia": "109989",
-  "Pearly Penile Papules": "109990",
-  "Pediculosis Capitis": "109991",
-  "Pediculosis Pubis": "109992",
-  "Pedunculated Papillomatosis": "109993",
-  "Pellagra": "109994",
-  "Pemphigus Foliaceus": "109995",
-  "Pemphigus Vegitant": "109996",
-  "Pemphigus Vulgaris": "109997",
-  "Perifolliculitis Capitis": "109998",
-  "Perioral Dermatitis": "109999",
-  "Periungual and Subungual Wart": "110000",
-  "Periungual Erythema and Telangiectasias in Dermatomyositis": "110001",
-  "Periungual Fibroma": "110002",
-  "Phagedenic Herpes Simplex Virus": "110003",
-  "Photo Onycholysis": "110004",
-  "Photocontact": "110005",
-  "Photocontact Dermatitis": "110006",
-  "Photodermatitis": "110007",
-  "Photodrug Reaction": "110008",
-  "Photosensitivity": "110009",
-  "Phrynoderma": "110010",
-  "Phytophotodermatitis": "110011",
-  "Piezogenic Papule": "110012",
-  "Piezogenic Papules": "110013",
-  "Pilar Cyst": "110014",
-  "Pilomatrixoma": "110015",
-  "Pilonidal Cyst": "110016",
-  "Pincer Nail Syndrome": "110017",
-  "Pitted Keratolysis": "110018",
-  "Pityriasis Alba": "110019",
-  "Pityriasis Rosea": "110020",
-  "Pityriasis Rubra Pilaris": "110021",
-  "Pityriasis Versicolor": "110022",
-  "Pityrosporum Folliculitis": "110023",
-  "Planar Warts": "110024",
-  "Plantar Wart": "110025",
-  "Plantar Warts": "110026",
-  "Plexiform Neurofibroma": "110027",
-  "Poikiloderma and Heliotrope Changes of Dermatomyositis": "110028",
-  "Poikiloderma Atrophicans Vasculare": "110029",
-  "Poikiloderma of Civatte": "110030",
-  "Poikilodermatous Changes of Dermatomyositis": "110031",
-  "Poison Ivy": "110032",
-  "Polymorphic Light Eruption": "110033",
-  "Pomade Acne": "110034",
-  "Porokeratosis of Mibelli": "110035",
-  "Porphyria Cutanea Tarda": "110036",
-  "Port Wine Stain": "110037",
-  "Pressure Alopecia": "110038",
-  "Pressure Sore": "110039",
-  "Primary Herpes Simplex Virus": "110040",
-  "Primary Syphilis": "110041",
-  "Prokeratosis": "110042",
-  "Prurigo Nodularis": "110043",
-  "Pruritic Urticarial Papules and Plaques of Pregnancy": "110044",
-  "Pruritus": "110045",
-  "Pruritus Ani": "110046",
-  "Pseudocyst of the Auricle": "110047",
-  "Pseudofolliculitis Barbae": "110048",
-  "Pseudopelade": "110049",
-  "Pseudoporphyria": "110050",
-  "Pseudorhinophyma": "110051",
-  "Pseudoxanthoma Elasticum": "110052",
-  "Psoriasis": "110053",
-  "Psoriasis and Tinea Corporis": "110054",
-  "Psoriatic Arthritis": "110055",
-  "Pterygium Inversum Unguis": "110056",
-  "Purpura": "110057",
-  "Purpura Fulminans": "110058",
-  "Pustular Psoriasis": "110059",
-  "Pustule": "110060",
-  "Pustulosis Palmaris": "110061",
-  "Pyoderma": "110062",
-  "Pyoderma Gangrenosum": "110063",
-  "Pyogenic Granuloma": "110064",
-  "Racquet Nail": "110067",
-  "Radiodermatitis": "110068",
-  "Raynaud's Phenomenon": "110069",
-  "Reactive Perforating Collagenosis": "110070",
-  "Red Tattoo Reaction": "110071",
-  "Reiter's Syndrome": "110072",
-  "Relapsing Polychondritis": "110073",
-  "Reticulated Erythema of Fifth Disease": "110074",
-  "Rheumatoid Arthritis": "110075",
-  "Rhinophyma": "110076",
-  "Rocky Mountain Spotted Fever": "110077",
-  "Rosacea": "110078",
-  "Rubella": "110079",
-  "Sarcoid": "110081",
-  "Sarcoidosis": "110082",
-  "Scabies": "110083",
-  "Scalp Psoriasis": "110084",
-  "Scalp Psoriasis and Inverse Psoriasis": "110085",
-  "Scar": "110086",
-  "Scarlet Fever": "110087",
-  "Scarring Alopecia": "110088",
-  "Schamberg's Disease": "110089",
-  "Sclerosing Lymphangitis": "110090",
-  "Scrotal Tongue": "110091",
-  "Sebaceous Gland Adenoma": "110092",
-  "Sebaceous Gland Hyperplasia": "110093",
-  "Sebopsoriasis": "110094",
-  "Seborrheic Dermatitis": "110095",
-  "Seborrheic Keratosis": "110096",
-  "Secondarily Infected Skin Biopsy Site": "110097",
-  "Secondary Syphilis": "110098",
-  "Senile Angioma": "110099",
-  "Septic Embolis": "110100",
-  "Septic Vasculitis": "110101",
-  "Shagreen Plaque": "110102",
-  "Shave Biopsy": "110103",
-  "Shaving Folliculitis": "110104",
-  "Sjogren's Syndrome": "110105",
-  "Skin Tag": "110106",
-  "Solar Elastosis": "110107",
-  "Solar Lentigenes": "110108",
-  "Solar Lentigo": "110109",
-  "Solar Purpura": "110110",
-  "Solar Urticaria": "110111",
-  "Spider Angioma": "110112",
-  "Spider Nevus": "110113",
-  "Spider Nevus Prior to Electrodesiccation": "110114",
-  "Spindle Cell Nevus": "110115",
-  "Splinter Hemorrhage": "110116",
-  "Squamous Cell Carcinoma (SCC)": "110117",
-  "St. Anne's Sign": "110118",
-  "Staphylococcal Pyoderma": "110119",
-  "Stasis Dermatitis": "110120",
-  "Stasis Edema": "110121",
-  "Stasis Ulcer": "110122",
-  "Steatocystoma Multiplex": "110123",
-  "Steroid Acne": "110124",
-  "Steroid Atrophy": "110125",
-  "Steroid Folliculitis": "110126",
-  "Steroid Purpura": "110127",
-  "Steroid Striae": "110128",
-  "Steroid Use/abuse/misuse Dermatitis": "110129",
-  "Steroid-Induced Acneiform Eruption": "110130",
-  "Stevens–Johnson Syndrome": "110131",
-  "Stomatitis": "110132",
-  "Strawberry Hemangioma": "110133",
-  "Streptococcal Fissure of the External Nares": "110134",
-  "Streptococcal Folliculitis": "110135",
-  "Streptococcal Pyoderma of the Scrotum": "110136",
-  "Striae": "110137",
-  "Striae Distensae": "110138",
-  "Stucco Keratosis": "110139",
-  "Subacute Cutaneous Lupus Erythematosus": "110140",
-  "Subcutaneous Atrophy": "110141",
-  "Subungual Abscess": "110142",
-  "Subungual Hematoma": "110143",
-  "Subungual Verruca Vulgaris": "110144",
-  "Sucking Blister": "110145",
-  "Sunburn": "110146",
-  "Suntan": "110147",
-  "Superficial Actinic Porokeratosis": "110148",
-  "Supernumerary Digit": "110149",
-  "Sweet's Syndrome": "110150",
-  "Sycosis Barbae": "110151",
-  "Synovial Cyst": "110152",
-  "Syphilis": "110153",
-  "Syringoma": "110154",
-  "Systemic Lupus Erythematosus": "110155",
-  "Takayasu's Arteritis": "110157",
-  "Talon Noir": "110158",
-  "Tattoo": "110159",
-  "Tattoo Reaction": "110160",
-  "Telangiectasia Eruptiva Macularis Perstans": "110161",
-  "Telangiectasias": "110162",
-  "Telogen Effluvium": "110163",
-  "Temporal Triangular Alopecia": "110164",
-  "Terry's Nails": "110165",
-  "Thermal Burn": "110166",
-  "Thrush": "110167",
-  "Tick Bite": "110168",
-  "Tinea Barbae": "110169",
-  "Tinea Capitis": "110170",
-  "Tinea Corporis": "110171",
-  "Tinea Cruris": "110172",
-  "Tinea Faciale": "110173",
-  "Tinea Imbricata": "110174",
-  "Tinea Incognito": "110175",
-  "Tinea Manus": "110176",
-  "Tinea Pedis": "110177",
-  "Tinea Versicolor": "110178",
-  "Toe Deformity": "110179",
-  "Tooth Abnormality": "110180",
-  "Torus Palantine": "110181",
-  "Toxic Epidermal Necrolysis": "110182",
-  "Traction Alopecia": "110183",
-  "Trauma": "110184",
-  "Traumatic Alopecia": "110185",
-  "Trichilemmal Cyst": "110186",
-  "Trichoepithelioma": "110187",
-  "Trichofolliculoma": "110188",
-  "Trichomycosis Axillaris": "110189",
-  "Trichostasis Spinulosa": "110190",
-  "Trichotillomania": "110191",
-  "Tubercles of Montgomery": "110192",
-  "Tuberculosis Verrucosa Cutis": "110193",
-  "Tuberous Sclerosis": "110194",
-  "TUNGIASIS ": "110195",
-  "Twenty Nail Dystrophy": "110196",
-  "Ulcer": "110198",
-  "Umbilical Papillomatosis": "110199",
-  "Unilateral Thoracic Exanthem": "110200",
-  "Urticaria": "110201",
-  "Urticaria Pigmentosa": "110202",
-  "Urticarial Vasculitis": "110203",
-  "UVL Burn": "110204",
-  "Varicella": "110206",
-  "Venous Lake": "110207",
-  "Venous Stars": "110208",
-  "Verruca Vulgaris": "110209",
-  "Verrucous Epidermal Nevus": "110210",
-  "Viral Exanthem": "110211",
-  "Virilization": "110212",
-  "Vitiligo": "110213",
-  "Von Recklinghausen's Disease": "110214",
-  "Wallace's Line": "110216",
-  "Wart": "110217",
-  "Wasp Sting": "110218",
-  "Wegener's Granulomatosis": "110219",
-  "Well's Syndrome": "110220",
-  "Wet to Dry Foot Syndrome": "110221",
-  "White Dermographia": "110222",
-  "Wiskott-Aldrich Syndrome": "110223",
-  "Wound Dehiscence": "110224",
-  "Wound Infection": "110225",
-  "Wrinkles": "110226",
-  "Xanthelasma Palpebrarum": "110228",
-  "Xanthogranuloma": "110229",
-  "Xanthoma": "110230",
-  "Xeroderma Pigmentosa": "110231",
-  "Xerosis": "110232",
-  "X-Linked Ichthyosis": "110233",
-  "Yellow Nail Syndrome": "110235",
-  "Zosteriform Nevus": "110237",
-  "Zygomycosis": "110238"
-};
+DIAGNOSES_DICT = {};
+DIAGNOSES_DICT[translations["Abrasion"][selectedLanguage]] = "109487";
+DIAGNOSES_DICT[translations["Abscess"][selectedLanguage]] = "109488";
+DIAGNOSES_DICT[translations["Acanthoma Fissuratum"][selectedLanguage]] = "109489";
+DIAGNOSES_DICT[translations["Acanthosis Nigricans"][selectedLanguage]] = "109490";
+DIAGNOSES_DICT[translations["Acne Excoriee"][selectedLanguage]] = "109491";
+DIAGNOSES_DICT[translations["Acne Keloidalis Nuchae"][selectedLanguage]] = "109492";
+DIAGNOSES_DICT[translations["Acne Vulgaris"][selectedLanguage]] = "109493";
+DIAGNOSES_DICT[translations["Acral Fibrokeratoma"][selectedLanguage]] = "109494";
+DIAGNOSES_DICT[translations["Acral Keratosis"][selectedLanguage]] = "109495";
+DIAGNOSES_DICT[translations["Acral Lentiginous Melanoma"][selectedLanguage]] = "109496";
+DIAGNOSES_DICT[translations["Acrochordon"][selectedLanguage]] = "109497";
+DIAGNOSES_DICT[translations["Acrocyanosis"][selectedLanguage]] = "109498";
+DIAGNOSES_DICT[translations["Acrodermatitis Enteropathica"][selectedLanguage]] = "109499";
+DIAGNOSES_DICT[translations["Acrokeratosis Verruciformis"][selectedLanguage]] = "109500";
+DIAGNOSES_DICT[translations["Actinic Atrophy"][selectedLanguage]] = "109501";
+DIAGNOSES_DICT[translations["Actinic Keratosis"][selectedLanguage]] = "109502";
+DIAGNOSES_DICT[translations["Actinic or Senile Damage or Atrophy"][selectedLanguage]] = "109503";
+DIAGNOSES_DICT[translations["Actinic Prurigo"][selectedLanguage]] = "109504";
+DIAGNOSES_DICT[translations["Actinic/solar Damage"][selectedLanguage]] = "109505";
+DIAGNOSES_DICT[translations["Actinic/solar Damage, 5 FU Treatment"][selectedLanguage]] = "109506";
+DIAGNOSES_DICT[translations["Actinic/solar Damage, Actinex Treatment"][selectedLanguage]] = "109507";
+DIAGNOSES_DICT[translations["Actinic/solar Damage, Actinic Cheilitis"][selectedLanguage]] = "109508";
+DIAGNOSES_DICT[translations["Actinic/solar Damage, Actinic Keratosis"][selectedLanguage]] = "109509";
+DIAGNOSES_DICT[translations["Actinic/solar Damage, Atrophy"][selectedLanguage]] = "109510";
+DIAGNOSES_DICT[translations["Actinic/solar Damage, Cutis Rhomboidalis Nuchae"][selectedLanguage]] = "109511";
+DIAGNOSES_DICT[translations["Actinic/solar Damage, Dyspigmentation"][selectedLanguage]] = "109512";
+DIAGNOSES_DICT[translations["Actinic/solar Damage, Favre-Racouchot"][selectedLanguage]] = "109513";
+DIAGNOSES_DICT[translations["Actinic/solar Damage, Follicular Retention Cysts"][selectedLanguage]] = "109514";
+DIAGNOSES_DICT[translations["Actinic/solar Damage, Freckles"][selectedLanguage]] = "109515";
+DIAGNOSES_DICT[translations["Actinic/solar Damage, Hyperpigmentation"][selectedLanguage]] = "109516";
+DIAGNOSES_DICT[translations["Actinic/solar Damage, Milia"][selectedLanguage]] = "109517";
+DIAGNOSES_DICT[translations["Actinic/solar Damage, Photoaging"][selectedLanguage]] = "109518";
+DIAGNOSES_DICT[translations["Actinic/solar Damage, Pigmentation"][selectedLanguage]] = "109519";
+DIAGNOSES_DICT[translations["Actinic/solar Damage, Poikiloderma of Civatte"][selectedLanguage]] = "109520";
+DIAGNOSES_DICT[translations["Actinic/solar Damage, Skin Phototype I"][selectedLanguage]] = "109521";
+DIAGNOSES_DICT[translations["Actinic/solar Damage, Solar Elastosis"][selectedLanguage]] = "109522";
+DIAGNOSES_DICT[translations["Actinic/solar Damage, Solar Keratosis"][selectedLanguage]] = "109523";
+DIAGNOSES_DICT[translations["Actinic/solar Damage, Solar Lentigo"][selectedLanguage]] = "109524";
+DIAGNOSES_DICT[translations["Actinic/solar Damage, Solar Purpura"][selectedLanguage]] = "109525";
+DIAGNOSES_DICT[translations["Actinic/solar Damage, Stellate Pseudoscars"][selectedLanguage]] = "109526";
+DIAGNOSES_DICT[translations["Actinic/solar Damage, Suntan"][selectedLanguage]] = "109527";
+DIAGNOSES_DICT[translations["Actinic/solar Damage, Surgery"][selectedLanguage]] = "109528";
+DIAGNOSES_DICT[translations["Actinic/solar Damage, Telangiectasia"][selectedLanguage]] = "109529";
+DIAGNOSES_DICT[translations["Actinic/solar Damage, Tretinoin Treatment"][selectedLanguage]] = "109530";
+DIAGNOSES_DICT[translations["Actinic/solar Damage, Wrinkles"][selectedLanguage]] = "109531";
+DIAGNOSES_DICT[translations["Acute Cutaneous Necrosis After Cardiac Catheterization"][selectedLanguage]] = "109532";
+DIAGNOSES_DICT[translations["Acute Eczema"][selectedLanguage]] = "109533";
+DIAGNOSES_DICT[translations["Adenoma Sebaceum"][selectedLanguage]] = "109534";
+DIAGNOSES_DICT[translations["Allergic Contact Dermatitis"][selectedLanguage]] = "109535";
+DIAGNOSES_DICT[translations["Alopecia"][selectedLanguage]] = "109536";
+DIAGNOSES_DICT[translations["Alopecia Areata"][selectedLanguage]] = "109537";
+DIAGNOSES_DICT[translations["Alopecia Mucinosa"][selectedLanguage]] = "109538";
+DIAGNOSES_DICT[translations["Amyloidosis"][selectedLanguage]] = "109539";
+DIAGNOSES_DICT[translations["Anagen Effluvium"][selectedLanguage]] = "109540";
+DIAGNOSES_DICT[translations["Androgenetic Alopecia"][selectedLanguage]] = "109541";
+DIAGNOSES_DICT[translations["Anetoderma"][selectedLanguage]] = "109542";
+DIAGNOSES_DICT[translations["Angioedema"][selectedLanguage]] = "109543";
+DIAGNOSES_DICT[translations["Angiofibroma"][selectedLanguage]] = "109544";
+DIAGNOSES_DICT[translations["Angiokeratoma"][selectedLanguage]] = "109545";
+DIAGNOSES_DICT[translations["Angiolymphoid Hyperplasia"][selectedLanguage]] = "109546";
+DIAGNOSES_DICT[translations["Angioma"][selectedLanguage]] = "109547";
+DIAGNOSES_DICT[translations["Angiosarcoma"][selectedLanguage]] = "109548";
+DIAGNOSES_DICT[translations["Angular Cheilitis"][selectedLanguage]] = "109549";
+DIAGNOSES_DICT[translations["Aphthous Ulcer"][selectedLanguage]] = "109550";
+DIAGNOSES_DICT[translations["Aplasia Cutis"][selectedLanguage]] = "109551";
+DIAGNOSES_DICT[translations["Apocrine Cystadenoma"][selectedLanguage]] = "109552";
+DIAGNOSES_DICT[translations["Apocrine Hydrocystoma"][selectedLanguage]] = "109553";
+DIAGNOSES_DICT[translations["Arsenical Keratosis"][selectedLanguage]] = "109554";
+DIAGNOSES_DICT[translations["Arsenical Pigmentation"][selectedLanguage]] = "109555";
+DIAGNOSES_DICT[translations["Ashy Dermatosis"][selectedLanguage]] = "109556";
+DIAGNOSES_DICT[translations["Atopic Dermatitis"][selectedLanguage]] = "109557";
+DIAGNOSES_DICT[translations["Atopic Dermatitis/eczema"][selectedLanguage]] = "109558";
+DIAGNOSES_DICT[translations["Atrophie Blanche"][selectedLanguage]] = "109559";
+DIAGNOSES_DICT[translations["Atrophoderma"][selectedLanguage]] = "109560";
+DIAGNOSES_DICT[translations["Atypical Mycobacteria"][selectedLanguage]] = "109561";
+DIAGNOSES_DICT[translations["Autosensitization Reaction"][selectedLanguage]] = "109562";
+DIAGNOSES_DICT[translations["Avulsion Laceration"][selectedLanguage]] = "109563";
+DIAGNOSES_DICT[translations["Balanitis Xerotica Obliterans"][selectedLanguage]] = "109565";
+DIAGNOSES_DICT[translations["Basal Cell Carcinoma"][selectedLanguage]] = "109566";
+DIAGNOSES_DICT[translations["Basal Cell Carcinoma and Seborrheic Keratosis"][selectedLanguage]] = "109567";
+DIAGNOSES_DICT[translations["Basisquamous Carcinoma"][selectedLanguage]] = "109568";
+DIAGNOSES_DICT[translations["Bazex's Syndrome"][selectedLanguage]] = "109569";
+DIAGNOSES_DICT[translations["B-Cell Lymphoma"][selectedLanguage]] = "109570";
+DIAGNOSES_DICT[translations["Beau's Lines"][selectedLanguage]] = "109571";
+DIAGNOSES_DICT[translations["Becker's Nevus"][selectedLanguage]] = "109572";
+DIAGNOSES_DICT[translations["Bed Bug Bite With Urticarial Reaction"][selectedLanguage]] = "109573";
+DIAGNOSES_DICT[translations["Behcet's Syndrome"][selectedLanguage]] = "109574";
+DIAGNOSES_DICT[translations["Benign Keratosis"][selectedLanguage]] = "109575";
+DIAGNOSES_DICT[translations["Black Hairy Tongue"][selectedLanguage]] = "109576";
+DIAGNOSES_DICT[translations["Black Madura"][selectedLanguage]] = "109577";
+DIAGNOSES_DICT[translations["Blepharochalasia"][selectedLanguage]] = "109578";
+DIAGNOSES_DICT[translations["Blister"][selectedLanguage]] = "109579";
+DIAGNOSES_DICT[translations["Blue Nevus"][selectedLanguage]] = "109580";
+DIAGNOSES_DICT[translations["Body Louse Infestation"][selectedLanguage]] = "109581";
+DIAGNOSES_DICT[translations["Bowenoid Papulosis"][selectedLanguage]] = "109582";
+DIAGNOSES_DICT[translations["Bowen's Disease"][selectedLanguage]] = "109583";
+DIAGNOSES_DICT[translations["Brushfield's Spots"][selectedLanguage]] = "109584";
+DIAGNOSES_DICT[translations["Bullous Impetigo"][selectedLanguage]] = "109585";
+DIAGNOSES_DICT[translations["Bullous Pemphigoid"][selectedLanguage]] = "109586";
+DIAGNOSES_DICT[translations["Burn"][selectedLanguage]] = "109587";
+DIAGNOSES_DICT[translations["Bywater's Lesion"][selectedLanguage]] = "109588";
+DIAGNOSES_DICT[translations["Cafe Au Lait Macule"][selectedLanguage]] = "109590";
+DIAGNOSES_DICT[translations["Callus"][selectedLanguage]] = "109591";
+DIAGNOSES_DICT[translations["Candida Balanitis"][selectedLanguage]] = "109592";
+DIAGNOSES_DICT[translations["Candidiasis"][selectedLanguage]] = "109593";
+DIAGNOSES_DICT[translations["Carbuncle"][selectedLanguage]] = "109594";
+DIAGNOSES_DICT[translations["Cellulitis"][selectedLanguage]] = "109595";
+DIAGNOSES_DICT[translations["Chalazion"][selectedLanguage]] = "109596";
+DIAGNOSES_DICT[translations["Cheilitis"][selectedLanguage]] = "109597";
+DIAGNOSES_DICT[translations["Cheilitis Granulomatosa"][selectedLanguage]] = "109598";
+DIAGNOSES_DICT[translations["Cherry Angioma"][selectedLanguage]] = "109599";
+DIAGNOSES_DICT[translations["Chilblains"][selectedLanguage]] = "109600";
+DIAGNOSES_DICT[translations["Chondrodermatitis Nodularis Helicus"][selectedLanguage]] = "109601";
+DIAGNOSES_DICT[translations["Chromomycosis"][selectedLanguage]] = "109602";
+DIAGNOSES_DICT[translations["Chronic Bullous Disease of Childhood"][selectedLanguage]] = "109603";
+DIAGNOSES_DICT[translations["Chronic Eczema"][selectedLanguage]] = "109604";
+DIAGNOSES_DICT[translations["Chronic Venous Ulcer"][selectedLanguage]] = "109605";
+DIAGNOSES_DICT[translations["Cicatricial Pemphigoid"][selectedLanguage]] = "109606";
+DIAGNOSES_DICT[translations["Clavus"][selectedLanguage]] = "109607";
+DIAGNOSES_DICT[translations["Clear Cell Acanthoma"][selectedLanguage]] = "109608";
+DIAGNOSES_DICT[translations["Clubbing of Fingers"][selectedLanguage]] = "109609";
+DIAGNOSES_DICT[translations["Cold Abscess"][selectedLanguage]] = "109610";
+DIAGNOSES_DICT[translations["Collagen Nevus"][selectedLanguage]] = "109611";
+DIAGNOSES_DICT[translations["Colloidion Baby"][selectedLanguage]] = "109612";
+DIAGNOSES_DICT[translations["Combined Nevus"][selectedLanguage]] = "109613";
+DIAGNOSES_DICT[translations["Compound Nevus"][selectedLanguage]] = "109614";
+DIAGNOSES_DICT[translations["Compound Nevus/dysplastic Nevus"][selectedLanguage]] = "109615";
+DIAGNOSES_DICT[translations["Condyloma Accuminata"][selectedLanguage]] = "109616";
+DIAGNOSES_DICT[translations["Condyloma Acuminata"][selectedLanguage]] = "109617";
+DIAGNOSES_DICT[translations["Congenital Hairy Melanocytic Nevus"][selectedLanguage]] = "109618";
+DIAGNOSES_DICT[translations["Congenital Nevus"][selectedLanguage]] = "109619";
+DIAGNOSES_DICT[translations["Congenital Vascular Malformation"][selectedLanguage]] = "109620";
+DIAGNOSES_DICT[translations["Conjunctival Hemorrhage"][selectedLanguage]] = "109621";
+DIAGNOSES_DICT[translations["Connective Tissue Nevus"][selectedLanguage]] = "109622";
+DIAGNOSES_DICT[translations["Contact Dermatitis"][selectedLanguage]] = "109623";
+DIAGNOSES_DICT[translations["Crowe's Sign"][selectedLanguage]] = "109624";
+DIAGNOSES_DICT[translations["Cryofibrinogenemia"][selectedLanguage]] = "109625";
+DIAGNOSES_DICT[translations["Cryosurgery"][selectedLanguage]] = "109626";
+DIAGNOSES_DICT[translations["Curettage and Electrodesiccation"][selectedLanguage]] = "109627";
+DIAGNOSES_DICT[translations["Cutanea Larva Migrans"][selectedLanguage]] = "109628";
+DIAGNOSES_DICT[translations["Cutaneous Horn"][selectedLanguage]] = "109629";
+DIAGNOSES_DICT[translations["Cutaneous Leishmaniasis"][selectedLanguage]] = "109630";
+DIAGNOSES_DICT[translations["Cutaneous T-Cell Lymphoma"][selectedLanguage]] = "109631";
+DIAGNOSES_DICT[translations["Cutis Marmorata"][selectedLanguage]] = "109632";
+DIAGNOSES_DICT[translations["Cutis Rhomboidalis Nuchae"][selectedLanguage]] = "109633";
+DIAGNOSES_DICT[translations["Cutis Verticis Gyrata"][selectedLanguage]] = "109634";
+DIAGNOSES_DICT[translations["Cyanosis"][selectedLanguage]] = "109635";
+DIAGNOSES_DICT[translations["Darier-White Disease"][selectedLanguage]] = "109637";
+DIAGNOSES_DICT[translations["Delusions of Parasitosis"][selectedLanguage]] = "109638";
+DIAGNOSES_DICT[translations["Dental Sinus"][selectedLanguage]] = "109639";
+DIAGNOSES_DICT[translations["Dermatitis Herpetiformis"][selectedLanguage]] = "109640";
+DIAGNOSES_DICT[translations["Dermatofibroma"][selectedLanguage]] = "109641";
+DIAGNOSES_DICT[translations["Dermatofibrosarcoma Protuberans"][selectedLanguage]] = "109642";
+DIAGNOSES_DICT[translations["Dermatoliposclerosis"][selectedLanguage]] = "109643";
+DIAGNOSES_DICT[translations["Dermatomyositis"][selectedLanguage]] = "109644";
+DIAGNOSES_DICT[translations["Dermatosis Papulosa Nigra"][selectedLanguage]] = "109645";
+DIAGNOSES_DICT[translations["Dermographia"][selectedLanguage]] = "109646";
+DIAGNOSES_DICT[translations["Dermographism"][selectedLanguage]] = "109647";
+DIAGNOSES_DICT[translations["Dermoid Cyst"][selectedLanguage]] = "109648";
+DIAGNOSES_DICT[translations["Desquamation"][selectedLanguage]] = "109649";
+DIAGNOSES_DICT[translations["Diabetic Dermopathy"][selectedLanguage]] = "109650";
+DIAGNOSES_DICT[translations["Diabetic Ulcer"][selectedLanguage]] = "109651";
+DIAGNOSES_DICT[translations["Diaper Dermatitis"][selectedLanguage]] = "109652";
+DIAGNOSES_DICT[translations["Digital Fibroma"][selectedLanguage]] = "109653";
+DIAGNOSES_DICT[translations["Dilated Pore of Winer"][selectedLanguage]] = "109654";
+DIAGNOSES_DICT[translations["Discoid Lupus Erythematosus"][selectedLanguage]] = "109655";
+DIAGNOSES_DICT[translations["Dissecting Cellulitis of the Scalp"][selectedLanguage]] = "109656";
+DIAGNOSES_DICT[translations["Dissecting Folliculitis"][selectedLanguage]] = "109657";
+DIAGNOSES_DICT[translations["Disseminated Actinic Porokeratosis"][selectedLanguage]] = "109658";
+DIAGNOSES_DICT[translations["Drug Eruption"][selectedLanguage]] = "109659";
+DIAGNOSES_DICT[translations["Drug Induced Bullous Eruption"][selectedLanguage]] = "109660";
+DIAGNOSES_DICT[translations["Drug Induced Pigmentary Changes"][selectedLanguage]] = "109661";
+DIAGNOSES_DICT[translations["Drug-Induced Pigmentary Change"][selectedLanguage]] = "109662";
+DIAGNOSES_DICT[translations["Dry Skin Eczema"][selectedLanguage]] = "109663";
+DIAGNOSES_DICT[translations["Dupuytren's Contracture"][selectedLanguage]] = "109664";
+DIAGNOSES_DICT[translations["Dyshidrosiform Eczema"][selectedLanguage]] = "109665";
+DIAGNOSES_DICT[translations["Dyshidrosis"][selectedLanguage]] = "109666";
+DIAGNOSES_DICT[translations["Dysplastic Nevus"][selectedLanguage]] = "109667";
+DIAGNOSES_DICT[translations["Dystrophic Nail"][selectedLanguage]] = "109668";
+DIAGNOSES_DICT[translations["Ecchymosis"][selectedLanguage]] = "109670";
+DIAGNOSES_DICT[translations["Eccrine Hydrocystoma"][selectedLanguage]] = "109671";
+DIAGNOSES_DICT[translations["Eccrine Poroma"][selectedLanguage]] = "109672";
+DIAGNOSES_DICT[translations["Eccrine Spiradenoma"][selectedLanguage]] = "109673";
+DIAGNOSES_DICT[translations["Ecthyma"][selectedLanguage]] = "109674";
+DIAGNOSES_DICT[translations["Eczema"][selectedLanguage]] = "109675";
+DIAGNOSES_DICT[translations["Eczema Herpeticum"][selectedLanguage]] = "109676";
+DIAGNOSES_DICT[translations["Edema"][selectedLanguage]] = "109677";
+DIAGNOSES_DICT[translations["Elephantiasis Nostras Verrucosa"][selectedLanguage]] = "109678";
+DIAGNOSES_DICT[translations["Emboli"][selectedLanguage]] = "109679";
+DIAGNOSES_DICT[translations["Endometriosis"][selectedLanguage]] = "109680";
+DIAGNOSES_DICT[translations["Eosinophilic Granuloma"][selectedLanguage]] = "109681";
+DIAGNOSES_DICT[translations["Epidermal Nevus"][selectedLanguage]] = "109682";
+DIAGNOSES_DICT[translations["Epidermoid Cyst"][selectedLanguage]] = "109683";
+DIAGNOSES_DICT[translations["Epidermolysis Bullosa"][selectedLanguage]] = "109684";
+DIAGNOSES_DICT[translations["Epithelioma Adenoides Cysticum"][selectedLanguage]] = "109685";
+DIAGNOSES_DICT[translations["Eruptive Vellus Hair Cysts"][selectedLanguage]] = "109686";
+DIAGNOSES_DICT[translations["Erysipelas"][selectedLanguage]] = "109687";
+DIAGNOSES_DICT[translations["Erythema Ab Igne"][selectedLanguage]] = "109688";
+DIAGNOSES_DICT[translations["Erythema Annulare Centrifigum"][selectedLanguage]] = "109689";
+DIAGNOSES_DICT[translations["Erythema Chronicum Migrans"][selectedLanguage]] = "109690";
+DIAGNOSES_DICT[translations["Erythema Craquele"][selectedLanguage]] = "109691";
+DIAGNOSES_DICT[translations["Erythema Gyratum Repens"][selectedLanguage]] = "109692";
+DIAGNOSES_DICT[translations["Erythema Infectiosum"][selectedLanguage]] = "109693";
+DIAGNOSES_DICT[translations["Erythema Multiforme"][selectedLanguage]] = "109694";
+DIAGNOSES_DICT[translations["Erythema Nodosum"][selectedLanguage]] = "109695";
+DIAGNOSES_DICT[translations["Erythema Nodosum Leprosum"][selectedLanguage]] = "109696";
+DIAGNOSES_DICT[translations["Erythema Toxicum Neonatorum"][selectedLanguage]] = "109697";
+DIAGNOSES_DICT[translations["Erythrasma"][selectedLanguage]] = "109698";
+DIAGNOSES_DICT[translations["Erythroplasia of Queyrat"][selectedLanguage]] = "109699";
+DIAGNOSES_DICT[translations["Euthyroid Grave's Ophthalmopathy"][selectedLanguage]] = "109700";
+DIAGNOSES_DICT[translations["Excoriations"][selectedLanguage]] = "109701";
+DIAGNOSES_DICT[translations["Exfoliative Erythroderma"][selectedLanguage]] = "109702";
+DIAGNOSES_DICT[translations["Exophthalmos"][selectedLanguage]] = "109703";
+DIAGNOSES_DICT[translations["Extensive Intertriginal Impetigo"][selectedLanguage]] = "109704";
+DIAGNOSES_DICT[translations["Extramammary Paget's Disease"][selectedLanguage]] = "109705";
+DIAGNOSES_DICT[translations["Factitial Dermatitis"][selectedLanguage]] = "109707";
+DIAGNOSES_DICT[translations["Favre-Racouchot"][selectedLanguage]] = "109708";
+DIAGNOSES_DICT[translations["Felon"][selectedLanguage]] = "109709";
+DIAGNOSES_DICT[translations["Fibrohistiocytic Nodule"][selectedLanguage]] = "109710";
+DIAGNOSES_DICT[translations["Fibroma"][selectedLanguage]] = "109711";
+DIAGNOSES_DICT[translations["Fibroma Molle"][selectedLanguage]] = "109712";
+DIAGNOSES_DICT[translations["Figurate Erythema"][selectedLanguage]] = "109713";
+DIAGNOSES_DICT[translations["Fish Tank Granuloma"][selectedLanguage]] = "109714";
+DIAGNOSES_DICT[translations["Fixed Drug Eruption"][selectedLanguage]] = "109715";
+DIAGNOSES_DICT[translations["Fixed Erythema"][selectedLanguage]] = "109716";
+DIAGNOSES_DICT[translations["Follicular Degeneration Syndrome"][selectedLanguage]] = "109717";
+DIAGNOSES_DICT[translations["Follicular Mucinosis"][selectedLanguage]] = "109718";
+DIAGNOSES_DICT[translations["Follicular Occlusion Syndrome"][selectedLanguage]] = "109719";
+DIAGNOSES_DICT[translations["Follicular Retention Cyst"][selectedLanguage]] = "109720";
+DIAGNOSES_DICT[translations["Folliculitis"][selectedLanguage]] = "109721";
+DIAGNOSES_DICT[translations["Folliculitis Decalvans"][selectedLanguage]] = "109722";
+DIAGNOSES_DICT[translations["Fordyce Spots"][selectedLanguage]] = "109723";
+DIAGNOSES_DICT[translations["Foreign Body Granuloma"][selectedLanguage]] = "109724";
+DIAGNOSES_DICT[translations["Fournier's Gangrene"][selectedLanguage]] = "109725";
+DIAGNOSES_DICT[translations["Fox-Fordyce Disease"][selectedLanguage]] = "109726";
+DIAGNOSES_DICT[translations["Frayed Cuticles in Dermatomyositis"][selectedLanguage]] = "109727";
+DIAGNOSES_DICT[translations["Freckles"][selectedLanguage]] = "109728";
+DIAGNOSES_DICT[translations["Frictional Lichenoid Dermatitis"][selectedLanguage]] = "109729";
+DIAGNOSES_DICT[translations["Frost Bite"][selectedLanguage]] = "109730";
+DIAGNOSES_DICT[translations["Fungal Culture"][selectedLanguage]] = "109731";
+DIAGNOSES_DICT[translations["Furuncle"][selectedLanguage]] = "109732";
+DIAGNOSES_DICT[translations["Furunculoid Myiasis"][selectedLanguage]] = "109733";
+DIAGNOSES_DICT[translations["Fusarium Infection"][selectedLanguage]] = "109734";
+DIAGNOSES_DICT[translations["Ganglion"][selectedLanguage]] = "109736";
+DIAGNOSES_DICT[translations["Gangrene"][selectedLanguage]] = "109737";
+DIAGNOSES_DICT[translations["Genital Herpes"][selectedLanguage]] = "109738";
+DIAGNOSES_DICT[translations["Geographic Tongue"][selectedLanguage]] = "109739";
+DIAGNOSES_DICT[translations["Gianotti-Crosti Syndrome"][selectedLanguage]] = "109740";
+DIAGNOSES_DICT[translations["Giant Cell Tumor"][selectedLanguage]] = "109741";
+DIAGNOSES_DICT[translations["Giant Comedone"][selectedLanguage]] = "109742";
+DIAGNOSES_DICT[translations["Giant Condyloma Accuminata"][selectedLanguage]] = "109743";
+DIAGNOSES_DICT[translations["Giant Conginital Melanocytic Nevus"][selectedLanguage]] = "109744";
+DIAGNOSES_DICT[translations["Gingival Hyperpigmentation"][selectedLanguage]] = "109745";
+DIAGNOSES_DICT[translations["Gingival Hyperplasia"][selectedLanguage]] = "109746";
+DIAGNOSES_DICT[translations["Glomus Tumor"][selectedLanguage]] = "109747";
+DIAGNOSES_DICT[translations["Glossodynia"][selectedLanguage]] = "109748";
+DIAGNOSES_DICT[translations["Goiter"][selectedLanguage]] = "109749";
+DIAGNOSES_DICT[translations["Gonorrhea"][selectedLanguage]] = "109750";
+DIAGNOSES_DICT[translations["Gottron's Papules of Dermatomyositis"][selectedLanguage]] = "109751";
+DIAGNOSES_DICT[translations["Gout"][selectedLanguage]] = "109752";
+DIAGNOSES_DICT[translations["Granular Cell Myoblastoma"][selectedLanguage]] = "109753";
+DIAGNOSES_DICT[translations["Granulation Tissue"][selectedLanguage]] = "109754";
+DIAGNOSES_DICT[translations["Granuloma Annulare"][selectedLanguage]] = "109755";
+DIAGNOSES_DICT[translations["Granuloma Faciale"][selectedLanguage]] = "109756";
+DIAGNOSES_DICT[translations["Granuloma Inguinale"][selectedLanguage]] = "109757";
+DIAGNOSES_DICT[translations["Green Hair"][selectedLanguage]] = "109758";
+DIAGNOSES_DICT[translations["Green Nail"][selectedLanguage]] = "109759";
+DIAGNOSES_DICT[translations["Group B Streptococcal Vaginitis"][selectedLanguage]] = "109760";
+DIAGNOSES_DICT[translations["Grover's Disease"][selectedLanguage]] = "109761";
+DIAGNOSES_DICT[translations["Guttate Psoriasis"][selectedLanguage]] = "109762";
+DIAGNOSES_DICT[translations["Hailey-Hailey Disease"][selectedLanguage]] = "109764";
+DIAGNOSES_DICT[translations["Hair Transplantation"][selectedLanguage]] = "109765";
+DIAGNOSES_DICT[translations["Hairy Ears"][selectedLanguage]] = "109766";
+DIAGNOSES_DICT[translations["Hairy Tongue"][selectedLanguage]] = "109767";
+DIAGNOSES_DICT[translations["Half and Half Nail"][selectedLanguage]] = "109768";
+DIAGNOSES_DICT[translations["Halo Nevus"][selectedLanguage]] = "109769";
+DIAGNOSES_DICT[translations["Hand Foot Mouth Disease"][selectedLanguage]] = "109770";
+DIAGNOSES_DICT[translations["Harlequin Fetus"][selectedLanguage]] = "109771";
+DIAGNOSES_DICT[translations["Hemangioma"][selectedLanguage]] = "109772";
+DIAGNOSES_DICT[translations["Hematoma"][selectedLanguage]] = "109773";
+DIAGNOSES_DICT[translations["Hernia"][selectedLanguage]] = "109774";
+DIAGNOSES_DICT[translations["Herpes Gestationis"][selectedLanguage]] = "109775";
+DIAGNOSES_DICT[translations["Herpes Simplex Ear Infection"][selectedLanguage]] = "109776";
+DIAGNOSES_DICT[translations["Herpes Simplex Virus"][selectedLanguage]] = "109777";
+DIAGNOSES_DICT[translations["Herpes Simplex Virus Folliculitis"][selectedLanguage]] = "109778";
+DIAGNOSES_DICT[translations["Herpes Simplex Virus of the Thenar Eminence"][selectedLanguage]] = "109779";
+DIAGNOSES_DICT[translations["Herpes Zoster"][selectedLanguage]] = "109780";
+DIAGNOSES_DICT[translations["Herpes Zoster and Allergic Contact Dermatitis"][selectedLanguage]] = "109781";
+DIAGNOSES_DICT[translations["Heterochromia Iridis"][selectedLanguage]] = "109782";
+DIAGNOSES_DICT[translations["Hidradenitis Suppurativa"][selectedLanguage]] = "109783";
+DIAGNOSES_DICT[translations["Hirsutism"][selectedLanguage]] = "109784";
+DIAGNOSES_DICT[translations["Histiocytosis X"][selectedLanguage]] = "109785";
+DIAGNOSES_DICT[translations["Hot Tub Dermatitis"][selectedLanguage]] = "109786";
+DIAGNOSES_DICT[translations["Hydrocystoma"][selectedLanguage]] = "109787";
+DIAGNOSES_DICT[translations["Hyperhidrosis"][selectedLanguage]] = "109788";
+DIAGNOSES_DICT[translations["Hyperkeratosis Palmaris Et Plantaris"][selectedLanguage]] = "109789";
+DIAGNOSES_DICT[translations["Hyperpigmentation"][selectedLanguage]] = "109790";
+DIAGNOSES_DICT[translations["Hypertrichosis"][selectedLanguage]] = "109791";
+DIAGNOSES_DICT[translations["Hypertrophic Actinic Keratosis"][selectedLanguage]] = "109792";
+DIAGNOSES_DICT[translations["Hypertrophic Scar"][selectedLanguage]] = "109793";
+DIAGNOSES_DICT[translations["Hypopigmentation"][selectedLanguage]] = "109794";
+DIAGNOSES_DICT[translations["Ichthyosis"][selectedLanguage]] = "109796";
+DIAGNOSES_DICT[translations["Ichthyosis Follicularis Atrichia and photophobia(IFAP)Syndrome"][selectedLanguage]] = "109797";
+DIAGNOSES_DICT[translations["Ichthyosis Hystrix"][selectedLanguage]] = "109798";
+DIAGNOSES_DICT[translations["Ichthyosis Linearis Circumflexa"][selectedLanguage]] = "109799";
+DIAGNOSES_DICT[translations["Ichthyosis Vulgaris"][selectedLanguage]] = "109800";
+DIAGNOSES_DICT[translations["Id Reaction"][selectedLanguage]] = "109801";
+DIAGNOSES_DICT[translations["Idiopathic Guttate Hypomelanosis"][selectedLanguage]] = "109802";
+DIAGNOSES_DICT[translations["Impetigo"][selectedLanguage]] = "109803";
+DIAGNOSES_DICT[translations["Impetigo of the Scalp Secondary to 5-FU Therapy"][selectedLanguage]] = "109804";
+DIAGNOSES_DICT[translations["Impetigo of the Umbilicus"][selectedLanguage]] = "109805";
+DIAGNOSES_DICT[translations["Incisional Biopsy"][selectedLanguage]] = "109806";
+DIAGNOSES_DICT[translations["Infantile Atopic Dermatitis"][selectedLanguage]] = "109807";
+DIAGNOSES_DICT[translations["Infantile Haemangioma"][selectedLanguage]] = "109808";
+DIAGNOSES_DICT[translations["Infected Eczema"][selectedLanguage]] = "109809";
+DIAGNOSES_DICT[translations["Ingrown Nail"][selectedLanguage]] = "109810";
+DIAGNOSES_DICT[translations["Ink Spot Nevus"][selectedLanguage]] = "109811";
+DIAGNOSES_DICT[translations["Insect Bite"][selectedLanguage]] = "109812";
+DIAGNOSES_DICT[translations["Insect Sting"][selectedLanguage]] = "109813";
+DIAGNOSES_DICT[translations["Intertrigo"][selectedLanguage]] = "109814";
+DIAGNOSES_DICT[translations["Intradermal Nevus"][selectedLanguage]] = "109815";
+DIAGNOSES_DICT[translations["Intraurethral Warts"][selectedLanguage]] = "109816";
+DIAGNOSES_DICT[translations["Inverse Psoriasis"][selectedLanguage]] = "109817";
+DIAGNOSES_DICT[translations["Irritant Contact Dermatitis"][selectedLanguage]] = "109818";
+DIAGNOSES_DICT[translations["Irritant Dermatitis"][selectedLanguage]] = "109819";
+DIAGNOSES_DICT[translations["Ischemia"][selectedLanguage]] = "109820";
+DIAGNOSES_DICT[translations["Ixodes Tick Bite"][selectedLanguage]] = "109821";
+DIAGNOSES_DICT[translations["Jaundice"][selectedLanguage]] = "109823";
+DIAGNOSES_DICT[translations["Junction Nevus"][selectedLanguage]] = "109824";
+DIAGNOSES_DICT[translations["Junction Nevus/dysplastic Nevus"][selectedLanguage]] = "109825";
+DIAGNOSES_DICT[translations["Juvenile Xanthogranuloma"][selectedLanguage]] = "109826";
+DIAGNOSES_DICT[translations["Kaposi's Sarcoma"][selectedLanguage]] = "109828";
+DIAGNOSES_DICT[translations["Keloid"][selectedLanguage]] = "109829";
+DIAGNOSES_DICT[translations["Keratin Granuloma"][selectedLanguage]] = "109830";
+DIAGNOSES_DICT[translations["Keratoacanthoma"][selectedLanguage]] = "109831";
+DIAGNOSES_DICT[translations["Keratoderma"][selectedLanguage]] = "109832";
+DIAGNOSES_DICT[translations["Keratolysis Exfoliativa of Wende"][selectedLanguage]] = "109833";
+DIAGNOSES_DICT[translations["Keratosis Pilaris"][selectedLanguage]] = "109834";
+DIAGNOSES_DICT[translations["Kerion"][selectedLanguage]] = "109835";
+DIAGNOSES_DICT[translations["Knuckle Pads"][selectedLanguage]] = "109836";
+DIAGNOSES_DICT[translations["Koenen's Tumours in Tuberous Sclerosis "][selectedLanguage]] = "109837";
+DIAGNOSES_DICT[translations["Koilonychia"][selectedLanguage]] = "109838";
+DIAGNOSES_DICT[translations["Kyrle's Disease"][selectedLanguage]] = "109839";
+DIAGNOSES_DICT[translations["Labial Melanotic Macule"][selectedLanguage]] = "109841";
+DIAGNOSES_DICT[translations["Leiomyoma"][selectedLanguage]] = "109842";
+DIAGNOSES_DICT[translations["Leiomyosarcoma"][selectedLanguage]] = "109843";
+DIAGNOSES_DICT[translations["Lentigo Maligna"][selectedLanguage]] = "109844";
+DIAGNOSES_DICT[translations["Lentigo Maligna Melanoma"][selectedLanguage]] = "109845";
+DIAGNOSES_DICT[translations["Lentigo Simplex"][selectedLanguage]] = "109846";
+DIAGNOSES_DICT[translations["Leprosy"][selectedLanguage]] = "109847";
+DIAGNOSES_DICT[translations["Leprosy, Histoid Type"][selectedLanguage]] = "109848";
+DIAGNOSES_DICT[translations["Leser-Trelat Sign"][selectedLanguage]] = "109849";
+DIAGNOSES_DICT[translations["Leukemia Cutis"][selectedLanguage]] = "109850";
+DIAGNOSES_DICT[translations["Leukocytoclastic Vasculitis"][selectedLanguage]] = "109851";
+DIAGNOSES_DICT[translations["Leukonychia"][selectedLanguage]] = "109852";
+DIAGNOSES_DICT[translations["Leukoplakia"][selectedLanguage]] = "109853";
+DIAGNOSES_DICT[translations["Lichen Aureus"][selectedLanguage]] = "109854";
+DIAGNOSES_DICT[translations["Lichen Nitidus"][selectedLanguage]] = "109855";
+DIAGNOSES_DICT[translations["Lichen Planopilaris"][selectedLanguage]] = "109856";
+DIAGNOSES_DICT[translations["Lichen Planus"][selectedLanguage]] = "109857";
+DIAGNOSES_DICT[translations["Lichen Planus Actinicus"][selectedLanguage]] = "109858";
+DIAGNOSES_DICT[translations["Lichen Planus Hypertrophicus"][selectedLanguage]] = "109859";
+DIAGNOSES_DICT[translations["Lichen Sclerosis Et Atrophicus"][selectedLanguage]] = "109860";
+DIAGNOSES_DICT[translations["Lichen Simplex Chronicus"][selectedLanguage]] = "109861";
+DIAGNOSES_DICT[translations["Lichen Spinulosis"][selectedLanguage]] = "109862";
+DIAGNOSES_DICT[translations["Lichen Striatus"][selectedLanguage]] = "109863";
+DIAGNOSES_DICT[translations["Lichenoid Benign Keratosis"][selectedLanguage]] = "109864";
+DIAGNOSES_DICT[translations["Linear and Whorled Hypomelanosis"][selectedLanguage]] = "109865";
+DIAGNOSES_DICT[translations["Linear Epidermal Nevus"][selectedLanguage]] = "109866";
+DIAGNOSES_DICT[translations["Linear Focal Elastolysis"][selectedLanguage]] = "109867";
+DIAGNOSES_DICT[translations["Linear Lichen Planus"][selectedLanguage]] = "109868";
+DIAGNOSES_DICT[translations["Linear Nigra"][selectedLanguage]] = "109869";
+DIAGNOSES_DICT[translations["Lip Licker's Dermatitis"][selectedLanguage]] = "109870";
+DIAGNOSES_DICT[translations["Lipodystrophy"][selectedLanguage]] = "109871";
+DIAGNOSES_DICT[translations["Lipoid Proteinosis"][selectedLanguage]] = "109872";
+DIAGNOSES_DICT[translations["Lipoma"][selectedLanguage]] = "109873";
+DIAGNOSES_DICT[translations["Livedo Reticularis"][selectedLanguage]] = "109874";
+DIAGNOSES_DICT[translations["Longtudinal Melanonychia"][selectedLanguage]] = "109875";
+DIAGNOSES_DICT[translations["Lupus Profunda"][selectedLanguage]] = "109876";
+DIAGNOSES_DICT[translations["Lupus Vulgaris"][selectedLanguage]] = "109877";
+DIAGNOSES_DICT[translations["Lymphangioma"][selectedLanguage]] = "109878";
+DIAGNOSES_DICT[translations["Lymphangioma Circumscriptum"][selectedLanguage]] = "109879";
+DIAGNOSES_DICT[translations["Lymphangitis"][selectedLanguage]] = "109880";
+DIAGNOSES_DICT[translations["Lymphedema"][selectedLanguage]] = "109881";
+DIAGNOSES_DICT[translations["Lymphedema Praecox"][selectedLanguage]] = "109882";
+DIAGNOSES_DICT[translations["Lymphocytic Infiltrate of Jessner"][selectedLanguage]] = "109883";
+DIAGNOSES_DICT[translations["Lymphocytoma Cutis"][selectedLanguage]] = "109884";
+DIAGNOSES_DICT[translations["Lymphomatoid Papulosis"][selectedLanguage]] = "109885";
+DIAGNOSES_DICT[translations["Lymphosarcoma"][selectedLanguage]] = "109886";
+DIAGNOSES_DICT[translations["Macular Amyloidosis"][selectedLanguage]] = "109888";
+DIAGNOSES_DICT[translations["Maggots"][selectedLanguage]] = "109889";
+DIAGNOSES_DICT[translations["Mal Perforans"][selectedLanguage]] = "109890";
+DIAGNOSES_DICT[translations["Malignant Melanoma"][selectedLanguage]] = "109891";
+DIAGNOSES_DICT[translations["Mastocytosis (Urticaria Pigmentosa)"][selectedLanguage]] = "109892";
+DIAGNOSES_DICT[translations["Measles"][selectedLanguage]] = "109893";
+DIAGNOSES_DICT[translations["Median Nail Dystrophy"][selectedLanguage]] = "109894";
+DIAGNOSES_DICT[translations["Median Raphe Cyst"][selectedLanguage]] = "109895";
+DIAGNOSES_DICT[translations["Median Rhomboid Glossitis"][selectedLanguage]] = "109896";
+DIAGNOSES_DICT[translations["Melasma"][selectedLanguage]] = "109897";
+DIAGNOSES_DICT[translations["Melkersson-Rosenthal Syndrome"][selectedLanguage]] = "109898";
+DIAGNOSES_DICT[translations["Meningococcemia"][selectedLanguage]] = "109899";
+DIAGNOSES_DICT[translations["Merkle Cell Tumor"][selectedLanguage]] = "109900";
+DIAGNOSES_DICT[translations["Metastatic Carcinoma"][selectedLanguage]] = "109901";
+DIAGNOSES_DICT[translations["Metastatic Melanoma"][selectedLanguage]] = "109902";
+DIAGNOSES_DICT[translations["Miasis Cutanea Furunculoide"][selectedLanguage]] = "109903";
+DIAGNOSES_DICT[translations["Milia"][selectedLanguage]] = "109904";
+DIAGNOSES_DICT[translations["Molluscum Contagiosum"][selectedLanguage]] = "109905";
+DIAGNOSES_DICT[translations["Mongolian Spot"][selectedLanguage]] = "109906";
+DIAGNOSES_DICT[translations["Monilethrix"][selectedLanguage]] = "109907";
+DIAGNOSES_DICT[translations["Mononucleosis"][selectedLanguage]] = "109908";
+DIAGNOSES_DICT[translations["Morphea"][selectedLanguage]] = "109909";
+DIAGNOSES_DICT[translations["Morton's Toe"][selectedLanguage]] = "109910";
+DIAGNOSES_DICT[translations["Mosaic Plantar Wart"][selectedLanguage]] = "109911";
+DIAGNOSES_DICT[translations["Mucha-Habermann Disease"][selectedLanguage]] = "109912";
+DIAGNOSES_DICT[translations["Mucinosis"][selectedLanguage]] = "109913";
+DIAGNOSES_DICT[translations["Mucinous Cyst/myxoma"][selectedLanguage]] = "109914";
+DIAGNOSES_DICT[translations["Mucocele"][selectedLanguage]] = "109915";
+DIAGNOSES_DICT[translations["Mucocutaneous Candidiasis"][selectedLanguage]] = "109916";
+DIAGNOSES_DICT[translations["Mucous Cyst"][selectedLanguage]] = "109917";
+DIAGNOSES_DICT[translations["Mucous Membrane Psoriasis"][selectedLanguage]] = "109918";
+DIAGNOSES_DICT[translations["Muir-Torre Syndrome"][selectedLanguage]] = "109919";
+DIAGNOSES_DICT[translations["Multiple Hemangioma of Infancy"][selectedLanguage]] = "109920";
+DIAGNOSES_DICT[translations["Multiple Molluscum Contagiosum"][selectedLanguage]] = "109921";
+DIAGNOSES_DICT[translations["Multiple Myxomas"][selectedLanguage]] = "109922";
+DIAGNOSES_DICT[translations["Multiple Plantar Warts"][selectedLanguage]] = "109923";
+DIAGNOSES_DICT[translations["Mycetoma (Nocardia Brasilensis)"][selectedLanguage]] = "109924";
+DIAGNOSES_DICT[translations["Mycosis Fungoides"][selectedLanguage]] = "109925";
+DIAGNOSES_DICT[translations["Myofibromatosis"][selectedLanguage]] = "109926";
+DIAGNOSES_DICT[translations["Myxedema"][selectedLanguage]] = "109927";
+DIAGNOSES_DICT[translations["Myxoid Cyst"][selectedLanguage]] = "109928";
+DIAGNOSES_DICT[translations["Nail Beading"][selectedLanguage]] = "109930";
+DIAGNOSES_DICT[translations["Nail Cosmesis"][selectedLanguage]] = "109931";
+DIAGNOSES_DICT[translations["Nail Dystrophy"][selectedLanguage]] = "109932";
+DIAGNOSES_DICT[translations["Nail Nevus"][selectedLanguage]] = "109933";
+DIAGNOSES_DICT[translations["Nail Pigmentation"][selectedLanguage]] = "109934";
+DIAGNOSES_DICT[translations["Nail Psoriasis"][selectedLanguage]] = "109935";
+DIAGNOSES_DICT[translations["Nail Ridging"][selectedLanguage]] = "109936";
+DIAGNOSES_DICT[translations["Nail Shedding"][selectedLanguage]] = "109937";
+DIAGNOSES_DICT[translations["Nail Surgery"][selectedLanguage]] = "109938";
+DIAGNOSES_DICT[translations["Nail Trauma"][selectedLanguage]] = "109939";
+DIAGNOSES_DICT[translations["Necrobiosis Lipoidica Diabeticorum"][selectedLanguage]] = "109940";
+DIAGNOSES_DICT[translations["Necrotising Fasciitis"][selectedLanguage]] = "109941";
+DIAGNOSES_DICT[translations["Needle Tracks"][selectedLanguage]] = "109942";
+DIAGNOSES_DICT[translations["Neonatal Acne"][selectedLanguage]] = "109943";
+DIAGNOSES_DICT[translations["Neural Nevus"][selectedLanguage]] = "109944";
+DIAGNOSES_DICT[translations["Neurodermatitis"][selectedLanguage]] = "109945";
+DIAGNOSES_DICT[translations["Neurofibroma"][selectedLanguage]] = "109946";
+DIAGNOSES_DICT[translations["Neurofibromatosis"][selectedLanguage]] = "109947";
+DIAGNOSES_DICT[translations["Neuroma"][selectedLanguage]] = "109948";
+DIAGNOSES_DICT[translations["Neurotic Excoriations"][selectedLanguage]] = "109949";
+DIAGNOSES_DICT[translations["Nevus"][selectedLanguage]] = "109950";
+DIAGNOSES_DICT[translations["Nevus Anemicus"][selectedLanguage]] = "109951";
+DIAGNOSES_DICT[translations["Nevus Cell Nevus"][selectedLanguage]] = "109952";
+DIAGNOSES_DICT[translations["Nevus Comedonicus"][selectedLanguage]] = "109953";
+DIAGNOSES_DICT[translations["Nevus Flammeus"][selectedLanguage]] = "109954";
+DIAGNOSES_DICT[translations["Nevus Incipiens"][selectedLanguage]] = "109955";
+DIAGNOSES_DICT[translations["Nevus Lipomatosis"][selectedLanguage]] = "109956";
+DIAGNOSES_DICT[translations["Nevus of Ota"][selectedLanguage]] = "109957";
+DIAGNOSES_DICT[translations["Nevus Sebaceous of Jadassohn"][selectedLanguage]] = "109958";
+DIAGNOSES_DICT[translations["Nevus Spilus"][selectedLanguage]] = "109959";
+DIAGNOSES_DICT[translations["Nodulo - Cystic Acne Vulgaris"][selectedLanguage]] = "109960";
+DIAGNOSES_DICT[translations["Nodulo Cystic Acne Vulgaris"][selectedLanguage]] = "109961";
+DIAGNOSES_DICT[translations["Nodulocystic Acne"][selectedLanguage]] = "109962";
+DIAGNOSES_DICT[translations["Nodulo-Cystic Acne Vulgaris"][selectedLanguage]] = "109963";
+DIAGNOSES_DICT[translations["North American Blastomycosis"][selectedLanguage]] = "109964";
+DIAGNOSES_DICT[translations["Notalgia Paresthetica"][selectedLanguage]] = "109965";
+DIAGNOSES_DICT[translations["Nummular Eczema"][selectedLanguage]] = "109966";
+DIAGNOSES_DICT[translations["Occupational Acne"][selectedLanguage]] = "109968";
+DIAGNOSES_DICT[translations["Onychogryphosis"][selectedLanguage]] = "109969";
+DIAGNOSES_DICT[translations["Onychogryphosis and Onychauxis"][selectedLanguage]] = "109970";
+DIAGNOSES_DICT[translations["Onycholysis"][selectedLanguage]] = "109971";
+DIAGNOSES_DICT[translations["Onychomycosis"][selectedLanguage]] = "109972";
+DIAGNOSES_DICT[translations["Onychoschizia"][selectedLanguage]] = "109973";
+DIAGNOSES_DICT[translations["Oral Fibroma"][selectedLanguage]] = "109974";
+DIAGNOSES_DICT[translations["Orf"][selectedLanguage]] = "109975";
+DIAGNOSES_DICT[translations["Orf & Erythema Multiforme"][selectedLanguage]] = "109976";
+DIAGNOSES_DICT[translations["Osler-Weber-Rendu Syndrome"][selectedLanguage]] = "109977";
+DIAGNOSES_DICT[translations["Osteoarthritis Arthritis"][selectedLanguage]] = "109978";
+DIAGNOSES_DICT[translations["Osteoma Cutis"][selectedLanguage]] = "109979";
+DIAGNOSES_DICT[translations["Pachyonychia Congenita"][selectedLanguage]] = "109981";
+DIAGNOSES_DICT[translations["Paget's Disease"][selectedLanguage]] = "109982";
+DIAGNOSES_DICT[translations["Palmar Erythema"][selectedLanguage]] = "109983";
+DIAGNOSES_DICT[translations["Palmar Wart"][selectedLanguage]] = "109984";
+DIAGNOSES_DICT[translations["Panniculitis"][selectedLanguage]] = "109985";
+DIAGNOSES_DICT[translations["Papilloma"][selectedLanguage]] = "109986";
+DIAGNOSES_DICT[translations["Papillomatosis of Gougerot and Carteaud"][selectedLanguage]] = "109987";
+DIAGNOSES_DICT[translations["Paracoccidioidomycosis"][selectedLanguage]] = "109988";
+DIAGNOSES_DICT[translations["Paronychia"][selectedLanguage]] = "109989";
+DIAGNOSES_DICT[translations["Pearly Penile Papules"][selectedLanguage]] = "109990";
+DIAGNOSES_DICT[translations["Pediculosis Capitis"][selectedLanguage]] = "109991";
+DIAGNOSES_DICT[translations["Pediculosis Pubis"][selectedLanguage]] = "109992";
+DIAGNOSES_DICT[translations["Pedunculated Papillomatosis"][selectedLanguage]] = "109993";
+DIAGNOSES_DICT[translations["Pellagra"][selectedLanguage]] = "109994";
+DIAGNOSES_DICT[translations["Pemphigus Foliaceus"][selectedLanguage]] = "109995";
+DIAGNOSES_DICT[translations["Pemphigus Vegitant"][selectedLanguage]] = "109996";
+DIAGNOSES_DICT[translations["Pemphigus Vulgaris"][selectedLanguage]] = "109997";
+DIAGNOSES_DICT[translations["Perifolliculitis Capitis"][selectedLanguage]] = "109998";
+DIAGNOSES_DICT[translations["Perioral Dermatitis"][selectedLanguage]] = "109999";
+DIAGNOSES_DICT[translations["Periungual and Subungual Wart"][selectedLanguage]] = "110000";
+DIAGNOSES_DICT[translations["Periungual Erythema and Telangiectasias in Dermatomyositis"][selectedLanguage]] = "110001";
+DIAGNOSES_DICT[translations["Periungual Fibroma"][selectedLanguage]] = "110002";
+DIAGNOSES_DICT[translations["Phagedenic Herpes Simplex Virus"][selectedLanguage]] = "110003";
+DIAGNOSES_DICT[translations["Photo Onycholysis"][selectedLanguage]] = "110004";
+DIAGNOSES_DICT[translations["Photocontact"][selectedLanguage]] = "110005";
+DIAGNOSES_DICT[translations["Photocontact Dermatitis"][selectedLanguage]] = "110006";
+DIAGNOSES_DICT[translations["Photodermatitis"][selectedLanguage]] = "110007";
+DIAGNOSES_DICT[translations["Photodrug Reaction"][selectedLanguage]] = "110008";
+DIAGNOSES_DICT[translations["Photosensitivity"][selectedLanguage]] = "110009";
+DIAGNOSES_DICT[translations["Phrynoderma"][selectedLanguage]] = "110010";
+DIAGNOSES_DICT[translations["Phytophotodermatitis"][selectedLanguage]] = "110011";
+DIAGNOSES_DICT[translations["Piezogenic Papule"][selectedLanguage]] = "110012";
+DIAGNOSES_DICT[translations["Piezogenic Papules"][selectedLanguage]] = "110013";
+DIAGNOSES_DICT[translations["Pilar Cyst"][selectedLanguage]] = "110014";
+DIAGNOSES_DICT[translations["Pilomatrixoma"][selectedLanguage]] = "110015";
+DIAGNOSES_DICT[translations["Pilonidal Cyst"][selectedLanguage]] = "110016";
+DIAGNOSES_DICT[translations["Pincer Nail Syndrome"][selectedLanguage]] = "110017";
+DIAGNOSES_DICT[translations["Pitted Keratolysis"][selectedLanguage]] = "110018";
+DIAGNOSES_DICT[translations["Pityriasis Alba"][selectedLanguage]] = "110019";
+DIAGNOSES_DICT[translations["Pityriasis Rosea"][selectedLanguage]] = "110020";
+DIAGNOSES_DICT[translations["Pityriasis Rubra Pilaris"][selectedLanguage]] = "110021";
+DIAGNOSES_DICT[translations["Pityriasis Versicolor"][selectedLanguage]] = "110022";
+DIAGNOSES_DICT[translations["Pityrosporum Folliculitis"][selectedLanguage]] = "110023";
+DIAGNOSES_DICT[translations["Planar Warts"][selectedLanguage]] = "110024";
+DIAGNOSES_DICT[translations["Plantar Wart"][selectedLanguage]] = "110025";
+DIAGNOSES_DICT[translations["Plantar Warts"][selectedLanguage]] = "110026";
+DIAGNOSES_DICT[translations["Plexiform Neurofibroma"][selectedLanguage]] = "110027";
+DIAGNOSES_DICT[translations["Poikiloderma and Heliotrope Changes of Dermatomyositis"][selectedLanguage]] = "110028";
+DIAGNOSES_DICT[translations["Poikiloderma Atrophicans Vasculare"][selectedLanguage]] = "110029";
+DIAGNOSES_DICT[translations["Poikiloderma of Civatte"][selectedLanguage]] = "110030";
+DIAGNOSES_DICT[translations["Poikilodermatous Changes of Dermatomyositis"][selectedLanguage]] = "110031";
+DIAGNOSES_DICT[translations["Poison Ivy"][selectedLanguage]] = "110032";
+DIAGNOSES_DICT[translations["Polymorphic Light Eruption"][selectedLanguage]] = "110033";
+DIAGNOSES_DICT[translations["Pomade Acne"][selectedLanguage]] = "110034";
+DIAGNOSES_DICT[translations["Porokeratosis of Mibelli"][selectedLanguage]] = "110035";
+DIAGNOSES_DICT[translations["Porphyria Cutanea Tarda"][selectedLanguage]] = "110036";
+DIAGNOSES_DICT[translations["Port Wine Stain"][selectedLanguage]] = "110037";
+DIAGNOSES_DICT[translations["Pressure Alopecia"][selectedLanguage]] = "110038";
+DIAGNOSES_DICT[translations["Pressure Sore"][selectedLanguage]] = "110039";
+DIAGNOSES_DICT[translations["Primary Herpes Simplex Virus"][selectedLanguage]] = "110040";
+DIAGNOSES_DICT[translations["Primary Syphilis"][selectedLanguage]] = "110041";
+DIAGNOSES_DICT[translations["Prokeratosis"][selectedLanguage]] = "110042";
+DIAGNOSES_DICT[translations["Prurigo Nodularis"][selectedLanguage]] = "110043";
+DIAGNOSES_DICT[translations["Pruritic Urticarial Papules and Plaques of Pregnancy"][selectedLanguage]] = "110044";
+DIAGNOSES_DICT[translations["Pruritus"][selectedLanguage]] = "110045";
+DIAGNOSES_DICT[translations["Pruritus Ani"][selectedLanguage]] = "110046";
+DIAGNOSES_DICT[translations["Pseudocyst of the Auricle"][selectedLanguage]] = "110047";
+DIAGNOSES_DICT[translations["Pseudofolliculitis Barbae"][selectedLanguage]] = "110048";
+DIAGNOSES_DICT[translations["Pseudopelade"][selectedLanguage]] = "110049";
+DIAGNOSES_DICT[translations["Pseudoporphyria"][selectedLanguage]] = "110050";
+DIAGNOSES_DICT[translations["Pseudorhinophyma"][selectedLanguage]] = "110051";
+DIAGNOSES_DICT[translations["Pseudoxanthoma Elasticum"][selectedLanguage]] = "110052";
+DIAGNOSES_DICT[translations["Psoriasis"][selectedLanguage]] = "110053";
+DIAGNOSES_DICT[translations["Psoriasis and Tinea Corporis"][selectedLanguage]] = "110054";
+DIAGNOSES_DICT[translations["Psoriatic Arthritis"][selectedLanguage]] = "110055";
+DIAGNOSES_DICT[translations["Pterygium Inversum Unguis"][selectedLanguage]] = "110056";
+DIAGNOSES_DICT[translations["Purpura"][selectedLanguage]] = "110057";
+DIAGNOSES_DICT[translations["Purpura Fulminans"][selectedLanguage]] = "110058";
+DIAGNOSES_DICT[translations["Pustular Psoriasis"][selectedLanguage]] = "110059";
+DIAGNOSES_DICT[translations["Pustule"][selectedLanguage]] = "110060";
+DIAGNOSES_DICT[translations["Pustulosis Palmaris"][selectedLanguage]] = "110061";
+DIAGNOSES_DICT[translations["Pyoderma"][selectedLanguage]] = "110062";
+DIAGNOSES_DICT[translations["Pyoderma Gangrenosum"][selectedLanguage]] = "110063";
+DIAGNOSES_DICT[translations["Pyogenic Granuloma"][selectedLanguage]] = "110064";
+DIAGNOSES_DICT[translations["Racquet Nail"][selectedLanguage]] = "110067";
+DIAGNOSES_DICT[translations["Radiodermatitis"][selectedLanguage]] = "110068";
+DIAGNOSES_DICT[translations["Raynaud's Phenomenon"][selectedLanguage]] = "110069";
+DIAGNOSES_DICT[translations["Reactive Perforating Collagenosis"][selectedLanguage]] = "110070";
+DIAGNOSES_DICT[translations["Red Tattoo Reaction"][selectedLanguage]] = "110071";
+DIAGNOSES_DICT[translations["Reiter's Syndrome"][selectedLanguage]] = "110072";
+DIAGNOSES_DICT[translations["Relapsing Polychondritis"][selectedLanguage]] = "110073";
+DIAGNOSES_DICT[translations["Reticulated Erythema of Fifth Disease"][selectedLanguage]] = "110074";
+DIAGNOSES_DICT[translations["Rheumatoid Arthritis"][selectedLanguage]] = "110075";
+DIAGNOSES_DICT[translations["Rhinophyma"][selectedLanguage]] = "110076";
+DIAGNOSES_DICT[translations["Rocky Mountain Spotted Fever"][selectedLanguage]] = "110077";
+DIAGNOSES_DICT[translations["Rosacea"][selectedLanguage]] = "110078";
+DIAGNOSES_DICT[translations["Rubella"][selectedLanguage]] = "110079";
+DIAGNOSES_DICT[translations["Sarcoid"][selectedLanguage]] = "110081";
+DIAGNOSES_DICT[translations["Sarcoidosis"][selectedLanguage]] = "110082";
+DIAGNOSES_DICT[translations["Scabies"][selectedLanguage]] = "110083";
+DIAGNOSES_DICT[translations["Scalp Psoriasis"][selectedLanguage]] = "110084";
+DIAGNOSES_DICT[translations["Scalp Psoriasis and Inverse Psoriasis"][selectedLanguage]] = "110085";
+DIAGNOSES_DICT[translations["Scar"][selectedLanguage]] = "110086";
+DIAGNOSES_DICT[translations["Scarlet Fever"][selectedLanguage]] = "110087";
+DIAGNOSES_DICT[translations["Scarring Alopecia"][selectedLanguage]] = "110088";
+DIAGNOSES_DICT[translations["Schamberg's Disease"][selectedLanguage]] = "110089";
+DIAGNOSES_DICT[translations["Sclerosing Lymphangitis"][selectedLanguage]] = "110090";
+DIAGNOSES_DICT[translations["Scrotal Tongue"][selectedLanguage]] = "110091";
+DIAGNOSES_DICT[translations["Sebaceous Gland Adenoma"][selectedLanguage]] = "110092";
+DIAGNOSES_DICT[translations["Sebaceous Gland Hyperplasia"][selectedLanguage]] = "110093";
+DIAGNOSES_DICT[translations["Sebopsoriasis"][selectedLanguage]] = "110094";
+DIAGNOSES_DICT[translations["Seborrheic Dermatitis"][selectedLanguage]] = "110095";
+DIAGNOSES_DICT[translations["Seborrheic Keratosis"][selectedLanguage]] = "110096";
+DIAGNOSES_DICT[translations["Secondarily Infected Skin Biopsy Site"][selectedLanguage]] = "110097";
+DIAGNOSES_DICT[translations["Secondary Syphilis"][selectedLanguage]] = "110098";
+DIAGNOSES_DICT[translations["Senile Angioma"][selectedLanguage]] = "110099";
+DIAGNOSES_DICT[translations["Septic Embolis"][selectedLanguage]] = "110100";
+DIAGNOSES_DICT[translations["Septic Vasculitis"][selectedLanguage]] = "110101";
+DIAGNOSES_DICT[translations["Shagreen Plaque"][selectedLanguage]] = "110102";
+DIAGNOSES_DICT[translations["Shave Biopsy"][selectedLanguage]] = "110103";
+DIAGNOSES_DICT[translations["Shaving Folliculitis"][selectedLanguage]] = "110104";
+DIAGNOSES_DICT[translations["Sjogren's Syndrome"][selectedLanguage]] = "110105";
+DIAGNOSES_DICT[translations["Skin Tag"][selectedLanguage]] = "110106";
+DIAGNOSES_DICT[translations["Solar Elastosis"][selectedLanguage]] = "110107";
+DIAGNOSES_DICT[translations["Solar Lentigenes"][selectedLanguage]] = "110108";
+DIAGNOSES_DICT[translations["Solar Lentigo"][selectedLanguage]] = "110109";
+DIAGNOSES_DICT[translations["Solar Purpura"][selectedLanguage]] = "110110";
+DIAGNOSES_DICT[translations["Solar Urticaria"][selectedLanguage]] = "110111";
+DIAGNOSES_DICT[translations["Spider Angioma"][selectedLanguage]] = "110112";
+DIAGNOSES_DICT[translations["Spider Nevus"][selectedLanguage]] = "110113";
+DIAGNOSES_DICT[translations["Spider Nevus Prior to Electrodesiccation"][selectedLanguage]] = "110114";
+DIAGNOSES_DICT[translations["Spindle Cell Nevus"][selectedLanguage]] = "110115";
+DIAGNOSES_DICT[translations["Splinter Hemorrhage"][selectedLanguage]] = "110116";
+DIAGNOSES_DICT[translations["Squamous Cell Carcinoma (SCC)"][selectedLanguage]] = "110117";
+DIAGNOSES_DICT[translations["St. Anne's Sign"][selectedLanguage]] = "110118";
+DIAGNOSES_DICT[translations["Staphylococcal Pyoderma"][selectedLanguage]] = "110119";
+DIAGNOSES_DICT[translations["Stasis Dermatitis"][selectedLanguage]] = "110120";
+DIAGNOSES_DICT[translations["Stasis Edema"][selectedLanguage]] = "110121";
+DIAGNOSES_DICT[translations["Stasis Ulcer"][selectedLanguage]] = "110122";
+DIAGNOSES_DICT[translations["Steatocystoma Multiplex"][selectedLanguage]] = "110123";
+DIAGNOSES_DICT[translations["Steroid Acne"][selectedLanguage]] = "110124";
+DIAGNOSES_DICT[translations["Steroid Atrophy"][selectedLanguage]] = "110125";
+DIAGNOSES_DICT[translations["Steroid Folliculitis"][selectedLanguage]] = "110126";
+DIAGNOSES_DICT[translations["Steroid Purpura"][selectedLanguage]] = "110127";
+DIAGNOSES_DICT[translations["Steroid Striae"][selectedLanguage]] = "110128";
+DIAGNOSES_DICT[translations["Steroid Use/abuse/misuse Dermatitis"][selectedLanguage]] = "110129";
+DIAGNOSES_DICT[translations["Steroid-Induced Acneiform Eruption"][selectedLanguage]] = "110130";
+DIAGNOSES_DICT[translations["Stevens–Johnson Syndrome"][selectedLanguage]] = "110131";
+DIAGNOSES_DICT[translations["Stomatitis"][selectedLanguage]] = "110132";
+DIAGNOSES_DICT[translations["Strawberry Hemangioma"][selectedLanguage]] = "110133";
+DIAGNOSES_DICT[translations["Streptococcal Fissure of the External Nares"][selectedLanguage]] = "110134";
+DIAGNOSES_DICT[translations["Streptococcal Folliculitis"][selectedLanguage]] = "110135";
+DIAGNOSES_DICT[translations["Streptococcal Pyoderma of the Scrotum"][selectedLanguage]] = "110136";
+DIAGNOSES_DICT[translations["Striae"][selectedLanguage]] = "110137";
+DIAGNOSES_DICT[translations["Striae Distensae"][selectedLanguage]] = "110138";
+DIAGNOSES_DICT[translations["Stucco Keratosis"][selectedLanguage]] = "110139";
+DIAGNOSES_DICT[translations["Subacute Cutaneous Lupus Erythematosus"][selectedLanguage]] = "110140";
+DIAGNOSES_DICT[translations["Subcutaneous Atrophy"][selectedLanguage]] = "110141";
+DIAGNOSES_DICT[translations["Subungual Abscess"][selectedLanguage]] = "110142";
+DIAGNOSES_DICT[translations["Subungual Hematoma"][selectedLanguage]] = "110143";
+DIAGNOSES_DICT[translations["Subungual Verruca Vulgaris"][selectedLanguage]] = "110144";
+DIAGNOSES_DICT[translations["Sucking Blister"][selectedLanguage]] = "110145";
+DIAGNOSES_DICT[translations["Sunburn"][selectedLanguage]] = "110146";
+DIAGNOSES_DICT[translations["Suntan"][selectedLanguage]] = "110147";
+DIAGNOSES_DICT[translations["Superficial Actinic Porokeratosis"][selectedLanguage]] = "110148";
+DIAGNOSES_DICT[translations["Supernumerary Digit"][selectedLanguage]] = "110149";
+DIAGNOSES_DICT[translations["Sweet's Syndrome"][selectedLanguage]] = "110150";
+DIAGNOSES_DICT[translations["Sycosis Barbae"][selectedLanguage]] = "110151";
+DIAGNOSES_DICT[translations["Synovial Cyst"][selectedLanguage]] = "110152";
+DIAGNOSES_DICT[translations["Syphilis"][selectedLanguage]] = "110153";
+DIAGNOSES_DICT[translations["Syringoma"][selectedLanguage]] = "110154";
+DIAGNOSES_DICT[translations["Systemic Lupus Erythematosus"][selectedLanguage]] = "110155";
+DIAGNOSES_DICT[translations["Takayasu's Arteritis"][selectedLanguage]] = "110157";
+DIAGNOSES_DICT[translations["Talon Noir"][selectedLanguage]] = "110158";
+DIAGNOSES_DICT[translations["Tattoo"][selectedLanguage]] = "110159";
+DIAGNOSES_DICT[translations["Tattoo Reaction"][selectedLanguage]] = "110160";
+DIAGNOSES_DICT[translations["Telangiectasia Eruptiva Macularis Perstans"][selectedLanguage]] = "110161";
+DIAGNOSES_DICT[translations["Telangiectasias"][selectedLanguage]] = "110162";
+DIAGNOSES_DICT[translations["Telogen Effluvium"][selectedLanguage]] = "110163";
+DIAGNOSES_DICT[translations["Temporal Triangular Alopecia"][selectedLanguage]] = "110164";
+DIAGNOSES_DICT[translations["Terry's Nails"][selectedLanguage]] = "110165";
+DIAGNOSES_DICT[translations["Thermal Burn"][selectedLanguage]] = "110166";
+DIAGNOSES_DICT[translations["Thrush"][selectedLanguage]] = "110167";
+DIAGNOSES_DICT[translations["Tick Bite"][selectedLanguage]] = "110168";
+DIAGNOSES_DICT[translations["Tinea Barbae"][selectedLanguage]] = "110169";
+DIAGNOSES_DICT[translations["Tinea Capitis"][selectedLanguage]] = "110170";
+DIAGNOSES_DICT[translations["Tinea Corporis"][selectedLanguage]] = "110171";
+DIAGNOSES_DICT[translations["Tinea Cruris"][selectedLanguage]] = "110172";
+DIAGNOSES_DICT[translations["Tinea Faciale"][selectedLanguage]] = "110173";
+DIAGNOSES_DICT[translations["Tinea Imbricata"][selectedLanguage]] = "110174";
+DIAGNOSES_DICT[translations["Tinea Incognito"][selectedLanguage]] = "110175";
+DIAGNOSES_DICT[translations["Tinea Manus"][selectedLanguage]] = "110176";
+DIAGNOSES_DICT[translations["Tinea Pedis"][selectedLanguage]] = "110177";
+DIAGNOSES_DICT[translations["Tinea Versicolor"][selectedLanguage]] = "110178";
+DIAGNOSES_DICT[translations["Toe Deformity"][selectedLanguage]] = "110179";
+DIAGNOSES_DICT[translations["Tooth Abnormality"][selectedLanguage]] = "110180";
+DIAGNOSES_DICT[translations["Torus Palantine"][selectedLanguage]] = "110181";
+DIAGNOSES_DICT[translations["Toxic Epidermal Necrolysis"][selectedLanguage]] = "110182";
+DIAGNOSES_DICT[translations["Traction Alopecia"][selectedLanguage]] = "110183";
+DIAGNOSES_DICT[translations["Trauma"][selectedLanguage]] = "110184";
+DIAGNOSES_DICT[translations["Traumatic Alopecia"][selectedLanguage]] = "110185";
+DIAGNOSES_DICT[translations["Trichilemmal Cyst"][selectedLanguage]] = "110186";
+DIAGNOSES_DICT[translations["Trichoepithelioma"][selectedLanguage]] = "110187";
+DIAGNOSES_DICT[translations["Trichofolliculoma"][selectedLanguage]] = "110188";
+DIAGNOSES_DICT[translations["Trichomycosis Axillaris"][selectedLanguage]] = "110189";
+DIAGNOSES_DICT[translations["Trichostasis Spinulosa"][selectedLanguage]] = "110190";
+DIAGNOSES_DICT[translations["Trichotillomania"][selectedLanguage]] = "110191";
+DIAGNOSES_DICT[translations["Tubercles of Montgomery"][selectedLanguage]] = "110192";
+DIAGNOSES_DICT[translations["Tuberculosis Verrucosa Cutis"][selectedLanguage]] = "110193";
+DIAGNOSES_DICT[translations["Tuberous Sclerosis"][selectedLanguage]] = "110194";
+DIAGNOSES_DICT[translations["Tungiasis"][selectedLanguage]] = "110195";
+DIAGNOSES_DICT[translations["Twenty Nail Dystrophy"][selectedLanguage]] = "110196";
+DIAGNOSES_DICT[translations["Ulcer"][selectedLanguage]] = "110198";
+DIAGNOSES_DICT[translations["Umbilical Papillomatosis"][selectedLanguage]] = "110199";
+DIAGNOSES_DICT[translations["Unilateral Thoracic Exanthem"][selectedLanguage]] = "110200";
+DIAGNOSES_DICT[translations["Urticaria"][selectedLanguage]] = "110201";
+DIAGNOSES_DICT[translations["Urticaria Pigmentosa"][selectedLanguage]] = "110202";
+DIAGNOSES_DICT[translations["Urticarial Vasculitis"][selectedLanguage]] = "110203";
+DIAGNOSES_DICT[translations["UVL Burn"][selectedLanguage]] = "110204";
+DIAGNOSES_DICT[translations["Varicella"][selectedLanguage]] = "110206";
+DIAGNOSES_DICT[translations["Venous Lake"][selectedLanguage]] = "110207";
+DIAGNOSES_DICT[translations["Venous Stars"][selectedLanguage]] = "110208";
+DIAGNOSES_DICT[translations["Verruca Vulgaris"][selectedLanguage]] = "110209";
+DIAGNOSES_DICT[translations["Verrucous Epidermal Nevus"][selectedLanguage]] = "110210";
+DIAGNOSES_DICT[translations["Viral Exanthem"][selectedLanguage]] = "110211";
+DIAGNOSES_DICT[translations["Virilization"][selectedLanguage]] = "110212";
+DIAGNOSES_DICT[translations["Vitiligo"][selectedLanguage]] = "110213";
+DIAGNOSES_DICT[translations["Von Recklinghausen's Disease"][selectedLanguage]] = "110214";
+DIAGNOSES_DICT[translations["Wallace's Line"][selectedLanguage]] = "110216";
+DIAGNOSES_DICT[translations["Wart"][selectedLanguage]] = "110217";
+DIAGNOSES_DICT[translations["Wasp Sting"][selectedLanguage]] = "110218";
+DIAGNOSES_DICT[translations["Wegener's Granulomatosis"][selectedLanguage]] = "110219";
+DIAGNOSES_DICT[translations["Well's Syndrome"][selectedLanguage]] = "110220";
+DIAGNOSES_DICT[translations["Wet to Dry Foot Syndrome"][selectedLanguage]] = "110221";
+DIAGNOSES_DICT[translations["White Dermographia"][selectedLanguage]] = "110222";
+DIAGNOSES_DICT[translations["Wiskott-Aldrich Syndrome"][selectedLanguage]] = "110223";
+DIAGNOSES_DICT[translations["Wound Dehiscence"][selectedLanguage]] = "110224";
+DIAGNOSES_DICT[translations["Wound Infection"][selectedLanguage]] = "110225";
+DIAGNOSES_DICT[translations["Wrinkles"][selectedLanguage]] = "110226";
+DIAGNOSES_DICT[translations["Xanthelasma Palpebrarum"][selectedLanguage]] = "110228";
+DIAGNOSES_DICT[translations["Xanthogranuloma"][selectedLanguage]] = "110229";
+DIAGNOSES_DICT[translations["Xanthoma"][selectedLanguage]] = "110230";
+DIAGNOSES_DICT[translations["Xeroderma Pigmentosa"][selectedLanguage]] = "110231";
+DIAGNOSES_DICT[translations["Xerosis"][selectedLanguage]] = "110232";
+DIAGNOSES_DICT[translations["X-Linked Ichthyosis"][selectedLanguage]] = "110233";
+DIAGNOSES_DICT[translations["Yellow Nail Syndrome"][selectedLanguage]] = "110235";
+DIAGNOSES_DICT[translations["Zosteriform Nevus"][selectedLanguage]] = "110237";
+DIAGNOSES_DICT[translations["Zygomycosis"][selectedLanguage]] = "110238";
 
-DIAGNOSES_DICT_SWAP = {
-  "109487": "Abrasion",
-  "109488": "Abscess",
-  "109489": "Acanthoma Fissuratum",
-  "109490": "Acanthosis Nigricans",
-  "109491": "Acne Excoriee",
-  "109492": "Acne Keloidalis Nuchae",
-  "109493": "Acne Vulgaris",
-  "109494": "Acral Fibrokeratoma",
-  "109495": "Acral Keratosis",
-  "109496": "Acral Lentiginous Melanoma",
-  "109497": "Acrochordon",
-  "109498": "Acrocyanosis",
-  "109499": "Acrodermatitis Enteropathica",
-  "109500": "Acrokeratosis Verruciformis",
-  "109501": "Actinic Atrophy",
-  "109502": "Actinic Keratosis",
-  "109503": "Actinic or Senile Damage or Atrophy",
-  "109504": "ACTINIC PRURIGO",
-  "109505": "Actinic/solar Damage",
-  "109506": "Actinic/solar Damage, 5 FU Treatment",
-  "109507": "Actinic/solar Damage, Actinex Treatment",
-  "109508": "Actinic/solar Damage, Actinic Cheilitis",
-  "109509": "Actinic/solar Damage, Actinic Keratosis",
-  "109510": "Actinic/solar Damage, Atrophy",
-  "109511": "Actinic/solar Damage, Cutis Rhomboidalis Nuchae",
-  "109512": "Actinic/solar Damage, Dyspigmentation",
-  "109513": "Actinic/solar Damage, Favre-Racouchot",
-  "109514": "Actinic/solar Damage, Follicular Retention Cysts",
-  "109515": "Actinic/solar Damage, Freckles",
-  "109516": "Actinic/solar Damage, Hyperpigmentation",
-  "109517": "Actinic/solar Damage, Milia",
-  "109518": "Actinic/solar Damage, Photoaging",
-  "109519": "Actinic/solar Damage, Pigmentation",
-  "109520": "Actinic/solar Damage, Poikiloderma of Civatte",
-  "109521": "Actinic/solar Damage, Skin Phototype I",
-  "109522": "Actinic/solar Damage, Solar Elastosis",
-  "109523": "Actinic/solar Damage, Solar Keratosis",
-  "109524": "Actinic/solar Damage, Solar Lentigo",
-  "109525": "Actinic/solar Damage, Solar Purpura",
-  "109526": "Actinic/solar Damage, Stellate Pseudoscars",
-  "109527": "Actinic/solar Damage, Suntan",
-  "109528": "Actinic/solar Damage, Surgery",
-  "109529": "Actinic/solar Damage, Telangiectasia",
-  "109530": "Actinic/solar Damage, Tretinoin Treatment",
-  "109531": "Actinic/solar Damage, Wrinkles",
-  "109532": "Acute Cutaneous Necrosis After Cardiac Catheterization",
-  "109533": "Acute Eczema",
-  "109534": "Adenoma Sebaceum",
-  "109535": "Allergic Contact Dermatitis",
-  "109536": "Alopecia",
-  "109537": "Alopecia Areata",
-  "109538": "Alopecia Mucinosa",
-  "109539": "Amyloidosis",
-  "109540": "Anagen Effluvium",
-  "109541": "Androgenetic Alopecia",
-  "109542": "Anetoderma",
-  "109543": "Angioedema",
-  "109544": "Angiofibroma",
-  "109545": "Angiokeratoma",
-  "109546": "Angiolymphoid Hyperplasia",
-  "109547": "Angioma",
-  "109548": "Angiosarcoma",
-  "109549": "Angular Cheilitis",
-  "109550": "Aphthous Ulcer",
-  "109551": "Aplasia Cutis",
-  "109552": "Apocrine Cystadenoma",
-  "109553": "Apocrine Hydrocystoma",
-  "109554": "Arsenical Keratosis",
-  "109555": "Arsenical Pigmentation",
-  "109556": "Ashy Dermatosis",
-  "109557": "Atopic Dermatitis",
-  "109558": "Atopic Dermatitis/eczema",
-  "109559": "Atrophie Blanche",
-  "109560": "Atrophoderma",
-  "109561": "Atypical Mycobacteria",
-  "109562": "Autosensitization Reaction",
-  "109563": "Avulsion Laceration",
-  "109565": "Balanitis Xerotica Obliterans",
-  "109566": "Basal Cell Carcinoma",
-  "109567": "Basal Cell Carcinoma and Seborrheic Keratosis",
-  "109568": "Basisquamous Carcinoma",
-  "109569": "Bazex's Syndrome",
-  "109570": "B-Cell Lymphoma",
-  "109571": "Beau's Lines",
-  "109572": "Becker's Nevus",
-  "109573": "Bed Bug Bite With Urticarial Reaction",
-  "109574": "Behcet's Syndrome",
-  "109575": "Benign Keratosis",
-  "109576": "Black Hairy Tongue",
-  "109577": "Black Madura",
-  "109578": "Blepharochalasia",
-  "109579": "Blister",
-  "109580": "Blue Nevus",
-  "109581": "Body Louse Infestation",
-  "109582": "Bowenoid Papulosis",
-  "109583": "Bowen's Disease",
-  "109584": "Brushfield's Spots",
-  "109585": "Bullous Impetigo",
-  "109586": "Bullous Pemphigoid",
-  "109587": "Burn",
-  "109588": "Bywater's Lesion",
-  "109590": "Cafe Au Lait Macule",
-  "109591": "Callus",
-  "109592": "Candida Balanitis",
-  "109593": "Candidiasis",
-  "109594": "Carbuncle",
-  "109595": "Cellulitis",
-  "109596": "Chalazion",
-  "109597": "Cheilitis",
-  "109598": "Cheilitis Granulomatosa",
-  "109599": "Cherry Angioma",
-  "109600": "Chilblains",
-  "109601": "Chondrodermatitis Nodularis Helicus",
-  "109602": "Chromomycosis",
-  "109603": "Chronic Bullous Disease of Childhood",
-  "109604": "Chronic Eczema",
-  "109605": "Chronic Venous Ulcer",
-  "109606": "Cicatricial Pemphigoid",
-  "109607": "Clavus",
-  "109608": "Clear Cell Acanthoma",
-  "109609": "Clubbing of Fingers",
-  "109610": "Cold Abscess",
-  "109611": "Collagen Nevus",
-  "109612": "Colloidion Baby",
-  "109613": "Combined Nevus",
-  "109614": "Compound Nevus",
-  "109615": "Compound Nevus/dysplastic Nevus",
-  "109616": "Condyloma Accuminata",
-  "109617": "Condyloma Acuminata",
-  "109618": "Congenital Hairy Melanocytic Nevus",
-  "109619": "Congenital Nevus",
-  "109620": "Congenital Vascular Malformation",
-  "109621": "Conjunctival Hemorrhage",
-  "109622": "Connective Tissue Nevus",
-  "109623": "Contact Dermatitis",
-  "109624": "Crowe's Sign",
-  "109625": "Cryofibrinogenemia",
-  "109626": "Cryosurgery",
-  "109627": "Curettage and Electrodesiccation",
-  "109628": "Cutanea Larva Migrans",
-  "109629": "Cutaneous Horn",
-  "109630": "Cutaneous Leishmaniasis",
-  "109631": "Cutaneous T-Cell Lymphoma",
-  "109632": "Cutis Marmorata",
-  "109633": "Cutis Rhomboidalis Nuchae",
-  "109634": "Cutis Verticis Gyrata",
-  "109635": "Cyanosis",
-  "109637": "Darier-White Disease",
-  "109638": "Delusions of Parasitosis",
-  "109639": "Dental Sinus",
-  "109640": "Dermatitis Herpetiformis",
-  "109641": "Dermatofibroma",
-  "109642": "Dermatofibrosarcoma Protuberans",
-  "109643": "Dermatoliposclerosis",
-  "109644": "Dermatomyositis",
-  "109645": "Dermatosis Papulosa Nigra",
-  "109646": "Dermographia",
-  "109647": "Dermographism",
-  "109648": "Dermoid Cyst",
-  "109649": "Desquamation",
-  "109650": "Diabetic Dermopathy",
-  "109651": "Diabetic Ulcer",
-  "109652": "Diaper Dermatitis",
-  "109653": "Digital Fibroma",
-  "109654": "Dilated Pore of Winer",
-  "109655": "Discoid Lupus Erythematosus",
-  "109656": "Dissecting Cellulitis of the Scalp",
-  "109657": "Dissecting Folliculitis",
-  "109658": "Disseminated Actinic Porokeratosis",
-  "109659": "Drug Eruption",
-  "109660": "Drug Induced Bullous Eruption",
-  "109661": "Drug Induced Pigmentary Changes",
-  "109662": "Drug-Induced Pigmentary Change",
-  "109663": "Dry Skin Eczema",
-  "109664": "Dupuytren's Contracture",
-  "109665": "Dyshidrosiform Eczema",
-  "109666": "Dyshidrosis",
-  "109667": "Dysplastic Nevus",
-  "109668": "Dystrophic Nail",
-  "109670": "Ecchymosis",
-  "109671": "Eccrine Hydrocystoma",
-  "109672": "Eccrine Poroma",
-  "109673": "Eccrine Spiradenoma",
-  "109674": "Ecthyma",
-  "109675": "Eczema",
-  "109676": "Eczema Herpeticum",
-  "109677": "Edema",
-  "109678": "Elephantiasis Nostras Verrucosa",
-  "109679": "Emboli",
-  "109680": "Endometriosis",
-  "109681": "Eosinophilic Granuloma",
-  "109682": "Epidermal Nevus",
-  "109683": "Epidermoid Cyst",
-  "109684": "Epidermolysis Bullosa",
-  "109685": "Epithelioma Adenoides Cysticum",
-  "109686": "Eruptive Vellus Hair Cysts",
-  "109687": "Erysipelas",
-  "109688": "Erythema Ab Igne",
-  "109689": "Erythema Annulare Centrifigum",
-  "109690": "Erythema Chronicum Migrans",
-  "109691": "Erythema Craquele",
-  "109692": "Erythema Gyratum Repens",
-  "109693": "Erythema Infectiosum",
-  "109694": "Erythema Multiforme",
-  "109695": "Erythema Nodosum",
-  "109696": "Erythema Nodosum Leprosum",
-  "109697": "Erythema Toxicum Neonatorum",
-  "109698": "Erythrasma",
-  "109699": "Erythroplasia of Queyrat",
-  "109700": "Euthyroid Grave's Ophthalmopathy",
-  "109701": "Excoriations",
-  "109702": "Exfoliative Erythroderma",
-  "109703": "Exophthalmos",
-  "109704": "Extensive Intertriginal Impetigo",
-  "109705": "Extramammary Paget's Disease",
-  "109707": "Factitial Dermatitis",
-  "109708": "Favre-Racouchot",
-  "109709": "Felon",
-  "109710": "Fibrohistiocytic Nodule",
-  "109711": "Fibroma",
-  "109712": "Fibroma Molle",
-  "109713": "Figurate Erythema",
-  "109714": "Fish Tank Granuloma",
-  "109715": "Fixed Drug Eruption",
-  "109716": "Fixed Erythema",
-  "109717": "Follicular Degeneration Syndrome",
-  "109718": "Follicular Mucinosis",
-  "109719": "Follicular Occlusion Syndrome",
-  "109720": "Follicular Retention Cyst",
-  "109721": "Folliculitis",
-  "109722": "Folliculitis Decalvans",
-  "109723": "Fordyce Spots",
-  "109724": "Foreign Body Granuloma",
-  "109725": "Fournier's Gangrene",
-  "109726": "Fox-Fordyce Disease",
-  "109727": "Frayed Cuticles in Dermatomyositis",
-  "109728": "Freckles",
-  "109729": "Frictional Lichenoid Dermatitis",
-  "109730": "Frost Bite",
-  "109731": "Fungal Culture",
-  "109732": "Furuncle",
-  "109733": "Furunculoid Myiasis",
-  "109734": "Fusarium Infection",
-  "109736": "Ganglion",
-  "109737": "Gangrene",
-  "109738": "Genital Herpes",
-  "109739": "Geographic Tongue",
-  "109740": "Gianotti-Crosti Syndrome",
-  "109741": "Giant Cell Tumor",
-  "109742": "Giant Comedone",
-  "109743": "Giant Condyloma Accuminata",
-  "109744": "Giant Conginital Melanocytic Nevus",
-  "109745": "Gingival Hyperpigmentation",
-  "109746": "Gingival Hyperplasia",
-  "109747": "Glomus Tumor",
-  "109748": "Glossodynia",
-  "109749": "Goiter",
-  "109750": "Gonorrhea",
-  "109751": "Gottron's Papules of Dermatomyositis",
-  "109752": "Gout",
-  "109753": "Granular Cell Myoblastoma",
-  "109754": "Granulation Tissue",
-  "109755": "Granuloma Annulare",
-  "109756": "Granuloma Faciale",
-  "109757": "Granuloma Inguinale",
-  "109758": "Green Hair",
-  "109759": "Green Nail",
-  "109760": "Group B Streptococcal Vaginitis",
-  "109761": "Grover's Disease",
-  "109762": "Guttate Psoriasis",
-  "109764": "Hailey-Hailey Disease",
-  "109765": "Hair Transplantation",
-  "109766": "Hairy Ears",
-  "109767": "Hairy Tongue",
-  "109768": "Half and Half Nail",
-  "109769": "Halo Nevus",
-  "109770": "Hand Foot Mouth Disease",
-  "109771": "Harlequin Fetus",
-  "109772": "Hemangioma",
-  "109773": "Hematoma",
-  "109774": "Hernia",
-  "109775": "Herpes Gestationis",
-  "109776": "Herpes Simplex Ear Infection",
-  "109777": "Herpes Simplex Virus",
-  "109778": "Herpes Simplex Virus Folliculitis",
-  "109779": "Herpes Simplex Virus of the Thenar Eminence",
-  "109780": "Herpes Zoster",
-  "109781": "Herpes Zoster and Allergic Contact Dermatitis",
-  "109782": "Heterochromia Iridis",
-  "109783": "Hidradenitis Suppurativa",
-  "109784": "Hirsutism",
-  "109785": "Histiocytosis X",
-  "109786": "Hot Tub Dermatitis",
-  "109787": "Hydrocystoma",
-  "109788": "Hyperhidrosis",
-  "109789": "Hyperkeratosis Palmaris Et Plantaris",
-  "109790": "Hyperpigmentation",
-  "109791": "Hypertrichosis",
-  "109792": "Hypertrophic Actinic Keratosis",
-  "109793": "Hypertrophic Scar",
-  "109794": "Hypopigmentation",
-  "109796": "Ichthyosis",
-  "109797": "Ichthyosis Follicularis Atrichia and photophobia(IFAP)Syndrome",
-  "109798": "Ichthyosis Hystrix",
-  "109799": "Ichthyosis Linearis Circumflexa",
-  "109800": "Ichthyosis Vulgaris",
-  "109801": "Id Reaction",
-  "109802": "Idiopathic Guttate Hypomelanosis",
-  "109803": "Impetigo",
-  "109804": "Impetigo of the Scalp Secondary to 5-FU Therapy",
-  "109805": "Impetigo of the Umbilicus",
-  "109806": "Incisional Biopsy",
-  "109807": "Infantile Atopic Dermatitis",
-  "109808": "Infantile Haemangioma",
-  "109809": "Infected Eczema",
-  "109810": "Ingrown Nail",
-  "109811": "Ink Spot Nevus",
-  "109812": "Insect Bite",
-  "109813": "Insect Sting",
-  "109814": "Intertrigo",
-  "109815": "Intradermal Nevus",
-  "109816": "Intraurethral Warts",
-  "109817": "Inverse Psoriasis",
-  "109818": "Irritant Contact Dermatitis",
-  "109819": "Irritant Dermatitis",
-  "109820": "Ischemia",
-  "109821": "Ixodes Tick Bite",
-  "109823": "Jaundice",
-  "109824": "Junction Nevus",
-  "109825": "Junction Nevus/dysplastic Nevus",
-  "109826": "Juvenile Xanthogranuloma",
-  "109828": "Kaposi's Sarcoma",
-  "109829": "Keloid",
-  "109830": "Keratin Granuloma",
-  "109831": "Keratoacanthoma",
-  "109832": "Keratoderma",
-  "109833": "Keratolysis Exfoliativa of Wende",
-  "109834": "Keratosis Pilaris",
-  "109835": "Kerion",
-  "109836": "Knuckle Pads",
-  "109837": "Koenen's Tumours in Tuberous Sclerosis ",
-  "109838": "Koilonychia",
-  "109839": "Kyrle's Disease",
-  "109841": "Labial Melanotic Macule",
-  "109842": "Leiomyoma",
-  "109843": "Leiomyosarcoma",
-  "109844": "Lentigo Maligna",
-  "109845": "Lentigo Maligna Melanoma",
-  "109846": "Lentigo Simplex",
-  "109847": "Leprosy",
-  "109848": "Leprosy, Histoid Type",
-  "109849": "Leser-Trelat Sign",
-  "109850": "Leukemia Cutis",
-  "109851": "Leukocytoclastic Vasculitis",
-  "109852": "Leukonychia",
-  "109853": "Leukoplakia",
-  "109854": "Lichen Aureus",
-  "109855": "Lichen Nitidus",
-  "109856": "Lichen Planopilaris",
-  "109857": "Lichen Planus",
-  "109858": "Lichen Planus Actinicus",
-  "109859": "Lichen Planus Hypertrophicus",
-  "109860": "Lichen Sclerosis Et Atrophicus",
-  "109861": "Lichen Simplex Chronicus",
-  "109862": "Lichen Spinulosis",
-  "109863": "Lichen Striatus",
-  "109864": "Lichenoid Benign Keratosis",
-  "109865": "Linear and Whorled Hypomelanosis",
-  "109866": "Linear Epidermal Nevus",
-  "109867": "Linear Focal Elastolysis",
-  "109868": "Linear Lichen Planus",
-  "109869": "Linear Nigra",
-  "109870": "Lip Licker's Dermatitis",
-  "109871": "Lipodystrophy",
-  "109872": "Lipoid Proteinosis",
-  "109873": "Lipoma",
-  "109874": "Livedo Reticularis",
-  "109875": "Longtudinal Melanonychia",
-  "109876": "Lupus Profunda",
-  "109877": "Lupus Vulgaris",
-  "109878": "Lymphangioma",
-  "109879": "Lymphangioma Circumscriptum",
-  "109880": "Lymphangitis",
-  "109881": "Lymphedema",
-  "109882": "Lymphedema Praecox",
-  "109883": "Lymphocytic Infiltrate of Jessner",
-  "109884": "Lymphocytoma Cutis",
-  "109885": "Lymphomatoid Papulosis",
-  "109886": "Lymphosarcoma",
-  "109888": "Macular Amyloidosis",
-  "109889": "Maggots",
-  "109890": "Mal Perforans",
-  "109891": "Malignant Melanoma",
-  "109892": "Mastocytosis (Urticaria Pigmentosa)",
-  "109893": "Measles",
-  "109894": "Median Nail Dystrophy",
-  "109895": "Median Raphe Cyst",
-  "109896": "Median Rhomboid Glossitis",
-  "109897": "Melasma",
-  "109898": "Melkersson-Rosenthal Syndrome",
-  "109899": "Meningococcemia",
-  "109900": "Merkle Cell Tumor",
-  "109901": "Metastatic Carcinoma",
-  "109902": "Metastatic Melanoma",
-  "109903": "Miasis Cutanea Furunculoide",
-  "109904": "Milia",
-  "109905": "Molluscum Contagiosum",
-  "109906": "Mongolian Spot",
-  "109907": "Monilethrix",
-  "109908": "Mononucleosis",
-  "109909": "Morphea",
-  "109910": "Morton's Toe",
-  "109911": "Mosaic Plantar Wart",
-  "109912": "Mucha-Habermann Disease",
-  "109913": "Mucinosis",
-  "109914": "Mucinous Cyst/myxoma",
-  "109915": "Mucocele",
-  "109916": "Mucocutaneous Candidiasis",
-  "109917": "Mucous Cyst",
-  "109918": "Mucous Membrane Psoriasis",
-  "109919": "Muir-Torre Syndrome",
-  "109920": "Multiple Hemangioma of Infancy",
-  "109921": "Multiple Molluscum Contagiosum",
-  "109922": "Multiple Myxomas",
-  "109923": "Multiple Plantar Warts",
-  "109924": "Mycetoma (Nocardia Brasilensis)",
-  "109925": "Mycosis Fungoides",
-  "109926": "Myofibromatosis",
-  "109927": "Myxedema",
-  "109928": "Myxoid Cyst",
-  "109930": "Nail Beading",
-  "109931": "Nail Cosmesis",
-  "109932": "Nail Dystrophy",
-  "109933": "Nail Nevus",
-  "109934": "Nail Pigmentation",
-  "109935": "Nail Psoriasis",
-  "109936": "Nail Ridging",
-  "109937": "Nail Shedding",
-  "109938": "Nail Surgery",
-  "109939": "Nail Trauma",
-  "109940": "Necrobiosis Lipoidica Diabeticorum",
-  "109941": "Necrotising Fasciitis",
-  "109942": "Needle Tracks",
-  "109943": "Neonatal Acne",
-  "109944": "Neural Nevus",
-  "109945": "Neurodermatitis",
-  "109946": "Neurofibroma",
-  "109947": "Neurofibromatosis",
-  "109948": "Neuroma",
-  "109949": "Neurotic Excoriations",
-  "109950": "Nevus",
-  "109951": "Nevus Anemicus",
-  "109952": "Nevus Cell Nevus",
-  "109953": "Nevus Comedonicus",
-  "109954": "Nevus Flammeus",
-  "109955": "Nevus Incipiens",
-  "109956": "Nevus Lipomatosis",
-  "109957": "Nevus of Ota",
-  "109958": "Nevus Sebaceous of Jadassohn",
-  "109959": "Nevus Spilus",
-  "109960": "Nodulo - Cystic Acne Vulgaris",
-  "109961": "Nodulo Cystic Acne Vulgaris",
-  "109962": "Nodulocystic Acne",
-  "109963": "Nodulo-Cystic Acne Vulgaris",
-  "109964": "North American Blastomycosis",
-  "109965": "Notalgia Paresthetica",
-  "109966": "Nummular Eczema",
-  "109968": "Occupational Acne",
-  "109969": "Onychogryphosis",
-  "109970": "Onychogryphosis and Onychauxis",
-  "109971": "Onycholysis",
-  "109972": "Onychomycosis",
-  "109973": "Onychoschizia",
-  "109974": "Oral Fibroma",
-  "109975": "Orf",
-  "109976": "Orf & Erythema Multiforme",
-  "109977": "Osler-Weber-Rendu Syndrome",
-  "109978": "Osteoarthritis Arthritis",
-  "109979": "Osteoma Cutis",
-  "109981": "Pachyonychia Congenita",
-  "109982": "Paget's Disease",
-  "109983": "Palmar Erythema",
-  "109984": "Palmar Wart",
-  "109985": "Panniculitis",
-  "109986": "Papilloma",
-  "109987": "Papillomatosis of Gougerot and Carteaud",
-  "109988": "Paracoccidioidomycosis",
-  "109989": "Paronychia",
-  "109990": "Pearly Penile Papules",
-  "109991": "Pediculosis Capitis",
-  "109992": "Pediculosis Pubis",
-  "109993": "Pedunculated Papillomatosis",
-  "109994": "Pellagra",
-  "109995": "Pemphigus Foliaceus",
-  "109996": "Pemphigus Vegitant",
-  "109997": "Pemphigus Vulgaris",
-  "109998": "Perifolliculitis Capitis",
-  "109999": "Perioral Dermatitis",
-  "110000": "Periungual and Subungual Wart",
-  "110001": "Periungual Erythema and Telangiectasias in Dermatomyositis",
-  "110002": "Periungual Fibroma",
-  "110003": "Phagedenic Herpes Simplex Virus",
-  "110004": "Photo Onycholysis",
-  "110005": "Photocontact",
-  "110006": "Photocontact Dermatitis",
-  "110007": "Photodermatitis",
-  "110008": "Photodrug Reaction",
-  "110009": "Photosensitivity",
-  "110010": "Phrynoderma",
-  "110011": "Phytophotodermatitis",
-  "110012": "Piezogenic Papule",
-  "110013": "Piezogenic Papules",
-  "110014": "Pilar Cyst",
-  "110015": "Pilomatrixoma",
-  "110016": "Pilonidal Cyst",
-  "110017": "Pincer Nail Syndrome",
-  "110018": "Pitted Keratolysis",
-  "110019": "Pityriasis Alba",
-  "110020": "Pityriasis Rosea",
-  "110021": "Pityriasis Rubra Pilaris",
-  "110022": "Pityriasis Versicolor",
-  "110023": "Pityrosporum Folliculitis",
-  "110024": "Planar Warts",
-  "110025": "Plantar Wart",
-  "110026": "Plantar Warts",
-  "110027": "Plexiform Neurofibroma",
-  "110028": "Poikiloderma and Heliotrope Changes of Dermatomyositis",
-  "110029": "Poikiloderma Atrophicans Vasculare",
-  "110030": "Poikiloderma of Civatte",
-  "110031": "Poikilodermatous Changes of Dermatomyositis",
-  "110032": "Poison Ivy",
-  "110033": "Polymorphic Light Eruption",
-  "110034": "Pomade Acne",
-  "110035": "Porokeratosis of Mibelli",
-  "110036": "Porphyria Cutanea Tarda",
-  "110037": "Port Wine Stain",
-  "110038": "Pressure Alopecia",
-  "110039": "Pressure Sore",
-  "110040": "Primary Herpes Simplex Virus",
-  "110041": "Primary Syphilis",
-  "110042": "Prokeratosis",
-  "110043": "Prurigo Nodularis",
-  "110044": "Pruritic Urticarial Papules and Plaques of Pregnancy",
-  "110045": "Pruritus",
-  "110046": "Pruritus Ani",
-  "110047": "Pseudocyst of the Auricle",
-  "110048": "Pseudofolliculitis Barbae",
-  "110049": "Pseudopelade",
-  "110050": "Pseudoporphyria",
-  "110051": "Pseudorhinophyma",
-  "110052": "Pseudoxanthoma Elasticum",
-  "110053": "Psoriasis",
-  "110054": "Psoriasis and Tinea Corporis",
-  "110055": "Psoriatic Arthritis",
-  "110056": "Pterygium Inversum Unguis",
-  "110057": "Purpura",
-  "110058": "Purpura Fulminans",
-  "110059": "Pustular Psoriasis",
-  "110060": "Pustule",
-  "110061": "Pustulosis Palmaris",
-  "110062": "Pyoderma",
-  "110063": "Pyoderma Gangrenosum",
-  "110064": "Pyogenic Granuloma",
-  "110067": "Racquet Nail",
-  "110068": "Radiodermatitis",
-  "110069": "Raynaud's Phenomenon",
-  "110070": "Reactive Perforating Collagenosis",
-  "110071": "Red Tattoo Reaction",
-  "110072": "Reiter's Syndrome",
-  "110073": "Relapsing Polychondritis",
-  "110074": "Reticulated Erythema of Fifth Disease",
-  "110075": "Rheumatoid Arthritis",
-  "110076": "Rhinophyma",
-  "110077": "Rocky Mountain Spotted Fever",
-  "110078": "Rosacea",
-  "110079": "Rubella",
-  "110081": "Sarcoid",
-  "110082": "Sarcoidosis",
-  "110083": "Scabies",
-  "110084": "Scalp Psoriasis",
-  "110085": "Scalp Psoriasis and Inverse Psoriasis",
-  "110086": "Scar",
-  "110087": "Scarlet Fever",
-  "110088": "Scarring Alopecia",
-  "110089": "Schamberg's Disease",
-  "110090": "Sclerosing Lymphangitis",
-  "110091": "Scrotal Tongue",
-  "110092": "Sebaceous Gland Adenoma",
-  "110093": "Sebaceous Gland Hyperplasia",
-  "110094": "Sebopsoriasis",
-  "110095": "Seborrheic Dermatitis",
-  "110096": "Seborrheic Keratosis",
-  "110097": "Secondarily Infected Skin Biopsy Site",
-  "110098": "Secondary Syphilis",
-  "110099": "Senile Angioma",
-  "110100": "Septic Embolis",
-  "110101": "Septic Vasculitis",
-  "110102": "Shagreen Plaque",
-  "110103": "Shave Biopsy",
-  "110104": "Shaving Folliculitis",
-  "110105": "Sjogren's Syndrome",
-  "110106": "Skin Tag",
-  "110107": "Solar Elastosis",
-  "110108": "Solar Lentigenes",
-  "110109": "Solar Lentigo",
-  "110110": "Solar Purpura",
-  "110111": "Solar Urticaria",
-  "110112": "Spider Angioma",
-  "110113": "Spider Nevus",
-  "110114": "Spider Nevus Prior to Electrodesiccation",
-  "110115": "Spindle Cell Nevus",
-  "110116": "Splinter Hemorrhage",
-  "110117": "Squamous Cell Carcinoma (SCC)",
-  "110118": "St. Anne's Sign",
-  "110119": "Staphylococcal Pyoderma",
-  "110120": "Stasis Dermatitis",
-  "110121": "Stasis Edema",
-  "110122": "Stasis Ulcer",
-  "110123": "Steatocystoma Multiplex",
-  "110124": "Steroid Acne",
-  "110125": "Steroid Atrophy",
-  "110126": "Steroid Folliculitis",
-  "110127": "Steroid Purpura",
-  "110128": "Steroid Striae",
-  "110129": "Steroid Use/abuse/misuse Dermatitis",
-  "110130": "Steroid-Induced Acneiform Eruption",
-  "110131": "Stevens–Johnson Syndrome",
-  "110132": "Stomatitis",
-  "110133": "Strawberry Hemangioma",
-  "110134": "Streptococcal Fissure of the External Nares",
-  "110135": "Streptococcal Folliculitis",
-  "110136": "Streptococcal Pyoderma of the Scrotum",
-  "110137": "Striae",
-  "110138": "Striae Distensae",
-  "110139": "Stucco Keratosis",
-  "110140": "Subacute Cutaneous Lupus Erythematosus",
-  "110141": "Subcutaneous Atrophy",
-  "110142": "Subungual Abscess",
-  "110143": "Subungual Hematoma",
-  "110144": "Subungual Verruca Vulgaris",
-  "110145": "Sucking Blister",
-  "110146": "Sunburn",
-  "110147": "Suntan",
-  "110148": "Superficial Actinic Porokeratosis",
-  "110149": "Supernumerary Digit",
-  "110150": "Sweet's Syndrome",
-  "110151": "Sycosis Barbae",
-  "110152": "Synovial Cyst",
-  "110153": "Syphilis",
-  "110154": "Syringoma",
-  "110155": "Systemic Lupus Erythematosus",
-  "110157": "Takayasu's Arteritis",
-  "110158": "Talon Noir",
-  "110159": "Tattoo",
-  "110160": "Tattoo Reaction",
-  "110161": "Telangiectasia Eruptiva Macularis Perstans",
-  "110162": "Telangiectasias",
-  "110163": "Telogen Effluvium",
-  "110164": "Temporal Triangular Alopecia",
-  "110165": "Terry's Nails",
-  "110166": "Thermal Burn",
-  "110167": "Thrush",
-  "110168": "Tick Bite",
-  "110169": "Tinea Barbae",
-  "110170": "Tinea Capitis",
-  "110171": "Tinea Corporis",
-  "110172": "Tinea Cruris",
-  "110173": "Tinea Faciale",
-  "110174": "Tinea Imbricata",
-  "110175": "Tinea Incognito",
-  "110176": "Tinea Manus",
-  "110177": "Tinea Pedis",
-  "110178": "Tinea Versicolor",
-  "110179": "Toe Deformity",
-  "110180": "Tooth Abnormality",
-  "110181": "Torus Palantine",
-  "110182": "Toxic Epidermal Necrolysis",
-  "110183": "Traction Alopecia",
-  "110184": "Trauma",
-  "110185": "Traumatic Alopecia",
-  "110186": "Trichilemmal Cyst",
-  "110187": "Trichoepithelioma",
-  "110188": "Trichofolliculoma",
-  "110189": "Trichomycosis Axillaris",
-  "110190": "Trichostasis Spinulosa",
-  "110191": "Trichotillomania",
-  "110192": "Tubercles of Montgomery",
-  "110193": "Tuberculosis Verrucosa Cutis",
-  "110194": "Tuberous Sclerosis",
-  "110195": "TUNGIASIS ",
-  "110196": "Twenty Nail Dystrophy",
-  "110198": "Ulcer",
-  "110199": "Umbilical Papillomatosis",
-  "110200": "Unilateral Thoracic Exanthem",
-  "110201": "Urticaria",
-  "110202": "Urticaria Pigmentosa",
-  "110203": "Urticarial Vasculitis",
-  "110204": "UVL Burn",
-  "110206": "Varicella",
-  "110207": "Venous Lake",
-  "110208": "Venous Stars",
-  "110209": "Verruca Vulgaris",
-  "110210": "Verrucous Epidermal Nevus",
-  "110211": "Viral Exanthem",
-  "110212": "Virilization",
-  "110213": "Vitiligo",
-  "110214": "Von Recklinghausen's Disease",
-  "110216": "Wallace's Line",
-  "110217": "Wart",
-  "110218": "Wasp Sting",
-  "110219": "Wegener's Granulomatosis",
-  "110220": "Well's Syndrome",
-  "110221": "Wet to Dry Foot Syndrome",
-  "110222": "White Dermographia",
-  "110223": "Wiskott-Aldrich Syndrome",
-  "110224": "Wound Dehiscence",
-  "110225": "Wound Infection",
-  "110226": "Wrinkles",
-  "110228": "Xanthelasma Palpebrarum",
-  "110229": "Xanthogranuloma",
-  "110230": "Xanthoma",
-  "110231": "Xeroderma Pigmentosa",
-  "110232": "Xerosis",
-  "110233": "X-Linked Ichthyosis",
-  "110235": "Yellow Nail Syndrome",
-  "110237": "Zosteriform Nevus",
-  "110238": "Zygomycosis"
-};
+DIAGNOSES_DICT_SWAP = {};
+DIAGNOSES_DICT_SWAP["109487"] = translations["Abrasion"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109488"] = translations["Abscess"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109489"] = translations["Acanthoma Fissuratum"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109490"] = translations["Acanthosis Nigricans"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109491"] = translations["Acne Excoriee"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109492"] = translations["Acne Keloidalis Nuchae"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109493"] = translations["Acne Vulgaris"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109494"] = translations["Acral Fibrokeratoma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109495"] = translations["Acral Keratosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109496"] = translations["Acral Lentiginous Melanoma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109497"] = translations["Acrochordon"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109498"] = translations["Acrocyanosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109499"] = translations["Acrodermatitis Enteropathica"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109500"] = translations["Acrokeratosis Verruciformis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109501"] = translations["Actinic Atrophy"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109502"] = translations["Actinic Keratosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109503"] = translations["Actinic or Senile Damage or Atrophy"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109504"] = translations["Actinic Prurigo"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109505"] = translations["Actinic/solar Damage"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109506"] = translations["Actinic/solar Damage, 5 FU Treatment"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109507"] = translations["Actinic/solar Damage, Actinex Treatment"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109508"] = translations["Actinic/solar Damage, Actinic Cheilitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109509"] = translations["Actinic/solar Damage, Actinic Keratosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109510"] = translations["Actinic/solar Damage, Atrophy"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109511"] = translations["Actinic/solar Damage, Cutis Rhomboidalis Nuchae"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109512"] = translations["Actinic/solar Damage, Dyspigmentation"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109513"] = translations["Actinic/solar Damage, Favre-Racouchot"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109514"] = translations["Actinic/solar Damage, Follicular Retention Cysts"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109515"] = translations["Actinic/solar Damage, Freckles"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109516"] = translations["Actinic/solar Damage, Hyperpigmentation"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109517"] = translations["Actinic/solar Damage, Milia"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109518"] = translations["Actinic/solar Damage, Photoaging"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109519"] = translations["Actinic/solar Damage, Pigmentation"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109520"] = translations["Actinic/solar Damage, Poikiloderma of Civatte"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109521"] = translations["Actinic/solar Damage, Skin Phototype I"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109522"] = translations["Actinic/solar Damage, Solar Elastosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109523"] = translations["Actinic/solar Damage, Solar Keratosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109524"] = translations["Actinic/solar Damage, Solar Lentigo"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109525"] = translations["Actinic/solar Damage, Solar Purpura"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109526"] = translations["Actinic/solar Damage, Stellate Pseudoscars"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109527"] = translations["Actinic/solar Damage, Suntan"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109528"] = translations["Actinic/solar Damage, Surgery"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109529"] = translations["Actinic/solar Damage, Telangiectasia"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109530"] = translations["Actinic/solar Damage, Tretinoin Treatment"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109531"] = translations["Actinic/solar Damage, Wrinkles"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109532"] = translations["Acute Cutaneous Necrosis After Cardiac Catheterization"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109533"] = translations["Acute Eczema"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109534"] = translations["Adenoma Sebaceum"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109535"] = translations["Allergic Contact Dermatitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109536"] = translations["Alopecia"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109537"] = translations["Alopecia Areata"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109538"] = translations["Alopecia Mucinosa"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109539"] = translations["Amyloidosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109540"] = translations["Anagen Effluvium"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109541"] = translations["Androgenetic Alopecia"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109542"] = translations["Anetoderma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109543"] = translations["Angioedema"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109544"] = translations["Angiofibroma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109545"] = translations["Angiokeratoma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109546"] = translations["Angiolymphoid Hyperplasia"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109547"] = translations["Angioma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109548"] = translations["Angiosarcoma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109549"] = translations["Angular Cheilitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109550"] = translations["Aphthous Ulcer"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109551"] = translations["Aplasia Cutis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109552"] = translations["Apocrine Cystadenoma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109553"] = translations["Apocrine Hydrocystoma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109554"] = translations["Arsenical Keratosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109555"] = translations["Arsenical Pigmentation"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109556"] = translations["Ashy Dermatosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109557"] = translations["Atopic Dermatitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109558"] = translations["Atopic Dermatitis/eczema"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109559"] = translations["Atrophie Blanche"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109560"] = translations["Atrophoderma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109561"] = translations["Atypical Mycobacteria"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109562"] = translations["Autosensitization Reaction"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109563"] = translations["Avulsion Laceration"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109565"] = translations["Balanitis Xerotica Obliterans"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109566"] = translations["Basal Cell Carcinoma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109567"] = translations["Basal Cell Carcinoma and Seborrheic Keratosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109568"] = translations["Basisquamous Carcinoma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109569"] = translations["Bazex's Syndrome"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109570"] = translations["B-Cell Lymphoma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109571"] = translations["Beau's Lines"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109572"] = translations["Becker's Nevus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109573"] = translations["Bed Bug Bite With Urticarial Reaction"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109574"] = translations["Behcet's Syndrome"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109575"] = translations["Benign Keratosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109576"] = translations["Black Hairy Tongue"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109577"] = translations["Black Madura"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109578"] = translations["Blepharochalasia"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109579"] = translations["Blister"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109580"] = translations["Blue Nevus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109581"] = translations["Body Louse Infestation"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109582"] = translations["Bowenoid Papulosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109583"] = translations["Bowen's Disease"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109584"] = translations["Brushfield's Spots"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109585"] = translations["Bullous Impetigo"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109586"] = translations["Bullous Pemphigoid"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109587"] = translations["Burn"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109588"] = translations["Bywater's Lesion"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109590"] = translations["Cafe Au Lait Macule"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109591"] = translations["Callus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109592"] = translations["Candida Balanitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109593"] = translations["Candidiasis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109594"] = translations["Carbuncle"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109595"] = translations["Cellulitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109596"] = translations["Chalazion"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109597"] = translations["Cheilitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109598"] = translations["Cheilitis Granulomatosa"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109599"] = translations["Cherry Angioma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109600"] = translations["Chilblains"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109601"] = translations["Chondrodermatitis Nodularis Helicus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109602"] = translations["Chromomycosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109603"] = translations["Chronic Bullous Disease of Childhood"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109604"] = translations["Chronic Eczema"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109605"] = translations["Chronic Venous Ulcer"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109606"] = translations["Cicatricial Pemphigoid"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109607"] = translations["Clavus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109608"] = translations["Clear Cell Acanthoma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109609"] = translations["Clubbing of Fingers"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109610"] = translations["Cold Abscess"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109611"] = translations["Collagen Nevus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109612"] = translations["Colloidion Baby"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109613"] = translations["Combined Nevus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109614"] = translations["Compound Nevus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109615"] = translations["Compound Nevus/dysplastic Nevus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109616"] = translations["Condyloma Accuminata"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109617"] = translations["Condyloma Acuminata"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109618"] = translations["Congenital Hairy Melanocytic Nevus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109619"] = translations["Congenital Nevus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109620"] = translations["Congenital Vascular Malformation"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109621"] = translations["Conjunctival Hemorrhage"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109622"] = translations["Connective Tissue Nevus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109623"] = translations["Contact Dermatitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109624"] = translations["Crowe's Sign"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109625"] = translations["Cryofibrinogenemia"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109626"] = translations["Cryosurgery"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109627"] = translations["Curettage and Electrodesiccation"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109628"] = translations["Cutanea Larva Migrans"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109629"] = translations["Cutaneous Horn"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109630"] = translations["Cutaneous Leishmaniasis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109631"] = translations["Cutaneous T-Cell Lymphoma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109632"] = translations["Cutis Marmorata"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109633"] = translations["Cutis Rhomboidalis Nuchae"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109634"] = translations["Cutis Verticis Gyrata"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109635"] = translations["Cyanosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109637"] = translations["Darier-White Disease"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109638"] = translations["Delusions of Parasitosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109639"] = translations["Dental Sinus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109640"] = translations["Dermatitis Herpetiformis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109641"] = translations["Dermatofibroma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109642"] = translations["Dermatofibrosarcoma Protuberans"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109643"] = translations["Dermatoliposclerosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109644"] = translations["Dermatomyositis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109645"] = translations["Dermatosis Papulosa Nigra"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109646"] = translations["Dermographia"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109647"] = translations["Dermographism"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109648"] = translations["Dermoid Cyst"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109649"] = translations["Desquamation"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109650"] = translations["Diabetic Dermopathy"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109651"] = translations["Diabetic Ulcer"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109652"] = translations["Diaper Dermatitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109653"] = translations["Digital Fibroma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109654"] = translations["Dilated Pore of Winer"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109655"] = translations["Discoid Lupus Erythematosus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109656"] = translations["Dissecting Cellulitis of the Scalp"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109657"] = translations["Dissecting Folliculitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109658"] = translations["Disseminated Actinic Porokeratosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109659"] = translations["Drug Eruption"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109660"] = translations["Drug Induced Bullous Eruption"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109661"] = translations["Drug Induced Pigmentary Changes"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109662"] = translations["Drug-Induced Pigmentary Change"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109663"] = translations["Dry Skin Eczema"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109664"] = translations["Dupuytren's Contracture"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109665"] = translations["Dyshidrosiform Eczema"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109666"] = translations["Dyshidrosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109667"] = translations["Dysplastic Nevus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109668"] = translations["Dystrophic Nail"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109670"] = translations["Ecchymosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109671"] = translations["Eccrine Hydrocystoma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109672"] = translations["Eccrine Poroma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109673"] = translations["Eccrine Spiradenoma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109674"] = translations["Ecthyma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109675"] = translations["Eczema"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109676"] = translations["Eczema Herpeticum"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109677"] = translations["Edema"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109678"] = translations["Elephantiasis Nostras Verrucosa"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109679"] = translations["Emboli"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109680"] = translations["Endometriosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109681"] = translations["Eosinophilic Granuloma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109682"] = translations["Epidermal Nevus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109683"] = translations["Epidermoid Cyst"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109684"] = translations["Epidermolysis Bullosa"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109685"] = translations["Epithelioma Adenoides Cysticum"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109686"] = translations["Eruptive Vellus Hair Cysts"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109687"] = translations["Erysipelas"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109688"] = translations["Erythema Ab Igne"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109689"] = translations["Erythema Annulare Centrifigum"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109690"] = translations["Erythema Chronicum Migrans"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109691"] = translations["Erythema Craquele"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109692"] = translations["Erythema Gyratum Repens"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109693"] = translations["Erythema Infectiosum"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109694"] = translations["Erythema Multiforme"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109695"] = translations["Erythema Nodosum"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109696"] = translations["Erythema Nodosum Leprosum"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109697"] = translations["Erythema Toxicum Neonatorum"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109698"] = translations["Erythrasma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109699"] = translations["Erythroplasia of Queyrat"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109700"] = translations["Euthyroid Grave's Ophthalmopathy"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109701"] = translations["Excoriations"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109702"] = translations["Exfoliative Erythroderma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109703"] = translations["Exophthalmos"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109704"] = translations["Extensive Intertriginal Impetigo"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109705"] = translations["Extramammary Paget's Disease"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109707"] = translations["Factitial Dermatitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109708"] = translations["Favre-Racouchot"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109709"] = translations["Felon"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109710"] = translations["Fibrohistiocytic Nodule"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109711"] = translations["Fibroma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109712"] = translations["Fibroma Molle"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109713"] = translations["Figurate Erythema"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109714"] = translations["Fish Tank Granuloma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109715"] = translations["Fixed Drug Eruption"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109716"] = translations["Fixed Erythema"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109717"] = translations["Follicular Degeneration Syndrome"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109718"] = translations["Follicular Mucinosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109719"] = translations["Follicular Occlusion Syndrome"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109720"] = translations["Follicular Retention Cyst"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109721"] = translations["Folliculitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109722"] = translations["Folliculitis Decalvans"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109723"] = translations["Fordyce Spots"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109724"] = translations["Foreign Body Granuloma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109725"] = translations["Fournier's Gangrene"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109726"] = translations["Fox-Fordyce Disease"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109727"] = translations["Frayed Cuticles in Dermatomyositis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109728"] = translations["Freckles"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109729"] = translations["Frictional Lichenoid Dermatitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109730"] = translations["Frost Bite"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109731"] = translations["Fungal Culture"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109732"] = translations["Furuncle"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109733"] = translations["Furunculoid Myiasis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109734"] = translations["Fusarium Infection"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109736"] = translations["Ganglion"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109737"] = translations["Gangrene"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109738"] = translations["Genital Herpes"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109739"] = translations["Geographic Tongue"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109740"] = translations["Gianotti-Crosti Syndrome"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109741"] = translations["Giant Cell Tumor"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109742"] = translations["Giant Comedone"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109743"] = translations["Giant Condyloma Accuminata"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109744"] = translations["Giant Conginital Melanocytic Nevus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109745"] = translations["Gingival Hyperpigmentation"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109746"] = translations["Gingival Hyperplasia"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109747"] = translations["Glomus Tumor"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109748"] = translations["Glossodynia"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109749"] = translations["Goiter"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109750"] = translations["Gonorrhea"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109751"] = translations["Gottron's Papules of Dermatomyositis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109752"] = translations["Gout"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109753"] = translations["Granular Cell Myoblastoma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109754"] = translations["Granulation Tissue"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109755"] = translations["Granuloma Annulare"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109756"] = translations["Granuloma Faciale"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109757"] = translations["Granuloma Inguinale"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109758"] = translations["Green Hair"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109759"] = translations["Green Nail"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109760"] = translations["Group B Streptococcal Vaginitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109761"] = translations["Grover's Disease"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109762"] = translations["Guttate Psoriasis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109764"] = translations["Hailey-Hailey Disease"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109765"] = translations["Hair Transplantation"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109766"] = translations["Hairy Ears"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109767"] = translations["Hairy Tongue"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109768"] = translations["Half and Half Nail"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109769"] = translations["Halo Nevus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109770"] = translations["Hand Foot Mouth Disease"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109771"] = translations["Harlequin Fetus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109772"] = translations["Hemangioma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109773"] = translations["Hematoma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109774"] = translations["Hernia"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109775"] = translations["Herpes Gestationis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109776"] = translations["Herpes Simplex Ear Infection"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109777"] = translations["Herpes Simplex Virus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109778"] = translations["Herpes Simplex Virus Folliculitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109779"] = translations["Herpes Simplex Virus of the Thenar Eminence"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109780"] = translations["Herpes Zoster"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109781"] = translations["Herpes Zoster and Allergic Contact Dermatitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109782"] = translations["Heterochromia Iridis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109783"] = translations["Hidradenitis Suppurativa"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109784"] = translations["Hirsutism"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109785"] = translations["Histiocytosis X"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109786"] = translations["Hot Tub Dermatitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109787"] = translations["Hydrocystoma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109788"] = translations["Hyperhidrosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109789"] = translations["Hyperkeratosis Palmaris Et Plantaris"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109790"] = translations["Hyperpigmentation"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109791"] = translations["Hypertrichosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109792"] = translations["Hypertrophic Actinic Keratosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109793"] = translations["Hypertrophic Scar"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109794"] = translations["Hypopigmentation"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109796"] = translations["Ichthyosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109797"] = translations["Ichthyosis Follicularis Atrichia and photophobia(IFAP)Syndrome"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109798"] = translations["Ichthyosis Hystrix"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109799"] = translations["Ichthyosis Linearis Circumflexa"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109800"] = translations["Ichthyosis Vulgaris"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109801"] = translations["Id Reaction"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109802"] = translations["Idiopathic Guttate Hypomelanosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109803"] = translations["Impetigo"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109804"] = translations["Impetigo of the Scalp Secondary to 5-FU Therapy"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109805"] = translations["Impetigo of the Umbilicus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109806"] = translations["Incisional Biopsy"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109807"] = translations["Infantile Atopic Dermatitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109808"] = translations["Infantile Haemangioma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109809"] = translations["Infected Eczema"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109810"] = translations["Ingrown Nail"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109811"] = translations["Ink Spot Nevus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109812"] = translations["Insect Bite"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109813"] = translations["Insect Sting"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109814"] = translations["Intertrigo"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109815"] = translations["Intradermal Nevus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109816"] = translations["Intraurethral Warts"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109817"] = translations["Inverse Psoriasis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109818"] = translations["Irritant Contact Dermatitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109819"] = translations["Irritant Dermatitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109820"] = translations["Ischemia"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109821"] = translations["Ixodes Tick Bite"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109823"] = translations["Jaundice"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109824"] = translations["Junction Nevus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109825"] = translations["Junction Nevus/dysplastic Nevus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109826"] = translations["Juvenile Xanthogranuloma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109828"] = translations["Kaposi's Sarcoma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109829"] = translations["Keloid"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109830"] = translations["Keratin Granuloma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109831"] = translations["Keratoacanthoma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109832"] = translations["Keratoderma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109833"] = translations["Keratolysis Exfoliativa of Wende"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109834"] = translations["Keratosis Pilaris"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109835"] = translations["Kerion"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109836"] = translations["Knuckle Pads"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109837"] = translations["Koenen's Tumours in Tuberous Sclerosis "][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109838"] = translations["Koilonychia"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109839"] = translations["Kyrle's Disease"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109841"] = translations["Labial Melanotic Macule"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109842"] = translations["Leiomyoma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109843"] = translations["Leiomyosarcoma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109844"] = translations["Lentigo Maligna"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109845"] = translations["Lentigo Maligna Melanoma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109846"] = translations["Lentigo Simplex"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109847"] = translations["Leprosy"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109848"] = translations["Leprosy, Histoid Type"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109849"] = translations["Leser-Trelat Sign"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109850"] = translations["Leukemia Cutis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109851"] = translations["Leukocytoclastic Vasculitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109852"] = translations["Leukonychia"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109853"] = translations["Leukoplakia"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109854"] = translations["Lichen Aureus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109855"] = translations["Lichen Nitidus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109856"] = translations["Lichen Planopilaris"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109857"] = translations["Lichen Planus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109858"] = translations["Lichen Planus Actinicus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109859"] = translations["Lichen Planus Hypertrophicus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109860"] = translations["Lichen Sclerosis Et Atrophicus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109861"] = translations["Lichen Simplex Chronicus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109862"] = translations["Lichen Spinulosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109863"] = translations["Lichen Striatus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109864"] = translations["Lichenoid Benign Keratosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109865"] = translations["Linear and Whorled Hypomelanosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109866"] = translations["Linear Epidermal Nevus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109867"] = translations["Linear Focal Elastolysis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109868"] = translations["Linear Lichen Planus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109869"] = translations["Linear Nigra"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109870"] = translations["Lip Licker's Dermatitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109871"] = translations["Lipodystrophy"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109872"] = translations["Lipoid Proteinosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109873"] = translations["Lipoma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109874"] = translations["Livedo Reticularis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109875"] = translations["Longtudinal Melanonychia"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109876"] = translations["Lupus Profunda"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109877"] = translations["Lupus Vulgaris"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109878"] = translations["Lymphangioma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109879"] = translations["Lymphangioma Circumscriptum"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109880"] = translations["Lymphangitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109881"] = translations["Lymphedema"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109882"] = translations["Lymphedema Praecox"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109883"] = translations["Lymphocytic Infiltrate of Jessner"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109884"] = translations["Lymphocytoma Cutis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109885"] = translations["Lymphomatoid Papulosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109886"] = translations["Lymphosarcoma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109888"] = translations["Macular Amyloidosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109889"] = translations["Maggots"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109890"] = translations["Mal Perforans"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109891"] = translations["Malignant Melanoma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109892"] = translations["Mastocytosis (Urticaria Pigmentosa)"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109893"] = translations["Measles"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109894"] = translations["Median Nail Dystrophy"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109895"] = translations["Median Raphe Cyst"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109896"] = translations["Median Rhomboid Glossitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109897"] = translations["Melasma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109898"] = translations["Melkersson-Rosenthal Syndrome"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109899"] = translations["Meningococcemia"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109900"] = translations["Merkle Cell Tumor"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109901"] = translations["Metastatic Carcinoma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109902"] = translations["Metastatic Melanoma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109903"] = translations["Miasis Cutanea Furunculoide"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109904"] = translations["Milia"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109905"] = translations["Molluscum Contagiosum"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109906"] = translations["Mongolian Spot"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109907"] = translations["Monilethrix"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109908"] = translations["Mononucleosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109909"] = translations["Morphea"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109910"] = translations["Morton's Toe"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109911"] = translations["Mosaic Plantar Wart"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109912"] = translations["Mucha-Habermann Disease"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109913"] = translations["Mucinosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109914"] = translations["Mucinous Cyst/myxoma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109915"] = translations["Mucocele"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109916"] = translations["Mucocutaneous Candidiasis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109917"] = translations["Mucous Cyst"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109918"] = translations["Mucous Membrane Psoriasis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109919"] = translations["Muir-Torre Syndrome"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109920"] = translations["Multiple Hemangioma of Infancy"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109921"] = translations["Multiple Molluscum Contagiosum"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109922"] = translations["Multiple Myxomas"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109923"] = translations["Multiple Plantar Warts"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109924"] = translations["Mycetoma (Nocardia Brasilensis)"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109925"] = translations["Mycosis Fungoides"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109926"] = translations["Myofibromatosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109927"] = translations["Myxedema"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109928"] = translations["Myxoid Cyst"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109930"] = translations["Nail Beading"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109931"] = translations["Nail Cosmesis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109932"] = translations["Nail Dystrophy"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109933"] = translations["Nail Nevus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109934"] = translations["Nail Pigmentation"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109935"] = translations["Nail Psoriasis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109936"] = translations["Nail Ridging"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109937"] = translations["Nail Shedding"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109938"] = translations["Nail Surgery"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109939"] = translations["Nail Trauma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109940"] = translations["Necrobiosis Lipoidica Diabeticorum"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109941"] = translations["Necrotising Fasciitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109942"] = translations["Needle Tracks"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109943"] = translations["Neonatal Acne"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109944"] = translations["Neural Nevus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109945"] = translations["Neurodermatitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109946"] = translations["Neurofibroma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109947"] = translations["Neurofibromatosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109948"] = translations["Neuroma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109949"] = translations["Neurotic Excoriations"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109950"] = translations["Nevus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109951"] = translations["Nevus Anemicus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109952"] = translations["Nevus Cell Nevus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109953"] = translations["Nevus Comedonicus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109954"] = translations["Nevus Flammeus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109955"] = translations["Nevus Incipiens"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109956"] = translations["Nevus Lipomatosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109957"] = translations["Nevus of Ota"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109958"] = translations["Nevus Sebaceous of Jadassohn"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109959"] = translations["Nevus Spilus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109960"] = translations["Nodulo - Cystic Acne Vulgaris"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109961"] = translations["Nodulo Cystic Acne Vulgaris"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109962"] = translations["Nodulocystic Acne"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109963"] = translations["Nodulo-Cystic Acne Vulgaris"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109964"] = translations["North American Blastomycosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109965"] = translations["Notalgia Paresthetica"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109966"] = translations["Nummular Eczema"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109968"] = translations["Occupational Acne"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109969"] = translations["Onychogryphosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109970"] = translations["Onychogryphosis and Onychauxis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109971"] = translations["Onycholysis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109972"] = translations["Onychomycosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109973"] = translations["Onychoschizia"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109974"] = translations["Oral Fibroma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109975"] = translations["Orf"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109976"] = translations["Orf & Erythema Multiforme"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109977"] = translations["Osler-Weber-Rendu Syndrome"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109978"] = translations["Osteoarthritis Arthritis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109979"] = translations["Osteoma Cutis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109981"] = translations["Pachyonychia Congenita"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109982"] = translations["Paget's Disease"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109983"] = translations["Palmar Erythema"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109984"] = translations["Palmar Wart"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109985"] = translations["Panniculitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109986"] = translations["Papilloma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109987"] = translations["Papillomatosis of Gougerot and Carteaud"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109988"] = translations["Paracoccidioidomycosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109989"] = translations["Paronychia"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109990"] = translations["Pearly Penile Papules"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109991"] = translations["Pediculosis Capitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109992"] = translations["Pediculosis Pubis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109993"] = translations["Pedunculated Papillomatosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109994"] = translations["Pellagra"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109995"] = translations["Pemphigus Foliaceus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109996"] = translations["Pemphigus Vegitant"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109997"] = translations["Pemphigus Vulgaris"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109998"] = translations["Perifolliculitis Capitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["109999"] = translations["Perioral Dermatitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110000"] = translations["Periungual and Subungual Wart"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110001"] = translations["Periungual Erythema and Telangiectasias in Dermatomyositis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110002"] = translations["Periungual Fibroma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110003"] = translations["Phagedenic Herpes Simplex Virus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110004"] = translations["Photo Onycholysis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110005"] = translations["Photocontact"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110006"] = translations["Photocontact Dermatitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110007"] = translations["Photodermatitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110008"] = translations["Photodrug Reaction"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110009"] = translations["Photosensitivity"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110010"] = translations["Phrynoderma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110011"] = translations["Phytophotodermatitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110012"] = translations["Piezogenic Papule"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110013"] = translations["Piezogenic Papules"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110014"] = translations["Pilar Cyst"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110015"] = translations["Pilomatrixoma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110016"] = translations["Pilonidal Cyst"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110017"] = translations["Pincer Nail Syndrome"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110018"] = translations["Pitted Keratolysis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110019"] = translations["Pityriasis Alba"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110020"] = translations["Pityriasis Rosea"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110021"] = translations["Pityriasis Rubra Pilaris"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110022"] = translations["Pityriasis Versicolor"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110023"] = translations["Pityrosporum Folliculitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110024"] = translations["Planar Warts"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110025"] = translations["Plantar Wart"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110026"] = translations["Plantar Warts"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110027"] = translations["Plexiform Neurofibroma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110028"] = translations["Poikiloderma and Heliotrope Changes of Dermatomyositis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110029"] = translations["Poikiloderma Atrophicans Vasculare"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110030"] = translations["Poikiloderma of Civatte"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110031"] = translations["Poikilodermatous Changes of Dermatomyositis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110032"] = translations["Poison Ivy"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110033"] = translations["Polymorphic Light Eruption"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110034"] = translations["Pomade Acne"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110035"] = translations["Porokeratosis of Mibelli"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110036"] = translations["Porphyria Cutanea Tarda"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110037"] = translations["Port Wine Stain"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110038"] = translations["Pressure Alopecia"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110039"] = translations["Pressure Sore"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110040"] = translations["Primary Herpes Simplex Virus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110041"] = translations["Primary Syphilis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110042"] = translations["Prokeratosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110043"] = translations["Prurigo Nodularis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110044"] = translations["Pruritic Urticarial Papules and Plaques of Pregnancy"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110045"] = translations["Pruritus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110046"] = translations["Pruritus Ani"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110047"] = translations["Pseudocyst of the Auricle"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110048"] = translations["Pseudofolliculitis Barbae"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110049"] = translations["Pseudopelade"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110050"] = translations["Pseudoporphyria"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110051"] = translations["Pseudorhinophyma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110052"] = translations["Pseudoxanthoma Elasticum"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110053"] = translations["Psoriasis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110054"] = translations["Psoriasis and Tinea Corporis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110055"] = translations["Psoriatic Arthritis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110056"] = translations["Pterygium Inversum Unguis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110057"] = translations["Purpura"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110058"] = translations["Purpura Fulminans"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110059"] = translations["Pustular Psoriasis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110060"] = translations["Pustule"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110061"] = translations["Pustulosis Palmaris"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110062"] = translations["Pyoderma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110063"] = translations["Pyoderma Gangrenosum"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110064"] = translations["Pyogenic Granuloma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110067"] = translations["Racquet Nail"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110068"] = translations["Radiodermatitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110069"] = translations["Raynaud's Phenomenon"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110070"] = translations["Reactive Perforating Collagenosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110071"] = translations["Red Tattoo Reaction"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110072"] = translations["Reiter's Syndrome"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110073"] = translations["Relapsing Polychondritis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110074"] = translations["Reticulated Erythema of Fifth Disease"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110075"] = translations["Rheumatoid Arthritis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110076"] = translations["Rhinophyma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110077"] = translations["Rocky Mountain Spotted Fever"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110078"] = translations["Rosacea"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110079"] = translations["Rubella"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110081"] = translations["Sarcoid"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110082"] = translations["Sarcoidosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110083"] = translations["Scabies"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110084"] = translations["Scalp Psoriasis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110085"] = translations["Scalp Psoriasis and Inverse Psoriasis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110086"] = translations["Scar"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110087"] = translations["Scarlet Fever"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110088"] = translations["Scarring Alopecia"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110089"] = translations["Schamberg's Disease"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110090"] = translations["Sclerosing Lymphangitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110091"] = translations["Scrotal Tongue"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110092"] = translations["Sebaceous Gland Adenoma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110093"] = translations["Sebaceous Gland Hyperplasia"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110094"] = translations["Sebopsoriasis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110095"] = translations["Seborrheic Dermatitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110096"] = translations["Seborrheic Keratosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110097"] = translations["Secondarily Infected Skin Biopsy Site"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110098"] = translations["Secondary Syphilis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110099"] = translations["Senile Angioma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110100"] = translations["Septic Embolis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110101"] = translations["Septic Vasculitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110102"] = translations["Shagreen Plaque"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110103"] = translations["Shave Biopsy"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110104"] = translations["Shaving Folliculitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110105"] = translations["Sjogren's Syndrome"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110106"] = translations["Skin Tag"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110107"] = translations["Solar Elastosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110108"] = translations["Solar Lentigenes"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110109"] = translations["Solar Lentigo"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110110"] = translations["Solar Purpura"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110111"] = translations["Solar Urticaria"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110112"] = translations["Spider Angioma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110113"] = translations["Spider Nevus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110114"] = translations["Spider Nevus Prior to Electrodesiccation"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110115"] = translations["Spindle Cell Nevus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110116"] = translations["Splinter Hemorrhage"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110117"] = translations["Squamous Cell Carcinoma (SCC)"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110118"] = translations["St. Anne's Sign"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110119"] = translations["Staphylococcal Pyoderma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110120"] = translations["Stasis Dermatitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110121"] = translations["Stasis Edema"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110122"] = translations["Stasis Ulcer"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110123"] = translations["Steatocystoma Multiplex"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110124"] = translations["Steroid Acne"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110125"] = translations["Steroid Atrophy"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110126"] = translations["Steroid Folliculitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110127"] = translations["Steroid Purpura"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110128"] = translations["Steroid Striae"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110129"] = translations["Steroid Use/abuse/misuse Dermatitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110130"] = translations["Steroid-Induced Acneiform Eruption"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110131"] = translations["Stevens–Johnson Syndrome"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110132"] = translations["Stomatitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110133"] = translations["Strawberry Hemangioma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110134"] = translations["Streptococcal Fissure of the External Nares"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110135"] = translations["Streptococcal Folliculitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110136"] = translations["Streptococcal Pyoderma of the Scrotum"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110137"] = translations["Striae"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110138"] = translations["Striae Distensae"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110139"] = translations["Stucco Keratosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110140"] = translations["Subacute Cutaneous Lupus Erythematosus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110141"] = translations["Subcutaneous Atrophy"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110142"] = translations["Subungual Abscess"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110143"] = translations["Subungual Hematoma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110144"] = translations["Subungual Verruca Vulgaris"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110145"] = translations["Sucking Blister"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110146"] = translations["Sunburn"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110147"] = translations["Suntan"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110148"] = translations["Superficial Actinic Porokeratosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110149"] = translations["Supernumerary Digit"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110150"] = translations["Sweet's Syndrome"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110151"] = translations["Sycosis Barbae"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110152"] = translations["Synovial Cyst"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110153"] = translations["Syphilis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110154"] = translations["Syringoma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110155"] = translations["Systemic Lupus Erythematosus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110157"] = translations["Takayasu's Arteritis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110158"] = translations["Talon Noir"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110159"] = translations["Tattoo"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110160"] = translations["Tattoo Reaction"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110161"] = translations["Telangiectasia Eruptiva Macularis Perstans"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110162"] = translations["Telangiectasias"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110163"] = translations["Telogen Effluvium"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110164"] = translations["Temporal Triangular Alopecia"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110165"] = translations["Terry's Nails"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110166"] = translations["Thermal Burn"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110167"] = translations["Thrush"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110168"] = translations["Tick Bite"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110169"] = translations["Tinea Barbae"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110170"] = translations["Tinea Capitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110171"] = translations["Tinea Corporis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110172"] = translations["Tinea Cruris"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110173"] = translations["Tinea Faciale"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110174"] = translations["Tinea Imbricata"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110175"] = translations["Tinea Incognito"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110176"] = translations["Tinea Manus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110177"] = translations["Tinea Pedis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110178"] = translations["Tinea Versicolor"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110179"] = translations["Toe Deformity"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110180"] = translations["Tooth Abnormality"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110181"] = translations["Torus Palantine"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110182"] = translations["Toxic Epidermal Necrolysis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110183"] = translations["Traction Alopecia"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110184"] = translations["Trauma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110185"] = translations["Traumatic Alopecia"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110186"] = translations["Trichilemmal Cyst"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110187"] = translations["Trichoepithelioma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110188"] = translations["Trichofolliculoma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110189"] = translations["Trichomycosis Axillaris"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110190"] = translations["Trichostasis Spinulosa"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110191"] = translations["Trichotillomania"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110192"] = translations["Tubercles of Montgomery"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110193"] = translations["Tuberculosis Verrucosa Cutis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110194"] = translations["Tuberous Sclerosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110195"] = translations["Tungiasis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110196"] = translations["Twenty Nail Dystrophy"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110198"] = translations["Ulcer"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110199"] = translations["Umbilical Papillomatosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110200"] = translations["Unilateral Thoracic Exanthem"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110201"] = translations["Urticaria"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110202"] = translations["Urticaria Pigmentosa"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110203"] = translations["Urticarial Vasculitis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110204"] = translations["UVL Burn"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110206"] = translations["Varicella"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110207"] = translations["Venous Lake"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110208"] = translations["Venous Stars"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110209"] = translations["Verruca Vulgaris"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110210"] = translations["Verrucous Epidermal Nevus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110211"] = translations["Viral Exanthem"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110212"] = translations["Virilization"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110213"] = translations["Vitiligo"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110214"] = translations["Von Recklinghausen's Disease"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110216"] = translations["Wallace's Line"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110217"] = translations["Wart"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110218"] = translations["Wasp Sting"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110219"] = translations["Wegener's Granulomatosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110220"] = translations["Well's Syndrome"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110221"] = translations["Wet to Dry Foot Syndrome"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110222"] = translations["White Dermographia"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110223"] = translations["Wiskott-Aldrich Syndrome"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110224"] = translations["Wound Dehiscence"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110225"] = translations["Wound Infection"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110226"] = translations["Wrinkles"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110228"] = translations["Xanthelasma Palpebrarum"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110229"] = translations["Xanthogranuloma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110230"] = translations["Xanthoma"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110231"] = translations["Xeroderma Pigmentosa"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110232"] = translations["Xerosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110233"] = translations["X-Linked Ichthyosis"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110235"] = translations["Yellow Nail Syndrome"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110237"] = translations["Zosteriform Nevus"][selectedLanguage];
+DIAGNOSES_DICT_SWAP["110238"] = translations["Zygomycosis"][selectedLanguage];
