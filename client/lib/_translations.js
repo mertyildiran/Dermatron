@@ -1146,117 +1146,449 @@ translations = {
         en_US: "Acquired Disorders of the Dermis and Subcutaneous Tissue",
         en_GB: "Acquired Disorders of the Dermis and Subcutaneous Tissue",
         tr_TR: "Sonradan Kazanılmış Dermis ve Deri Altı Doku Bozuklukları"
-    },"Acquired Keratinizing Disorders": {
+    },
+    "Acquired Keratinizing Disorders": {
         en_US: "Acquired Keratinizing Disorders",
         en_GB: "Acquired Keratinizing Disorders",
         tr_TR: "Sonradan Kazanılmış Keratinizleşme Bozuklukları"
-    },"Adverse Drug Reactions": {
+    },
+    "Adverse Drug Reactions": {
         en_US: "Adverse Drug Reactions",
         en_GB: "Adverse Drug Reactions",
         tr_TR: "Advers İlaç Reaksiyonları"
-    },"Auto-Immune Bullous Diseases": {
+    },
+    "Auto-Immune Bullous Diseases": {
         en_US: "Auto-Immune Bullous Diseases",
         en_GB: "Auto-Immune Bullous Diseases",
         tr_TR: "Otoimmün Büllü Hastalıklar"
-    },"Bites and Stings": {
+    },
+    "Bites and Stings": {
         en_US: "Bites and Stings",
         en_GB: "Bites and Stings",
         tr_TR: "Isırma ve Sokmalar"
-    },"Connective Tissue Diseases": {
+    },
+    "Connective Tissue Diseases": {
         en_US: "Connective Tissue Diseases",
         en_GB: "Connective Tissue Diseases",
         tr_TR: "Bağ Dokusu Hastalıkları"
-    },"Deposition Disorders": {
+    },
+    "Deposition Disorders": {
         en_US: "Deposition Disorders",
         en_GB: "Deposition Disorders",
         tr_TR: "Birikim Bozuklukları"
-    },"Dermatitis and Eczematous Diseases": {
+    },
+    "Dermatitis and Eczematous Diseases": {
         en_US: "Dermatitis and Eczematous Diseases",
         en_GB: "Dermatitis and Eczematous Diseases",
         tr_TR: "Dermatit ve Ekzematöz Hastalıklar"
-    },"Dermatoses Due to Physical Factors": {
+    },
+    "Dermatoses Due to Physical Factors": {
         en_US: "Dermatoses Due to Physical Factors",
         en_GB: "Dermatoses Due to Physical Factors",
         tr_TR: "Fiziksel Faktörlere Dayalı Dermatozlar"
-    },"Diseases of Unclear Origin": {
+    },
+    "Diseases of Unclear Origin": {
         en_US: "Diseases of Unclear Origin",
         en_GB: "Diseases of Unclear Origin",
         tr_TR: "Kökeni Belirsiz Hastalıklar"
-    },"Genetic Disorders": {
+    },
+    "Genetic Disorders": {
         en_US: "Genetic Disorders",
         en_GB: "Genetic Disorders",
         tr_TR: "Genetik Bozukluklar"
-    },"Granulomatous Disorders": {
+    },
+    "Granulomatous Disorders": {
         en_US: "Granulomatous Disorders",
         en_GB: "Granulomatous Disorders",
         tr_TR: "Granülomatöz Bozukluklar"
-    },"Immunologic Diseases": {
+    },
+    "Immunologic Diseases": {
         en_US: "Immunologic Diseases",
         en_GB: "Immunologic Diseases",
         tr_TR: "İmmünolojik Hastalıklar"
-    },"Infectious Diseases": {
+    },
+    "Infectious Diseases": {
         en_US: "Infectious Diseases",
         en_GB: "Infectious Diseases",
         tr_TR: "Bulaşıcı Hastalıklar"
-    },"Inflammatory Skin Appendage Disorders": {
+    },
+    "Inflammatory Skin Appendage Disorders": {
         en_US: "Inflammatory Skin Appendage Disorders",
         en_GB: "Inflammatory Skin Appendage Disorders",
         tr_TR: "İnflamatuar Deri Eklem Bozuklukları"
-    },"Lichen Planus and Lichenoid Disorders": {
+    },
+    "Lichen Planus and Lichenoid Disorders": {
         en_US: "Lichen Planus and Lichenoid Disorders",
         en_GB: "Lichen Planus and Lichenoid Disorders",
         tr_TR: "Liken Planus ve Likenoid Bozukluklar"
-    },"Noninflammatory Skin Appendage Disorders": {
+    },
+    "Noninflammatory Skin Appendage Disorders": {
         en_US: "Noninflammatory Skin Appendage Disorders",
         en_GB: "Noninflammatory Skin Appendage Disorders",
         tr_TR: "İnflamatuar Olmayan Deri Eklem Bozuklukları"
-    },"Nutritional, Metabolic and Endocrine Diseases": {
+    },
+    "Nutritional, Metabolic and Endocrine Diseases": {
         en_US: "Nutritional, Metabolic and Endocrine Diseases",
         en_GB: "Nutritional, Metabolic and Endocrine Diseases",
         tr_TR: "Beslenme, Metabolik ve Endokrin Hastalıklar"
-    },"Paraneoplastic Syndromes": {
+    },
+    "Paraneoplastic Syndromes": {
         en_US: "Paraneoplastic Syndromes",
         en_GB: "Paraneoplastic Syndromes",
         tr_TR: "Paraneoplastik Sendromlar"
-    },"Pigmentary Disorders": {
+    },
+    "Pigmentary Disorders": {
         en_US: "Pigmentary Disorders",
         en_GB: "Pigmentary Disorders",
         tr_TR: "Pigmentatif Bozukluklar"
-    },"Pregnancy-Related Dermatoses": {
+    },
+    "Pregnancy-Related Dermatoses": {
         en_US: "Pregnancy-Related Dermatoses",
         en_GB: "Pregnancy-Related Dermatoses",
         tr_TR: "Gebelikle İlişkili Dermatozlar"
-    },"Psoriasis and Papulosquamous Diseases": {
+    },
+    "Psoriasis and Papulosquamous Diseases": {
         en_US: "Psoriasis and Papulosquamous Diseases",
         en_GB: "Psoriasis and Papulosquamous Diseases",
         tr_TR: "Psoriyazis ve Papüloskuamöz Hastalıklar"
-    },"Psychocutaneous and Neurocutaneous Disorders": {
+    },
+    "Psychocutaneous and Neurocutaneous Disorders": {
         en_US: "Psychocutaneous and Neurocutaneous Disorders",
         en_GB: "Psychocutaneous and Neurocutaneous Disorders",
         tr_TR: "Psikokütanöz ve Nörokutanöz Bozukluklar"
-    },"Reactive Conditions": {
+    },
+    "Reactive Conditions": {
         en_US: "Reactive Conditions",
         en_GB: "Reactive Conditions",
         tr_TR: "Reaktif Durumlar"
-    },"Rosacea": {
+    },
+    "Rosacea": {
         en_US: "Rosacea",
         en_GB: "Rosacea",
         tr_TR: "Rosacea (Yüzde Kızarıklık ve Şişme)"
-    },"Tumors and Proliferative Diseases": {
+    },
+    "Tumors and Proliferative Diseases": {
         en_US: "Tumors and Proliferative Diseases",
         en_GB: "Tumors and Proliferative Diseases",
         tr_TR: "Tümörler ve Proliferatif Hastalıklar"
-    },"Urticaria": {
+    },
+    "Urticaria": {
         en_US: "Urticaria",
         en_GB: "Urticaria",
         tr_TR: "Ürtiker"
-    },"Vascular Disorders, Vasculitis and Purpuras": {
+    },
+    "Vascular Disorders, Vasculitis and Purpuras": {
         en_US: "Vascular Disorders, Vasculitis and Purpuras",
         en_GB: "Vascular Disorders, Vasculitis and Purpuras",
         tr_TR: "Vasküler Bozukluklar, Vaskülit ve Purpuralar"
     },
 
     // ------ PATHOPHYSIOLOGY ------
+
+    // ------ ANATOMICAL-LOCATION ------
+
+    "Head": {
+        en_US: "Head",
+        en_GB: "Head",
+        tr_TR: "Kafa"
+    },
+    "Beard": {
+        en_US: "Beard",
+        en_GB: "Beard",
+        tr_TR: "Sakal"
+    },
+    "Cheek": {
+        en_US: "Cheek",
+        en_GB: "Cheek",
+        tr_TR: "Yanak"
+    },
+    "Chin": {
+        en_US: "Chin",
+        en_GB: "Chin",
+        tr_TR: "Çene"
+    },
+    "Ear": {
+        en_US: "Ear",
+        en_GB: "Ear",
+        tr_TR: "Kulak"
+    },
+    "Eyebrow": {
+        en_US: "Eyebrow",
+        en_GB: "Eyebrow",
+        tr_TR: "Kaş"
+    },
+    "Eyelid": {
+        en_US: "Eyelid",
+        en_GB: "Eyelid",
+        tr_TR: "Göz Kapağı"
+    },
+    "Forehead": {
+        en_US: "Forehead",
+        en_GB: "Forehead",
+        tr_TR: "Alın"
+    },
+    "Hairline": {
+        en_US: "Hairline",
+        en_GB: "Hairline",
+        tr_TR: "Saç Çizgisi"
+    },
+    "Labia": {
+        en_US: "Labia",
+        en_GB: "Labia",
+        tr_TR: "Dudak Kenarı"
+    },
+    "Mandible": {
+        en_US: "Mandible",
+        en_GB: "Mandible",
+        tr_TR: "Çene Kemiği"
+    },
+    "Nose": {
+        en_US: "Nose",
+        en_GB: "Nose",
+        tr_TR: "Burun"
+    },
+    "Orbit": {
+        en_US: "Orbit",
+        en_GB: "Orbit",
+        tr_TR: "Göz Çukuru"
+    },
+    "Retroauricular Folds": {
+        en_US: "Retroauricular Folds",
+        en_GB: "Retroauricular Folds",
+        tr_TR: "Retroauriküler Kıvrımlar"
+    },
+    "Temple": {
+        en_US: "Temple",
+        en_GB: "Temple",
+        tr_TR: "Şakak"
+    },
+    "Mouth": {
+        en_US: "Mouth",
+        en_GB: "Mouth",
+        tr_TR: "Ağız"
+    },
+    "Neck": {
+        en_US: "Neck",
+        en_GB: "Neck",
+        tr_TR: "Boyun"
+    },
+    "Nape": {
+        en_US: "Nape",
+        en_GB: "Nape",
+        tr_TR: "Ense"
+    },
+    "Scalp/Hair": {
+        en_US: "Scalp/Hair",
+        en_GB: "Scalp/Hair",
+        tr_TR: "Kafa Tası / Saç"
+    },
+    "Upper Limbs": {
+        en_US: "Upper Limbs",
+        en_GB: "Upper Limbs",
+        tr_TR: "Üst Uzuvlar"
+    },
+    "Elbow": {
+        en_US: "Elbow",
+        en_GB: "Elbow",
+        tr_TR: "Dirsek"
+    },
+    "Axillae": {
+        en_US: "Axillae",
+        en_GB: "Axillae",
+        tr_TR: "Koltuk Altı"
+    },
+    "Elbow Flexures": {
+        en_US: "Elbow Flexures",
+        en_GB: "Elbow Flexures",
+        tr_TR: "Dirsek (İç)"
+    },
+    "Inderdigital Folds": {
+        en_US: "Inderdigital Folds",
+        en_GB: "Inderdigital Folds",
+        tr_TR: "Parmak Arası Kıvrımları"
+    },
+    "Hand": {
+        en_US: "Hand",
+        en_GB: "Hand",
+        tr_TR: "El"
+    },
+    "Finger": {
+        en_US: "Finger",
+        en_GB: "Finger",
+        tr_TR: "Parmak"
+    },
+    "Nail": {
+        en_US: "Nail",
+        en_GB: "Nail",
+        tr_TR: "Tırnak"
+    },
+    "Lower Arm": {
+        en_US: "Lower Arm",
+        en_GB: "Lower Arm",
+        tr_TR: "Dirsek Altı"
+    },
+    "Wrist": {
+        en_US: "Wrist",
+        en_GB: "Wrist",
+        tr_TR: "Bilek"
+    },
+    "Shoulder": {
+        en_US: "Shoulder",
+        en_GB: "Shoulder",
+        tr_TR: "Omuz"
+    },
+    "Upper Arm": {
+        en_US: "Upper Arm",
+        en_GB: "Upper Arm",
+        tr_TR: "Dirsek Üstü"
+    },
+    "Anogenital Region": {
+        en_US: "Anogenital Region",
+        en_GB: "Anogenital Region",
+        tr_TR: "Anogenital Bölge"
+    },
+    "Anus": {
+        en_US: "Anus",
+        en_GB: "Anus",
+        tr_TR: "Makat"
+    },
+    "Glans Penis": {
+        en_US: "Glans Penis",
+        en_GB: "Glans Penis",
+        tr_TR: "Penisin Başı"
+    },
+    "Perineum": {
+        en_US: "Perineum",
+        en_GB: "Perineum",
+        tr_TR: "Apış Arası"
+    },
+    "Penis": {
+        en_US: "Penis",
+        en_GB: "Penis",
+        tr_TR: "Penis"
+    },
+    "Vulva": {
+        en_US: "Vulva",
+        en_GB: "Vulva",
+        tr_TR: "Dişilik Organı (Vulva / Vajina)"
+    },
+    "Scrotum": {
+        en_US: "Scrotum",
+        en_GB: "Scrotum",
+        tr_TR: "Testis Torbası"
+    },
+    "Trunk": {
+        en_US: "Trunk",
+        en_GB: "Trunk",
+        tr_TR: "Gövde"
+    },
+    "Abdomen": {
+        en_US: "Abdomen",
+        en_GB: "Abdomen",
+        tr_TR: "Karın"
+    },
+    "Back": {
+        en_US: "Back",
+        en_GB: "Back",
+        tr_TR: "Sırt"
+    },
+    "Chest": {
+        en_US: "Chest",
+        en_GB: "Chest",
+        tr_TR: "Göğüs"
+    },
+    "Decollete": {
+        en_US: "Decollete",
+        en_GB: "Decollete",
+        tr_TR: "Dekolte"
+    },
+    "Submammary": {
+        en_US: "Submammary",
+        en_GB: "Submammary",
+        tr_TR: "Göğüs Altı"
+    },
+    "Mammary Areola": {
+        en_US: "Mammary Areola",
+        en_GB: "Mammary Areola",
+        tr_TR: "Meme Ucu"
+    },
+    "Umbilicus": {
+        en_US: "Umbilicus",
+        en_GB: "Umbilicus",
+        tr_TR: "Göbek Deliği"
+    },
+    "Shoulder": {
+        en_US: "Shoulder",
+        en_GB: "Shoulder",
+        tr_TR: "Omuz"
+    },
+    "Lower Limbs": {
+        en_US: "Lower Limbs",
+        en_GB: "Lower Limbs",
+        tr_TR: "Alt Uzuvlar"
+    },
+    "Buttock": {
+        en_US: "Buttock",
+        en_GB: "Buttock",
+        tr_TR: "Kalça"
+    },
+    "Foot": {
+        en_US: "Foot",
+        en_GB: "Foot",
+        tr_TR: "Ayak"
+    },
+    "Ankle": {
+        en_US: "Ankle",
+        en_GB: "Ankle",
+        tr_TR: "Ayak Bileği"
+    },
+    "Sole": {
+        en_US: "Sole",
+        en_GB: "Sole",
+        tr_TR: "Ayak Tabanı"
+    },
+    "Toe": {
+        en_US: "Toe",
+        en_GB: "Toe",
+        tr_TR: "Ayak Parmağı"
+    },
+    "Inguino-Crural": {
+        en_US: "Inguino-Crural",
+        en_GB: "Inguino-Crural",
+        tr_TR: "Kasık"
+    },
+    "Interdigital": {
+        en_US: "Interdigital",
+        en_GB: "Interdigital",
+        tr_TR: "Parmak Arası"
+    },
+    "Popliteal": {
+        en_US: "Popliteal",
+        en_GB: "Popliteal",
+        tr_TR: "Diz Arkası"
+    },
+    "Knee": {
+        en_US: "Knee",
+        en_GB: "Knee",
+        tr_TR: "Diz"
+    },
+    "Leg": {
+        en_US: "Leg",
+        en_GB: "Leg",
+        tr_TR: "Diz Altı"
+    },
+    "Thigh": {
+        en_US: "Thigh",
+        en_GB: "Thigh",
+        tr_TR: "Diz Üstü"
+    },
+    "anatomicalPlaceholder": {
+        en_US: "anatomical location",
+        en_GB: "anatomical location",
+        tr_TR: "anatomik konumu"
+    }
+
+    // ------ ANATOMICAL-LOCATION ------
 }
 
-selectedLanguage = "en_US";
+selectedLanguage = "tr_TR";

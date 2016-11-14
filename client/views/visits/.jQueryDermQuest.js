@@ -137,3 +137,7 @@ $('#pathos > div > div > div > div > ul > li > label').each(function(index) {
     str += '<option value="{{tr "' + $(this).text() + '"}}">{{tr "' + $(this).text() + '"}}</option>\n';
 });
 copy(str);
+
+// ATOM REGEX REPLACE EXAMPLE
+// title="(.*?) > (.*?)"
+// title="{{tr "$1"}} > {{tr "$2"}}"

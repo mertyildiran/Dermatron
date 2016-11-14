@@ -217,67 +217,66 @@ PATHOS_DICT[translations["Tumors and Proliferative Diseases"][selectedLanguage]]
 PATHOS_DICT[translations["Urticaria"][selectedLanguage]] = "109401|109402|109403|109404|109405|109406|109407|109408|109409|109410|109411|109412|109413|109414";
 PATHOS_DICT[translations["Vascular Disorders, Vasculitis and Purpuras"][selectedLanguage]] = "109415|109416|109417|109418|109419|109420|109421|109422|109423|109424|109425|109426|109427|109428|109429|109430|109431|109432|109433|109434|109435|109436|109437|109438|109439|109440|109441|109442|109443|109444|109445|109446|109447|109448|109449|109450|109451|109452|109453|109454|109455|109456|109457|109458|109459|109460|109461|109462|109463|109464|109465|109466|109467|109468|109469|109470|109471|109472|109473|109474|109475|109476|109477|109478|109479|109480|109481|109482|109483|109484";
 
-ANATOMICAL_DICT = {
-  "Head": "107988",
-      "Head > Beard": "107990",
-      "Head > Cheek": "107991",
-      "Head > Chin": "107992",
-      "Head > Ear": "107994",
-      "Head > Eyebrow": "107995",
-      "Head > Eyelid": "107996",
-      "Head > Forehead": "107997",
-      "Head > Hairline": "107998",
-      "Head > Labia": "107999",
-      "Head > Mandible": "108000",
-      "Head > Nose": "108011",
-      "Head > Orbit": "108002",
-      "Head > Retroauricular Folds": "108003|108006",
-      "Head > Temple": "108004",
-      "Head > Mouth": "108009",
-      "Head > Neck": "108012",
-      "Head > Nape": "108012",
-      "Head > Scalp/Hair": "108013",
-  "Upper Limbs": "108040",
-      "Upper Limbs > Elbow": "108026",
-      "Upper Limbs > Axillae": "108028",
-      "Upper Limbs > Elbow Flexures": "108029",
-      "Upper Limbs > Inderdigital Folds": "108030",
-      "Upper Limbs > Hand": "108031",
-      "Upper Limbs > Finger": "108033",
-      "Upper Limbs > Nail": "108044",
-      "Upper Limbs > Lower Arm": "108036",
-      "Upper Limbs > Wrist": "108036",
-      "Upper Limbs > Shoulder": "108037",
-      "Upper Limbs > Upper Arm": "108038",
-  "Anogenital Region": "108054",
-      "Anogenital Region > Anus": "108060",
-      "Anogenital Region > Glans Penis": "108056",
-      "Anogenital Region > Perineum": "108058",
-      "Anogenital Region > Penis": "108063",
-      "Anogenital Region > Vulva": "108065",
-      "Anogenital Region > Scrotum": "108064",
-  "Trunk": "108015",
-      "Trunk > Abdomen": "108016",
-      "Trunk > Back": "108017",
-      "Trunk > Chest": "108018",
-      "Trunk > Decollete": "108019",
-      "Trunk > Submammary": "108021",
-      "Trunk > Mammary Areola": "108022",
-      "Trunk > Umbilicus": "108023",
-      "Trunk > Shoulder": "108037",
-  "Lower Limbs": "108039",
-      "Lower Limbs > Buttocks": "108041",
-      "Lower Limbs > Foot": "108042",
-      "Lower Limbs > Ankle": "108043",
-      "Lower Limbs > Sole": "108045",
-      "Lower Limbs > Toe": "108046",
-      "Lower Limbs > Inguino-Crural": "108048",
-      "Lower Limbs > Interdigital": "108049",
-      "Lower Limbs > Popliteal": "108050",
-      "Lower Limbs > Knee": "108051",
-      "Lower Limbs > Leg": "108052",
-      "Lower Limbs > Thigh": "108053"
-};
+ANATOMICAL_DICT = {};
+ANATOMICAL_DICT[translations["Head"][selectedLanguage]] = "107988";
+    ANATOMICAL_DICT[translations["Head"][selectedLanguage] + ' > ' + translations["Beard"][selectedLanguage]] = "107990";
+    ANATOMICAL_DICT[translations["Head"][selectedLanguage] + ' > ' + translations["Cheek"][selectedLanguage]] = "107991";
+    ANATOMICAL_DICT[translations["Head"][selectedLanguage] + ' > ' + translations["Chin"][selectedLanguage]] = "107992";
+    ANATOMICAL_DICT[translations["Head"][selectedLanguage] + ' > ' + translations["Ear"][selectedLanguage]] = "107994";
+    ANATOMICAL_DICT[translations["Head"][selectedLanguage] + ' > ' + translations["Eyebrow"][selectedLanguage]] = "107995";
+    ANATOMICAL_DICT[translations["Head"][selectedLanguage] + ' > ' + translations["Eyelid"][selectedLanguage]] = "107996";
+    ANATOMICAL_DICT[translations["Head"][selectedLanguage] + ' > ' + translations["Forehead"][selectedLanguage]] = "107997";
+    ANATOMICAL_DICT[translations["Head"][selectedLanguage] + ' > ' + translations["Hairline"][selectedLanguage]] = "107998";
+    ANATOMICAL_DICT[translations["Head"][selectedLanguage] + ' > ' + translations["Labia"][selectedLanguage]] = "107999";
+    ANATOMICAL_DICT[translations["Head"][selectedLanguage] + ' > ' + translations["Mandible"][selectedLanguage]] = "108000";
+    ANATOMICAL_DICT[translations["Head"][selectedLanguage] + ' > ' + translations["Nose"][selectedLanguage]] = "108011";
+    ANATOMICAL_DICT[translations["Head"][selectedLanguage] + ' > ' + translations["Orbit"][selectedLanguage]] = "108002";
+    ANATOMICAL_DICT[translations["Head"][selectedLanguage] + ' > ' + translations["Retroauricular Folds"][selectedLanguage]] = "108003|108006";
+    ANATOMICAL_DICT[translations["Head"][selectedLanguage] + ' > ' + translations["Temple"][selectedLanguage]] = "108004";
+    ANATOMICAL_DICT[translations["Head"][selectedLanguage] + ' > ' + translations["Mouth"][selectedLanguage]] = "108009";
+    ANATOMICAL_DICT[translations["Head"][selectedLanguage] + ' > ' + translations["Neck"][selectedLanguage]] = "108012";
+    ANATOMICAL_DICT[translations["Head"][selectedLanguage] + ' > ' + translations["Nape"][selectedLanguage]] = "108012";
+    ANATOMICAL_DICT[translations["Head"][selectedLanguage] + ' > ' + translations["Scalp/Hair"][selectedLanguage]] = "108013";
+ANATOMICAL_DICT[translations["Upper Limbs"][selectedLanguage]] = "108040";
+    ANATOMICAL_DICT[translations["Upper Limbs"][selectedLanguage] + ' > ' + translations["Elbow"][selectedLanguage]] = "108026";
+    ANATOMICAL_DICT[translations["Upper Limbs"][selectedLanguage] + ' > ' + translations["Axillae"][selectedLanguage]] = "108028";
+    ANATOMICAL_DICT[translations["Upper Limbs"][selectedLanguage] + ' > ' + translations["Elbow Flexures"][selectedLanguage]] = "108029";
+    ANATOMICAL_DICT[translations["Upper Limbs"][selectedLanguage] + ' > ' + translations["Inderdigital Folds"][selectedLanguage]] = "108030";
+    ANATOMICAL_DICT[translations["Upper Limbs"][selectedLanguage] + ' > ' + translations["Hand"][selectedLanguage]] = "108031";
+    ANATOMICAL_DICT[translations["Upper Limbs"][selectedLanguage] + ' > ' + translations["Finger"][selectedLanguage]] = "108033";
+    ANATOMICAL_DICT[translations["Upper Limbs"][selectedLanguage] + ' > ' + translations["Nail"][selectedLanguage]] = "108044";
+    ANATOMICAL_DICT[translations["Upper Limbs"][selectedLanguage] + ' > ' + translations["Lower Arm"][selectedLanguage]] = "108036";
+    ANATOMICAL_DICT[translations["Upper Limbs"][selectedLanguage] + ' > ' + translations["Wrist"][selectedLanguage]] = "108036";
+    ANATOMICAL_DICT[translations["Upper Limbs"][selectedLanguage] + ' > ' + translations["Shoulder"][selectedLanguage]] = "108037";
+    ANATOMICAL_DICT[translations["Upper Limbs"][selectedLanguage] + ' > ' + translations["Upper Arm"][selectedLanguage]] = "108038";
+ANATOMICAL_DICT[translations["Anogenital Region"][selectedLanguage]] = "108054";
+    ANATOMICAL_DICT[translations["Anogenital Region"][selectedLanguage] + ' > ' + translations["Anus"][selectedLanguage]] = "108060";
+    ANATOMICAL_DICT[translations["Anogenital Region"][selectedLanguage] + ' > ' + translations["Glans Penis"][selectedLanguage]] = "108056";
+    ANATOMICAL_DICT[translations["Anogenital Region"][selectedLanguage] + ' > ' + translations["Perineum"][selectedLanguage]] = "108058";
+    ANATOMICAL_DICT[translations["Anogenital Region"][selectedLanguage] + ' > ' + translations["Penis"][selectedLanguage]] = "108063";
+    ANATOMICAL_DICT[translations["Anogenital Region"][selectedLanguage] + ' > ' + translations["Vulva"][selectedLanguage]] = "108065";
+    ANATOMICAL_DICT[translations["Anogenital Region"][selectedLanguage] + ' > ' + translations["Scrotum"][selectedLanguage]] = "108064";
+ANATOMICAL_DICT[translations["Trunk"][selectedLanguage]] = "108015";
+    ANATOMICAL_DICT[translations["Trunk"][selectedLanguage] + ' > ' + translations["Abdomen"][selectedLanguage]] = "108016";
+    ANATOMICAL_DICT[translations["Trunk"][selectedLanguage] + ' > ' + translations["Back"][selectedLanguage]] = "108017";
+    ANATOMICAL_DICT[translations["Trunk"][selectedLanguage] + ' > ' + translations["Chest"][selectedLanguage]] = "108018";
+    ANATOMICAL_DICT[translations["Trunk"][selectedLanguage] + ' > ' + translations["Decollete"][selectedLanguage]] = "108019";
+    ANATOMICAL_DICT[translations["Trunk"][selectedLanguage] + ' > ' + translations["Submammary"][selectedLanguage]] = "108021";
+    ANATOMICAL_DICT[translations["Trunk"][selectedLanguage] + ' > ' + translations["Mammary Areola"][selectedLanguage]] = "108022";
+    ANATOMICAL_DICT[translations["Trunk"][selectedLanguage] + ' > ' + translations["Umbilicus"][selectedLanguage]] = "108023";
+    ANATOMICAL_DICT[translations["Trunk"][selectedLanguage] + ' > ' + translations["Shoulder"][selectedLanguage]] = "108037";
+ANATOMICAL_DICT[translations["Lower Limbs"][selectedLanguage]] = "108039";
+    ANATOMICAL_DICT[translations["Lower Limbs"][selectedLanguage] + ' > ' + translations["Buttock"][selectedLanguage]] = "108041";
+    ANATOMICAL_DICT[translations["Lower Limbs"][selectedLanguage] + ' > ' + translations["Foot"][selectedLanguage]] = "108042";
+    ANATOMICAL_DICT[translations["Lower Limbs"][selectedLanguage] + ' > ' + translations["Ankle"][selectedLanguage]] = "108043";
+    ANATOMICAL_DICT[translations["Lower Limbs"][selectedLanguage] + ' > ' + translations["Sole"][selectedLanguage]] = "108045";
+    ANATOMICAL_DICT[translations["Lower Limbs"][selectedLanguage] + ' > ' + translations["Toe"][selectedLanguage]] = "108046";
+    ANATOMICAL_DICT[translations["Lower Limbs"][selectedLanguage] + ' > ' + translations["Inguino-Crural"][selectedLanguage]] = "108048";
+    ANATOMICAL_DICT[translations["Lower Limbs"][selectedLanguage] + ' > ' + translations["Interdigital"][selectedLanguage]] = "108049";
+    ANATOMICAL_DICT[translations["Lower Limbs"][selectedLanguage] + ' > ' + translations["Popliteal"][selectedLanguage]] = "108050";
+    ANATOMICAL_DICT[translations["Lower Limbs"][selectedLanguage] + ' > ' + translations["Knee"][selectedLanguage]] = "108051";
+    ANATOMICAL_DICT[translations["Lower Limbs"][selectedLanguage] + ' > ' + translations["Leg"][selectedLanguage]] = "108052";
+    ANATOMICAL_DICT[translations["Lower Limbs"][selectedLanguage] + ' > ' + translations["Thigh"][selectedLanguage]] = "108053";
 
 DIAGNOSES_DICT = {
   "Abrasion": "109487",
