@@ -5224,6 +5224,52 @@ translations = {
     },
 
     // ------ DIAGNOSIS ------
+
+    "Done": {
+        en_US: "Done",
+        en_GB: "Done",
+        tr_TR: "Tamam"
+    },
+    "Backside": {
+        en_US: "Backside",
+        en_GB: "Backside",
+        tr_TR: "Arka Taraf"
+    },
+    "Reset": {
+        en_US: "Reset",
+        en_GB: "Reset",
+        tr_TR: "Sıfırla"
+    },
+    "image": {
+        en_US: "Image",
+        en_GB: "Image",
+        tr_TR: "Görüntü"
+    },
+    "Take a photo": {
+        en_US: "Take a photo",
+        en_GB: "Take a photo",
+        tr_TR: "FOTOĞRAF ÇEK"
+    },
+    "Make sure your Dermatoscope": {
+        en_US: " * Make sure you have connected your Dermatoscope via USB as the primary camera",
+        en_GB: " * Make sure you have connected your Dermatoscope via USB as the primary camera",
+        tr_TR: " * Dermatoskop'unuzun USB üzerinden birincil kamera olarak bağlı olduğuna emin olunuz"
+    },
+    "prescription": {
+        en_US: "Prescription",
+        en_GB: "Prescription",
+        tr_TR: "Reçete"
+    },
+    "Save": {
+        en_US: "Save",
+        en_GB: "Save",
+        tr_TR: "KAYDET"
+    },
+    "Back": {
+        en_US: "Back",
+        en_GB: "Back",
+        tr_TR: "GERİ"
+    }
 }
 
-selectedLanguage = "en_US";
+selectedLanguage = "tr_TR";

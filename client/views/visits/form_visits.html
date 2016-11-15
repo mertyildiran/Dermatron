@@ -266,17 +266,17 @@
                   <i class="large material-icons">visibility</i>
                 </a>
                 <ul style="right: 250px; position: relative;">
-                    <li><a class="btn-floating green lighten-2" title="Done" id="anatomicalLocationDone"><i class="material-icons">done</i></a></li>
-                    <li><a class="btn-floating blue lighten-2" title="Backside" id="anatomicalLocationBackside"><i class="material-icons">swap_vert</i></a></li>
-                    <li><a class="btn-floating yellow lighten-2" title="Reset" id="anatomicalLocationReset"><i class="material-icons">replay</i></a></li>
+                    <li><a class="btn-floating green lighten-2" title="{{tr "Done"}}" id="anatomicalLocationDone"><i class="material-icons">done</i></a></li>
+                    <li><a class="btn-floating blue lighten-2" title="{{tr "Backside"}}" id="anatomicalLocationBackside"><i class="material-icons">swap_vert</i></a></li>
+                    <li><a class="btn-floating yellow lighten-2" title="{{tr "Reset"}}" id="anatomicalLocationReset"><i class="material-icons">replay</i></a></li>
                 </ul>
               </div>
 
         </div>
         <div class="form-group">
-            <label for="input_image">image</label>
+            <label for="input_image">{{tr "image"}}</label>
             <br>
-            <a class="btn btn-default btn-xs" id="captureButton" nohref>Take a photo</a> <i style="color: #6e6e6e;">* Make sure you have connected your Dermatoscope via USB as the primary camera</i>
+            <a class="btn btn-default btn-xs" id="captureButton" nohref>{{tr "Take a photo"}}</a> <i style="color: #6e6e6e;">{{tr "Make sure your Dermatoscope"}}</i>
             <br>
             <div id="capturedImage" value="{{image}}">{{{placeImage image captionImage}}}{{{previousImage patientId visitDateTime captionLastVisit}}}</div>
             <br>
@@ -1019,7 +1019,7 @@
             </select>
         </div>
         <div class="form-group">
-            <label for="input_prescription">prescription</label>
+            <label for="input_prescription">{{tr "prescription"}}</label>
             <textarea class="form-control" style="height:150px;" id="input_prescription">{{prescription}}</textarea>
         </div>
     </form>
