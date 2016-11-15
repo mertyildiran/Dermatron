@@ -14,10 +14,10 @@ translations = {
         en_GB: "Medicines",
         tr_TR: "İlaçlar"
     },
-    About: {
-        en_US: "About",
-        en_GB: "About",
-        tr_TR: "Hakkında"
+    Settings: {
+        en_US: "Settings",
+        en_GB: "Settings",
+        tr_TR: "Ayarlar"
     },
     allVisits: {
         en_US: "All visits",
@@ -5309,6 +5309,161 @@ translations = {
         en_US: "Viewing the visit",
         en_GB: "Viewing the visit",
         tr_TR: "Ziyaret görüntüleniyor"
+    },
+    "All patients": {
+        en_US: "All patients",
+        en_GB: "All patients",
+        tr_TR: "Tüm hastalar"
+    },
+    patientsMoreInfo: {
+        en_US: 'by clicking column names on the table, you can easily sort the results. e.g try to click "<b>Birth Date</b>"',
+        en_GB: 'by clicking column names on the table, you can easily sort the results. e.g try to click "<b>Birth Date</b>"',
+        tr_TR: 'tablodaki sütun isimlerine tıklayarak sonuçları sıralayabilirsiniz. Mesela "<b>Doğum Tarihi</b>"ne tıklamayı deneyin'
+    },
+    "name": {
+        en_US: "Name",
+        en_GB: "Name",
+        tr_TR: "Adı"
+    },
+    "surname": {
+        en_US: "Surname",
+        en_GB: "Surname",
+        tr_TR: "Soyadı"
+    },
+    "gender": {
+        en_US: "Gender",
+        en_GB: "Gender",
+        tr_TR: "Cinsiyeti"
+    },
+    "birthDate": {
+        en_US: "Birth Date",
+        en_GB: "Birth Date",
+        tr_TR: "Doğum Tarihi"
+    },
+    "nationalId": {
+        en_US: "National ID",
+        en_GB: "National ID",
+        tr_TR: "T.C. Kimlik No"
+    },
+    "socialSecurityType": {
+        en_US: "Social Security Type",
+        en_GB: "Social Security Type",
+        tr_TR: "Sosyal Güvenlik Türü"
+    },
+    "socialSecurityNumber": {
+        en_US: "Social Security Number",
+        en_GB: "Social Security Number",
+        tr_TR: "Sosyal Güvenlik Numarası"
+    },
+    "isPatientDisabled": {
+        en_US: "Is Patient Disabled?",
+        en_GB: "Is Patient Disabled?",
+        tr_TR: "Hasta Engelli Mi?"
+    },
+    "bloodType": {
+        en_US: "Blood Type",
+        en_GB: "Blood Type",
+        tr_TR: "Kan Grubu"
+    },
+    "email": {
+        en_US: "Email",
+        en_GB: "Email",
+        tr_TR: "E-posta"
+    },
+    "phone": {
+        en_US: "Phone",
+        en_GB: "Phone",
+        tr_TR: "Telefon"
+    },
+    "address": {
+        en_US: "Address",
+        en_GB: "Address",
+        tr_TR: "Adres"
+    },
+    "totalVisits": {
+        en_US: "Total Visits",
+        en_GB: "Total Visits",
+        tr_TR: "Toplam Ziyaret"
+    },
+    newPatient: {
+        en_US: "New Patient",
+        en_GB: "New Patient",
+        tr_TR: "YENİ HASTA"
+    },
+    "New patient": {
+        en_US: "New patient",
+        en_GB: "New patient",
+        tr_TR: "Yeni hasta"
+    },
+    "name input": {
+        en_US: "name input",
+        en_GB: "name input",
+        tr_TR: "isim girdisi"
+    },
+    "surname input": {
+        en_US: "surname input",
+        en_GB: "surname input",
+        tr_TR: "soyisim girdisi"
+    },
+    "Male": {
+        en_US: "Male",
+        en_GB: "Male",
+        tr_TR: "Erkek"
+    },
+    "Female": {
+        en_US: "Female",
+        en_GB: "Female",
+        tr_TR: "Kız"
+    },
+    "nationalId input": {
+        en_US: "national ID input",
+        en_GB: "national ID input",
+        tr_TR: "kimlik numarası girdisi"
+    },
+    "State Insurance": {
+        en_US: "State Insurance",
+        en_GB: "State Insurance",
+        tr_TR: "Devlet Sigortası"
+    },
+    "Private Insurance": {
+        en_US: "Private Insurance",
+        en_GB: "Private Insurance",
+        tr_TR: "Özel Sigorta"
+    },
+    "socialSecurityNumber input": {
+        en_US: "social security number input",
+        en_GB: "social security number input",
+        tr_TR: "sosyal güvenlik numarası girdisi"
+    },
+    emailPlaceholder: {
+        en_US: "example@gmail.com",
+        en_GB: "example@gmail.com",
+        tr_TR: "ornek@gmail.com"
+    },
+    "dermatologicHistory": {
+        en_US: "Dermatologic History",
+        en_GB: "Dermatologic History",
+        tr_TR: "Dermatolojik Geçmişi"
+    },
+    "Edit this patient": {
+        en_US: "Edit this patient",
+        en_GB: "Edit this patient",
+        tr_TR: "Bu hastayı düzenle"
+    },
+    "Viewing the patient": {
+        en_US: "Viewing the patient",
+        en_GB: "Viewing the patient",
+        tr_TR: "Hasta görüntüleniyor"
+    },
+    "Schedule a new visit": {
+        en_US: "Schedule a new visit",
+        en_GB: "Schedule a new visit",
+        tr_TR: "YENİ ZIYARET PLANLAYIN"
+    },
+    medicinesUrl: {
+        en_US: "http://www.accessdata.fda.gov/scripts/cder/drugsatfda/index.cfm",
+        en_GB: "http://www.accessdata.fda.gov/scripts/cder/drugsatfda/index.cfm",
+        tr_TR: "http://www.ilacprospektusu.com/ara/ilac"
     }
 }
 

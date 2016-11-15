@@ -1,8 +1,8 @@
 <template name="new_patients">
     <div class="container">
-        <h3>New patient</h3>
+        <h3>{{tr "New patient"}}</h3>
         {{> form_patients}}
-        <button type="button" class="btn btn-primary btn-xs" id="save">Save</button>
-        <a class="btn btn-default btn-xs"  href="{{pathFor 'patients'}}">Back</a>
+        <button type="button" class="btn btn-primary btn-xs" id="save">{{tr "Save"}}</button>
+        <a class="btn btn-default btn-xs"  href="{{pathFor 'patients'}}">{{tr "Back"}}</a>
     </div>
 </template>

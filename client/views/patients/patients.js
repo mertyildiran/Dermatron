@@ -5,7 +5,7 @@ Template.patients.helpers ({
 
     // controllers
     tpl_info: function() {
-        return patients.find().count() + ' record(s) found. This is patients template, find me at client/views/patients';
+        return patients.find().count() + translations.recordsFound[selectedLanguage];
     },
 
     patients: function() {
@@ -56,7 +56,7 @@ Template.patients.events ({
         options['limit'] += 10;
         _deps.changed();
         if (options['limit'] >= patients.find().count()){
-            $('#loadMore').text('Done');
+            $('#loadMore').text(translations["Done"][selectedLanguage]);
             $('#loadMore').fadeOut();
         }
 

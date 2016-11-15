@@ -1,65 +1,65 @@
 <template name="form_patients">
     <form>
         <div class="form-group">
-            <label for="input_name">name</label>
+            <label for="input_name">{{tr "name"}}</label>
             <input type="text" class="form-control"
-                placeholder="name input"
+                placeholder="{{tr "name input"}}"
                 id="input_name"
                 value="{{name}}">
         </div>
         <div class="form-group">
-            <label for="input_surname">surname</label>
+            <label for="input_surname">{{tr "surname"}}</label>
             <input type="text" class="form-control"
-                placeholder="surname input"
+                placeholder="{{tr "surname input"}}"
                 id="input_surname"
                 value="{{surname}}">
         </div>
         <div class="form-group">
-            <label for="input_gender">gender</label>
+            <label for="input_gender">{{tr "gender"}}</label>
             <select class="form-control" id="input_gender">
                 <option value="{{gender}}" selected>{{gender}}</option>
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
+                <option value="Male">{{tr "Male"}}</option>
+                <option value="Female">{{tr "Female"}}</option>
             </select>
         </div>
         <div class="form-group">
-            <label for="input_birthDate">birthDate</label>
+            <label for="input_birthDate">{{tr "birthDate"}}</label>
             <input type="date" class="form-control datepicker"
-                placeholder="Date"
+                placeholder="{{tr "date"}}"
                 id="input_birthDate"
                 value="{{birthDate}}">
         </div>
         <div class="form-group">
-            <label for="input_nationalId">nationalId</label>
+            <label for="input_nationalId">{{tr "nationalId"}}</label>
             <input type="text" class="form-control"
-                placeholder="nationalId input"
+                placeholder="{{tr "nationalId input"}}"
                 id="input_nationalId"
                 value="{{nationalId}}">
         </div>
         <div class="form-group">
-            <label for="input_socialSecurityType">socialSecurityType</label>
+            <label for="input_socialSecurityType">{{tr "socialSecurityType"}}</label>
             <select class="form-control" id="input_socialSecurityType">
                 <option value="{{socialSecurityType}}" selected>{{socialSecurityType}}</option>
-                <option value="State Insurance">State Insurance</option>
-                <option value="Private Insurance">Private Insurance</option>
+                <option value="State Insurance">{{tr "State Insurance"}}</option>
+                <option value="Private Insurance">{{tr "Private Insurance"}}</option>
             </select>
         </div>
         <div class="form-group">
-            <label for="input_socialSecurityNumber">socialSecurityNumber</label>
+            <label for="input_socialSecurityNumber">{{tr "socialSecurityNumber"}}</label>
             <input type="text" class="form-control"
-                placeholder="socialSecurityNumber input"
+                placeholder="{{tr "socialSecurityNumber input"}}"
                 id="input_socialSecurityNumber"
                 value="{{socialSecurityNumber}}">
         </div>
         <div class="form-group">
-            <label for="input_isPatientDisabled">isPatientDisabled</label>
+            <label for="input_isPatientDisabled">{{tr "isPatientDisabled"}}</label>
             <input type="checkbox" class="form-control filled-in"
                 id="input_isPatientDisabled"
                 value="true">
                 <label for="input_isPatientDisabled"></label>
         </div>
         <div class="form-group">
-            <label for="input_bloodType">bloodType</label>
+            <label for="input_bloodType">{{tr "bloodType"}}</label>
             <select class="form-control" id="input_bloodType">
                 <option value="{{bloodType}}" selected>{{bloodType}}</option>
                 <option value="0 Rh(-)">0 Rh(-)</option>
@@ -73,25 +73,25 @@
             </select>
         </div>
         <div class="form-group">
-            <label for="input_email">email</label>
+            <label for="input_email">{{tr "email"}}</label>
             <input type="email" class="form-control"
-                placeholder="foo@foobar.bar"
+                placeholder="{{tr "emailPlaceholder"}}"
                 id="input_email"
                 value="{{email}}">
         </div>
         <div class="form-group">
-            <label for="input_phone">phone</label>
+            <label for="input_phone">{{tr "phone"}}</label>
             <input type="tel" class="form-control"
-                placeholder="+00 000 000 000"
+                placeholder="+00 000 000 0000"
                 id="input_phone"
                 value="{{phone}}">
         </div>
         <div class="form-group">
-            <label for="input_address">address</label>
+            <label for="input_address">{{tr "address"}}</label>
             <textarea class="form-control" style="height:75px;" id="input_address">{{address}}</textarea>
         </div>
         <div class="form-group">
-            <label for="input_dermatologicHistory">dermatologicHistory</label>
+            <label for="input_dermatologicHistory">{{tr "dermatologicHistory"}}</label>
             <textarea class="form-control" style="height:150px;" id="input_dermatologicHistory">{{dermatologicHistory}}</textarea>
         </div>
     </form>

@@ -1,9 +1,9 @@
 <template name="patients">
     {{invokeBeforeLoadPatients}}
     <div class="container">
-        <h3>All patients</h3>
+        <h3>{{tr "All patients"}}</h3>
         <p><pre>{{tpl_info}}</pre>
-        you can delete this message from the template and/or the helper</p>
+        {{{tr "patientsMoreInfo"}}}</p>
             <div class="table-responsive">
                 <table class="table table-hover table-condensed table-bordered">
                     <thead>
@@ -11,36 +11,36 @@
                             <th colspan="50">
                                 <form class="form-inline">
                                         <div class="form-group">
-                                            <label for="input_title">Search: </label>
+                                            <label for="input_title">{{tr "Search"}}: </label>
                                             <input type="text" class="form-control"
-                                                   placeholder="filter text"
+                                                   placeholder="{{tr 'filterText'}}"
                                                    id="filter_field">
                                         </div>
                                 </form>
                             </th>
                         </tr>
                         <tr>
-                            <th id=header-createdAt>createdAt</th>
-                            <th id=header-name>name</th>
-                            <th id=header-surname>surname</th>
-                            <th id=header-gender>gender</th>
-                            <th id=header-birthDate>birthDate</th>
-                            <th id=header-nationalId>nationalId</th>
-                            <th id=header-socialSecurityType>socialSecurityType</th>
-                            <th id=header-socialSecurityNumber>socialSecurityNumber</th>
-                            <th id=header-isPatientDisabled>isPatientDisabled</th>
-                            <th id=header-bloodType>bloodType</th>
-                            <th id=header-email>email</th>
-                            <th id=header-phone>phone</th>
-                            <th id=header-address>address</th>
-                            <th id=header-totalVisits>totalVisits</th>
+                            <th id=header-createdAt>{{tr "createdAt"}}</th>
+                            <th id=header-name>{{tr "name"}}</th>
+                            <th id=header-surname>{{tr "surname"}}</th>
+                            <th id=header-gender>{{tr "gender"}}</th>
+                            <th id=header-birthDate>{{tr "birthDate"}}</th>
+                            <th id=header-nationalId>{{tr "nationalId"}}</th>
+                            <th id=header-socialSecurityType>{{tr "socialSecurityType"}}</th>
+                            <th id=header-socialSecurityNumber>{{tr "socialSecurityNumber"}}</th>
+                            <th id=header-isPatientDisabled>{{tr "isPatientDisabled"}}</th>
+                            <th id=header-bloodType>{{tr "bloodType"}}</th>
+                            <th id=header-email>{{tr "email"}}</th>
+                            <th id=header-phone>{{tr "phone"}}</th>
+                            <th id=header-address>{{tr "address"}}</th>
+                            <th id=header-totalVisits>{{tr "totalVisits"}}</th>
                             <th colspan="4">
                                 <form class="form-inline">
                                         <div class="form-group">
                                         <input type="checkbox" class="space-left space-right filled-in"
                                             id="checkAll">
                                             <label for="checkAll"></label>
-                                            <a class="btn btn-danger btn-xs space-right" href="" id="deleteAll" style="margin-left: 50px;">Delete selected</a>
+                                            <a class="btn btn-danger btn-xs space-right" href="" id="deleteAll" style="margin-left: 50px;">{{tr "deleteSelected"}}</a>
                                         </div>
                                 </form>
                             </th>
@@ -69,21 +69,21 @@
                                 <label for="row_{{_id}}"></label>
                             </td>
                             <td>
-                                <a class="btn btn-default btn-xs" href="{{pathFor 'show_patients'}}"  id="show">Show </a>
+                                <a class="btn btn-default btn-xs" href="{{pathFor 'show_patients'}}"  id="show">{{tr "show"}}</a>
                             </td>
                             <td>
-                                <a class="btn btn-primary btn-xs" href="{{pathFor 'edit_patients'}}"  id="edit"> Edit</a>
+                                <a class="btn btn-primary btn-xs" href="{{pathFor 'edit_patients'}}"  id="edit">{{tr "edit"}}</a>
                             </td>
                             <td>
-                                <a class="btn btn-danger btn-xs" href="" id="delete">Delete</a>
+                                <a class="btn btn-danger btn-xs" href="" id="delete">{{tr "delete"}}</a>
                             </td>
                         </tr>
                     {{/each}}
                     </tbody>
                </table>
             </div>
-            <a class="btn btn-success btn-xs" href="{{pathFor 'new_patients'}}">New patient</a>
-            <button class="btn btn-primary" id="loadMore">Load More</button>
-            <button class="btn btn-primary" id="loadReset">Reset</button>
+            <a class="btn btn-success btn-xs" href="{{pathFor 'new_patients'}}">{{tr "newPatient"}}</a>
+            <button class="btn btn-primary" id="loadMore">{{tr "loadMore"}}</button>
+            <button class="btn btn-primary" id="loadReset">{{tr "reset"}}</button>
         </div>
 </template>

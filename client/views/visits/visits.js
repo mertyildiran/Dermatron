@@ -74,7 +74,7 @@ Template.visits.events ({
         options['limit'] += 10;
         _deps.changed();
         if (options['limit'] >= visits.find().count()){
-            $('#loadMore').text('Done');
+            $('#loadMore').text(translations["Done"][selectedLanguage]);
             $('#loadMore').fadeOut();
         }
 
