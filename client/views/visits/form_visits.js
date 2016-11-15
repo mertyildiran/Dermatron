@@ -211,7 +211,7 @@ Template.form_visits.events ({
                 img.onload = function() {
                     ctx.drawImage(img, 0, 0, canv.width, canv.height);
                     areaOfCaptured = drawContour(canv);
-                    $('div#capturedImage figcaption#captured p').html('Area: ' + areaOfCaptured + ' px<sup>2</sup>');
+                    $('div#capturedImage figcaption#captured p').html(translations['Area'][selectedLanguage] + ': ' + areaOfCaptured + ' px<sup>2</sup>');
                     compareImages();
                 }
                 img.src = data;
@@ -284,7 +284,7 @@ Template.form_visits.events ({
                 }
 
                 var dermQuestUrl = 'https://www.dermquest.com/Services/imageData.ashx?' + lesionString + '&' + symptomsString + '&' + pathosString + '&' + anatomicalString + '&page=1&perPage=100&sort=relevance';
-                var suggestionsDermQuest = '<br><i>diagnosis suggestions from DermQuest.com:</i><br>';
+                var suggestionsDermQuest = '<br><i>' + translations['diagnosis suggestions from'][selectedLanguage] + ' DermQuest.com:</i><br>';
                 //console.log(dermQuestUrl);
 
                 Meteor.call('cross_origin_request', dermQuestUrl, function(error, result) {
@@ -340,7 +340,7 @@ Template.form_visits.events ({
                                     //console.log(maxKey);
                                     var answer = DIAGNOSES_DICT_SWAP[maxKey];
                                     //console.log(answer);
-                                    $('div#ai-suggestions').html('<i>Artifical Intelligence thinks the diagnosis is</i> <b>' + answer + '</b>.');
+                                    $('div#ai-suggestions').html('<i>' + translations['Artifical Intelligence thinks the diagnosis is'][selectedLanguage] + '</i> <b>' + answer + '</b>.');
                                 });
 
                             });
@@ -417,14 +417,14 @@ function compareImages() {
 
     if (imageCounter >= 2) {
         if (areaOfCaptured > areaOfLastVisit) {
-            $('div#capturedImage figcaption#captured p').html( $('div#capturedImage figcaption#captured p').html() + ' (bigger)' );
-            $('div#capturedImage figcaption#last-visit p').html( $('div#capturedImage figcaption#last-visit p').html() + ' (smaller)' );
+            $('div#capturedImage figcaption#captured p').html( $('div#capturedImage figcaption#captured p').html() + ' (' + translations['bigger'][selectedLanguage] + ')' );
+            $('div#capturedImage figcaption#last-visit p').html( $('div#capturedImage figcaption#last-visit p').html() + ' (' + translations['smaller'][selectedLanguage] + ')' );
         } else if (areaOfCaptured < areaOfLastVisit) {
-            $('div#capturedImage figcaption#captured p').html( $('div#capturedImage figcaption#captured p').html() + ' (smaller)' );
-            $('div#capturedImage figcaption#last-visit p').html( $('div#capturedImage figcaption#last-visit p').html() + ' (bigger)' );
+            $('div#capturedImage figcaption#captured p').html( $('div#capturedImage figcaption#captured p').html() + ' (' + translations['smaller'][selectedLanguage] + ')' );
+            $('div#capturedImage figcaption#last-visit p').html( $('div#capturedImage figcaption#last-visit p').html() + ' (' + translations['bigger'][selectedLanguage] + ')' );
         } else {
-            $('div#capturedImage figcaption#captured p').html( $('div#capturedImage figcaption#captured p').html() + ' (exactly equal)' );
-            $('div#capturedImage figcaption#last-visit p').html( $('div#capturedImage figcaption#last-visit p').html() + ' (exactly equal)' );
+            $('div#capturedImage figcaption#captured p').html( $('div#capturedImage figcaption#captured p').html() + ' (' + translations['exactly equal'][selectedLanguage] + ')' );
+            $('div#capturedImage figcaption#last-visit p').html( $('div#capturedImage figcaption#last-visit p').html() + ' (' + translations['exactly equal'][selectedLanguage] + ')' );
         }
     }
 }

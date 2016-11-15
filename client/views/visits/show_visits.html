@@ -1,32 +1,32 @@
 <template name="show_visits">
     <div class="container">
-        <h3>Viewing a/an visit</h3>
+        <h3>{{tr "Viewing the visit"}}</h3>
         <div class="panel panel-default">
             <div class="panel-body">
-                    <p><strong>createdAt :</strong><br>
+                    <p><strong>{{tr "createdAt"}}</strong><br>
                     {{createdAt}}</p>
-                    <p><strong>patientName :</strong><br>
+                    <p><strong>{{tr "patientName"}}</strong><br>
                     {{patientLookup patientId}}</p>
-                    <p><strong>visitDateTime :</strong><br>
+                    <p><strong>{{tr "visitDateTime"}}</strong><br>
                     {{visitDateTime}}</p>
-                    <p><strong>lesion :</strong><br>
+                    <p><strong>{{tr "lesion"}}</strong><br>
                     {{lesion}}</p>
-                    <p><strong>symptoms :</strong><br>
+                    <p><strong>{{tr "symptoms"}}</strong><br>
                     {{symptoms}}</p>
-                    <p><strong>pathophysiology :</strong><br>
+                    <p><strong>{{tr "pathophysiology"}}</strong><br>
                     {{pathophysiology}}</p>
-                    <p><strong>anatomicalLocation :</strong><br>
+                    <p><strong>{{tr "anatomicalLocation"}}</strong><br>
                     {{anatomicalLocation}}</p>
-                    <p><strong>image :</strong><br>
+                    <p><strong>{{tr "image"}}</strong><br>
                     <div id="capturedImage">{{{placeImage image captionImage}}}{{{previousImage patientId visitDateTime captionLastVisit}}}</div></p>
-                    <p><strong>diagnosis :</strong><br>
+                    <p><strong>{{tr "diagnosis"}}</strong><br>
                     {{diagnosis}}</p>
-                    <p><strong>prescription :</strong><br>
+                    <p><strong>{{tr "prescription"}}</strong><br>
                     <pre>{{prescription}}</pre></p>
-                    <p><strong>status :</strong><br>
+                    <p><strong>{{tr "status"}}</strong><br>
                     {{status _id}}</p>
             </div>
         </div>
-        <a class="btn btn-default btn-xs" href="{{pathFor 'visits'}}">Back</a>
+        <a class="btn btn-default btn-xs" href="{{pathFor 'visits'}}">{{tr "Back"}}</a>
     </div>
 </template>

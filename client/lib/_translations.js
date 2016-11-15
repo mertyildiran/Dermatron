@@ -5269,7 +5269,47 @@ translations = {
         en_US: "Back",
         en_GB: "Back",
         tr_TR: "GERİ"
+    },
+    "Area": {
+        en_US: "Area",
+        en_GB: "Area",
+        tr_TR: "Alan"
+    },
+    "smaller": {
+        en_US: "smaller",
+        en_GB: "smaller",
+        tr_TR: "daha küçük"
+    },
+    "bigger": {
+        en_US: "bigger",
+        en_GB: "bigger",
+        tr_TR: "daha büyük"
+    },
+    "exactly equal": {
+        en_US: "exactly equal",
+        en_GB: "exactly equal",
+        tr_TR: "tam olarak eşit"
+    },
+    "diagnosis suggestions from": {
+        en_US: "diagnosis suggestions from",
+        en_GB: "diagnosis suggestions from",
+        tr_TR: "teşhis önerileri"
+    },
+    "Artifical Intelligence thinks the diagnosis is": {
+        en_US: "Artifical Intelligence thinks the diagnosis is",
+        en_GB: "Artifical Intelligence thinks the diagnosis is",
+        tr_TR: "Yapay Zeka teşhisin şu olduğunu düşünüyor:"
+    },
+    "Edit this visit": {
+        en_US: "Edit this visit",
+        en_GB: "Edit this visit",
+        tr_TR: "Bu ziyareti düzenle"
+    },
+    "Viewing the visit": {
+        en_US: "Viewing the visit",
+        en_GB: "Viewing the visit",
+        tr_TR: "Ziyaret görüntüleniyor"
     }
 }
 
-selectedLanguage = "tr_TR";
+selectedLanguage = "en_US";
