@@ -93,7 +93,30 @@ Template.form_visits.onRendered(function () {
     }
 
     $(document).ready(function() {
-      $('select').material_select();
+
+        function asc_sort(a, b){
+            return ($(b).text()) < ($(a).text()) ? 1 : -1;
+        }
+
+        // decending sort
+        function dec_sort(a, b){
+            return ($(b).text()) > ($(a).text()) ? 1 : -1;
+        }
+
+        $('ul').each(function( index ) {
+            if ( $(this)[0].id.startsWith("select-options") ) {
+                $(this).find('li').sort(asc_sort).appendTo( $(this) );
+            }
+        });
+
+        $('select').each(function( index ) {
+            if ( $(this)[0].id.startsWith("input_") ) {
+                $(this).find('option').sort(asc_sort).appendTo( $(this) );
+            }
+        });
+
+        $('select').material_select();
+        
     });
 
     if (Router.current().params._id) {
