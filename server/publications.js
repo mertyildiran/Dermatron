@@ -13,3 +13,6 @@ Meteor.publish('visits', function(searchText) {
     }
     return visits.find( { $or: [ {createdAt: { $regex: searchText }}, {patientId: { $regex: searchText }}, {visitDateTime: { $regex: searchText }}, {lesion: { $regex: searchText }}, {symptoms: { $regex: searchText }}, {pathophysiology: { $regex: searchText }}, {anatomicalLocation: { $regex: searchText }}, {diagnosis: { $regex: searchText }}, {status: { $regex: searchText }},  ] }, {} );
 });
+Meteor.publish('settings', function() {
+    return settings.find();
+});

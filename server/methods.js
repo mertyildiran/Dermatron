@@ -48,4 +48,8 @@ Meteor.methods({
         return result;
     },
 
+    update_settings: function(id, object_settings) {
+        settings.update({_id: id}, {$set: object_settings });
+    }
+
 });

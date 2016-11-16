@@ -202,7 +202,7 @@ translations = {
     clear: {
         en_US: "Clear",
         en_GB: "Clear",
-        tr_TR: "Temizle"
+        tr_TR: "TEMİZLE"
     },
     close: {
         en_US: "Close",
@@ -5464,7 +5464,12 @@ translations = {
         en_US: "http://www.accessdata.fda.gov/scripts/cder/drugsatfda/index.cfm",
         en_GB: "http://www.accessdata.fda.gov/scripts/cder/drugsatfda/index.cfm",
         tr_TR: "http://www.ilacprospektusu.com/ara/ilac"
+    },
+    "Language": {
+        en_US: "Language",
+        en_GB: "Language",
+        tr_TR: "Dil"
     }
 }
 
-selectedLanguage = "en_US";
+selectedLanguage = "";

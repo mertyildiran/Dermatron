@@ -9,3 +9,5 @@ searchTextVisits.set('');
 Tracker.autorun(function() {
     Meteor.subscribe('visits', searchTextVisits.get());
 });
+
+Meteor.subscribe('settings');

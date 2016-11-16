@@ -1,0 +1,20 @@
+<template name="settings">
+    <div class="container">
+        <h3>{{tr "Settings"}}</h3>
+        <br>
+        <form>
+            <div class="form-group">
+                <label for="input_language">{{tr "Language"}}</label>
+                <select class="form-control" id="input_language">
+                    <option value="{{language}}" selected>{{codeToLanguage language}}</option>
+                    <option value="en_US">{{codeToLanguage "en_US"}}</option>
+                    <option value="en_GB">{{codeToLanguage "en_GB"}}</option>
+                    <option value="tr_TR">{{codeToLanguage "tr_TR"}}</option>
+                </select>
+            </div>
+        </form>
+        <br><br><br><br>
+        <button type="button" class="btn btn-primary btn-xs" id="save">{{tr "Save"}}</button>
+
+    </div>
+</template>
