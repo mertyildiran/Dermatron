@@ -25,6 +25,8 @@ Template.settings.events ({
 
         // the method returns the new object id after saving it into the db
         Meteor.call('update_settings', this._id, updated_settings);
+        load_constants(updated_settings.language);
+        ClockPicker.DEFAULTS.donetext = translations.clockDone[updated_settings.language];
         Router.go('index');
 
     }

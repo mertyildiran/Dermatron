@@ -10,4 +10,7 @@ Tracker.autorun(function() {
     Meteor.subscribe('visits', searchTextVisits.get());
 });
 
-Meteor.subscribe('settings');
+Meteor.subscribe('settings', function() {
+    load_constants(settings.findOne().language);
+    ClockPicker.DEFAULTS.donetext = translations.clockDone[settings.findOne().language];
+});

@@ -1,3 +1,4 @@
+load_constants = function(selectedLanguage) {
 FORM_VISITS_GENDER = 'male';
 
 LESIONS_DICT = {};
@@ -1735,3 +1736,4 @@ DIAGNOSES_DICT_SWAP["110233"] = translations["X-Linked Ichthyosis"][selectedLang
 DIAGNOSES_DICT_SWAP["110235"] = translations["Yellow Nail Syndrome"][selectedLanguage];
 DIAGNOSES_DICT_SWAP["110237"] = translations["Zosteriform Nevus"][selectedLanguage];
 DIAGNOSES_DICT_SWAP["110238"] = translations["Zygomycosis"][selectedLanguage];
+}
