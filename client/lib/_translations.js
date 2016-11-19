@@ -1487,7 +1487,7 @@ translations = {
         en_GB: "Abdomen",
         tr_TR: "Karın"
     },
-    "Back": {
+    "trunkBack": {
         en_US: "Back",
         en_GB: "Back",
         tr_TR: "Sırt"
@@ -5469,6 +5469,21 @@ translations = {
         en_US: "Language",
         en_GB: "Language",
         tr_TR: "Dil"
+    },
+    day: {
+        en_US: "Day",
+        en_GB: "Day",
+        tr_TR: "Gün"
+    },
+    week: {
+        en_US: "Week",
+        en_GB: "Week",
+        tr_TR: "Hafta"
+    },
+    month: {
+        en_US: "Month",
+        en_GB: "Month",
+        tr_TR: "Ay"
     }
 }
 

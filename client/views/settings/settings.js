@@ -27,6 +27,16 @@ Template.settings.events ({
         Meteor.call('update_settings', this._id, updated_settings);
         load_constants(updated_settings.language);
         ClockPicker.DEFAULTS.donetext = translations.clockDone[updated_settings.language];
+
+        scheduler.locale.date.month_full = translations.monthsFull[updated_settings.language];
+        scheduler.locale.date.month_short = translations.monthsShort[updated_settings.language];
+        scheduler.locale.date.day_full = translations.weekdaysFull[updated_settings.language];
+        scheduler.locale.date.day_short = translations.weekdaysShort[updated_settings.language];
+        scheduler.locale.labels.dhx_cal_today_button = translations.today[updated_settings.language];
+        scheduler.locale.labels.day_tab = translations.day[updated_settings.language];
+        scheduler.locale.labels.week_tab = translations.week[updated_settings.language];
+        scheduler.locale.labels.month_tab = translations.month[updated_settings.language];
+
         Router.go('index');
 
     }

@@ -116,7 +116,7 @@ Template.form_visits.onRendered(function () {
         });
 
         $('select').material_select();
-        
+
     });
 
     if (Router.current().params._id) {
@@ -217,7 +217,8 @@ Template.form_visits.events ({
     'click #captureButton': function () {
         var cameraOptions = {
           width: 800,
-          height: 600
+          height: 600,
+          quality: 100,
         };
 
         MeteorCamera.getPicture(cameraOptions, function (error, data) {
