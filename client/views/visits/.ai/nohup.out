@@ -1,0 +1,3290 @@
+
+Number of classes: 725
+Number of samples: 8972
+
+Iteration limit: 2550.4313360684696
+
+Learning rate: 0.0003920905400815518
+Tue Nov 08 2016 03:14:37 GMT+0000 (UTC)
+iterations: 0 training error: 0.06387079866976388
+iterations: 1 training error: 0.010786434947407952
+iterations: 2 training error: 0.006274439405889102
+iterations: 3 training error: 0.004656487247020771
+iterations: 4 training error: 0.0038281385158442684
+iterations: 5 training error: 0.0033267886671125074
+iterations: 6 training error: 0.0029916720464430308
+iterations: 7 training error: 0.002752346372946774
+iterations: 8 training error: 0.002573138658314536
+iterations: 9 training error: 0.002434079637187561
+iterations: 10 training error: 0.002323133592842221
+iterations: 11 training error: 0.0022326217348457304
+iterations: 12 training error: 0.0021574182429801945
+iterations: 13 training error: 0.002093972941321463
+iterations: 14 training error: 0.0020397504067898803
+iterations: 15 training error: 0.001992892411559303
+iterations: 16 training error: 0.0019520065083159387
+iterations: 17 training error: 0.0019160290431693913
+iterations: 18 training error: 0.001884133753552341
+iterations: 19 training error: 0.0018556692027328903
+iterations: 20 training error: 0.0018301149789248282
+iterations: 21 training error: 0.0018070504131573822
+iterations: 22 training error: 0.0017861318361821197
+iterations: 23 training error: 0.0017670757765537643
+iterations: 24 training error: 0.0017496463668877776
+iterations: 25 training error: 0.0017336457794000762
+iterations: 26 training error: 0.0017189068744162873
+iterations: 27 training error: 0.0017052874873944737
+iterations: 28 training error: 0.0016926659441809638
+iterations: 29 training error: 0.001680937507467281
+iterations: 30 training error: 0.0016700115366942634
+iterations: 31 training error: 0.0016598091999093987
+iterations: 32 training error: 0.0016502616165130662
+iterations: 33 training error: 0.0016413083392270312
+iterations: 34 training error: 0.0016328961052269034
+iterations: 35 training error: 0.0016249778024268453
+iterations: 36 training error: 0.0016175116089344875
+iterations: 37 training error: 0.0016104602727935167
+iterations: 38 training error: 0.0016037905060717567
+iterations: 39 training error: 0.0015974724726891738
+iterations: 40 training error: 0.001591479353513209
+iterations: 41 training error: 0.0015857869754727963
+iterations: 42 training error: 0.0015803734939742724
+iterations: 43 training error: 0.0015752191199025808
+iterations: 44 training error: 0.0015703058840817147
+iterations: 45 training error: 0.0015656174333395269
+iterations: 46 training error: 0.0015611388533442127
+iterations: 47 training error: 0.0015568565142051747
+iterations: 48 training error: 0.0015527579355018473
+iterations: 49 training error: 0.0015488316679505717
+iterations: 50 training error: 0.0015450671893680358
+iterations: 51 training error: 0.001541454812958491
+iterations: 52 training error: 0.0015379856062569005
+iterations: 53 training error: 0.0015346513193128003
+iterations: 54 training error: 0.0015314443209104181
+iterations: 55 training error: 0.0015283575417964056
+iterations: 56 training error: 0.001525384424034453
+iterations: 57 training error: 0.0015225188757296464
+iterations: 58 training error: 0.0015197552304712207
+iterations: 59 training error: 0.0015170882109301813
+iterations: 60 training error: 0.0015145128961243442
+iterations: 61 training error: 0.0015120246919275327
+iterations: 62 training error: 0.001509619304454167
+iterations: 63 training error: 0.0015072927159982053
+iterations: 64 training error: 0.0015050411632448377
+iterations: 65 training error: 0.0015028611175091505
+iterations: 66 training error: 0.0015007492667851062
+iterations: 67 training error: 0.0014987024994146452
+iterations: 68 training error: 0.0014967178892090725
+iterations: 69 training error: 0.0014947926818743974
+iterations: 70 training error: 0.0014929242826095407
+iterations: 71 training error: 0.0014911102447607931
+iterations: 72 training error: 0.0014893482594294028
+iterations: 73 training error: 0.00148763614594018
+iterations: 74 training error: 0.0014859718430891224
+iterations: 75 training error: 0.0014843534010969715
+iterations: 76 training error: 0.0014827789742031137
+iterations: 77 training error: 0.0014812468138413776
+iterations: 78 training error: 0.0014797552623449805
+iterations: 79 training error: 0.001478302747133661
+iterations: 80 training error: 0.0014768877753402326
+iterations: 81 training error: 0.0014755089288385705
+iterations: 82 training error: 0.0014741648596383712
+iterations: 83 training error: 0.0014728542856157062
+iterations: 84 training error: 0.0014715759865509426
+iterations: 85 training error: 0.0014703288004488245
+iterations: 86 training error: 0.0014691116201174187
+iterations: 87 training error: 0.0014679233899848978
+iterations: 88 training error: 0.0014667631031354135
+iterations: 89 training error: 0.0014656297985462564
+iterations: 90 training error: 0.0014645225585110068
+iterations: 91 training error: 0.0014634405062338121
+iterations: 92 training error: 0.0014623828035821187
+iterations: 93 training error: 0.0014613486489855221
+iterations: 94 training error: 0.0014603372754698927
+iterations: 95 training error: 0.0014593479488167556
+iterations: 96 training error: 0.0014583799658387507
+iterations: 97 training error: 0.0014574326527626036
+iterations: 98 training error: 0.0014565053637120276
+iterations: 99 training error: 0.0014555974792833843
+iterations: 100 training error: 0.0014547084052074636
+iterations: 101 training error: 0.0014538375710915878
+iterations: 102 training error: 0.0014529844292362499
+iterations: 103 training error: 0.0014521484535213495
+iterations: 104 training error: 0.001451329138357251
+iterations: 105 training error: 0.001450525997696336
+iterations: 106 training error: 0.0014497385641008462
+iterations: 107 training error: 0.0014489663878637451
+iterations: 108 training error: 0.0014482090361785873
+iterations: 109 training error: 0.0014474660923556493
+iterations: 110 training error: 0.0014467371550811064
+iterations: 111 training error: 0.001446021837716713
+iterations: 112 training error: 0.0014453197676372288
+iterations: 113 training error: 0.0014446305856034341
+iterations: 114 training error: 0.0014439539451683748
+iterations: 115 training error: 0.0014432895121149016
+iterations: 116 training error: 0.0014426369639225763
+iterations: 117 training error: 0.0014419959892621103
+iterations: 118 training error: 0.0014413662875158127
+iterations: 119 training error: 0.0014407475683223556
+iterations: 120 training error: 0.001440139551144625
+iterations: 121 training error: 0.0014395419648590825
+iterations: 122 training error: 0.0014389545473655308
+iterations: 123 training error: 0.0014383770452161678
+iterations: 124 training error: 0.001437809213262651
+iterations: 125 training error: 0.0014372508143203184
+iterations: 126 training error: 0.0014367016188485523
+iterations: 127 training error: 0.0014361614046463406
+iterations: 128 training error: 0.001435629956562246
+iterations: 129 training error: 0.0014351070662180676
+iterations: 130 training error: 0.0014345925317452398
+iterations: 131 training error: 0.0014340861575335496
+iterations: 132 training error: 0.0014335877539913087
+iterations: 133 training error: 0.0014330971373164218
+iterations: 134 training error: 0.0014326141292779146
+iterations: 135 training error: 0.0014321385570071
+iterations: 136 training error: 0.0014316702527982143
+iterations: 137 training error: 0.0014312090539177118
+iterations: 138 training error: 0.001430754802422053
+iterations: 139 training error: 0.0014303073449833527
+iterations: 140 training error: 0.0014298665327226279
+iterations: 141 training error: 0.0014294322210501168
+iterations: 142 training error: 0.0014290042695125171
+iterations: 143 training error: 0.0014285825416466323
+iterations: 144 training error: 0.0014281669048392248
+iterations: 145 training error: 0.0014277572301926121
+iterations: 146 training error: 0.0014273533923959685
+iterations: 147 training error: 0.0014269552696018724
+iterations: 148 training error: 0.001426562743307872
+iterations: 149 training error: 0.0014261756982429316
+iterations: 150 training error: 0.0014257940222584399
+iterations: 151 training error: 0.001425417606223576
+iterations: 152 training error: 0.001425046343924812
+iterations: 153 training error: 0.0014246801319695089
+iterations: 154 training error: 0.0014243188696931683
+iterations: 155 training error: 0.0014239624590704028
+iterations: 156 training error: 0.0014236108046293415
+iterations: 157 training error: 0.001423263813369286
+iterations: 158 training error: 0.0014229213946816007
+iterations: 159 training error: 0.0014225834602736016
+iterations: 160 training error: 0.0014222499240952578
+iterations: 161 training error: 0.0014219207022687112
+iterations: 162 training error: 0.0014215957130204696
+iterations: 163 training error: 0.0014212748766160295
+iterations: 164 training error: 0.0014209581152969434
+iterations: 165 training error: 0.0014206453532202574
+iterations: 166 training error: 0.0014203365164000838
+iterations: 167 training error: 0.0014200315326513228
+iterations: 168 training error: 0.001419730331535423
+iterations: 169 training error: 0.0014194328443080636
+iterations: 170 training error: 0.001419139003868745
+iterations: 171 training error: 0.0014188487447120788
+iterations: 172 training error: 0.0014185620028808956
+iterations: 173 training error: 0.001418278715920963
+iterations: 174 training error: 0.001417998822837205
+iterations: 175 training error: 0.0014177222640515362
+iterations: 176 training error: 0.001417448981362138
+iterations: 177 training error: 0.0014171789179040232
+iterations: 178 training error: 0.0014169120181111042
+iterations: 179 training error: 0.0014166482276794065
+iterations: 180 training error: 0.0014163874935316043
+iterations: 181 training error: 0.00141612976378269
+iterations: 182 training error: 0.0014158749877068515
+iterations: 183 training error: 0.0014156231157053491
+iterations: 184 training error: 0.0014153740992755607
+iterations: 185 training error: 0.001415127890980934
+iterations: 186 training error: 0.0014148844444220603
+iterations: 187 training error: 0.0014146437142084835
+iterations: 188 training error: 0.0014144056559316255
+iterations: 189 training error: 0.0014141702261384048
+iterations: 190 training error: 0.0014139373823058665
+iterations: 191 training error: 0.0014137070828164385
+iterations: 192 training error: 0.0014134792869341089
+iterations: 193 training error: 0.001413253954781303
+iterations: 194 training error: 0.0014130310473164608
+iterations: 195 training error: 0.0014128105263123295
+iterations: 196 training error: 0.0014125923543349284
+iterations: 197 training error: 0.0014123764947231979
+iterations: 198 training error: 0.0014121629115691537
+iterations: 199 training error: 0.0014119515696988335
+iterations: 200 training error: 0.0014117424346535945
+iterations: 201 training error: 0.0014115354726722076
+iterations: 202 training error: 0.001411330650673288
+iterations: 203 training error: 0.0014111279362383788
+iterations: 204 training error: 0.0014109272975955044
+iterations: 205 training error: 0.001410728703603148
+iterations: 206 training error: 0.0014105321237348452
+iterations: 207 training error: 0.0014103375280640304
+iterations: 208 training error: 0.0014101448872495042
+iterations: 209 training error: 0.0014099541725212444
+iterations: 210 training error: 0.0014097653556665974
+iterations: 211 training error: 0.0014095784090169456
+iterations: 212 training error: 0.0014093933054346685
+iterations: 213 training error: 0.001409210018300525
+iterations: 214 training error: 0.001409028521501434
+iterations: 215 training error: 0.0014088487894184994
+iterations: 216 training error: 0.0014086707969154036
+iterations: 217 training error: 0.001408494519327238
+iterations: 218 training error: 0.0014083199324494355
+iterations: 219 training error: 0.0014081470125272345
+iterations: 220 training error: 0.0014079757362452235
+iterations: 221 training error: 0.0014078060807173533
+iterations: 222 training error: 0.0014076380234770854
+iterations: 223 training error: 0.0014074715424678777
+iterations: 224 training error: 0.0014073066160339724
+iterations: 225 training error: 0.001407143222911247
+iterations: 226 training error: 0.0014069813422185517
+iterations: 227 training error: 0.0014068209534491328
+iterations: 228 training error: 0.00140666203646227
+iterations: 229 training error: 0.001406504571475249
+iterations: 230 training error: 0.0014063485390554235
+iterations: 231 training error: 0.001406193920112577
+iterations: 232 training error: 0.001406040695891402
+iterations: 233 training error: 0.0014058888479642584
+iterations: 234 training error: 0.0014057383582240606
+iterations: 235 training error: 0.001405589208877389
+iterations: 236 training error: 0.0014054413824376969
+iterations: 237 training error: 0.0014052948617188387
+iterations: 238 training error: 0.0014051496298286218
+iterations: 239 training error: 0.0014050056701625656
+iterations: 240 training error: 0.001404862966397862
+iterations: 241 training error: 0.0014047215024874259
+iterations: 242 training error: 0.0014045812626541589
+iterations: 243 training error: 0.0014044422313852795
+iterations: 244 training error: 0.0014043043934268361
+iterations: 245 training error: 0.0014041677337784276
+iterations: 246 training error: 0.001404032237687869
+iterations: 247 training error: 0.0014038978906461812
+iterations: 248 training error: 0.0014037646783825765
+iterations: 249 training error: 0.001403632586859673
+iterations: 250 training error: 0.001403501602268684
+iterations: 251 training error: 0.0014033717110248562
+iterations: 252 training error: 0.0014032428997629402
+iterations: 253 training error: 0.0014031151553328296
+iterations: 254 training error: 0.0014029884647952162
+iterations: 255 training error: 0.001402862815417448
+iterations: 256 training error: 0.0014027381946694246
+iterations: 257 training error: 0.001402614590219577
+iterations: 258 training error: 0.0014024919899310055
+iterations: 259 training error: 0.0014023703818576737
+iterations: 260 training error: 0.0014022497542406107
+iterations: 261 training error: 0.0014021300955044105
+iterations: 262 training error: 0.0014020113942535516
+iterations: 263 training error: 0.0014018936392690337
+iterations: 264 training error: 0.0014017768195049188
+iterations: 265 training error: 0.001401660924085056
+iterations: 266 training error: 0.0014015459422998342
+iterations: 267 training error: 0.0014014318636030145
+iterations: 268 training error: 0.0014013186776086735
+iterations: 269 training error: 0.0014012063740881427
+iterations: 270 training error: 0.0014010949429670706
+iterations: 271 training error: 0.0014009843743225739
+iterations: 272 training error: 0.0014008746583803258
+iterations: 273 training error: 0.0014007657855119096
+iterations: 274 training error: 0.0014006577462320167
+iterations: 275 training error: 0.0014005505311958852
+iterations: 276 training error: 0.0014004441311966948
+iterations: 277 training error: 0.0014003385371629921
+iterations: 278 training error: 0.0014002337401563202
+iterations: 279 training error: 0.0014001297313687335
+iterations: 280 training error: 0.001400026502120437
+iterations: 281 training error: 0.001399924043857488
+iterations: 282 training error: 0.0013998223481495671
+iterations: 283 training error: 0.001399721406687699
+iterations: 284 training error: 0.0013996212112821374
+iterations: 285 training error: 0.001399521753860208
+iterations: 286 training error: 0.0013994230264642686
+iterations: 287 training error: 0.0013993250212496601
+iterations: 288 training error: 0.0013992277304827048
+iterations: 289 training error: 0.0013991311465387875
+iterations: 290 training error: 0.0013990352619004341
+iterations: 291 training error: 0.0013989400691554344
+iterations: 292 training error: 0.0013988455609950173
+iterations: 293 training error: 0.0013987517302120932
+iterations: 294 training error: 0.0013986585696994845
+iterations: 295 training error: 0.001398566072448154
+iterations: 296 training error: 0.0013984742315456128
+iterations: 297 training error: 0.001398383040174219
+iterations: 298 training error: 0.0013982924916095699
+iterations: 299 training error: 0.0013982025792189082
+iterations: 300 training error: 0.0013981132964596412
+iterations: 301 training error: 0.001398024636877735
+iterations: 302 training error: 0.0013979365941062668
+iterations: 303 training error: 0.0013978491618639604
+iterations: 304 training error: 0.0013977623339537862
+iterations: 305 training error: 0.0013976761042615161
+iterations: 306 training error: 0.0013975904667543762
+iterations: 307 training error: 0.001397505415479716
+iterations: 308 training error: 0.001397420944563633
+iterations: 309 training error: 0.0013973370482097448
+iterations: 310 training error: 0.0013972537206978896
+iterations: 311 training error: 0.0013971709563828838
+iterations: 312 training error: 0.0013970887496933184
+iterations: 313 training error: 0.0013970070951303496
+iterations: 314 training error: 0.0013969259872665105
+iterations: 315 training error: 0.001396845420744603
+iterations: 316 training error: 0.0013967653902765451
+iterations: 317 training error: 0.0013966858906422847
+iterations: 318 training error: 0.0013966069166886572
+iterations: 319 training error: 0.0013965284633284084
+iterations: 320 training error: 0.0013964505255390776
+iterations: 321 training error: 0.0013963730983620206
+iterations: 322 training error: 0.0013962961769013597
+iterations: 323 training error: 0.0013962197563230474
+iterations: 324 training error: 0.001396143831853879
+iterations: 325 training error: 0.00139606839878052
+iterations: 326 training error: 0.0013959934524486154
+iterations: 327 training error: 0.0013959189882618306
+iterations: 328 training error: 0.0013958450016810012
+iterations: 329 training error: 0.0013957714882232126
+iterations: 330 training error: 0.001395698443460949
+iterations: 331 training error: 0.001395625863021264
+iterations: 332 training error: 0.0013955537425849153
+iterations: 333 training error: 0.0013954820778855396
+iterations: 334 training error: 0.0013954108647089296
+iterations: 335 training error: 0.0013953400988921253
+iterations: 336 training error: 0.0013952697763227311
+iterations: 337 training error: 0.0013951998929381231
+iterations: 338 training error: 0.0013951304447246836
+iterations: 339 training error: 0.0013950614277171282
+iterations: 340 training error: 0.001394992837997685
+iterations: 341 training error: 0.001394924671695496
+iterations: 342 training error: 0.0013948569249858376
+iterations: 343 training error: 0.0013947895940895083
+iterations: 344 training error: 0.0013947226752720789
+iterations: 345 training error: 0.0013946561648433234
+iterations: 346 training error: 0.0013945900591564857
+iterations: 347 training error: 0.0013945243546076857
+iterations: 348 training error: 0.0013944590476353265
+iterations: 349 training error: 0.0013943941347194012
+iterations: 350 training error: 0.001394329612380968
+iterations: 351 training error: 0.001394265477181486
+iterations: 352 training error: 0.001394201725722307
+iterations: 353 training error: 0.0013941383546440449
+iterations: 354 training error: 0.0013940753606260148
+iterations: 355 training error: 0.0013940127403857345
+iterations: 356 training error: 0.001393950490678315
+iterations: 357 training error: 0.0013938886082959625
+iterations: 358 training error: 0.0013938270900674449
+iterations: 359 training error: 0.0013937659328575702
+iterations: 360 training error: 0.001393705133566687
+iterations: 361 training error: 0.0013936446891301855
+iterations: 362 training error: 0.0013935845965179798
+iterations: 363 training error: 0.0013935248527340751
+iterations: 364 training error: 0.0013934654548160537
+iterations: 365 training error: 0.001393406399834595
+iterations: 366 training error: 0.0013933476848930891
+iterations: 367 training error: 0.0013932893071270933
+iterations: 368 training error: 0.0013932312637039447
+iterations: 369 training error: 0.0013931735518223154
+iterations: 370 training error: 0.0013931161687117655
+iterations: 371 training error: 0.001393059111632346
+iterations: 372 training error: 0.0013930023778741657
+iterations: 373 training error: 0.0013929459647569681
+iterations: 374 training error: 0.0013928898696297684
+iterations: 375 training error: 0.0013928340898704348
+iterations: 376 training error: 0.0013927786228852717
+iterations: 377 training error: 0.0013927234661086957
+iterations: 378 training error: 0.0013926686170028313
+iterations: 379 training error: 0.001392614073057094
+iterations: 380 training error: 0.0013925598317879148
+iterations: 381 training error: 0.0013925058907383234
+iterations: 382 training error: 0.0013924522474775601
+iterations: 383 training error: 0.0013923988996008545
+iterations: 384 training error: 0.0013923458447289258
+iterations: 385 training error: 0.0013922930805077552
+iterations: 386 training error: 0.0013922406046082115
+iterations: 387 training error: 0.0013921884147257597
+iterations: 388 training error: 0.0013921365085800784
+iterations: 389 training error: 0.0013920848839147903
+iterations: 390 training error: 0.0013920335384971425
+iterations: 391 training error: 0.001391982470117681
+iterations: 392 training error: 0.0013919316765900048
+iterations: 393 training error: 0.001391881155750383
+iterations: 394 training error: 0.0013918309054575017
+iterations: 395 training error: 0.0013917809235922463
+iterations: 396 training error: 0.001391731208057267
+iterations: 397 training error: 0.0013916817567768587
+iterations: 398 training error: 0.0013916325676965621
+iterations: 399 training error: 0.0013915836387829702
+iterations: 400 training error: 0.0013915349680234123
+iterations: 401 training error: 0.0013914865534257563
+iterations: 402 training error: 0.0013914383930180298
+iterations: 403 training error: 0.0013913904848483274
+iterations: 404 training error: 0.0013913428269844133
+iterations: 405 training error: 0.0013912954175135665
+iterations: 406 training error: 0.0013912482545422975
+iterations: 407 training error: 0.0013912013361960993
+iterations: 408 training error: 0.001391154660619257
+iterations: 409 training error: 0.001391108225974574
+iterations: 410 training error: 0.001391062030443143
+iterations: 411 training error: 0.001391016072224139
+iterations: 412 training error: 0.0013909703495346064
+iterations: 413 training error: 0.001390924860609202
+iterations: 414 training error: 0.0013908796036999783
+iterations: 415 training error: 0.0013908345770762582
+iterations: 416 training error: 0.0013907897790242927
+iterations: 417 training error: 0.0013907452078471365
+iterations: 418 training error: 0.001390700861864449
+iterations: 419 training error: 0.0013906567394122412
+iterations: 420 training error: 0.0013906128388427256
+iterations: 421 training error: 0.0013905691585241137
+iterations: 422 training error: 0.0013905256968403691
+iterations: 423 training error: 0.0013904824521911185
+iterations: 424 training error: 0.0013904394229913614
+iterations: 425 training error: 0.0013903966076713576
+iterations: 426 training error: 0.0013903540046764163
+iterations: 427 training error: 0.0013903116124667175
+iterations: 428 training error: 0.001390269429517132
+iterations: 429 training error: 0.0013902274543170791
+iterations: 430 training error: 0.0013901856853702895
+iterations: 431 training error: 0.0013901441211947323
+iterations: 432 training error: 0.001390102760322344
+iterations: 433 training error: 0.0013900616012989505
+iterations: 434 training error: 0.0013900206426840274
+iterations: 435 training error: 0.001389979883050625
+iterations: 436 training error: 0.001389939320985137
+iterations: 437 training error: 0.0013898989550871817
+iterations: 438 training error: 0.0013898587839694413
+iterations: 439 training error: 0.0013898188062575123
+iterations: 440 training error: 0.0013897790205897658
+iterations: 441 training error: 0.001389739425617163
+iterations: 442 training error: 0.0013897000200031617
+iterations: 443 training error: 0.0013896608024235482
+iterations: 444 training error: 0.0013896217715662718
+iterations: 445 training error: 0.0013895829261313692
+iterations: 446 training error: 0.0013895442648307519
+iterations: 447 training error: 0.0013895057863881311
+iterations: 448 training error: 0.0013894674895388343
+iterations: 449 training error: 0.0013894293730297444
+iterations: 450 training error: 0.0013893914356190955
+iterations: 451 training error: 0.0013893536760763692
+iterations: 452 training error: 0.0013893160931821853
+iterations: 453 training error: 0.0013892786857281683
+iterations: 454 training error: 0.001389241452516818
+iterations: 455 training error: 0.0013892043923613765
+iterations: 456 training error: 0.0013891675040857549
+iterations: 457 training error: 0.0013891307865243699
+iterations: 458 training error: 0.0013890942385219995
+iterations: 459 training error: 0.001389057858933787
+iterations: 460 training error: 0.0013890216466249969
+iterations: 461 training error: 0.0013889856004709411
+iterations: 462 training error: 0.0013889497193569475
+iterations: 463 training error: 0.0013889140021781236
+iterations: 464 training error: 0.0013888784478393295
+iterations: 465 training error: 0.001388843055255081
+iterations: 466 training error: 0.0013888078233493817
+iterations: 467 training error: 0.0013887727510556499
+iterations: 468 training error: 0.0013887378373166558
+iterations: 469 training error: 0.0013887030810843654
+iterations: 470 training error: 0.0013886684813198488
+iterations: 471 training error: 0.0013886340369932185
+iterations: 472 training error: 0.0013885997470835063
+iterations: 473 training error: 0.0013885656105785313
+iterations: 474 training error: 0.001388531626474904
+iterations: 475 training error: 0.0013884977937778284
+iterations: 476 training error: 0.0013884641115010532
+iterations: 477 training error: 0.0013884305786668193
+iterations: 478 training error: 0.0013883971943056631
+iterations: 479 training error: 0.0013883639574564786
+iterations: 480 training error: 0.0013883308671663011
+iterations: 481 training error: 0.0013882979224902623
+iterations: 482 training error: 0.0013882651224915196
+iterations: 483 training error: 0.001388232466241179
+iterations: 484 training error: 0.0013881999528181652
+iterations: 485 training error: 0.001388167581309191
+iterations: 486 training error: 0.0013881353508086358
+iterations: 487 training error: 0.0013881032604185187
+iterations: 488 training error: 0.001388071309248329
+iterations: 489 training error: 0.0013880394964150577
+iterations: 490 training error: 0.0013880078210430304
+iterations: 491 training error: 0.0013879762822638822
+iterations: 492 training error: 0.0013879448792164669
+iterations: 493 training error: 0.001387913611046759
+iterations: 494 training error: 0.0013878824769078617
+iterations: 495 training error: 0.001387851475959806
+iterations: 496 training error: 0.0013878206073695866
+iterations: 497 training error: 0.001387789870311051
+iterations: 498 training error: 0.0013877592639648297
+iterations: 499 training error: 0.00138772878751826
+iterations: 500 training error: 0.0013876984401653488
+iterations: 501 training error: 0.0013876682211066732
+iterations: 502 training error: 0.0013876381295493036
+iterations: 503 training error: 0.0013876081647068033
+iterations: 504 training error: 0.0013875783257990622
+iterations: 505 training error: 0.0013875486120523408
+iterations: 506 training error: 0.0013875190226991226
+iterations: 507 training error: 0.001387489556978117
+iterations: 508 training error: 0.001387460214134122
+iterations: 509 training error: 0.0013874309934180284
+iterations: 510 training error: 0.0013874018940867323
+iterations: 511 training error: 0.0013873729154030864
+iterations: 512 training error: 0.0013873440566358343
+iterations: 513 training error: 0.0013873153170595256
+iterations: 514 training error: 0.0013872866959545236
+iterations: 515 training error: 0.0013872581926068683
+iterations: 516 training error: 0.0013872298063082964
+iterations: 517 training error: 0.0013872015363561325
+iterations: 518 training error: 0.0013871733820532482
+iterations: 519 training error: 0.001387145342708029
+iterations: 520 training error: 0.0013871174176342672
+iterations: 521 training error: 0.0013870896061511893
+iterations: 522 training error: 0.001387061907583326
+iterations: 523 training error: 0.001387034321260503
+iterations: 524 training error: 0.0013870068465177783
+iterations: 525 training error: 0.0013869794826954008
+iterations: 526 training error: 0.0013869522291387435
+iterations: 527 training error: 0.0013869250851982473
+iterations: 528 training error: 0.0013868980502294234
+iterations: 529 training error: 0.0013868711235927604
+iterations: 530 training error: 0.001386844304653636
+iterations: 531 training error: 0.0013868175927823783
+iterations: 532 training error: 0.001386790987354149
+iterations: 533 training error: 0.00138676448774888
+iterations: 534 training error: 0.0013867380933512883
+iterations: 535 training error: 0.0013867118035507657
+iterations: 536 training error: 0.0013866856177413844
+iterations: 537 training error: 0.0013866595353218443
+iterations: 538 training error: 0.0013866335556953946
+iterations: 539 training error: 0.0013866076782698396
+iterations: 540 training error: 0.0013865819024574601
+iterations: 541 training error: 0.0013865562276749743
+iterations: 542 training error: 0.0013865306533435296
+iterations: 543 training error: 0.0013865051788886302
+iterations: 544 training error: 0.0013864798037400731
+iterations: 545 training error: 0.0013864545273319863
+iterations: 546 training error: 0.0013864293491026947
+iterations: 547 training error: 0.0013864042684947659
+iterations: 548 training error: 0.0013863792849549096
+iterations: 549 training error: 0.0013863543979339458
+iterations: 550 training error: 0.0013863296068868203
+iterations: 551 training error: 0.0013863049112725144
+iterations: 552 training error: 0.0013862803105540032
+iterations: 553 training error: 0.0013862558041982471
+iterations: 554 training error: 0.0013862313916761675
+iterations: 555 training error: 0.0013862070724625455
+iterations: 556 training error: 0.0013861828460360697
+iterations: 557 training error: 0.0013861587118792495
+iterations: 558 training error: 0.0013861346694783656
+iterations: 559 training error: 0.0013861107183235147
+iterations: 560 training error: 0.0013860868579084536
+iterations: 561 training error: 0.0013860630877306948
+iterations: 562 training error: 0.0013860394072913922
+iterations: 563 training error: 0.0013860158160953024
+iterations: 564 training error: 0.0013859923136508166
+iterations: 565 training error: 0.0013859688994698393
+iterations: 566 training error: 0.0013859455730678664
+iterations: 567 training error: 0.0013859223339638535
+iterations: 568 training error: 0.0013858991816802192
+iterations: 569 training error: 0.0013858761157428585
+iterations: 570 training error: 0.0013858531356810277
+iterations: 571 training error: 0.001385830241027389
+iterations: 572 training error: 0.0013858074313179334
+iterations: 573 training error: 0.0013857847060919828
+iterations: 574 training error: 0.0013857620648921275
+iterations: 575 training error: 0.0013857395072642352
+iterations: 576 training error: 0.0013857170327573928
+iterations: 577 training error: 0.001385694640923878
+iterations: 578 training error: 0.001385672331319154
+iterations: 579 training error: 0.001385650103501825
+iterations: 580 training error: 0.0013856279570336376
+iterations: 581 training error: 0.0013856058914793684
+iterations: 582 training error: 0.0013855839064069084
+iterations: 583 training error: 0.0013855620013871626
+iterations: 584 training error: 0.0013855401759940457
+iterations: 585 training error: 0.001385518429804478
+iterations: 586 training error: 0.0013854967623982888
+iterations: 587 training error: 0.001385475173358307
+iterations: 588 training error: 0.0013854536622701983
+iterations: 589 training error: 0.0013854322287225572
+iterations: 590 training error: 0.0013854108723068191
+iterations: 591 training error: 0.0013853895926172384
+iterations: 592 training error: 0.0013853683892509107
+iterations: 593 training error: 0.0013853472618076874
+iterations: 594 training error: 0.0013853262098901709
+iterations: 595 training error: 0.0013853052331037187
+iterations: 596 training error: 0.0013852843310564276
+iterations: 597 training error: 0.001385263503359011
+iterations: 598 training error: 0.0013852427496249139
+iterations: 599 training error: 0.0013852220694702013
+iterations: 600 training error: 0.001385201462513562
+iterations: 601 training error: 0.0013851809283762875
+iterations: 602 training error: 0.0013851604666822329
+iterations: 603 training error: 0.0013851400770578109
+iterations: 604 training error: 0.0013851197591320025
+iterations: 605 training error: 0.001385099512536245
+iterations: 606 training error: 0.0013850793369045273
+iterations: 607 training error: 0.0013850592318732586
+iterations: 608 training error: 0.0013850391970813226
+iterations: 609 training error: 0.0013850192321700388
+iterations: 610 training error: 0.0013849993367831036
+iterations: 611 training error: 0.0013849795105666568
+iterations: 612 training error: 0.0013849597531691558
+iterations: 613 training error: 0.0013849400642414267
+iterations: 614 training error: 0.0013849204434366474
+iterations: 615 training error: 0.0013849008904102662
+iterations: 616 training error: 0.0013848814048200476
+iterations: 617 training error: 0.0013848619863260315
+iterations: 618 training error: 0.0013848426345905154
+iterations: 619 training error: 0.0013848233492780083
+iterations: 620 training error: 0.001384804130055253
+iterations: 621 training error: 0.0013847849765912005
+iterations: 622 training error: 0.0013847658885569577
+iterations: 623 training error: 0.0013847468656258365
+iterations: 624 training error: 0.0013847279074732462
+iterations: 625 training error: 0.0013847090137767558
+iterations: 626 training error: 0.0013846901842160325
+iterations: 627 training error: 0.0013846714184728435
+iterations: 628 training error: 0.0013846527162310308
+iterations: 629 training error: 0.0013846340771764985
+iterations: 630 training error: 0.0013846155009971965
+iterations: 631 training error: 0.0013845969873830886
+iterations: 632 training error: 0.0013845785360261612
+iterations: 633 training error: 0.0013845601466203937
+iterations: 634 training error: 0.001384541818861736
+iterations: 635 training error: 0.0013845235524481204
+iterations: 636 training error: 0.0013845053470794054
+iterations: 637 training error: 0.0013844872024573929
+iterations: 638 training error: 0.0013844691182857873
+iterations: 639 training error: 0.00138445109427021
+iterations: 640 training error: 0.0013844331301181565
+iterations: 641 training error: 0.0013844152255390004
+iterations: 642 training error: 0.0013843973802439844
+iterations: 643 training error: 0.0013843795939461536
+iterations: 644 training error: 0.001384361866360404
+iterations: 645 training error: 0.0013843441972034428
+iterations: 646 training error: 0.0013843265861937849
+iterations: 647 training error: 0.0013843090330517168
+iterations: 648 training error: 0.0013842915374992861
+iterations: 649 training error: 0.0013842740992603044
+iterations: 650 training error: 0.001384256718060344
+iterations: 651 training error: 0.001384239393626681
+iterations: 652 training error: 0.0013842221256883068
+iterations: 653 training error: 0.0013842049139759349
+iterations: 654 training error: 0.0013841877582219404
+iterations: 655 training error: 0.001384170658160402
+iterations: 656 training error: 0.0013841536135270323
+iterations: 657 training error: 0.001384136624059224
+iterations: 658 training error: 0.0013841196894959734
+iterations: 659 training error: 0.0013841028095779254
+iterations: 660 training error: 0.0013840859840473139
+iterations: 661 training error: 0.0013840692126480187
+iterations: 662 training error: 0.0013840524951254398
+iterations: 663 training error: 0.0013840358312265995
+iterations: 664 training error: 0.001384019220700071
+iterations: 665 training error: 0.001384002663295965
+iterations: 666 training error: 0.0013839861587659538
+iterations: 667 training error: 0.001383969706863214
+iterations: 668 training error: 0.0013839533073424577
+iterations: 669 training error: 0.0013839369599598812
+iterations: 670 training error: 0.0013839206644731842
+iterations: 671 training error: 0.001383904420641554
+iterations: 672 training error: 0.001383888228225631
+iterations: 673 training error: 0.001383872086987525
+iterations: 674 training error: 0.0013838559966907857
+iterations: 675 training error: 0.0013838399571004113
+iterations: 676 training error: 0.00138382396798282
+iterations: 677 training error: 0.0013838080291058404
+iterations: 678 training error: 0.0013837921402387165
+iterations: 679 training error: 0.0013837763011520718
+iterations: 680 training error: 0.0013837605116179261
+iterations: 681 training error: 0.001383744771409671
+iterations: 682 training error: 0.0013837290803020428
+iterations: 683 training error: 0.0013837134380711655
+iterations: 684 training error: 0.0013836978444944756
+iterations: 685 training error: 0.00138368229935074
+iterations: 686 training error: 0.00138366680242008
+iterations: 687 training error: 0.0013836513534839028
+iterations: 688 training error: 0.0013836359523249373
+iterations: 689 training error: 0.0013836205987271875
+iterations: 690 training error: 0.0013836052924759326
+iterations: 691 training error: 0.0013835900333577756
+iterations: 692 training error: 0.0013835748211605313
+iterations: 693 training error: 0.0013835596556732953
+iterations: 694 training error: 0.0013835445366864182
+iterations: 695 training error: 0.0013835294639914656
+iterations: 696 training error: 0.0013835144373812575
+iterations: 697 training error: 0.0013834994566497964
+iterations: 698 training error: 0.0013834845215923296
+iterations: 699 training error: 0.0013834696320052936
+iterations: 700 training error: 0.001383454787686335
+iterations: 701 training error: 0.001383439988434248
+iterations: 702 training error: 0.0013834252340490245
+iterations: 703 training error: 0.0013834105243318352
+iterations: 704 training error: 0.0013833958590849817
+iterations: 705 training error: 0.0013833812381119567
+iterations: 706 training error: 0.001383366661217353
+iterations: 707 training error: 0.0013833521282069184
+iterations: 708 training error: 0.0013833376388875168
+iterations: 709 training error: 0.0013833231930671479
+iterations: 710 training error: 0.0013833087905549032
+iterations: 711 training error: 0.0013832944311609802
+iterations: 712 training error: 0.0013832801146966868
+iterations: 713 training error: 0.001383265840974385
+iterations: 714 training error: 0.001383251609807547
+iterations: 715 training error: 0.001383237421010682
+iterations: 716 training error: 0.001383223274399404
+iterations: 717 training error: 0.0013832091697903446
+iterations: 718 training error: 0.0013831951070012198
+iterations: 719 training error: 0.001383181085850731
+iterations: 720 training error: 0.0013831671061586789
+iterations: 721 training error: 0.0013831531677458437
+iterations: 722 training error: 0.00138313927043405
+iterations: 723 training error: 0.0013831254140460984
+iterations: 724 training error: 0.0013831115984058542
+iterations: 725 training error: 0.0013830978233381232
+iterations: 726 training error: 0.0013830840886687261
+iterations: 727 training error: 0.00138307039422445
+iterations: 728 training error: 0.0013830567398330936
+iterations: 729 training error: 0.0013830431253234006
+iterations: 730 training error: 0.0013830295505250834
+iterations: 731 training error: 0.0013830160152687862
+iterations: 732 training error: 0.0013830025193861508
+iterations: 733 training error: 0.0013829890627097285
+iterations: 734 training error: 0.0013829756450730098
+iterations: 735 training error: 0.0013829622663104196
+iterations: 736 training error: 0.0013829489262573115
+iterations: 737 training error: 0.0013829356247499417
+iterations: 738 training error: 0.0013829223616254936
+iterations: 739 training error: 0.001382909136722055
+iterations: 740 training error: 0.0013828959498785954
+iterations: 741 training error: 0.0013828828009349974
+iterations: 742 training error: 0.0013828696897319954
+iterations: 743 training error: 0.0013828566161112562
+iterations: 744 training error: 0.0013828435799152642
+iterations: 745 training error: 0.0013828305809874106
+iterations: 746 training error: 0.0013828176191719491
+iterations: 747 training error: 0.0013828046943139523
+iterations: 748 training error: 0.0013827918062593854
+iterations: 749 training error: 0.0013827789548550296
+iterations: 750 training error: 0.001382766139948526
+iterations: 751 training error: 0.0013827533613883212
+iterations: 752 training error: 0.0013827406190237298
+iterations: 753 training error: 0.0013827279127048432
+iterations: 754 training error: 0.0013827152422826057
+iterations: 755 training error: 0.0013827026076087524
+iterations: 756 training error: 0.0013826900085358146
+iterations: 757 training error: 0.0013826774449171636
+iterations: 758 training error: 0.001382664916606913
+iterations: 759 training error: 0.0013826524234600015
+iterations: 760 training error: 0.001382639965332152
+iterations: 761 training error: 0.0013826275420798465
+iterations: 762 training error: 0.0013826151535603396
+iterations: 763 training error: 0.0013826027996316722
+iterations: 764 training error: 0.0013825904801526416
+iterations: 765 training error: 0.0013825781949828005
+iterations: 766 training error: 0.0013825659439824667
+iterations: 767 training error: 0.0013825537270126737
+iterations: 768 training error: 0.0013825415439352308
+iterations: 769 training error: 0.0013825293946126648
+iterations: 770 training error: 0.0013825172789082615
+iterations: 771 training error: 0.0013825051966859906
+iterations: 772 training error: 0.0013824931478106095
+iterations: 773 training error: 0.0013824811321475313
+iterations: 774 training error: 0.0013824691495629177
+iterations: 775 training error: 0.0013824571999236255
+iterations: 776 training error: 0.0013824452830972329
+iterations: 777 training error: 0.0013824333989520088
+iterations: 778 training error: 0.0013824215473568907
+iterations: 779 training error: 0.0013824097281815641
+iterations: 780 training error: 0.0013823979412963588
+iterations: 781 training error: 0.0013823861865722912
+iterations: 782 training error: 0.0013823744638810588
+iterations: 783 training error: 0.0013823627730950507
+iterations: 784 training error: 0.0013823511140872865
+iterations: 785 training error: 0.0013823394867314937
+iterations: 786 training error: 0.001382327890902026
+iterations: 787 training error: 0.0013823163264739104
+iterations: 788 training error: 0.0013823047933228063
+iterations: 789 training error: 0.0013822932913250578
+iterations: 790 training error: 0.0013822818203576071
+iterations: 791 training error: 0.0013822703802980824
+iterations: 792 training error: 0.0013822589710246885
+iterations: 793 training error: 0.0013822475924163116
+iterations: 794 training error: 0.0013822362443524578
+iterations: 795 training error: 0.001382224926713215
+iterations: 796 training error: 0.0013822136393793498
+iterations: 797 training error: 0.001382202382232202
+iterations: 798 training error: 0.001382191155153731
+iterations: 799 training error: 0.001382179958026511
+iterations: 800 training error: 0.0013821687907336986
+iterations: 801 training error: 0.0013821576531590919
+iterations: 802 training error: 0.0013821465451870508
+iterations: 803 training error: 0.0013821354667025167
+iterations: 804 training error: 0.0013821244175910422
+iterations: 805 training error: 0.0013821133977387759
+iterations: 806 training error: 0.001382102407032417
+iterations: 807 training error: 0.0013820914453592447
+iterations: 808 training error: 0.0013820805126071335
+iterations: 809 training error: 0.0013820696086645006
+iterations: 810 training error: 0.0013820587334203759
+iterations: 811 training error: 0.0013820478867642705
+iterations: 812 training error: 0.001382037068586333
+iterations: 813 training error: 0.0013820262787772341
+iterations: 814 training error: 0.0013820155172281946
+iterations: 815 training error: 0.0013820047838309917
+iterations: 816 training error: 0.0013819940784779473
+iterations: 817 training error: 0.001381983401061917
+iterations: 818 training error: 0.0013819727514762926
+iterations: 819 training error: 0.0013819621296150193
+iterations: 820 training error: 0.00138195153537256
+iterations: 821 training error: 0.0013819409686439109
+iterations: 822 training error: 0.0013819304293245821
+iterations: 823 training error: 0.0013819199173106113
+iterations: 824 training error: 0.0013819094324985773
+iterations: 825 training error: 0.001381898974785536
+iterations: 826 training error: 0.0013818885440690862
+iterations: 827 training error: 0.0013818781402473142
+iterations: 828 training error: 0.0013818677632188164
+iterations: 829 training error: 0.0013818574128827202
+iterations: 830 training error: 0.0013818470891386043
+iterations: 831 training error: 0.001381836791886574
+iterations: 832 training error: 0.0013818265210272377
+iterations: 833 training error: 0.0013818162764616636
+iterations: 834 training error: 0.0013818060580914285
+iterations: 835 training error: 0.0013817958658185916
+iterations: 836 training error: 0.001381785699545684
+iterations: 837 training error: 0.0013817755591757268
+iterations: 838 training error: 0.0013817654446122173
+iterations: 839 training error: 0.0013817553557591124
+iterations: 840 training error: 0.0013817452925208454
+iterations: 841 training error: 0.0013817352548023264
+iterations: 842 training error: 0.0013817252425089045
+iterations: 843 training error: 0.0013817152555464444
+iterations: 844 training error: 0.0013817052938211976
+iterations: 845 training error: 0.001381695357239922
+iterations: 846 training error: 0.0013816854457098036
+iterations: 847 training error: 0.0013816755591385095
+iterations: 848 training error: 0.001381665697434104
+iterations: 849 training error: 0.0013816558605051455
+iterations: 850 training error: 0.001381646048260614
+iterations: 851 training error: 0.0013816362606099315
+iterations: 852 training error: 0.0013816264974629378
+iterations: 853 training error: 0.0013816167587299448
+iterations: 854 training error: 0.0013816070443216698
+iterations: 855 training error: 0.0013815973541492696
+iterations: 856 training error: 0.0013815876881243258
+iterations: 857 training error: 0.0013815780461588383
+iterations: 858 training error: 0.0013815684281652267
+iterations: 859 training error: 0.001381558834056359
+iterations: 860 training error: 0.001381549263745486
+iterations: 861 training error: 0.001381539717146268
+iterations: 862 training error: 0.0013815301941728143
+iterations: 863 training error: 0.001381520694739614
+iterations: 864 training error: 0.0013815112187615774
+iterations: 865 training error: 0.00138150176615401
+iterations: 866 training error: 0.0013814923368326059
+iterations: 867 training error: 0.0013814829307135202
+iterations: 868 training error: 0.0013814735477132175
+iterations: 869 training error: 0.001381464187748612
+iterations: 870 training error: 0.0013814548507370193
+iterations: 871 training error: 0.0013814455365961013
+iterations: 872 training error: 0.0013814362452439412
+iterations: 873 training error: 0.0013814269765990064
+iterations: 874 training error: 0.0013814177305801444
+iterations: 875 training error: 0.0013814085071065553
+iterations: 876 training error: 0.0013813993060978872
+iterations: 877 training error: 0.0013813901274740883
+iterations: 878 training error: 0.0013813809711555203
+iterations: 879 training error: 0.0013813718370629126
+iterations: 880 training error: 0.0013813627251173825
+iterations: 881 training error: 0.001381353635240373
+iterations: 882 training error: 0.0013813445673537433
+iterations: 883 training error: 0.0013813355213796708
+iterations: 884 training error: 0.0013813264972407375
+iterations: 885 training error: 0.001381317494859846
+iterations: 886 training error: 0.0013813085141602783
+iterations: 887 training error: 0.0013812995550656721
+iterations: 888 training error: 0.0013812906175000215
+iterations: 889 training error: 0.0013812817013876479
+iterations: 890 training error: 0.0013812728066532587
+iterations: 891 training error: 0.001381263933221881
+iterations: 892 training error: 0.0013812550810189048
+iterations: 893 training error: 0.0013812462499700482
+iterations: 894 training error: 0.0013812374400013758
+iterations: 895 training error: 0.0013812286510393069
+iterations: 896 training error: 0.0013812198830105893
+iterations: 897 training error: 0.0013812111358422806
+iterations: 898 training error: 0.0013812024094618314
+iterations: 899 training error: 0.0013811937037969582
+iterations: 900 training error: 0.0013811850187757696
+iterations: 901 training error: 0.001381176354326646
+iterations: 902 training error: 0.001381167710378321
+iterations: 903 training error: 0.0013811590868598707
+iterations: 904 training error: 0.0013811504837006627
+iterations: 905 training error: 0.001381141900830402
+iterations: 906 training error: 0.001381133338179115
+iterations: 907 training error: 0.0013811247956771247
+iterations: 908 training error: 0.00138111627325509
+iterations: 909 training error: 0.0013811077708439836
+iterations: 910 training error: 0.0013810992883750931
+iterations: 911 training error: 0.001381090825779996
+iterations: 912 training error: 0.0013810823829905913
+iterations: 913 training error: 0.00138107395993909
+iterations: 914 training error: 0.001381065556558001
+iterations: 915 training error: 0.0013810571727801298
+iterations: 916 training error: 0.0013810488085386082
+iterations: 917 training error: 0.0013810404637668433
+iterations: 918 training error: 0.0013810321383985517
+iterations: 919 training error: 0.0013810238323677486
+iterations: 920 training error: 0.0013810155456087257
+iterations: 921 training error: 0.0013810072780561077
+iterations: 922 training error: 0.0013809990296447616
+iterations: 923 training error: 0.0013809908003098892
+iterations: 924 training error: 0.0013809825899869443
+iterations: 925 training error: 0.0013809743986116926
+iterations: 926 training error: 0.001380966226120187
+iterations: 927 training error: 0.001380958072448739
+iterations: 928 training error: 0.0013809499375339648
+iterations: 929 training error: 0.0013809418213127514
+iterations: 930 training error: 0.0013809337237222846
+iterations: 931 training error: 0.0013809256446999907
+iterations: 932 training error: 0.0013809175841836049
+iterations: 933 training error: 0.001380909542111107
+iterations: 934 training error: 0.0013809015184208045
+iterations: 935 training error: 0.0013808935130512053
+iterations: 936 training error: 0.001380885525941149
+iterations: 937 training error: 0.0013808775570296973
+iterations: 938 training error: 0.0013808696062562102
+iterations: 939 training error: 0.0013808616735603045
+iterations: 940 training error: 0.0013808537588818537
+iterations: 941 training error: 0.0013808458621610083
+iterations: 942 training error: 0.0013808379833381587
+iterations: 943 training error: 0.0013808301223539835
+iterations: 944 training error: 0.0013808222791493996
+iterations: 945 training error: 0.001380814453665586
+iterations: 946 training error: 0.0013808066458439858
+iterations: 947 training error: 0.0013807988556262792
+iterations: 948 training error: 0.0013807910829544145
+iterations: 949 training error: 0.0013807833277705824
+iterations: 950 training error: 0.0013807755900172485
+iterations: 951 training error: 0.001380767869637087
+iterations: 952 training error: 0.0013807601665730483
+iterations: 953 training error: 0.0013807524807683267
+iterations: 954 training error: 0.0013807448121663437
+iterations: 955 training error: 0.0013807371607107853
+iterations: 956 training error: 0.0013807295263455791
+iterations: 957 training error: 0.0013807219090148772
+iterations: 958 training error: 0.0013807143086630913
+iterations: 959 training error: 0.001380706725234848
+iterations: 960 training error: 0.0013806991586750455
+iterations: 961 training error: 0.001380691608928769
+iterations: 962 training error: 0.0013806840759413958
+iterations: 963 training error: 0.0013806765596584899
+iterations: 964 training error: 0.0013806690600258868
+iterations: 965 training error: 0.0013806615769896128
+iterations: 966 training error: 0.0013806541104959495
+iterations: 967 training error: 0.0013806466604914067
+iterations: 968 training error: 0.001380639226922713
+iterations: 969 training error: 0.0013806318097368353
+iterations: 970 training error: 0.0013806244088809458
+iterations: 971 training error: 0.0013806170243024511
+iterations: 972 training error: 0.0013806096559489949
+iterations: 973 training error: 0.0013806023037684157
+iterations: 974 training error: 0.0013805949677087987
+iterations: 975 training error: 0.0013805876477184214
+iterations: 976 training error: 0.0013805803437458052
+iterations: 977 training error: 0.001380573055739685
+iterations: 978 training error: 0.0013805657836489815
+iterations: 979 training error: 0.0013805585274228743
+iterations: 980 training error: 0.0013805512870107054
+iterations: 981 training error: 0.0013805440623620893
+iterations: 982 training error: 0.0013805368534268035
+iterations: 983 training error: 0.001380529660154873
+iterations: 984 training error: 0.0013805224824964884
+iterations: 985 training error: 0.0013805153204020802
+iterations: 986 training error: 0.0013805081738222844
+iterations: 987 training error: 0.0013805010427079321
+iterations: 988 training error: 0.0013804939270100683
+iterations: 989 training error: 0.0013804868266799294
+iterations: 990 training error: 0.00138047974166897
+iterations: 991 training error: 0.0013804726719288392
+iterations: 992 training error: 0.0013804656174113829
+iterations: 993 training error: 0.0013804585780686548
+iterations: 994 training error: 0.0013804515538528965
+iterations: 995 training error: 0.0013804445447165555
+iterations: 996 training error: 0.0013804375506122864
+iterations: 997 training error: 0.001380430571492914
+iterations: 998 training error: 0.0013804236073114704
+iterations: 999 training error: 0.0013804166580211911
+iterations: 1000 training error: 0.0013804097235754896
+iterations: 1001 training error: 0.0013804028039279745
+iterations: 1002 training error: 0.0013803958990324472
+iterations: 1003 training error: 0.001380389008842907
+iterations: 1004 training error: 0.0013803821333135203
+iterations: 1005 training error: 0.0013803752723986701
+iterations: 1006 training error: 0.001380368426052903
+iterations: 1007 training error: 0.0013803615942309456
+iterations: 1008 training error: 0.0013803547768877521
+iterations: 1009 training error: 0.0013803479739784104
+iterations: 1010 training error: 0.001380341185458217
+iterations: 1011 training error: 0.0013803344112826423
+iterations: 1012 training error: 0.0013803276514073536
+iterations: 1013 training error: 0.001380320905788184
+iterations: 1014 training error: 0.0013803141743811336
+iterations: 1015 training error: 0.0013803074571424134
+iterations: 1016 training error: 0.0013803007540283897
+iterations: 1017 training error: 0.001380294064995607
+iterations: 1018 training error: 0.0013802873900007843
+iterations: 1019 training error: 0.001380280729000842
+iterations: 1020 training error: 0.0013802740819528285
+iterations: 1021 training error: 0.0013802674488140102
+iterations: 1022 training error: 0.001380260829541786
+iterations: 1023 training error: 0.0013802542240937588
+iterations: 1024 training error: 0.0013802476324276966
+iterations: 1025 training error: 0.001380241054501499
+iterations: 1026 training error: 0.0013802344902732891
+iterations: 1027 training error: 0.0013802279397013343
+iterations: 1028 training error: 0.0013802214027440682
+iterations: 1029 training error: 0.0013802148793600837
+iterations: 1030 training error: 0.0013802083695081521
+iterations: 1031 training error: 0.0013802018731471986
+iterations: 1032 training error: 0.0013801953902363294
+iterations: 1033 training error: 0.0013801889207347977
+iterations: 1034 training error: 0.0013801824646020265
+iterations: 1035 training error: 0.0013801760217975907
+iterations: 1036 training error: 0.0013801695922812396
+iterations: 1037 training error: 0.0013801631760128694
+iterations: 1038 training error: 0.0013801567729525603
+iterations: 1039 training error: 0.0013801503830605073
+iterations: 1040 training error: 0.001380144006297103
+iterations: 1041 training error: 0.0013801376426228742
+iterations: 1042 training error: 0.0013801312919985243
+iterations: 1043 training error: 0.0013801249543848892
+iterations: 1044 training error: 0.0013801186297429755
+iterations: 1045 training error: 0.001380112318033932
+iterations: 1046 training error: 0.001380106019219072
+iterations: 1047 training error: 0.0013800997332598511
+iterations: 1048 training error: 0.001380093460117878
+iterations: 1049 training error: 0.0013800871997549213
+iterations: 1050 training error: 0.0013800809521328891
+iterations: 1051 training error: 0.001380074717213841
+iterations: 1052 training error: 0.0013800684949599965
+iterations: 1053 training error: 0.0013800622853336992
+iterations: 1054 training error: 0.0013800560882974624
+iterations: 1055 training error: 0.0013800499038139425
+iterations: 1056 training error: 0.001380043731845925
+iterations: 1057 training error: 0.0013800375723563621
+iterations: 1058 training error: 0.0013800314253083266
+iterations: 1059 training error: 0.001380025290665071
+iterations: 1060 training error: 0.0013800191683899536
+iterations: 1061 training error: 0.0013800130584464905
+iterations: 1062 training error: 0.0013800069607983415
+iterations: 1063 training error: 0.0013800008754093142
+iterations: 1064 training error: 0.0013799948022433118
+iterations: 1065 training error: 0.0013799887412644543
+iterations: 1066 training error: 0.0013799826924369436
+iterations: 1067 training error: 0.0013799766557251248
+iterations: 1068 training error: 0.0013799706310935018
+iterations: 1069 training error: 0.0013799646185066903
+iterations: 1070 training error: 0.0013799586179294601
+iterations: 1071 training error: 0.0013799526293267281
+iterations: 1072 training error: 0.0013799466526635171
+iterations: 1073 training error: 0.0013799406879050002
+iterations: 1074 training error: 0.0013799347350164789
+iterations: 1075 training error: 0.0013799287939633932
+iterations: 1076 training error: 0.001379922864711307
+iterations: 1077 training error: 0.0013799169472259263
+iterations: 1078 training error: 0.0013799110414730786
+iterations: 1079 training error: 0.0013799051474187374
+iterations: 1080 training error: 0.0013798992650289812
+iterations: 1081 training error: 0.0013798933942700473
+iterations: 1082 training error: 0.0013798875351082795
+iterations: 1083 training error: 0.0013798816875101433
+iterations: 1084 training error: 0.001379875851442269
+iterations: 1085 training error: 0.00137987002687137
+iterations: 1086 training error: 0.0013798642137643194
+iterations: 1087 training error: 0.0013798584120880944
+iterations: 1088 training error: 0.0013798526218098052
+iterations: 1089 training error: 0.001379846842896684
+iterations: 1090 training error: 0.0013798410753161018
+iterations: 1091 training error: 0.0013798353190355237
+iterations: 1092 training error: 0.0013798295740225619
+iterations: 1093 training error: 0.0013798238402449488
+iterations: 1094 training error: 0.001379818117670533
+iterations: 1095 training error: 0.0013798124062672707
+iterations: 1096 training error: 0.0013798067060032562
+iterations: 1097 training error: 0.0013798010168467104
+iterations: 1098 training error: 0.001379795338765951
+iterations: 1099 training error: 0.001379789671729433
+iterations: 1100 training error: 0.0013797840157057217
+iterations: 1101 training error: 0.0013797783706634887
+iterations: 1102 training error: 0.0013797727365715503
+iterations: 1103 training error: 0.0013797671133988214
+iterations: 1104 training error: 0.0013797615011143206
+iterations: 1105 training error: 0.001379755899687225
+iterations: 1106 training error: 0.0013797503090867747
+iterations: 1107 training error: 0.001379744729282363
+iterations: 1108 training error: 0.0013797391602434767
+iterations: 1109 training error: 0.0013797336019397079
+iterations: 1110 training error: 0.0013797280543408079
+iterations: 1111 training error: 0.0013797225174165815
+iterations: 1112 training error: 0.0013797169911369735
+iterations: 1113 training error: 0.001379711475472061
+iterations: 1114 training error: 0.0013797059703919829
+iterations: 1115 training error: 0.0013797004758670263
+iterations: 1116 training error: 0.0013796949918675806
+iterations: 1117 training error: 0.001379689518364131
+iterations: 1118 training error: 0.0013796840553272898
+iterations: 1119 training error: 0.0013796786027277677
+iterations: 1120 training error: 0.00137967316053637
+iterations: 1121 training error: 0.0013796677287240553
+iterations: 1122 training error: 0.0013796623072618278
+iterations: 1123 training error: 0.0013796568961208326
+iterations: 1124 training error: 0.001379651495272324
+iterations: 1125 training error: 0.0013796461046876576
+iterations: 1126 training error: 0.0013796407243382791
+iterations: 1127 training error: 0.0013796353541957506
+iterations: 1128 training error: 0.0013796299942317486
+iterations: 1129 training error: 0.0013796246444180316
+iterations: 1130 training error: 0.0013796193047264664
+iterations: 1131 training error: 0.001379613975129044
+iterations: 1132 training error: 0.0013796086555978124
+iterations: 1133 training error: 0.0013796033461049783
+iterations: 1134 training error: 0.0013795980466228053
+iterations: 1135 training error: 0.0013795927571236852
+iterations: 1136 training error: 0.0013795874775800678
+iterations: 1137 training error: 0.001379582207964574
+iterations: 1138 training error: 0.001379576948249856
+iterations: 1139 training error: 0.0013795716984087065
+iterations: 1140 training error: 0.0013795664584139926
+iterations: 1141 training error: 0.0013795612282386828
+iterations: 1142 training error: 0.001379556007855854
+iterations: 1143 training error: 0.0013795507972386846
+iterations: 1144 training error: 0.0013795455963604409
+iterations: 1145 training error: 0.0013795404051944653
+iterations: 1146 training error: 0.0013795352237142334
+iterations: 1147 training error: 0.0013795300518932988
+iterations: 1148 training error: 0.0013795248897053014
+iterations: 1149 training error: 0.0013795197371239912
+iterations: 1150 training error: 0.0013795145941232038
+iterations: 1151 training error: 0.0013795094606768642
+iterations: 1152 training error: 0.001379504336759001
+iterations: 1153 training error: 0.0013794992223437428
+iterations: 1154 training error: 0.0013794941174052858
+iterations: 1155 training error: 0.0013794890219179358
+iterations: 1156 training error: 0.0013794839358560779
+iterations: 1157 training error: 0.0013794788591942144
+iterations: 1158 training error: 0.0013794737919069107
+iterations: 1159 training error: 0.0013794687339688252
+iterations: 1160 training error: 0.0013794636853547329
+iterations: 1161 training error: 0.001379458646039469
+iterations: 1162 training error: 0.0013794536159979635
+iterations: 1163 training error: 0.001379448595205252
+iterations: 1164 training error: 0.0013794435836364518
+iterations: 1165 training error: 0.0013794385812667407
+iterations: 1166 training error: 0.0013794335880714212
+iterations: 1167 training error: 0.0013794286040258784
+iterations: 1168 training error: 0.001379423629105564
+iterations: 1169 training error: 0.0013794186632860258
+iterations: 1170 training error: 0.0013794137065429107
+iterations: 1171 training error: 0.0013794087588519164
+iterations: 1172 training error: 0.0013794038201888732
+iterations: 1173 training error: 0.0013793988905296706
+iterations: 1174 training error: 0.00137939396985028
+iterations: 1175 training error: 0.0013793890581267538
+iterations: 1176 training error: 0.0013793841553352531
+iterations: 1177 training error: 0.0013793792614520109
+iterations: 1178 training error: 0.0013793743764533148
+iterations: 1179 training error: 0.0013793695003155705
+iterations: 1180 training error: 0.0013793646330152638
+iterations: 1181 training error: 0.0013793597745289524
+iterations: 1182 training error: 0.0013793549248332635
+iterations: 1183 training error: 0.0013793500839049306
+iterations: 1184 training error: 0.0013793452517207661
+iterations: 1185 training error: 0.0013793404282576415
+iterations: 1186 training error: 0.0013793356134925248
+iterations: 1187 training error: 0.0013793308074024524
+iterations: 1188 training error: 0.0013793260099645773
+iterations: 1189 training error: 0.0013793212211560765
+iterations: 1190 training error: 0.0013793164409542475
+iterations: 1191 training error: 0.0013793116693364268
+iterations: 1192 training error: 0.0013793069062800975
+iterations: 1193 training error: 0.0013793021517627512
+iterations: 1194 training error: 0.0013792974057619883
+iterations: 1195 training error: 0.0013792926682554638
+iterations: 1196 training error: 0.0013792879392209632
+iterations: 1197 training error: 0.0013792832186362916
+iterations: 1198 training error: 0.0013792785064793524
+iterations: 1199 training error: 0.0013792738027281343
+iterations: 1200 training error: 0.0013792691073606954
+iterations: 1201 training error: 0.0013792644203551579
+iterations: 1202 training error: 0.0013792597416897195
+iterations: 1203 training error: 0.00137925507134267
+iterations: 1204 training error: 0.0013792504092923674
+iterations: 1205 training error: 0.001379245755517234
+iterations: 1206 training error: 0.0013792411099957781
+iterations: 1207 training error: 0.0013792364727065732
+iterations: 1208 training error: 0.0013792318436282765
+iterations: 1209 training error: 0.0013792272227395933
+iterations: 1210 training error: 0.0013792226100193372
+iterations: 1211 training error: 0.0013792180054463558
+iterations: 1212 training error: 0.0013792134089996063
+iterations: 1213 training error: 0.0013792088206580825
+iterations: 1214 training error: 0.0013792042404008817
+iterations: 1215 training error: 0.0013791996682071483
+iterations: 1216 training error: 0.0013791951040561152
+iterations: 1217 training error: 0.0013791905479270676
+iterations: 1218 training error: 0.0013791859997993713
+iterations: 1219 training error: 0.0013791814596524627
+iterations: 1220 training error: 0.0013791769274658426
+iterations: 1221 training error: 0.0013791724032190937
+iterations: 1222 training error: 0.001379167886891842
+iterations: 1223 training error: 0.0013791633784638253
+iterations: 1224 training error: 0.0013791588779147829
+iterations: 1225 training error: 0.0013791543852245906
+iterations: 1226 training error: 0.00137914990037316
+iterations: 1227 training error: 0.001379145423340476
+iterations: 1228 training error: 0.0013791409541065865
+iterations: 1229 training error: 0.0013791364926515923
+iterations: 1230 training error: 0.0013791320389556993
+iterations: 1231 training error: 0.0013791275929991456
+iterations: 1232 training error: 0.0013791231547622533
+iterations: 1233 training error: 0.0013791187242254033
+iterations: 1234 training error: 0.0013791143013690344
+iterations: 1235 training error: 0.00137910988617368
+iterations: 1236 training error: 0.001379105478619905
+iterations: 1237 training error: 0.0013791010786883418
+iterations: 1238 training error: 0.0013790966863597234
+iterations: 1239 training error: 0.001379092301614805
+iterations: 1240 training error: 0.001379087924434423
+iterations: 1241 training error: 0.0013790835547994743
+iterations: 1242 training error: 0.0013790791926909394
+iterations: 1243 training error: 0.001379074838089824
+iterations: 1244 training error: 0.0013790704909772216
+iterations: 1245 training error: 0.001379066151334296
+iterations: 1246 training error: 0.001379061819142257
+iterations: 1247 training error: 0.0013790574943823729
+iterations: 1248 training error: 0.0013790531770359916
+iterations: 1249 training error: 0.001379048867084502
+iterations: 1250 training error: 0.0013790445645093746
+iterations: 1251 training error: 0.001379040269292125
+iterations: 1252 training error: 0.0013790359814143504
+iterations: 1253 training error: 0.0013790317008576865
+iterations: 1254 training error: 0.00137902742760384
+iterations: 1255 training error: 0.0013790231616345632
+iterations: 1256 training error: 0.0013790189029316982
+iterations: 1257 training error: 0.0013790146514771266
+iterations: 1258 training error: 0.0013790104072527803
+iterations: 1259 training error: 0.0013790061702406758
+iterations: 1260 training error: 0.0013790019404228762
+iterations: 1261 training error: 0.0013789977177814875
+iterations: 1262 training error: 0.0013789935022987029
+iterations: 1263 training error: 0.001378989293956762
+iterations: 1264 training error: 0.0013789850927379383
+iterations: 1265 training error: 0.001378980898624616
+iterations: 1266 training error: 0.0013789767115991746
+iterations: 1267 training error: 0.0013789725316441124
+iterations: 1268 training error: 0.0013789683587419343
+iterations: 1269 training error: 0.0013789641928752313
+iterations: 1270 training error: 0.0013789600340266379
+iterations: 1271 training error: 0.0013789558821788426
+iterations: 1272 training error: 0.0013789517373146178
+iterations: 1273 training error: 0.0013789475994167562
+iterations: 1274 training error: 0.0013789434684681175
+iterations: 1275 training error: 0.001378939344451632
+iterations: 1276 training error: 0.0013789352273502536
+iterations: 1277 training error: 0.001378931117147032
+iterations: 1278 training error: 0.001378927013825042
+iterations: 1279 training error: 0.0013789229173674254
+iterations: 1280 training error: 0.0013789188277573733
+iterations: 1281 training error: 0.0013789147449781293
+iterations: 1282 training error: 0.0013789106690129962
+iterations: 1283 training error: 0.001378906599845326
+iterations: 1284 training error: 0.0013789025374585265
+iterations: 1285 training error: 0.0013788984818360718
+iterations: 1286 training error: 0.0013788944329614528
+iterations: 1287 training error: 0.0013788903908182556
+iterations: 1288 training error: 0.0013788863553900982
+iterations: 1289 training error: 0.0013788823266606414
+iterations: 1290 training error: 0.0013788783046136221
+iterations: 1291 training error: 0.0013788742892328206
+iterations: 1292 training error: 0.0013788702805020456
+iterations: 1293 training error: 0.0013788662784051924
+iterations: 1294 training error: 0.0013788622829261842
+iterations: 1295 training error: 0.0013788582940490184
+iterations: 1296 training error: 0.0013788543117577215
+iterations: 1297 training error: 0.0013788503360363674
+iterations: 1298 training error: 0.0013788463668691102
+iterations: 1299 training error: 0.001378842404240115
+iterations: 1300 training error: 0.0013788384481336347
+iterations: 1301 training error: 0.001378834498533951
+iterations: 1302 training error: 0.0013788305554253916
+iterations: 1303 training error: 0.001378826618792348
+iterations: 1304 training error: 0.00137882268861926
+iterations: 1305 training error: 0.0013788187648906063
+iterations: 1306 training error: 0.001378814847590925
+iterations: 1307 training error: 0.0013788109367047934
+iterations: 1308 training error: 0.0013788070322168365
+iterations: 1309 training error: 0.0013788031341117446
+iterations: 1310 training error: 0.0013787992423742491
+iterations: 1311 training error: 0.001378795356989118
+iterations: 1312 training error: 0.0013787914779411635
+iterations: 1313 training error: 0.0013787876052152668
+iterations: 1314 training error: 0.0013787837387963613
+iterations: 1315 training error: 0.0013787798786693904
+iterations: 1316 training error: 0.0013787760248193822
+iterations: 1317 training error: 0.0013787721772313905
+iterations: 1318 training error: 0.0013787683358905244
+iterations: 1319 training error: 0.0013787645007819298
+iterations: 1320 training error: 0.0013787606718908263
+iterations: 1321 training error: 0.0013787568492024493
+iterations: 1322 training error: 0.001378753032702089
+iterations: 1323 training error: 0.0013787492223750748
+iterations: 1324 training error: 0.0013787454182068162
+iterations: 1325 training error: 0.0013787416201827276
+iterations: 1326 training error: 0.001378737828288279
+iterations: 1327 training error: 0.0013787340425090015
+iterations: 1328 training error: 0.001378730262830452
+iterations: 1329 training error: 0.0013787264892382526
+iterations: 1330 training error: 0.00137872272171805
+iterations: 1331 training error: 0.001378718960255541
+iterations: 1332 training error: 0.0013787152048364807
+iterations: 1333 training error: 0.0013787114554466467
+iterations: 1334 training error: 0.0013787077120718681
+iterations: 1335 training error: 0.001378703974698026
+iterations: 1336 training error: 0.0013787002433110502
+iterations: 1337 training error: 0.0013786965178968966
+iterations: 1338 training error: 0.001378692798441549
+iterations: 1339 training error: 0.001378689084931094
+iterations: 1340 training error: 0.0013786853773515985
+iterations: 1341 training error: 0.0013786816756892197
+iterations: 1342 training error: 0.0013786779799301108
+iterations: 1343 training error: 0.0013786742900605
+iterations: 1344 training error: 0.0013786706060666628
+iterations: 1345 training error: 0.0013786669279348975
+iterations: 1346 training error: 0.0013786632556515356
+iterations: 1347 training error: 0.0013786595892029962
+iterations: 1348 training error: 0.0013786559285756791
+iterations: 1349 training error: 0.0013786522737560794
+iterations: 1350 training error: 0.0013786486247307013
+iterations: 1351 training error: 0.0013786449814860958
+iterations: 1352 training error: 0.0013786413440088653
+iterations: 1353 training error: 0.0013786377122856483
+iterations: 1354 training error: 0.0013786340863031139
+iterations: 1355 training error: 0.0013786304660479867
+iterations: 1356 training error: 0.0013786268515070252
+iterations: 1357 training error: 0.00137862324266702
+iterations: 1358 training error: 0.0013786196395148209
+iterations: 1359 training error: 0.0013786160420373023
+iterations: 1360 training error: 0.0013786124502213862
+iterations: 1361 training error: 0.0013786088640540264
+iterations: 1362 training error: 0.0013786052835222217
+iterations: 1363 training error: 0.0013786017086130163
+iterations: 1364 training error: 0.0013785981393134802
+iterations: 1365 training error: 0.0013785945756107365
+iterations: 1366 training error: 0.0013785910174919337
+iterations: 1367 training error: 0.0013785874649442555
+iterations: 1368 training error: 0.0013785839179549537
+iterations: 1369 training error: 0.0013785803765112915
+iterations: 1370 training error: 0.0013785768406005831
+iterations: 1371 training error: 0.0013785733102101606
+iterations: 1372 training error: 0.0013785697853274338
+iterations: 1373 training error: 0.0013785662659397974
+iterations: 1374 training error: 0.0013785627520347427
+iterations: 1375 training error: 0.001378559243599747
+iterations: 1376 training error: 0.0013785557406223493
+iterations: 1377 training error: 0.0013785522430901263
+iterations: 1378 training error: 0.0013785487509907037
+iterations: 1379 training error: 0.0013785452643117135
+iterations: 1380 training error: 0.0013785417830408451
+iterations: 1381 training error: 0.001378538307165817
+iterations: 1382 training error: 0.0013785348366743939
+iterations: 1383 training error: 0.0013785313715543649
+iterations: 1384 training error: 0.0013785279117935745
+iterations: 1385 training error: 0.001378524457379879
+iterations: 1386 training error: 0.0013785210083011859
+iterations: 1387 training error: 0.0013785175645454337
+iterations: 1388 training error: 0.001378514126100599
+iterations: 1389 training error: 0.0013785106929547
+iterations: 1390 training error: 0.001378507265095785
+iterations: 1391 training error: 0.0013785038425119225
+iterations: 1392 training error: 0.0013785004251912474
+iterations: 1393 training error: 0.001378497013121898
+iterations: 1394 training error: 0.0013784936062920864
+iterations: 1395 training error: 0.0013784902046900189
+iterations: 1396 training error: 0.0013784868083039454
+iterations: 1397 training error: 0.0013784834171221814
+iterations: 1398 training error: 0.001378480031133041
+iterations: 1399 training error: 0.0013784766503248868
+iterations: 1400 training error: 0.0013784732746861302
+iterations: 1401 training error: 0.00137846990420518
+iterations: 1402 training error: 0.0013784665388705208
+iterations: 1403 training error: 0.0013784631786706468
+iterations: 1404 training error: 0.001378459823594086
+iterations: 1405 training error: 0.001378456473629403
+iterations: 1406 training error: 0.0013784531287652068
+iterations: 1407 training error: 0.0013784497889901047
+iterations: 1408 training error: 0.0013784464542928173
+iterations: 1409 training error: 0.0013784431246619954
+iterations: 1410 training error: 0.001378439800086395
+iterations: 1411 training error: 0.0013784364805547755
+iterations: 1412 training error: 0.0013784331660559386
+iterations: 1413 training error: 0.0013784298565787216
+iterations: 1414 training error: 0.0013784265521119775
+iterations: 1415 training error: 0.0013784232526446237
+iterations: 1416 training error: 0.0013784199581655565
+iterations: 1417 training error: 0.0013784166686637647
+iterations: 1418 training error: 0.0013784133841282442
+iterations: 1419 training error: 0.0013784101045480053
+iterations: 1420 training error: 0.0013784068299121073
+iterations: 1421 training error: 0.0013784035602096491
+iterations: 1422 training error: 0.0013784002954297613
+iterations: 1423 training error: 0.0013783970355615682
+iterations: 1424 training error: 0.0013783937805942788
+iterations: 1425 training error: 0.0013783905305170987
+iterations: 1426 training error: 0.001378387285319278
+iterations: 1427 training error: 0.001378384044990094
+iterations: 1428 training error: 0.0013783808095188625
+iterations: 1429 training error: 0.0013783775788949112
+iterations: 1430 training error: 0.0013783743531076138
+iterations: 1431 training error: 0.0013783711321463837
+iterations: 1432 training error: 0.0013783679160006496
+iterations: 1433 training error: 0.0013783647046598697
+iterations: 1434 training error: 0.0013783614981135292
+iterations: 1435 training error: 0.0013783582963511768
+iterations: 1436 training error: 0.0013783550993623306
+iterations: 1437 training error: 0.0013783519071366018
+iterations: 1438 training error: 0.0013783487196635986
+iterations: 1439 training error: 0.0013783455369329593
+iterations: 1440 training error: 0.0013783423589343656
+iterations: 1441 training error: 0.0013783391856575073
+iterations: 1442 training error: 0.0013783360170921252
+iterations: 1443 training error: 0.001378332853227986
+iterations: 1444 training error: 0.0013783296940548698
+iterations: 1445 training error: 0.0013783265395625997
+iterations: 1446 training error: 0.0013783233897410269
+iterations: 1447 training error: 0.0013783202445800244
+iterations: 1448 training error: 0.0013783171040695108
+iterations: 1449 training error: 0.0013783139681994134
+iterations: 1450 training error: 0.0013783108369597081
+iterations: 1451 training error: 0.0013783077103403738
+iterations: 1452 training error: 0.001378304588331428
+iterations: 1453 training error: 0.0013783014709229352
+iterations: 1454 training error: 0.0013782983581049676
+iterations: 1455 training error: 0.0013782952498676364
+iterations: 1456 training error: 0.0013782921462010779
+iterations: 1457 training error: 0.0013782890470954373
+iterations: 1458 training error: 0.0013782859525409315
+iterations: 1459 training error: 0.0013782828625277528
+iterations: 1460 training error: 0.0013782797770461595
+iterations: 1461 training error: 0.0013782766960864297
+iterations: 1462 training error: 0.0013782736196388565
+iterations: 1463 training error: 0.0013782705476937703
+iterations: 1464 training error: 0.0013782674802415222
+iterations: 1465 training error: 0.0013782644172725149
+iterations: 1466 training error: 0.0013782613587771356
+iterations: 1467 training error: 0.0013782583047458258
+iterations: 1468 training error: 0.001378255255169063
+iterations: 1469 training error: 0.0013782522100373254
+iterations: 1470 training error: 0.0013782491693411305
+iterations: 1471 training error: 0.0013782461330710321
+iterations: 1472 training error: 0.0013782431012175978
+iterations: 1473 training error: 0.001378240073771412
+iterations: 1474 training error: 0.0013782370507231104
+iterations: 1475 training error: 0.001378234032063336
+iterations: 1476 training error: 0.0013782310177827802
+iterations: 1477 training error: 0.0013782280078721337
+iterations: 1478 training error: 0.0013782250023221187
+iterations: 1479 training error: 0.0013782220011235016
+iterations: 1480 training error: 0.0013782190042670582
+iterations: 1481 training error: 0.0013782160117435805
+iterations: 1482 training error: 0.0013782130235439184
+iterations: 1483 training error: 0.001378210039658924
+iterations: 1484 training error: 0.001378207060079489
+iterations: 1485 training error: 0.0013782040847964891
+iterations: 1486 training error: 0.001378201113800887
+iterations: 1487 training error: 0.0013781981470836282
+iterations: 1488 training error: 0.001378195184635707
+iterations: 1489 training error: 0.001378192226448121
+iterations: 1490 training error: 0.0013781892725119
+iterations: 1491 training error: 0.0013781863228181195
+iterations: 1492 training error: 0.0013781833773578455
+iterations: 1493 training error: 0.0013781804361221925
+iterations: 1494 training error: 0.0013781774991022916
+iterations: 1495 training error: 0.0013781745662892959
+iterations: 1496 training error: 0.0013781716376743915
+iterations: 1497 training error: 0.0013781687132487814
+iterations: 1498 training error: 0.001378165793003706
+iterations: 1499 training error: 0.0013781628769304027
+iterations: 1500 training error: 0.0013781599650201555
+iterations: 1501 training error: 0.0013781570572642646
+iterations: 1502 training error: 0.0013781541536540631
+iterations: 1503 training error: 0.0013781512541808957
+iterations: 1504 training error: 0.0013781483588361351
+iterations: 1505 training error: 0.0013781454676111814
+iterations: 1506 training error: 0.0013781425804974493
+iterations: 1507 training error: 0.0013781396974864057
+iterations: 1508 training error: 0.0013781368185694913
+iterations: 1509 training error: 0.0013781339437381917
+iterations: 1510 training error: 0.0013781310729840642
+iterations: 1511 training error: 0.0013781282062985934
+iterations: 1512 training error: 0.001378125343673392
+iterations: 1513 training error: 0.0013781224850999928
+iterations: 1514 training error: 0.0013781196305700336
+iterations: 1515 training error: 0.0013781167800751488
+iterations: 1516 training error: 0.0013781139336069735
+iterations: 1517 training error: 0.0013781110911571953
+iterations: 1518 training error: 0.0013781082527175063
+iterations: 1519 training error: 0.0013781054182796296
+iterations: 1520 training error: 0.0013781025878353
+iterations: 1521 training error: 0.0013780997613762887
+iterations: 1522 training error: 0.0013780969388943942
+iterations: 1523 training error: 0.0013780941203814104
+iterations: 1524 training error: 0.0013780913058291926
+iterations: 1525 training error: 0.0013780884952295667
+iterations: 1526 training error: 0.0013780856885744139
+iterations: 1527 training error: 0.0013780828858556556
+iterations: 1528 training error: 0.0013780800870652002
+iterations: 1529 training error: 0.0013780772921949734
+iterations: 1530 training error: 0.001378074501236966
+iterations: 1531 training error: 0.0013780717141831493
+iterations: 1532 training error: 0.0013780689310255291
+iterations: 1533 training error: 0.0013780661517561483
+iterations: 1534 training error: 0.0013780633763670483
+iterations: 1535 training error: 0.0013780606048502946
+iterations: 1536 training error: 0.0013780578371979937
+iterations: 1537 training error: 0.001378055073402243
+iterations: 1538 training error: 0.0013780523134552056
+iterations: 1539 training error: 0.0013780495573490024
+iterations: 1540 training error: 0.001378046805075842
+iterations: 1541 training error: 0.0013780440566279215
+iterations: 1542 training error: 0.001378041311997436
+iterations: 1543 training error: 0.0013780385711766466
+iterations: 1544 training error: 0.0013780358341578102
+iterations: 1545 training error: 0.0013780331009332076
+iterations: 1546 training error: 0.0013780303714951425
+iterations: 1547 training error: 0.0013780276458359338
+iterations: 1548 training error: 0.0013780249239479304
+iterations: 1549 training error: 0.0013780222058235082
+iterations: 1550 training error: 0.0013780194914550354
+iterations: 1551 training error: 0.0013780167808349144
+iterations: 1552 training error: 0.00137801407395559
+iterations: 1553 training error: 0.0013780113708094885
+iterations: 1554 training error: 0.0013780086713890867
+iterations: 1555 training error: 0.0013780059756868567
+iterations: 1556 training error: 0.0013780032836953132
+iterations: 1557 training error: 0.0013780005954069888
+iterations: 1558 training error: 0.0013779979108144214
+iterations: 1559 training error: 0.0013779952299101715
+iterations: 1560 training error: 0.0013779925526868266
+iterations: 1561 training error: 0.001377989879136992
+iterations: 1562 training error: 0.0013779872092533037
+iterations: 1563 training error: 0.0013779845430283914
+iterations: 1564 training error: 0.001377981880454911
+iterations: 1565 training error: 0.0013779792215255593
+iterations: 1566 training error: 0.0013779765662330253
+iterations: 1567 training error: 0.0013779739145700568
+iterations: 1568 training error: 0.001377971266529356
+iterations: 1569 training error: 0.0013779686221036982
+iterations: 1570 training error: 0.0013779659812858725
+iterations: 1571 training error: 0.0013779633440686755
+iterations: 1572 training error: 0.0013779607104448999
+iterations: 1573 training error: 0.0013779580804074126
+iterations: 1574 training error: 0.001377955453949047
+iterations: 1575 training error: 0.0013779528310626753
+iterations: 1576 training error: 0.0013779502117411853
+iterations: 1577 training error: 0.0013779475959775076
+iterations: 1578 training error: 0.0013779449837645638
+iterations: 1579 training error: 0.001377942375095279
+iterations: 1580 training error: 0.0013779397699626452
+iterations: 1581 training error: 0.0013779371683596358
+iterations: 1582 training error: 0.0013779345702792582
+iterations: 1583 training error: 0.0013779319757145215
+iterations: 1584 training error: 0.001377929384658476
+iterations: 1585 training error: 0.0013779267971041694
+iterations: 1586 training error: 0.001377924213044683
+iterations: 1587 training error: 0.0013779216324731156
+iterations: 1588 training error: 0.001377919055382568
+iterations: 1589 training error: 0.0013779164817661633
+iterations: 1590 training error: 0.001377913911617074
+iterations: 1591 training error: 0.0013779113449284349
+iterations: 1592 training error: 0.0013779087816934406
+iterations: 1593 training error: 0.001377906221905302
+iterations: 1594 training error: 0.001377903665557224
+iterations: 1595 training error: 0.0013779011126424498
+iterations: 1596 training error: 0.0013778985631542112
+iterations: 1597 training error: 0.001377896017085814
+iterations: 1598 training error: 0.0013778934744305186
+iterations: 1599 training error: 0.001377890935181628
+iterations: 1600 training error: 0.0013778883993324983
+iterations: 1601 training error: 0.0013778858668764293
+iterations: 1602 training error: 0.0013778833378068048
+iterations: 1603 training error: 0.0013778808121169804
+iterations: 1604 training error: 0.0013778782898003583
+iterations: 1605 training error: 0.0013778757708503414
+iterations: 1606 training error: 0.001377873255260357
+iterations: 1607 training error: 0.001377870743023855
+iterations: 1608 training error: 0.0013778682341342818
+iterations: 1609 training error: 0.0013778657285851113
+iterations: 1610 training error: 0.001377863226369854
+iterations: 1611 training error: 0.001377860727481995
+iterations: 1612 training error: 0.0013778582319150807
+iterations: 1613 training error: 0.0013778557396626478
+iterations: 1614 training error: 0.0013778532507182357
+iterations: 1615 training error: 0.0013778507650754513
+iterations: 1616 training error: 0.001377848282727871
+iterations: 1617 training error: 0.0013778458036691
+iterations: 1618 training error: 0.0013778433278927658
+iterations: 1619 training error: 0.0013778408553925218
+iterations: 1620 training error: 0.0013778383861619984
+iterations: 1621 training error: 0.0013778359201948838
+iterations: 1622 training error: 0.001377833457484876
+iterations: 1623 training error: 0.0013778309980256686
+iterations: 1624 training error: 0.0013778285418109975
+iterations: 1625 training error: 0.0013778260888345725
+iterations: 1626 training error: 0.0013778236390901682
+iterations: 1627 training error: 0.0013778211925715542
+iterations: 1628 training error: 0.00137781874927251
+iterations: 1629 training error: 0.0013778163091868354
+iterations: 1630 training error: 0.0013778138723083452
+iterations: 1631 training error: 0.001377811438630879
+iterations: 1632 training error: 0.0013778090081482876
+iterations: 1633 training error: 0.0013778065808544196
+iterations: 1634 training error: 0.0013778041567431604
+iterations: 1635 training error: 0.001377801735808416
+iterations: 1636 training error: 0.0013777993180440853
+iterations: 1637 training error: 0.0013777969034440862
+iterations: 1638 training error: 0.001377794492002374
+iterations: 1639 training error: 0.0013777920837129034
+iterations: 1640 training error: 0.0013777896785696383
+iterations: 1641 training error: 0.001377787276566573
+iterations: 1642 training error: 0.0013777848776976886
+iterations: 1643 training error: 0.0013777824819570276
+iterations: 1644 training error: 0.0013777800893386145
+iterations: 1645 training error: 0.001377777699836489
+iterations: 1646 training error: 0.0013777753134447198
+iterations: 1647 training error: 0.0013777729301573695
+iterations: 1648 training error: 0.0013777705499685485
+iterations: 1649 training error: 0.0013777681728723583
+iterations: 1650 training error: 0.0013777657988629185
+iterations: 1651 training error: 0.0013777634279343535
+iterations: 1652 training error: 0.00137776106008083
+iterations: 1653 training error: 0.0013777586952965035
+iterations: 1654 training error: 0.0013777563335755517
+iterations: 1655 training error: 0.0013777539749121818
+iterations: 1656 training error: 0.00137775161930059
+iterations: 1657 training error: 0.001377749266735005
+iterations: 1658 training error: 0.00137774691720966
+iterations: 1659 training error: 0.0013777445707188083
+iterations: 1660 training error: 0.0013777422272567192
+iterations: 1661 training error: 0.0013777398868176703
+iterations: 1662 training error: 0.0013777375493959636
+iterations: 1663 training error: 0.001377735214985899
+iterations: 1664 training error: 0.0013777328835818028
+iterations: 1665 training error: 0.0013777305551780116
+iterations: 1666 training error: 0.0013777282297688734
+iterations: 1667 training error: 0.001377725907348764
+iterations: 1668 training error: 0.0013777235879120513
+iterations: 1669 training error: 0.0013777212714531353
+iterations: 1670 training error: 0.0013777189579664178
+iterations: 1671 training error: 0.0013777166474463318
+iterations: 1672 training error: 0.0013777143398872932
+iterations: 1673 training error: 0.0013777120352837682
+iterations: 1674 training error: 0.001377709733630192
+iterations: 1675 training error: 0.001377707434921073
+iterations: 1676 training error: 0.00137770513915089
+iterations: 1677 training error: 0.0013777028463141281
+iterations: 1678 training error: 0.0013777005564053362
+iterations: 1679 training error: 0.0013776982694190187
+iterations: 1680 training error: 0.0013776959853497271
+iterations: 1681 training error: 0.0013776937041920178
+iterations: 1682 training error: 0.0013776914259404614
+iterations: 1683 training error: 0.001377689150589652
+iterations: 1684 training error: 0.0013776868781341658
+iterations: 1685 training error: 0.0013776846085686296
+iterations: 1686 training error: 0.0013776823418876546
+iterations: 1687 training error: 0.0013776800780858952
+iterations: 1688 training error: 0.0013776778171579846
+iterations: 1689 training error: 0.0013776755590985835
+iterations: 1690 training error: 0.0013776733039023864
+iterations: 1691 training error: 0.0013776710515640733
+iterations: 1692 training error: 0.0013776688020783385
+iterations: 1693 training error: 0.001377666555439903
+iterations: 1694 training error: 0.0013776643116434953
+iterations: 1695 training error: 0.0013776620706838537
+iterations: 1696 training error: 0.0013776598325557447
+iterations: 1697 training error: 0.0013776575972539093
+iterations: 1698 training error: 0.0013776553647731479
+iterations: 1699 training error: 0.001377653135108245
+iterations: 1700 training error: 0.001377650908254005
+iterations: 1701 training error: 0.0013776486842052385
+iterations: 1702 training error: 0.0013776464629567937
+iterations: 1703 training error: 0.001377644244503493
+iterations: 1704 training error: 0.001377642028840206
+iterations: 1705 training error: 0.0013776398159617848
+iterations: 1706 training error: 0.0013776376058631176
+iterations: 1707 training error: 0.0013776353985390994
+iterations: 1708 training error: 0.0013776331939846264
+iterations: 1709 training error: 0.0013776309921946317
+iterations: 1710 training error: 0.001377628793164025
+iterations: 1711 training error: 0.00137762659688776
+iterations: 1712 training error: 0.0013776244033607851
+iterations: 1713 training error: 0.0013776222125780578
+iterations: 1714 training error: 0.0013776200245345762
+iterations: 1715 training error: 0.0013776178392253128
+iterations: 1716 training error: 0.0013776156566452792
+iterations: 1717 training error: 0.0013776134767894885
+iterations: 1718 training error: 0.0013776112996529669
+iterations: 1719 training error: 0.001377609125230739
+iterations: 1720 training error: 0.0013776069535178768
+iterations: 1721 training error: 0.0013776047845094274
+iterations: 1722 training error: 0.001377602618200463
+iterations: 1723 training error: 0.0013776004545860844
+iterations: 1724 training error: 0.001377598293661378
+iterations: 1725 training error: 0.0013775961354214497
+iterations: 1726 training error: 0.0013775939798614271
+iterations: 1727 training error: 0.0013775918269764474
+iterations: 1728 training error: 0.001377589676761644
+iterations: 1729 training error: 0.0013775875292121717
+iterations: 1730 training error: 0.0013775853843232134
+iterations: 1731 training error: 0.0013775832420899292
+iterations: 1732 training error: 0.001377581102507516
+iterations: 1733 training error: 0.00137757896557118
+iterations: 1734 training error: 0.0013775768312761366
+iterations: 1735 training error: 0.0013775746996176064
+iterations: 1736 training error: 0.0013775725705908268
+iterations: 1737 training error: 0.001377570444191035
+iterations: 1738 training error: 0.001377568320413513
+iterations: 1739 training error: 0.0013775661992535004
+iterations: 1740 training error: 0.0013775640807063075
+iterations: 1741 training error: 0.001377561964767211
+iterations: 1742 training error: 0.001377559851431518
+iterations: 1743 training error: 0.0013775577406945456
+iterations: 1744 training error: 0.001377555632551616
+iterations: 1745 training error: 0.0013775535269980636
+iterations: 1746 training error: 0.0013775514240292463
+iterations: 1747 training error: 0.001377549323640516
+iterations: 1748 training error: 0.001377547225827248
+iterations: 1749 training error: 0.0013775451305848081
+iterations: 1750 training error: 0.0013775430379086061
+iterations: 1751 training error: 0.0013775409477940553
+iterations: 1752 training error: 0.0013775388602365445
+iterations: 1753 training error: 0.001377536775231498
+iterations: 1754 training error: 0.0013775346927743628
+iterations: 1755 training error: 0.0013775326128605847
+iterations: 1756 training error: 0.001377530535485615
+iterations: 1757 training error: 0.0013775284606449298
+iterations: 1758 training error: 0.0013775263883339843
+iterations: 1759 training error: 0.0013775243185483056
+iterations: 1760 training error: 0.0013775222512833673
+iterations: 1761 training error: 0.0013775201865346837
+iterations: 1762 training error: 0.0013775181242977746
+iterations: 1763 training error: 0.001377516064568171
+iterations: 1764 training error: 0.001377514007341426
+iterations: 1765 training error: 0.0013775119526130623
+iterations: 1766 training error: 0.0013775099003786736
+iterations: 1767 training error: 0.0013775078506338188
+iterations: 1768 training error: 0.0013775058033740825
+iterations: 1769 training error: 0.0013775037585950563
+iterations: 1770 training error: 0.0013775017162923466
+iterations: 1771 training error: 0.0013774996764615742
+iterations: 1772 training error: 0.0013774976390983499
+iterations: 1773 training error: 0.0013774956041983102
+iterations: 1774 training error: 0.001377493571757109
+iterations: 1775 training error: 0.0013774915417703985
+iterations: 1776 training error: 0.0013774895142338243
+iterations: 1777 training error: 0.0013774874891430966
+iterations: 1778 training error: 0.0013774854664938782
+iterations: 1779 training error: 0.0013774834462818597
+iterations: 1780 training error: 0.00137748142850277
+iterations: 1781 training error: 0.0013774794131522965
+iterations: 1782 training error: 0.0013774774002261836
+iterations: 1783 training error: 0.0013774753897201524
+iterations: 1784 training error: 0.0013774733816299546
+iterations: 1785 training error: 0.0013774713759513433
+iterations: 1786 training error: 0.0013774693726800917
+iterations: 1787 training error: 0.0013774673718119754
+iterations: 1788 training error: 0.0013774653733427467
+iterations: 1789 training error: 0.0013774633772682431
+iterations: 1790 training error: 0.0013774613835842438
+iterations: 1791 training error: 0.0013774593922865456
+iterations: 1792 training error: 0.0013774574033710127
+iterations: 1793 training error: 0.0013774554168334634
+iterations: 1794 training error: 0.00137745343266972
+iterations: 1795 training error: 0.0013774514508756474
+iterations: 1796 training error: 0.00137744947144711
+iterations: 1797 training error: 0.001377447494379983
+iterations: 1798 training error: 0.0013774455196701272
+iterations: 1799 training error: 0.0013774435473134514
+iterations: 1800 training error: 0.0013774415773058497
+iterations: 1801 training error: 0.0013774396096432242
+iterations: 1802 training error: 0.0013774376443215
+iterations: 1803 training error: 0.0013774356813366004
+iterations: 1804 training error: 0.0013774337206844628
+iterations: 1805 training error: 0.001377431762361046
+iterations: 1806 training error: 0.0013774298063622909
+iterations: 1807 training error: 0.0013774278526841655
+iterations: 1808 training error: 0.0013774259013226414
+iterations: 1809 training error: 0.001377423952273703
+iterations: 1810 training error: 0.0013774220055333423
+iterations: 1811 training error: 0.001377420061097567
+iterations: 1812 training error: 0.0013774181189623754
+iterations: 1813 training error: 0.0013774161791238063
+iterations: 1814 training error: 0.0013774142415778632
+iterations: 1815 training error: 0.001377412306320606
+iterations: 1816 training error: 0.0013774103733480713
+iterations: 1817 training error: 0.0013774084426563167
+iterations: 1818 training error: 0.0013774065142413998
+iterations: 1819 training error: 0.001377404588099403
+iterations: 1820 training error: 0.0013774026642264156
+iterations: 1821 training error: 0.0013774007426185187
+iterations: 1822 training error: 0.0013773988232718074
+iterations: 1823 training error: 0.0013773969061823988
+iterations: 1824 training error: 0.0013773949913464163
+iterations: 1825 training error: 0.0013773930787599775
+iterations: 1826 training error: 0.001377391168419223
+iterations: 1827 training error: 0.0013773892603202995
+iterations: 1828 training error: 0.0013773873544593383
+iterations: 1829 training error: 0.0013773854508325393
+iterations: 1830 training error: 0.0013773835494360388
+iterations: 1831 training error: 0.0013773816502660426
+iterations: 1832 training error: 0.0013773797533187184
+iterations: 1833 training error: 0.0013773778585902696
+iterations: 1834 training error: 0.0013773759660769037
+iterations: 1835 training error: 0.001377374075774832
+iterations: 1836 training error: 0.0013773721876802786
+iterations: 1837 training error: 0.0013773703017894714
+iterations: 1838 training error: 0.001377368418098649
+iterations: 1839 training error: 0.0013773665366040636
+iterations: 1840 training error: 0.0013773646573019551
+iterations: 1841 training error: 0.0013773627801886104
+iterations: 1842 training error: 0.0013773609052602981
+iterations: 1843 training error: 0.0013773590325132877
+iterations: 1844 training error: 0.0013773571619438785
+iterations: 1845 training error: 0.0013773552935483586
+iterations: 1846 training error: 0.0013773534273230335
+iterations: 1847 training error: 0.0013773515632642373
+iterations: 1848 training error: 0.0013773497013682698
+iterations: 1849 training error: 0.0013773478416314767
+iterations: 1850 training error: 0.0013773459840501871
+iterations: 1851 training error: 0.0013773441286207592
+iterations: 1852 training error: 0.0013773422753395428
+iterations: 1853 training error: 0.0013773404242028952
+iterations: 1854 training error: 0.001377338575207193
+iterations: 1855 training error: 0.0013773367283488093
+iterations: 1856 training error: 0.0013773348836241467
+iterations: 1857 training error: 0.0013773330410296039
+iterations: 1858 training error: 0.001377331200561552
+iterations: 1859 training error: 0.0013773293622164377
+iterations: 1860 training error: 0.0013773275259906688
+iterations: 1861 training error: 0.0013773256918806706
+iterations: 1862 training error: 0.0013773238598828667
+iterations: 1863 training error: 0.0013773220299937309
+iterations: 1864 training error: 0.0013773202022096958
+iterations: 1865 training error: 0.001377318376527224
+iterations: 1866 training error: 0.0013773165529427733
+iterations: 1867 training error: 0.0013773147314528349
+iterations: 1868 training error: 0.0013773129120538883
+iterations: 1869 training error: 0.0013773110947424136
+iterations: 1870 training error: 0.0013773092795149155
+iterations: 1871 training error: 0.0013773074663679013
+iterations: 1872 training error: 0.0013773056552978916
+iterations: 1873 training error: 0.001377303846301393
+iterations: 1874 training error: 0.0013773020393749431
+iterations: 1875 training error: 0.0013773002345150685
+iterations: 1876 training error: 0.0013772984317183385
+iterations: 1877 training error: 0.0013772966309812855
+iterations: 1878 training error: 0.0013772948323004788
+iterations: 1879 training error: 0.0013772930356724638
+iterations: 1880 training error: 0.0013772912410938496
+iterations: 1881 training error: 0.0013772894485611926
+iterations: 1882 training error: 0.0013772876580711072
+iterations: 1883 training error: 0.0013772858696201517
+iterations: 1884 training error: 0.0013772840832049675
+iterations: 1885 training error: 0.0013772822988221537
+iterations: 1886 training error: 0.0013772805164683284
+iterations: 1887 training error: 0.001377278736140122
+iterations: 1888 training error: 0.001377276957834176
+iterations: 1889 training error: 0.0013772751815471103
+iterations: 1890 training error: 0.0013772734072755963
+iterations: 1891 training error: 0.00137727163501628
+iterations: 1892 training error: 0.0013772698647658327
+iterations: 1893 training error: 0.0013772680965209096
+iterations: 1894 training error: 0.0013772663302782063
+iterations: 1895 training error: 0.001377264566034413
+iterations: 1896 training error: 0.0013772628037862073
+iterations: 1897 training error: 0.0013772610435302947
+iterations: 1898 training error: 0.0013772592852633804
+iterations: 1899 training error: 0.0013772575289821717
+iterations: 1900 training error: 0.001377255774683414
+iterations: 1901 training error: 0.0013772540223638162
+iterations: 1902 training error: 0.0013772522720201256
+iterations: 1903 training error: 0.0013772505236490705
+iterations: 1904 training error: 0.0013772487772474213
+iterations: 1905 training error: 0.0013772470328119082
+iterations: 1906 training error: 0.0013772452903393223
+iterations: 1907 training error: 0.001377243549826432
+iterations: 1908 training error: 0.0013772418112699917
+iterations: 1909 training error: 0.001377240074666816
+iterations: 1910 training error: 0.0013772383400136765
+iterations: 1911 training error: 0.0013772366073073793
+iterations: 1912 training error: 0.0013772348765447267
+iterations: 1913 training error: 0.0013772331477225463
+iterations: 1914 training error: 0.0013772314208376417
+iterations: 1915 training error: 0.0013772296958868466
+iterations: 1916 training error: 0.001377227972866996
+iterations: 1917 training error: 0.0013772262517749254
+iterations: 1918 training error: 0.0013772245326074814
+iterations: 1919 training error: 0.0013772228153615229
+iterations: 1920 training error: 0.0013772211000339077
+iterations: 1921 training error: 0.0013772193866215014
+iterations: 1922 training error: 0.0013772176751211968
+iterations: 1923 training error: 0.0013772159655298499
+iterations: 1924 training error: 0.0013772142578443497
+iterations: 1925 training error: 0.0013772125520616063
+iterations: 1926 training error: 0.0013772108481785103
+iterations: 1927 training error: 0.001377209146191975
+iterations: 1928 training error: 0.0013772074460989168
+iterations: 1929 training error: 0.0013772057478962502
+iterations: 1930 training error: 0.0013772040515809061
+iterations: 1931 training error: 0.0013772023571498198
+iterations: 1932 training error: 0.00137720066459992
+iterations: 1933 training error: 0.0013771989739281688
+iterations: 1934 training error: 0.0013771972851315273
+iterations: 1935 training error: 0.001377195598206929
+iterations: 1936 training error: 0.0013771939131513625
+iterations: 1937 training error: 0.001377192229961792
+iterations: 1938 training error: 0.0013771905486351973
+iterations: 1939 training error: 0.0013771888691685664
+iterations: 1940 training error: 0.0013771871915588994
+iterations: 1941 training error: 0.0013771855158031838
+iterations: 1942 training error: 0.0013771838418984229
+iterations: 1943 training error: 0.0013771821698416549
+iterations: 1944 training error: 0.0013771804996298598
+iterations: 1945 training error: 0.001377178831260085
+iterations: 1946 training error: 0.0013771771647293621
+iterations: 1947 training error: 0.0013771755000347155
+iterations: 1948 training error: 0.0013771738371732036
+iterations: 1949 training error: 0.0013771721761418703
+iterations: 1950 training error: 0.001377170516937764
+iterations: 1951 training error: 0.0013771688595579528
+iterations: 1952 training error: 0.0013771672039995045
+iterations: 1953 training error: 0.0013771655502595038
+iterations: 1954 training error: 0.0013771638983350093
+iterations: 1955 training error: 0.0013771622482231412
+iterations: 1956 training error: 0.0013771605999209607
+iterations: 1957 training error: 0.001377158953425575
+iterations: 1958 training error: 0.0013771573087340975
+iterations: 1959 training error: 0.001377155665843641
+iterations: 1960 training error: 0.0013771540247513121
+iterations: 1961 training error: 0.0013771523854542406
+iterations: 1962 training error: 0.0013771507479495586
+iterations: 1963 training error: 0.0013771491122344002
+iterations: 1964 training error: 0.0013771474783059083
+iterations: 1965 training error: 0.0013771458461612242
+iterations: 1966 training error: 0.0013771442157975127
+iterations: 1967 training error: 0.0013771425872119325
+iterations: 1968 training error: 0.001377140960401635
+iterations: 1969 training error: 0.0013771393353638078
+iterations: 1970 training error: 0.0013771377120956312
+iterations: 1971 training error: 0.001377136090594271
+iterations: 1972 training error: 0.0013771344708569258
+iterations: 1973 training error: 0.0013771328528807895
+iterations: 1974 training error: 0.0013771312366630698
+iterations: 1975 training error: 0.00137712962220098
+iterations: 1976 training error: 0.0013771280094917089
+iterations: 1977 training error: 0.0013771263985324937
+iterations: 1978 training error: 0.0013771247893205607
+iterations: 1979 training error: 0.00137712318185313
+iterations: 1980 training error: 0.0013771215761274498
+iterations: 1981 training error: 0.001377119972140747
+iterations: 1982 training error: 0.001377118369890277
+iterations: 1983 training error: 0.0013771167693733017
+iterations: 1984 training error: 0.0013771151705870728
+iterations: 1985 training error: 0.0013771135735288524
+iterations: 1986 training error: 0.0013771119781959132
+iterations: 1987 training error: 0.0013771103845855383
+iterations: 1988 training error: 0.0013771087926949962
+iterations: 1989 training error: 0.0013771072025215861
+iterations: 1990 training error: 0.001377105614062593
+iterations: 1991 training error: 0.0013771040273153332
+iterations: 1992 training error: 0.001377102442277085
+iterations: 1993 training error: 0.0013771008589451826
+iterations: 1994 training error: 0.0013770992773169265
+iterations: 1995 training error: 0.001377097697389644
+iterations: 1996 training error: 0.0013770961191606657
+iterations: 1997 training error: 0.0013770945426273154
+iterations: 1998 training error: 0.001377092967786934
+iterations: 1999 training error: 0.0013770913946368746
+iterations: 2000 training error: 0.0013770898231744684
+iterations: 2001 training error: 0.0013770882533970785
+iterations: 2002 training error: 0.001377086685302079
+iterations: 2003 training error: 0.001377085118886807
+iterations: 2004 training error: 0.0013770835541486622
+iterations: 2005 training error: 0.0013770819910849986
+iterations: 2006 training error: 0.001377080429693202
+iterations: 2007 training error: 0.0013770788699706638
+iterations: 2008 training error: 0.0013770773119147898
+iterations: 2009 training error: 0.0013770757555229467
+iterations: 2010 training error: 0.0013770742007925638
+iterations: 2011 training error: 0.001377072647721047
+iterations: 2012 training error: 0.0013770710963057911
+iterations: 2013 training error: 0.0013770695465442336
+iterations: 2014 training error: 0.0013770679984337856
+iterations: 2015 training error: 0.001377066451971902
+iterations: 2016 training error: 0.0013770649071559917
+iterations: 2017 training error: 0.0013770633639835015
+iterations: 2018 training error: 0.0013770618224518815
+iterations: 2019 training error: 0.001377060282558576
+iterations: 2020 training error: 0.0013770587443010472
+iterations: 2021 training error: 0.0013770572076767524
+iterations: 2022 training error: 0.0013770556726831597
+iterations: 2023 training error: 0.0013770541393177502
+iterations: 2024 training error: 0.0013770526075779757
+iterations: 2025 training error: 0.0013770510774613416
+iterations: 2026 training error: 0.0013770495489653384
+iterations: 2027 training error: 0.0013770480220874266
+iterations: 2028 training error: 0.001377046496825129
+iterations: 2029 training error: 0.001377044973175947
+iterations: 2030 training error: 0.0013770434511373821
+iterations: 2031 training error: 0.00137704193070695
+iterations: 2032 training error: 0.0013770404118821637
+iterations: 2033 training error: 0.0013770388946605415
+iterations: 2034 training error: 0.001377037379039624
+iterations: 2035 training error: 0.0013770358650169398
+iterations: 2036 training error: 0.0013770343525900187
+iterations: 2037 training error: 0.001377032841756419
+iterations: 2038 training error: 0.0013770313325136665
+iterations: 2039 training error: 0.0013770298248593346
+iterations: 2040 training error: 0.0013770283187909663
+iterations: 2041 training error: 0.0013770268143061396
+iterations: 2042 training error: 0.0013770253114024076
+iterations: 2043 training error: 0.0013770238100773468
+iterations: 2044 training error: 0.00137702231032854
+iterations: 2045 training error: 0.0013770208121535541
+iterations: 2046 training error: 0.001377019315549998
+iterations: 2047 training error: 0.0013770178205154498
+iterations: 2048 training error: 0.0013770163270475123
+iterations: 2049 training error: 0.001377014835143793
+iterations: 2050 training error: 0.0013770133448018707
+iterations: 2051 training error: 0.0013770118560193808
+iterations: 2052 training error: 0.0013770103687939423
+iterations: 2053 training error: 0.0013770088831231674
+iterations: 2054 training error: 0.0013770073990046784
+iterations: 2055 training error: 0.001377005916436107
+iterations: 2056 training error: 0.0013770044354151129
+iterations: 2057 training error: 0.0013770029559392947
+iterations: 2058 training error: 0.0013770014780063288
+iterations: 2059 training error: 0.001377000001613854
+iterations: 2060 training error: 0.0013769985267595244
+iterations: 2061 training error: 0.0013769970534409882
+iterations: 2062 training error: 0.0013769955816559333
+iterations: 2063 training error: 0.0013769941114020157
+iterations: 2064 training error: 0.0013769926426768964
+iterations: 2065 training error: 0.0013769911754782807
+iterations: 2066 training error: 0.0013769897098038228
+iterations: 2067 training error: 0.0013769882456512261
+iterations: 2068 training error: 0.0013769867830181759
+iterations: 2069 training error: 0.001376985321902375
+iterations: 2070 training error: 0.0013769838623015234
+iterations: 2071 training error: 0.0013769824042133135
+iterations: 2072 training error: 0.0013769809476354684
+iterations: 2073 training error: 0.0013769794925657015
+iterations: 2074 training error: 0.00137697803900173
+iterations: 2075 training error: 0.0013769765869412814
+iterations: 2076 training error: 0.0013769751363820729
+iterations: 2077 training error: 0.0013769736873218412
+iterations: 2078 training error: 0.0013769722397583286
+iterations: 2079 training error: 0.0013769707936892811
+iterations: 2080 training error: 0.0013769693491124362
+iterations: 2081 training error: 0.001376967906025551
+iterations: 2082 training error: 0.0013769664644263711
+iterations: 2083 training error: 0.0013769650243126675
+iterations: 2084 training error: 0.0013769635856821878
+iterations: 2085 training error: 0.001376962148532727
+iterations: 2086 training error: 0.0013769607128620368
+iterations: 2087 training error: 0.0013769592786679022
+iterations: 2088 training error: 0.0013769578459481011
+iterations: 2089 training error: 0.0013769564147004185
+iterations: 2090 training error: 0.0013769549849226529
+iterations: 2091 training error: 0.0013769535566125937
+iterations: 2092 training error: 0.0013769521297680486
+iterations: 2093 training error: 0.0013769507043868102
+iterations: 2094 training error: 0.00137694928046669
+iterations: 2095 training error: 0.0013769478580054947
+iterations: 2096 training error: 0.001376946437001056
+iterations: 2097 training error: 0.0013769450174511803
+iterations: 2098 training error: 0.0013769435993537034
+iterations: 2099 training error: 0.0013769421827064497
+iterations: 2100 training error: 0.0013769407675072527
+iterations: 2101 training error: 0.0013769393537539471
+iterations: 2102 training error: 0.0013769379414443896
+iterations: 2103 training error: 0.0013769365305764105
+iterations: 2104 training error: 0.0013769351211478564
+iterations: 2105 training error: 0.001376933713156613
+iterations: 2106 training error: 0.001376932306600508
+iterations: 2107 training error: 0.0013769309014774035
+iterations: 2108 training error: 0.0013769294977852044
+iterations: 2109 training error: 0.0013769280955217417
+iterations: 2110 training error: 0.001376926694684909
+iterations: 2111 training error: 0.0013769252952725956
+iterations: 2112 training error: 0.0013769238972826622
+iterations: 2113 training error: 0.0013769225007130238
+iterations: 2114 training error: 0.0013769211055615505
+iterations: 2115 training error: 0.001376919711826148
+iterations: 2116 training error: 0.0013769183195047115
+iterations: 2117 training error: 0.0013769169285951699
+iterations: 2118 training error: 0.0013769155390953997
+iterations: 2119 training error: 0.0013769141510033321
+iterations: 2120 training error: 0.001376912764316874
+iterations: 2121 training error: 0.001376911379033958
+iterations: 2122 training error: 0.0013769099951525116
+iterations: 2123 training error: 0.0013769086126704494
+iterations: 2124 training error: 0.0013769072315857151
+iterations: 2125 training error: 0.001376905851896233
+iterations: 2126 training error: 0.0013769044735999628
+iterations: 2127 training error: 0.001376903096694851
+iterations: 2128 training error: 0.0013769017211788302
+iterations: 2129 training error: 0.0013769003470498504
+iterations: 2130 training error: 0.0013768989743058971
+iterations: 2131 training error: 0.0013768976029449112
+iterations: 2132 training error: 0.0013768962329648578
+iterations: 2133 training error: 0.0013768948643636996
+iterations: 2134 training error: 0.0013768934971394365
+iterations: 2135 training error: 0.0013768921312900236
+iterations: 2136 training error: 0.0013768907668134428
+iterations: 2137 training error: 0.0013768894037076906
+iterations: 2138 training error: 0.0013768880419707376
+iterations: 2139 training error: 0.0013768866816006057
+iterations: 2140 training error: 0.0013768853225952606
+iterations: 2141 training error: 0.0013768839649527214
+iterations: 2142 training error: 0.001376882608670983
+iterations: 2143 training error: 0.0013768812537480555
+iterations: 2144 training error: 0.0013768799001819606
+iterations: 2145 training error: 0.0013768785479707029
+iterations: 2146 training error: 0.0013768771971122955
+iterations: 2147 training error: 0.001376875847604784
+iterations: 2148 training error: 0.0013768744994461742
+iterations: 2149 training error: 0.0013768731526345066
+iterations: 2150 training error: 0.0013768718071678256
+iterations: 2151 training error: 0.0013768704630441483
+iterations: 2152 training error: 0.0013768691202615357
+iterations: 2153 training error: 0.0013768677788180267
+iterations: 2154 training error: 0.001376866438711669
+iterations: 2155 training error: 0.0013768650999405217
+iterations: 2156 training error: 0.001376863762502639
+iterations: 2157 training error: 0.0013768624263960816
+iterations: 2158 training error: 0.0013768610916189124
+iterations: 2159 training error: 0.0013768597581692143
+iterations: 2160 training error: 0.0013768584260450427
+iterations: 2161 training error: 0.0013768570952444772
+iterations: 2162 training error: 0.0013768557657655935
+iterations: 2163 training error: 0.0013768544376064839
+iterations: 2164 training error: 0.0013768531107652352
+iterations: 2165 training error: 0.0013768517852399342
+iterations: 2166 training error: 0.0013768504610286712
+iterations: 2167 training error: 0.0013768491381295517
+iterations: 2168 training error: 0.0013768478165406845
+iterations: 2169 training error: 0.00137684649626015
+iterations: 2170 training error: 0.0013768451772860765
+iterations: 2171 training error: 0.0013768438596165773
+iterations: 2172 training error: 0.0013768425432497504
+iterations: 2173 training error: 0.0013768412281837412
+iterations: 2174 training error: 0.0013768399144166497
+iterations: 2175 training error: 0.001376838601946613
+iterations: 2176 training error: 0.0013768372907717575
+iterations: 2177 training error: 0.0013768359808902304
+iterations: 2178 training error: 0.001376834672300149
+iterations: 2179 training error: 0.0013768333649996725
+iterations: 2180 training error: 0.0013768320589869268
+iterations: 2181 training error: 0.0013768307542600723
+iterations: 2182 training error: 0.0013768294508172613
+iterations: 2183 training error: 0.001376828148656643
+iterations: 2184 training error: 0.0013768268477763732
+iterations: 2185 training error: 0.0013768255481746267
+iterations: 2186 training error: 0.0013768242498495638
+iterations: 2187 training error: 0.001376822952799342
+iterations: 2188 training error: 0.001376821657022147
+iterations: 2189 training error: 0.001376820362516143
+iterations: 2190 training error: 0.0013768190692795186
+iterations: 2191 training error: 0.0013768177773104539
+iterations: 2192 training error: 0.001376816486607137
+iterations: 2193 training error: 0.0013768151971677565
+iterations: 2194 training error: 0.0013768139089904965
+iterations: 2195 training error: 0.0013768126220735722
+iterations: 2196 training error: 0.0013768113364151656
+iterations: 2197 training error: 0.001376810052013497
+iterations: 2198 training error: 0.0013768087688667498
+iterations: 2199 training error: 0.0013768074869731427
+iterations: 2200 training error: 0.0013768062063309048
+iterations: 2201 training error: 0.0013768049269382318
+iterations: 2202 training error: 0.0013768036487933682
+iterations: 2203 training error: 0.0013768023718945077
+iterations: 2204 training error: 0.0013768010962398932
+iterations: 2205 training error: 0.0013767998218277534
+iterations: 2206 training error: 0.0013767985486563238
+iterations: 2207 training error: 0.0013767972767238241
+iterations: 2208 training error: 0.0013767960060285115
+iterations: 2209 training error: 0.0013767947365686413
+iterations: 2210 training error: 0.001376793468342438
+iterations: 2211 training error: 0.001376792201348146
+iterations: 2212 training error: 0.001376790935584035
+iterations: 2213 training error: 0.0013767896710483645
+iterations: 2214 training error: 0.0013767884077393773
+iterations: 2215 training error: 0.0013767871456553456
+iterations: 2216 training error: 0.0013767858847945416
+iterations: 2217 training error: 0.0013767846251552193
+iterations: 2218 training error: 0.0013767833667356648
+iterations: 2219 training error: 0.0013767821095341496
+iterations: 2220 training error: 0.0013767808535489448
+iterations: 2221 training error: 0.0013767795987783367
+iterations: 2222 training error: 0.0013767783452206203
+iterations: 2223 training error: 0.001376777092874082
+iterations: 2224 training error: 0.001376775841736999
+iterations: 2225 training error: 0.0013767745918076848
+iterations: 2226 training error: 0.0013767733430844159
+iterations: 2227 training error: 0.0013767720955655239
+iterations: 2228 training error: 0.0013767708492492734
+iterations: 2229 training error: 0.0013767696041340097
+iterations: 2230 training error: 0.0013767683602180143
+iterations: 2231 training error: 0.0013767671174996282
+iterations: 2232 training error: 0.0013767658759771513
+iterations: 2233 training error: 0.001376764635648905
+iterations: 2234 training error: 0.0013767633965132164
+iterations: 2235 training error: 0.0013767621585684072
+iterations: 2236 training error: 0.001376760921812805
+iterations: 2237 training error: 0.0013767596862447567
+iterations: 2238 training error: 0.001376758451862581
+iterations: 2239 training error: 0.0013767572186646226
+iterations: 2240 training error: 0.0013767559866492299
+iterations: 2241 training error: 0.0013767547558147283
+iterations: 2242 training error: 0.0013767535261594893
+iterations: 2243 training error: 0.001376752297681851
+iterations: 2244 training error: 0.0013767510703801746
+iterations: 2245 training error: 0.001376749844252803
+iterations: 2246 training error: 0.00137674861929811
+iterations: 2247 training error: 0.001376747395514445
+iterations: 2248 training error: 0.0013767461729001908
+iterations: 2249 training error: 0.0013767449514537097
+iterations: 2250 training error: 0.0013767437311733722
+iterations: 2251 training error: 0.001376742512057544
+iterations: 2252 training error: 0.001376741294104617
+iterations: 2253 training error: 0.001376740077312965
+iterations: 2254 training error: 0.0013767388616809759
+iterations: 2255 training error: 0.0013767376472070291
+iterations: 2256 training error: 0.001376736433889525
+iterations: 2257 training error: 0.0013767352217268615
+iterations: 2258 training error: 0.0013767340107174132
+iterations: 2259 training error: 0.0013767328008595916
+iterations: 2260 training error: 0.0013767315921517874
+iterations: 2261 training error: 0.0013767303845924229
+iterations: 2262 training error: 0.0013767291781798952
+iterations: 2263 training error: 0.0013767279729126173
+iterations: 2264 training error: 0.0013767267687890019
+iterations: 2265 training error: 0.0013767255658074628
+iterations: 2266 training error: 0.0013767243639664216
+iterations: 2267 training error: 0.0013767231632642973
+iterations: 2268 training error: 0.001376721963699515
+iterations: 2269 training error: 0.0013767207652705144
+iterations: 2270 training error: 0.0013767195679757064
+iterations: 2271 training error: 0.0013767183718135269
+iterations: 2272 training error: 0.0013767171767824304
+iterations: 2273 training error: 0.001376715982880833
+iterations: 2274 training error: 0.001376714790107204
+iterations: 2275 training error: 0.0013767135984599544
+iterations: 2276 training error: 0.0013767124079375602
+iterations: 2277 training error: 0.0013767112185384572
+iterations: 2278 training error: 0.0013767100302611041
+iterations: 2279 training error: 0.0013767088431039605
+iterations: 2280 training error: 0.0013767076570654732
+iterations: 2281 training error: 0.0013767064721441089
+iterations: 2282 training error: 0.0013767052883383345
+iterations: 2283 training error: 0.001376704105646621
+iterations: 2284 training error: 0.0013767029240674285
+iterations: 2285 training error: 0.0013767017435992374
+iterations: 2286 training error: 0.0013767005642405141
+iterations: 2287 training error: 0.0013766993859897544
+iterations: 2288 training error: 0.0013766982088454266
+iterations: 2289 training error: 0.0013766970328060034
+iterations: 2290 training error: 0.0013766958578699962
+iterations: 2291 training error: 0.0013766946840358808
+iterations: 2292 training error: 0.0013766935113021454
+iterations: 2293 training error: 0.0013766923396672898
+iterations: 2294 training error: 0.0013766911691298197
+iterations: 2295 training error: 0.0013766899996882234
+iterations: 2296 training error: 0.0013766888313409967
+iterations: 2297 training error: 0.0013766876640866556
+iterations: 2298 training error: 0.0013766864979237207
+iterations: 2299 training error: 0.001376685332850675
+iterations: 2300 training error: 0.001376684168866062
+iterations: 2301 training error: 0.001376683005968379
+iterations: 2302 training error: 0.0013766818441561367
+iterations: 2303 training error: 0.0013766806834278776
+iterations: 2304 training error: 0.001376679523782123
+iterations: 2305 training error: 0.001376678365217393
+iterations: 2306 training error: 0.0013766772077322053
+iterations: 2307 training error: 0.0013766760513251072
+iterations: 2308 training error: 0.0013766748959946377
+iterations: 2309 training error: 0.0013766737417393296
+iterations: 2310 training error: 0.0013766725885577097
+iterations: 2311 training error: 0.001376671436448334
+iterations: 2312 training error: 0.0013766702854097527
+iterations: 2313 training error: 0.0013766691354404976
+iterations: 2314 training error: 0.0013766679865391252
+iterations: 2315 training error: 0.0013766668387041959
+iterations: 2316 training error: 0.0013766656919342634
+iterations: 2317 training error: 0.0013766645462278744
+iterations: 2318 training error: 0.0013766634015836008
+iterations: 2319 training error: 0.001376662258000004
+iterations: 2320 training error: 0.0013766611154756513
+iterations: 2321 training error: 0.0013766599740091064
+iterations: 2322 training error: 0.0013766588335989336
+iterations: 2323 training error: 0.0013766576942437264
+iterations: 2324 training error: 0.001376656555942044
+iterations: 2325 training error: 0.0013766554186924694
+iterations: 2326 training error: 0.0013766542824935875
+iterations: 2327 training error: 0.0013766531473439706
+iterations: 2328 training error: 0.0013766520132422252
+iterations: 2329 training error: 0.001376650880186931
+iterations: 2330 training error: 0.0013766497481766645
+iterations: 2331 training error: 0.0013766486172100366
+iterations: 2332 training error: 0.0013766474872856274
+iterations: 2333 training error: 0.0013766463584020522
+iterations: 2334 training error: 0.001376645230557908
+iterations: 2335 training error: 0.0013766441037518012
+iterations: 2336 training error: 0.0013766429779823227
+iterations: 2337 training error: 0.001376641853248105
+iterations: 2338 training error: 0.0013766407295477364
+iterations: 2339 training error: 0.0013766396068798355
+iterations: 2340 training error: 0.0013766384852430284
+iterations: 2341 training error: 0.0013766373646359235
+iterations: 2342 training error: 0.0013766362450571426
+iterations: 2343 training error: 0.0013766351265053138
+iterations: 2344 training error: 0.0013766340089790704
+iterations: 2345 training error: 0.0013766328924770166
+iterations: 2346 training error: 0.0013766317769977978
+iterations: 2347 training error: 0.0013766306625400445
+iterations: 2348 training error: 0.0013766295491024027
+iterations: 2349 training error: 0.001376628436683498
+iterations: 2350 training error: 0.0013766273252819765
+iterations: 2351 training error: 0.001376626214896468
+iterations: 2352 training error: 0.0013766251055256234
+iterations: 2353 training error: 0.0013766239971681003
+iterations: 2354 training error: 0.0013766228898225458
+iterations: 2355 training error: 0.0013766217834876018
+iterations: 2356 training error: 0.0013766206781619273
+iterations: 2357 training error: 0.0013766195738441796
+iterations: 2358 training error: 0.0013766184705330281
+iterations: 2359 training error: 0.0013766173682271106
+iterations: 2360 training error: 0.0013766162669251068
+iterations: 2361 training error: 0.0013766151666256908
+iterations: 2362 training error: 0.0013766140673275157
+iterations: 2363 training error: 0.0013766129690292574
+iterations: 2364 training error: 0.001376611871729586
+iterations: 2365 training error: 0.0013766107754271857
+iterations: 2366 training error: 0.0013766096801207217
+iterations: 2367 training error: 0.001376608585808889
+iterations: 2368 training error: 0.0013766074924903557
+iterations: 2369 training error: 0.001376606400163821
+iterations: 2370 training error: 0.0013766053088279683
+iterations: 2371 training error: 0.0013766042184814586
+iterations: 2372 training error: 0.0013766031291230219
+iterations: 2373 training error: 0.0013766020407513372
+iterations: 2374 training error: 0.0013766009533651004
+iterations: 2375 training error: 0.0013765998669630088
+iterations: 2376 training error: 0.0013765987815437647
+iterations: 2377 training error: 0.0013765976971060658
+iterations: 2378 training error: 0.001376596613648633
+iterations: 2379 training error: 0.0013765955311701571
+iterations: 2380 training error: 0.0013765944496693494
+iterations: 2381 training error: 0.0013765933691449257
+iterations: 2382 training error: 0.0013765922895956038
+iterations: 2383 training error: 0.0013765912110201024
+iterations: 2384 training error: 0.0013765901334171315
+iterations: 2385 training error: 0.0013765890567854037
+iterations: 2386 training error: 0.0013765879811236715
+iterations: 2387 training error: 0.0013765869064306312
+iterations: 2388 training error: 0.001376585832705022
+iterations: 2389 training error: 0.0013765847599455617
+iterations: 2390 training error: 0.0013765836881510056
+iterations: 2391 training error: 0.0013765826173200632
+iterations: 2392 training error: 0.0013765815474514969
+iterations: 2393 training error: 0.0013765804785440174
+iterations: 2394 training error: 0.0013765794105963926
+iterations: 2395 training error: 0.0013765783436073358
+iterations: 2396 training error: 0.001376577277575617
+iterations: 2397 training error: 0.0013765762124999736
+iterations: 2398 training error: 0.001376575148379145
+iterations: 2399 training error: 0.001376574085211902
+iterations: 2400 training error: 0.001376573022996986
+iterations: 2401 training error: 0.001376571961733151
+iterations: 2402 training error: 0.0013765709014191667
+iterations: 2403 training error: 0.0013765698420537737
+iterations: 2404 training error: 0.0013765687836357597
+iterations: 2405 training error: 0.0013765677261638703
+iterations: 2406 training error: 0.0013765666696368712
+iterations: 2407 training error: 0.0013765656140535475
+iterations: 2408 training error: 0.001376564559412642
+iterations: 2409 training error: 0.0013765635057129567
+iterations: 2410 training error: 0.001376562452953251
+iterations: 2411 training error: 0.001376561401132301
+iterations: 2412 training error: 0.0013765603502488895
+iterations: 2413 training error: 0.0013765593003018037
+iterations: 2414 training error: 0.0013765582512898266
+iterations: 2415 training error: 0.0013765572032117255
+iterations: 2416 training error: 0.0013765561560663043
+iterations: 2417 training error: 0.0013765551098523466
+iterations: 2418 training error: 0.0013765540645686483
+iterations: 2419 training error: 0.001376553020213998
+iterations: 2420 training error: 0.0013765519767871938
+iterations: 2421 training error: 0.0013765509342870224
+iterations: 2422 training error: 0.0013765498927123148
+iterations: 2423 training error: 0.0013765488520618406
+iterations: 2424 training error: 0.0013765478123344108
+iterations: 2425 training error: 0.001376546773528848
+iterations: 2426 training error: 0.0013765457356439427
+iterations: 2427 training error: 0.0013765446986785006
+iterations: 2428 training error: 0.0013765436626313535
+iterations: 2429 training error: 0.0013765426275012984
+iterations: 2430 training error: 0.0013765415932871596
+iterations: 2431 training error: 0.001376540559987756
+iterations: 2432 training error: 0.0013765395276019007
+iterations: 2433 training error: 0.0013765384961284262
+iterations: 2434 training error: 0.0013765374655661476
+iterations: 2435 training error: 0.001376536435913893
+iterations: 2436 training error: 0.0013765354071704893
+iterations: 2437 training error: 0.001376534379334773
+iterations: 2438 training error: 0.0013765333524055705
+iterations: 2439 training error: 0.0013765323263817064
+iterations: 2440 training error: 0.0013765313012620401
+iterations: 2441 training error: 0.0013765302770453961
+iterations: 2442 training error: 0.0013765292537306095
+iterations: 2443 training error: 0.001376528231316524
+iterations: 2444 training error: 0.0013765272098019918
+iterations: 2445 training error: 0.0013765261891858615
+iterations: 2446 training error: 0.0013765251694669584
+iterations: 2447 training error: 0.001376524150644145
+iterations: 2448 training error: 0.001376523132716294
+iterations: 2449 training error: 0.0013765221156822238
+iterations: 2450 training error: 0.0013765210995408108
+iterations: 2451 training error: 0.0013765200842909074
+iterations: 2452 training error: 0.0013765190699313722
+iterations: 2453 training error: 0.0013765180564610632
+iterations: 2454 training error: 0.001376517043878863
+iterations: 2455 training error: 0.00137651603218361
+iterations: 2456 training error: 0.0013765150213741826
+iterations: 2457 training error: 0.001376514011449449
+iterations: 2458 training error: 0.0013765130024082815
+iterations: 2459 training error: 0.0013765119942495568
+iterations: 2460 training error: 0.0013765109869721356
+iterations: 2461 training error: 0.0013765099805749157
+iterations: 2462 training error: 0.0013765089750567552
+iterations: 2463 training error: 0.001376507970416546
+iterations: 2464 training error: 0.0013765069666531657
+iterations: 2465 training error: 0.0013765059637654963
+iterations: 2466 training error: 0.0013765049617524274
+iterations: 2467 training error: 0.0013765039606128532
+iterations: 2468 training error: 0.001376502960345659
+iterations: 2469 training error: 0.0013765019609497209
+iterations: 2470 training error: 0.0013765009624239597
+iterations: 2471 training error: 0.001376499964767241
+iterations: 2472 training error: 0.001376498967978481
+iterations: 2473 training error: 0.001376497972056584
+iterations: 2474 training error: 0.0013764969770004374
+iterations: 2475 training error: 0.0013764959828089427
+iterations: 2476 training error: 0.0013764949894810067
+iterations: 2477 training error: 0.0013764939970155473
+iterations: 2478 training error: 0.0013764930054114641
+iterations: 2479 training error: 0.0013764920146676575
+iterations: 2480 training error: 0.001376491024783058
+iterations: 2481 training error: 0.0013764900357565654
+iterations: 2482 training error: 0.0013764890475870908
+iterations: 2483 training error: 0.0013764880602735745
+iterations: 2484 training error: 0.001376487073814911
+iterations: 2485 training error: 0.0013764860882100292
+iterations: 2486 training error: 0.0013764851034578564
+iterations: 2487 training error: 0.0013764841195573183
+iterations: 2488 training error: 0.001376483136507325
+iterations: 2489 training error: 0.0013764821543068202
+iterations: 2490 training error: 0.0013764811729547305
+iterations: 2491 training error: 0.0013764801924499867
+iterations: 2492 training error: 0.0013764792127915221
+iterations: 2493 training error: 0.001376478233978265
+iterations: 2494 training error: 0.001376477256009168
+iterations: 2495 training error: 0.0013764762788831485
+iterations: 2496 training error: 0.0013764753025991626
+iterations: 2497 training error: 0.0013764743271561435
+iterations: 2498 training error: 0.001376473352553044
+iterations: 2499 training error: 0.0013764723787888036
+iterations: 2500 training error: 0.001376471405862377
+iterations: 2501 training error: 0.0013764704337726943
+iterations: 2502 training error: 0.0013764694625187264
+iterations: 2503 training error: 0.0013764684920994088
+iterations: 2504 training error: 0.0013764675225137106
+iterations: 2505 training error: 0.001376466553760588
+iterations: 2506 training error: 0.0013764655858389961
+iterations: 2507 training error: 0.0013764646187478795
+iterations: 2508 training error: 0.0013764636524862203
+iterations: 2509 training error: 0.0013764626870529646
+iterations: 2510 training error: 0.0013764617224470807
+iterations: 2511 training error: 0.0013764607586675508
+iterations: 2512 training error: 0.0013764597957133223
+iterations: 2513 training error: 0.0013764588335833795
+iterations: 2514 training error: 0.0013764578722766738
+iterations: 2515 training error: 0.00137645691179221
+iterations: 2516 training error: 0.0013764559521289297
+iterations: 2517 training error: 0.0013764549932858293
+iterations: 2518 training error: 0.0013764540352618807
+iterations: 2519 training error: 0.00137645307805607
+iterations: 2520 training error: 0.0013764521216673656
+iterations: 2521 training error: 0.0013764511660947576
+iterations: 2522 training error: 0.001376450211337229
+iterations: 2523 training error: 0.0013764492573937817
+iterations: 2524 training error: 0.0013764483042633868
+iterations: 2525 training error: 0.00137644735194503
+iterations: 2526 training error: 0.0013764464004377064
+iterations: 2527 training error: 0.0013764454497404253
+iterations: 2528 training error: 0.001376444499852168
+iterations: 2529 training error: 0.0013764435507719333
+iterations: 2530 training error: 0.0013764426024987127
+iterations: 2531 training error: 0.0013764416550315092
+iterations: 2532 training error: 0.0013764407083693311
+iterations: 2533 training error: 0.0013764397625111728
+iterations: 2534 training error: 0.0013764388174560356
+iterations: 2535 training error: 0.001376437873202944
+iterations: 2536 training error: 0.0013764369297508917
+iterations: 2537 training error: 0.0013764359870988903
+iterations: 2538 training error: 0.0013764350452459492
+iterations: 2539 training error: 0.0013764341041910845
+iterations: 2540 training error: 0.0013764331639333025
+iterations: 2541 training error: 0.0013764322244716359
+iterations: 2542 training error: 0.001376431285805074
+iterations: 2543 training error: 0.0013764303479326667
+iterations: 2544 training error: 0.0013764294108534157
+iterations: 2545 training error: 0.0013764284745663503
+iterations: 2546 training error: 0.0013764275390704959
+iterations: 2547 training error: 0.0013764266043648687
+iterations: 2548 training error: 0.0013764256704484937
+iterations: 2549 training error: 0.0013764247373204172
+iterations: 2550 training error: 0.0013764238049796633
+Tue Nov 15 2016 23:45:04 GMT+0000 (UTC)
+
+Elapsed time in seconds: 11310:27.319999999948777
+Number of classes: 725
+Number of samples: 8972
+
+{ '109487': 0.0025471997722581827,
+  '109488': 0.0019430251174888807,
+  '109489': 0.002194383991638847,
+  '109490': 0.002239121152563599,
+  '109491': 0.0031882450837895796,
+  '109492': 0.0055432286548631774,
+  '109493': 0.005587699241005575,
+  '109494': 0.0019436179387193183,
+  '109495': 0.002238804626291592,
+  '109496': 0.0019424485503573038,
+  '109497': 0.002021793383694394,
+  '109498': 0.0019429550364207192,
+  '109499': 0.002063301234006131,
+  '109500': 0.0023363189701475014,
+  '109501': 0.0019439933600434224,
+  '109502': 0.0019430165412031607,
+  '109503': 0.0019815958138389256,
+  '109504': 0.0019818891658792675,
+  '109505': 0.005481360661442492,
+  '109506': 0.0021059462030554683,
+  '109507': 0.003996081906555035,
+  '109508': 0.0029125343012799216,
+  '109509': 0.005587518089375301,
+  '109510': 0.0021923593162645537,
+  '109511': 0.0026609855188020255,
+  '109512': 0.0022865261840997195,
+  '109513': 0.0047613138326198755,
+  '109514': 0.0019818958828852957,
+  '109515': 0.0020209754586807964,
+  '109516': 0.0019807084170744716,
+  '109517': 0.0020227701676140157,
+  '109518': 0.001981214691379085,
+  '109519': 0.005591886438825529,
+  '109520': 0.002103914445051165,
+  '109521': 0.0021050115792062354,
+  '109522': 0.005377418448386985,
+  '109523': 0.001943050657134182,
+  '109524': 0.0019410558537752145,
+  '109525': 0.002911966312133218,
+  '109526': 0.0020623297980045994,
+  '109527': 0.001942572840724616,
+  '109528': 0.0019419597077464587,
+  '109529': 0.004371727458591799,
+  '109530': 0.002193850259656881,
+  '109531': 0.0055867864808827675,
+  '109532': 0.001942816616423036,
+  '109533': 0.002548315254671532,
+  '109534': 0.001982362896078379,
+  '109535': 0.005594230673975742,
+  '109536': 0.0020754746010558465,
+  '109537': 0.005629366978205326,
+  '109538': 0.0021490911538472476,
+  '109539': 0.0020629715096822337,
+  '109540': 0.002610549561509287,
+  '109541': 0.004711121077197342,
+  '109542': 0.0021486030125764414,
+  '109543': 0.0020616552353908283,
+  '109544': 0.005586423523060572,
+  '109545': 0.0032608779823392058,
+  '109546': 0.0019815469584661912,
+  '109547': 0.0038260720583592166,
+  '109548': 0.002104897205895076,
+  '109549': 0.004959363182452902,
+  '109550': 0.002492698187434107,
+  '109551': 0.002192745698893142,
+  '109552': 0.0019428056822415486,
+  '109553': 0.004866479594349001,
+  '109554': 0.002660986103767354,
+  '109555': 0.0019816939323336184,
+  '109556': 0.002149214794902928,
+  '109557': 0.002020610256931085,
+  '109558': 0.00559437659771787,
+  '109559': 0.0021927974973836276,
+  '109560': 0.0021050352640730654,
+  '109561': 0.0019428057596400507,
+  '109562': 0.002241155550255712,
+  '109563': 0.001941366548300517,
+  '109565': 0.0023881485861865317,
+  '109566': 0.005596306191697234,
+  '109567': 0.0019806378404577736,
+  '109568': 0.0019415826918834738,
+  '109569': 0.0019812918587520274,
+  '109570': 0.002021293121424441,
+  '109571': 0.003574446240638363,
+  '109572': 0.002846315341421333,
+  '109573': 0.002021744031611282,
+  '109574': 0.002492427364500365,
+  '109575': 0.005589781192402602,
+  '109576': 0.001943013216868654,
+  '109577': 0.0020222612407324574,
+  '109578': 0.0021941608274947347,
+  '109579': 0.0019435988041230424,
+  '109580': 0.005593715214641792,
+  '109581': 0.0019426487849938136,
+  '109582': 0.0027212863797390976,
+  '109583': 0.005589449117192415,
+  '109584': 0.001941913163765196,
+  '109585': 0.0020625147338483403,
+  '109586': 0.0019814880073149668,
+  '109587': 0.001942054295595234,
+  '109588': 0.0019812755794848457,
+  '109590': 0.002547619082125903,
+  '109591': 0.0034109654760147625,
+  '109592': 0.0019418410012968265,
+  '109593': 0.005588087538877038,
+  '109594': 0.0019423435371564227,
+  '109595': 0.004565993691093732,
+  '109596': 0.002660054908500435,
+  '109597': 0.002194016238447495,
+  '109598': 0.001942029110433547,
+  '109599': 0.0028474684535145295,
+  '109600': 0.0019428956987775092,
+  '109601': 0.002104600185509543,
+  '109602': 0.001982419835153765,
+  '109603': 0.0020201737291893327,
+  '109604': 0.0019423351928463163,
+  '109605': 0.0019438001475151564,
+  '109606': 0.001981251904749488,
+  '109607': 0.0019805751969321464,
+  '109608': 0.0021047156508932343,
+  '109609': 0.003910373782742277,
+  '109610': 0.0019427994272074255,
+  '109611': 0.002287591290111207,
+  '109612': 0.0021944015828197247,
+  '109613': 0.004002888435329498,
+  '109614': 0.005588154109663614,
+  '109615': 0.0019413211488899052,
+  '109616': 0.002062736628400428,
+  '109617': 0.0021047351972960774,
+  '109618': 0.0020206397335020697,
+  '109619': 0.005585798647993043,
+  '109620': 0.0019417053893153642,
+  '109621': 0.0019429333321888868,
+  '109622': 0.0019819194158742326,
+  '109623': 0.0025476181873836405,
+  '109624': 0.00297613018257747,
+  '109625': 0.0019421940848641003,
+  '109626': 0.0020213899099437564,
+  '109627': 0.0020631466380708887,
+  '109628': 0.0027211416146482575,
+  '109629': 0.0055905449697534115,
+  '109630': 0.002662276281886373,
+  '109631': 0.0028476513816221073,
+  '109632': 0.002439562795527637,
+  '109633': 0.0020220246689553606,
+  '109634': 0.002021005666599691,
+  '109635': 0.001982391977312986,
+  '109637': 0.004003200911314893,
+  '109638': 0.0019434032538104382,
+  '109639': 0.002104672008500016,
+  '109640': 0.0021930014491905138,
+  '109641': 0.005591700791164206,
+  '109642': 0.0021943058146661597,
+  '109643': 0.002286053188070025,
+  '109644': 0.0025459102426943635,
+  '109645': 0.003492165755001671,
+  '109646': 0.0021037138546062214,
+  '109647': 0.0019418821544252487,
+  '109648': 0.002061870617034974,
+  '109649': 0.0034098051551167347,
+  '109650': 0.0019825771900080073,
+  '109651': 0.0021478466649027285,
+  '109652': 0.002022470383489744,
+  '109653': 0.0030480530664764626,
+  '109654': 0.003259466795162627,
+  '109655': 0.0035731523857280996,
+  '109656': 0.001942671413146305,
+  '109657': 0.001981471600138409,
+  '109658': 0.0039143688192484,
+  '109659': 0.005586842916753126,
+  '109660': 0.0019817268774072637,
+  '109661': 0.0021038103936770504,
+  '109662': 0.0019819641679841983,
+  '109663': 0.005592223545631517,
+  '109664': 0.002238805628621213,
+  '109665': 0.005595447771873999,
+  '109666': 0.002063013565505577,
+  '109667': 0.005588124578752122,
+  '109668': 0.0019426859587180288,
+  '109670': 0.0021944136505777116,
+  '109671': 0.0022400160491351964,
+  '109672': 0.0027221004213380563,
+  '109673': 0.002193721577818815,
+  '109674': 0.002021961736069967,
+  '109675': 0.005592005508547618,
+  '109676': 0.002022068418946748,
+  '109677': 0.0019809551481890695,
+  '109678': 0.002193297635196197,
+  '109679': 0.001981823237710408,
+  '109680': 0.002063073236306392,
+  '109681': 0.0019436757456234215,
+  '109682': 0.005593792442083906,
+  '109683': 0.005592890978927949,
+  '109684': 0.002240597550374325,
+  '109685': 0.0027200571537561863,
+  '109686': 0.002062920843257584,
+  '109687': 0.0019431869027126507,
+  '109688': 0.0027830349989920247,
+  '109689': 0.002388173878528018,
+  '109690': 0.0019814818955482785,
+  '109691': 0.003741138067511137,
+  '109692': 0.002193047471922666,
+  '109693': 0.0021045869032523105,
+  '109694': 0.0033306601839511625,
+  '109695': 0.0020633373435467095,
+  '109696': 0.0019815058692965386,
+  '109697': 0.0021061400898846738,
+  '109698': 0.0022875019132370424,
+  '109699': 0.00202118569993389,
+  '109700': 0.00198052370686804,
+  '109701': 0.0019431656911022333,
+  '109702': 0.003573231893124831,
+  '109703': 0.0020628492315613715,
+  '109704': 0.0019820570557488927,
+  '109705': 0.002239062594428804,
+  '109707': 0.0055922056589711175,
+  '109708': 0.002385328168983994,
+  '109709': 0.001982495946928836,
+  '109710': 0.001979775218644793,
+  '109711': 0.003048049211954247,
+  '109712': 0.005591450059415123,
+  '109713': 0.001980935628165921,
+  '109714': 0.0019425019074847337,
+  '109715': 0.005484073683092167,
+  '109716': 0.002148514987351723,
+  '109717': 0.0019415770514833552,
+  '109718': 0.0033369984518467973,
+  '109719': 0.0019822742071910916,
+  '109720': 0.0023366374761665,
+  '109721': 0.002287725188021038,
+  '109722': 0.002020715852395178,
+  '109723': 0.002846538820655871,
+  '109724': 0.001942400819003226,
+  '109725': 0.0019427171732240578,
+  '109726': 0.002104974580391305,
+  '109727': 0.0019431024987532433,
+  '109728': 0.0020226202399384816,
+  '109729': 0.0024399979292971234,
+  '109730': 0.00194218672080573,
+  '109731': 0.001980749888994733,
+  '109732': 0.0020205660845876213,
+  '109733': 0.0020207503605926278,
+  '109734': 0.0019821745183588656,
+  '109736': 0.002439436434786822,
+  '109737': 0.002194485288210705,
+  '109738': 0.001981960427396689,
+  '109739': 0.002724121179598743,
+  '109740': 0.0019822102024007215,
+  '109741': 0.0019431588107110913,
+  '109742': 0.0020623345490987186,
+  '109743': 0.0019432212290614052,
+  '109744': 0.0020212505889404954,
+  '109745': 0.0019812680029631306,
+  '109746': 0.002062105683339193,
+  '109747': 0.002022618438654314,
+  '109748': 0.002021447509460939,
+  '109749': 0.0019421781269540392,
+  '109750': 0.0019428086241975201,
+  '109751': 0.0019431112594760255,
+  '109752': 0.0021050683534603334,
+  '109753': 0.001943185549022968,
+  '109754': 0.0034115619719961698,
+  '109755': 0.003492392877613246,
+  '109756': 0.001981035124480994,
+  '109757': 0.0019416627237673573,
+  '109758': 0.0020214864368100077,
+  '109759': 0.0027207163820136054,
+  '109760': 0.0019428123854246643,
+  '109761': 0.0020635434986529958,
+  '109762': 0.0032617849008573408,
+  '109764': 0.0023866475542424093,
+  '109765': 0.0019825823764762513,
+  '109766': 0.0021950096850515055,
+  '109767': 0.002020321977145599,
+  '109768': 0.002547602909601733,
+  '109769': 0.00559737847745541,
+  '109770': 0.0023382364349934263,
+  '109771': 0.0019430847391325016,
+  '109772': 0.0021038644630519848,
+  '109773': 0.002148496014986245,
+  '109774': 0.0019422425100118048,
+  '109775': 0.002440101898861239,
+  '109776': 0.0019435488874736141,
+  '109777': 0.0032599907309732224,
+  '109778': 0.0020211016106727185,
+  '109779': 0.0019427822853639492,
+  '109780': 0.005277747772858874,
+  '109781': 0.0019420571377105223,
+  '109782': 0.0019818169631062,
+  '109783': 0.003573856149026299,
+  '109784': 0.002676615474200976,
+  '109785': 0.0023857604446730863,
+  '109786': 0.001980896813968642,
+  '109787': 0.002148725373195408,
+  '109788': 0.0021482971394742763,
+  '109789': 0.0048631201174210445,
+  '109790': 0.00219486445327711,
+  '109791': 0.004277779002920656,
+  '109792': 0.002240352752856759,
+  '109793': 0.002103876268954935,
+  '109794': 0.0019429624113505507,
+  '109796': 0.0026618478878726675,
+  '109797': 0.0019824899150918678,
+  '109798': 0.0021941830564906357,
+  '109799': 0.0019825106171605135,
+  '109800': 0.005592759186151361,
+  '109801': 0.002722425702327365,
+  '109802': 0.001941517613048629,
+  '109803': 0.0029093297668401847,
+  '109804': 0.0019813517937359725,
+  '109805': 0.0019425511021003094,
+  '109806': 0.0020212777681085574,
+  '109807': 0.003822704454797787,
+  '109808': 0.0020230023437080107,
+  '109809': 0.0022875792912119344,
+  '109810': 0.002240410382025522,
+  '109811': 0.0021940109243521904,
+  '109812': 0.0026612582028650612,
+  '109813': 0.0019433709000629584,
+  '109814': 0.0019814072215621746,
+  '109815': 0.00559087182639086,
+  '109816': 0.0019412837126260526,
+  '109817': 0.005598154359256781,
+  '109818': 0.002195179382392235,
+  '109819': 0.0019419771059339562,
+  '109820': 0.003047965824313518,
+  '109821': 0.0019423773112444789,
+  '109823': 0.00202257081612792,
+  '109824': 0.00418112334771875,
+  '109825': 0.0019817125163793057,
+  '109826': 0.002063339041223797,
+  '109828': 0.0022386863082517593,
+  '109829': 0.005487199450052191,
+  '109830': 0.001980228660530778,
+  '109831': 0.005596426840894919,
+  '109832': 0.0021936817792921784,
+  '109833': 0.002978677156875915,
+  '109834': 0.005276367893323201,
+  '109835': 0.004579017858705254,
+  '109836': 0.001943476290089576,
+  '109837': 0.0020211017028229973,
+  '109838': 0.0029109963827496483,
+  '109839': 0.002546243215782626,
+  '109841': 0.00206163650746602,
+  '109842': 0.002911699727924242,
+  '109843': 0.002021235420108474,
+  '109844': 0.0022873349019313406,
+  '109845': 0.005593670400248599,
+  '109846': 0.002387511814691285,
+  '109847': 0.002336813289870455,
+  '109848': 0.0019406606159491874,
+  '109849': 0.002150363073839358,
+  '109850': 0.002910629821155378,
+  '109851': 0.0030481867435152837,
+  '109852': 0.0040014966357539965,
+  '109853': 0.0020624766940353124,
+  '109854': 0.0019414426822936875,
+  '109855': 0.002147448704908037,
+  '109856': 0.001981575016446695,
+  '109857': 0.005597329347468138,
+  '109858': 0.002062401415683607,
+  '109859': 0.0020643443563612964,
+  '109860': 0.00559627964314515,
+  '109861': 0.004002602200541242,
+  '109862': 0.0023874753422764867,
+  '109863': 0.0019814483610105242,
+  '109864': 0.001981708617428725,
+  '109865': 0.0019420428155097241,
+  '109866': 0.002386398944361758,
+  '109867': 0.0020610341320282262,
+  '109868': 0.001942959819710984,
+  '109869': 0.001942662390125552,
+  '109870': 0.0019425988732144693,
+  '109871': 0.002021143905866175,
+  '109872': 0.001981678822960849,
+  '109873': 0.0029788301261101007,
+  '109874': 0.004373095134549989,
+  '109875': 0.0019416453506817663,
+  '109876': 0.0019416154363675255,
+  '109877': 0.0019437847560554887,
+  '109878': 0.0019827530047796652,
+  '109879': 0.002387879090620018,
+  '109880': 0.0019435674283725544,
+  '109881': 0.0020623764179414843,
+  '109882': 0.0019431601336147445,
+  '109883': 0.005589804033634462,
+  '109884': 0.0027222199888441503,
+  '109885': 0.0028475131247674506,
+  '109886': 0.0019420744141116911,
+  '109888': 0.0021931953704984928,
+  '109889': 0.001980645064667697,
+  '109890': 0.0025487384645610767,
+  '109891': 0.005591555625154802,
+  '109892': 0.0021044167382423622,
+  '109893': 0.0020217008435493484,
+  '109894': 0.002337555912333629,
+  '109895': 0.001981626210366699,
+  '109896': 0.0019824449729471433,
+  '109897': 0.002386130768720376,
+  '109898': 0.0019810610577305834,
+  '109899': 0.0019437743620385009,
+  '109900': 0.0021061671999073285,
+  '109901': 0.005595411633226784,
+  '109902': 0.0021938966261518603,
+  '109903': 0.001941979593885642,
+  '109904': 0.0055941056080264905,
+  '109905': 0.002911638412510223,
+  '109906': 0.0019810910224997247,
+  '109907': 0.0020204291930019883,
+  '109908': 0.002021692062431393,
+  '109909': 0.002782894150757706,
+  '109910': 0.00194259163946715,
+  '109911': 0.002022190152163261,
+  '109912': 0.0023874429194228933,
+  '109913': 0.0020207182315482605,
+  '109914': 0.0021492978708970074,
+  '109915': 0.0020638933123388443,
+  '109916': 0.0019824029831713957,
+  '109917': 0.0021485419740378754,
+  '109918': 0.0026046397751751894,
+  '109919': 0.0020615406328658883,
+  '109920': 0.001981215150727213,
+  '109921': 0.0019419684614677632,
+  '109922': 0.0019414405145893802,
+  '109923': 0.0019420122748021915,
+  '109924': 0.0022887305287362537,
+  '109925': 0.0020623516285163835,
+  '109926': 0.002241149779902483,
+  '109927': 0.0019425962047444722,
+  '109928': 0.005596076532221869,
+  '109930': 0.0020617825794673828,
+  '109931': 0.0029767442906464894,
+  '109932': 0.0035731098253821664,
+  '109933': 0.002336223063817892,
+  '109934': 0.0021054052140441833,
+  '109935': 0.005596344516166423,
+  '109936': 0.002491335291202055,
+  '109937': 0.002288043847747404,
+  '109938': 0.002020904268836009,
+  '109939': 0.003187748057210214,
+  '109940': 0.0020617648996979483,
+  '109941': 0.0019433882515253141,
+  '109942': 0.001979925857331807,
+  '109943': 0.002021630393416086,
+  '109944': 0.0019827654727245653,
+  '109945': 0.0029782064529418435,
+  '109946': 0.005597061328137975,
+  '109947': 0.0021496252492146373,
+  '109948': 0.0020209973622394655,
+  '109949': 0.002492252660253468,
+  '109950': 0.001981520981511442,
+  '109951': 0.0021493229068249606,
+  '109952': 0.002977799786263141,
+  '109953': 0.002335136709735,
+  '109954': 0.0021487087083067453,
+  '109955': 0.005598693789301095,
+  '109956': 0.0021486092070553127,
+  '109957': 0.002022726333563231,
+  '109958': 0.005385955739854771,
+  '109959': 0.0033375579251662606,
+  '109960': 0.0021041495799118946,
+  '109961': 0.002106507197152724,
+  '109962': 0.0019816865686409094,
+  '109963': 0.0021056474917980432,
+  '109964': 0.0021056371030961393,
+  '109965': 0.0019430439294903564,
+  '109966': 0.004967378755039731,
+  '109968': 0.001942434337797861,
+  '109969': 0.0026033721518612754,
+  '109970': 0.0020630870139821344,
+  '109971': 0.005487732669034331,
+  '109972': 0.005493705969958182,
+  '109973': 0.0031154137838020624,
+  '109975': 0.0021046389666603306,
+  '109976': 0.001981620862651664,
+  '109977': 0.0019809893524997736,
+  '109978': 0.0019413817773028335,
+  '109979': 0.0019417078466393127,
+  '109981': 0.002021407451749399,
+  '109982': 0.0021502912188923586,
+  '109983': 0.002021312704997386,
+  '109984': 0.002149063986640376,
+  '109985': 0.0020215076812232524,
+  '109986': 0.0022393567817025496,
+  '109987': 0.00202183489280519,
+  '109988': 0.0019817024064354228,
+  '109989': 0.0031891572669660614,
+  '109990': 0.0024394595016951023,
+  '109991': 0.0021047845715484385,
+  '109992': 0.0024936792230350812,
+  '109993': 0.0019435962650002068,
+  '109994': 0.0022890309995575314,
+  '109995': 0.0025486440420876186,
+  '109996': 0.002194522524405093,
+  '109997': 0.0022876126361137026,
+  '109998': 0.0019424522984487584,
+  '109999': 0.005595077961600419,
+  '110000': 0.0019424306152720028,
+  '110001': 0.0019820275550567735,
+  '110002': 0.0019430027149503857,
+  '110003': 0.0019815378047693373,
+  '110004': 0.001981779082289975,
+  '110005': 0.001981103886886541,
+  '110006': 0.0019427020726779998,
+  '110007': 0.0023361629746491016,
+  '110008': 0.002061891791142865,
+  '110009': 0.0021938446115560934,
+  '110010': 0.0020213893373602814,
+  '110011': 0.0019439036175929508,
+  '110012': 0.0019433750878847286,
+  '110013': 0.001943625035720113,
+  '110014': 0.001981447081077487,
+  '110015': 0.0025479203140196297,
+  '110016': 0.0019424383229436214,
+  '110017': 0.0025478686416203016,
+  '110018': 0.0031891418260453284,
+  '110019': 0.002336234604423155,
+  '110020': 0.004373261318866249,
+  '110021': 0.0024385462567239518,
+  '110022': 0.0024928854403614073,
+  '110023': 0.005591420931986477,
+  '110024': 0.0021051686133844796,
+  '110025': 0.002104361622141026,
+  '110026': 0.001941740851290152,
+  '110027': 0.0021496699411936463,
+  '110028': 0.0019433457868256341,
+  '110029': 0.0025476348965063522,
+  '110030': 0.0021048641849652112,
+  '110031': 0.001981285698548845,
+  '110032': 0.0019426845667439544,
+  '110033': 0.0022885152571791136,
+  '110034': 0.0023869734558975945,
+  '110035': 0.0025480152459219276,
+  '110036': 0.002192487828106146,
+  '110037': 0.002385100225538423,
+  '110038': 0.0019426547876670276,
+  '110039': 0.001942846227443456,
+  '110040': 0.0020621949458411786,
+  '110041': 0.0019417444213406991,
+  '110042': 0.0019427722407514075,
+  '110043': 0.0021043883319991734,
+  '110044': 0.0022873016694854383,
+  '110045': 0.002021773404470525,
+  '110046': 0.002021110671148803,
+  '110047': 0.001943096946029052,
+  '110048': 0.0035755814474918903,
+  '110049': 0.0020209038106709888,
+  '110050': 0.0019801915092370827,
+  '110051': 0.003045555065335653,
+  '110052': 0.001982210353192543,
+  '110053': 0.00559634504168246,
+  '110054': 0.0019422890557553659,
+  '110055': 0.0019808223877788335,
+  '110056': 0.002387996318661853,
+  '110057': 0.0020632221082676075,
+  '110058': 0.002289368988988788,
+  '110059': 0.005598251708651157,
+  '110060': 0.001981606642532416,
+  '110061': 0.001943363105791511,
+  '110062': 0.001981961372923786,
+  '110063': 0.0027228019912976056,
+  '110064': 0.005592169255074667,
+  '110067': 0.0028105241566093427,
+  '110068': 0.004281985432336698,
+  '110069': 0.0020627557887422376,
+  '110070': 0.0021945288225372647,
+  '110071': 0.001982612818689249,
+  '110072': 0.002149467734083059,
+  '110073': 0.002192586834211172,
+  '110074': 0.0020229818432199492,
+  '110075': 0.0020211422725345753,
+  '110076': 0.005590554971849086,
+  '110077': 0.002062957947102993,
+  '110078': 0.005594987912619155,
+  '110079': 0.0019436732116275732,
+  '110081': 0.002021211866457387,
+  '110082': 0.0019426509982451022,
+  '110083': 0.0038258010389387253,
+  '110084': 0.0038272121433421216,
+  '110085': 0.0019419693401804686,
+  '110086': 0.005601505970477786,
+  '110087': 0.002020792659436063,
+  '110088': 0.0024911611257847194,
+  '110089': 0.002547489747668302,
+  '110090': 0.0019436850704125407,
+  '110091': 0.002062857104600331,
+  '110092': 0.0019812926362838155,
+  '110093': 0.005598610612054238,
+  '110094': 0.002021359314931121,
+  '110095': 0.005598359087836484,
+  '110096': 0.005597796455168186,
+  '110097': 0.001980665515748847,
+  '110098': 0.002240285583977737,
+  '110099': 0.0019418240899614087,
+  '110100': 0.001981238769603889,
+  '110101': 0.0019432374329006288,
+  '110102': 0.0019429869151206273,
+  '110103': 0.0020211851169187034,
+  '110104': 0.0020623217451030203,
+  '110105': 0.0022396221091784156,
+  '110106': 0.005603113582132022,
+  '110107': 0.0026034119041400414,
+  '110108': 0.0019822529675403294,
+  '110109': 0.002440353707368009,
+  '110110': 0.0021055056969375516,
+  '110111': 0.0019421086252650423,
+  '110112': 0.001980249327901053,
+  '110113': 0.0022880722027621273,
+  '110114': 0.0019436060708295424,
+  '110115': 0.0039104478023033575,
+  '110116': 0.0019427485803446896,
+  '110117': 0.00272438793139681,
+  '110118': 0.001981363475554419,
+  '110119': 0.0019812624534675744,
+  '110120': 0.0054909425652983,
+  '110121': 0.00560052180839744,
+  '110122': 0.005595007543744493,
+  '110123': 0.0021046633634703303,
+  '110124': 0.004567782996686323,
+  '110125': 0.004663601346170819,
+  '110126': 0.001981947435779975,
+  '110127': 0.0021492611402043325,
+  '110128': 0.0026038560889479687,
+  '110129': 0.005601933213201934,
+  '110130': 0.0019436069843403988,
+  '110131': 0.0020218627457679974,
+  '110132': 0.0023352012320149414,
+  '110133': 0.002437465494399406,
+  '110134': 0.001943278026433117,
+  '110135': 0.001943898195951997,
+  '110136': 0.0019439271060868867,
+  '110137': 0.003416007042425164,
+  '110139': 0.002239973656280832,
+  '110140': 0.0023867953639449134,
+  '110141': 0.00202061990814826,
+  '110142': 0.0019430959235733612,
+  '110143': 0.0026612100027951207,
+  '110144': 0.0019416458685197642,
+  '110145': 0.001981873679480347,
+  '110146': 0.0020211455028378337,
+  '110147': 0.0020215838293586356,
+  '110148': 0.002386501572825037,
+  '110149': 0.0019428085546167376,
+  '110150': 0.002286331497577687,
+  '110151': 0.001981965232855468,
+  '110152': 0.0019428884036495645,
+  '110153': 0.0019419504302031502,
+  '110154': 0.005594097368551061,
+  '110155': 0.0028474986152847996,
+  '110157': 0.0019420751216097088,
+  '110158': 0.0019418725816737793,
+  '110159': 0.0022868269972208025,
+  '110160': 0.0019429450458644082,
+  '110161': 0.001942967625800942,
+  '110162': 0.00219269593682016,
+  '110163': 0.0022395353334700337,
+  '110164': 0.0019421345800195694,
+  '110165': 0.0023362003184387308,
+  '110166': 0.002387368860898507,
+  '110167': 0.0019421903707921673,
+  '110168': 0.002547147160119347,
+  '110169': 0.0020631486992002224,
+  '110170': 0.0056550510863195985,
+  '110171': 0.0055964126980091325,
+  '110172': 0.005592984724971733,
+  '110173': 0.005599809516834741,
+  '110174': 0.0019435013533959952,
+  '110175': 0.002338173299915001,
+  '110176': 0.0056019365350780375,
+  '110177': 0.005597604246319492,
+  '110178': 0.005594887503554249,
+  '110179': 0.0027221631185225244,
+  '110180': 0.00198196806629862,
+  '110181': 0.002061727950882611,
+  '110182': 0.001982370139019323,
+  '110183': 0.00279794746348178,
+  '110184': 0.0020199814061946054,
+  '110185': 0.0022084519902673665,
+  '110186': 0.002726582716798965,
+  '110187': 0.0029778345745588284,
+  '110188': 0.0027839704528945307,
+  '110189': 0.001980341865015674,
+  '110190': 0.0024377371136284237,
+  '110191': 0.0027280416396420377,
+  '110192': 0.0022405764060047647,
+  '110193': 0.0020202351434326763,
+  '110194': 0.0023386609712414603,
+  '110195': 0.0020211162226572705,
+  '110196': 0.0023891541987746457,
+  '110198': 0.0031159993853365825,
+  '110199': 0.0019421565972748116,
+  '110200': 0.0019434499725692247,
+  '110201': 0.0023853663087210304,
+  '110202': 0.002062588070231733,
+  '110203': 0.0019417731392141289,
+  '110204': 0.0024396462111534478,
+  '110206': 0.0025473295649160333,
+  '110207': 0.00224055230135356,
+  '110208': 0.00202172491844125,
+  '110209': 0.0028487449042845577,
+  '110210': 0.0019807377135792072,
+  '110211': 0.002548498573648472,
+  '110212': 0.002336506824773936,
+  '110213': 0.0024410594513059247,
+  '110214': 0.0023862927269810044,
+  '110216': 0.0019433818460151062,
+  '110217': 0.0024913623125315744,
+  '110218': 0.001942775548658672,
+  '110219': 0.0020623098406511524,
+  '110220': 0.0019420978967888728,
+  '110221': 0.002241007431360677,
+  '110222': 0.001942738631885739,
+  '110223': 0.0020203219316316783,
+  '110224': 0.0020630905831452214,
+  '110225': 0.002492343151569793,
+  '110226': 0.002288551820313389,
+  '110228': 0.0019415974990660517,
+  '110229': 0.0019417255001919662,
+  '110230': 0.0019821024170284312,
+  '110231': 0.002021057361209844,
+  '110232': 0.004568077489442082,
+  '110233': 0.003413400672956104,
+  '110235': 0.00194406577550675,
+  '110237': 0.0019814406442170635,
+  '110238': 0.0019418145186234125 }
