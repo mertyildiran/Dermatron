@@ -221,6 +221,20 @@ Template.form_visits.events ({
           quality: 100,
         };
 
+        MeteorCamera.locale.errorBrowserNotSupported = translations.errorBrowserNotSupported[selectedLanguage];
+        MeteorCamera.locale.errorAccesingCamera = translations.errorAccesingCamera[selectedLanguage];
+        MeteorCamera.locale.usePhoto = translations.usePhoto[selectedLanguage];
+        MeteorCamera.locale.takeNewPhoto = translations.takeNewPhoto[selectedLanguage];
+        MeteorCamera.locale.waitingPermissions = translations.waitingPermissions[selectedLanguage];
+        MeteorCamera.locale.takePhoto = translations.takePhoto[selectedLanguage];
+        MeteorCamera.locale.cancel = translations.cancel[selectedLanguage];
+        MeteorCamera.locale.closePopup = translations.closePopup[selectedLanguage];
+        MeteorCamera.locale.permissionsDenied = translations.permissionsDenied[selectedLanguage];
+        MeteorCamera.locale.permissionsDeniedExp = translations.permissionsDeniedExp[selectedLanguage];
+        MeteorCamera.locale.howToChrome = translations.howToChrome[selectedLanguage];
+        MeteorCamera.locale.howToFirefox = translations.howToFirefox[selectedLanguage];
+        MeteorCamera.locale.howToOpera = translations.howToOpera[selectedLanguage];
+
         MeteorCamera.getPicture(cameraOptions, function (error, data) {
             if (data) {
                 imageCounter = 0;

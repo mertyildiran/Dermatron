@@ -5484,6 +5484,71 @@ translations = {
         en_US: "Month",
         en_GB: "Month",
         tr_TR: "Ay"
+    },
+    errorBrowserNotSupported: {
+        en_US: "Sorry, this browser is currently not supported for camera functionality.",
+        en_GB: "Sorry, this browser is currently not supported for camera functionality.",
+        tr_TR: "Üzgünüz, bu tarayıcı henüz kamera fonksiyonunu desteklememektedir."
+    },
+    errorAccesingCamera: {
+        en_US: "There was an error accessing the camera.",
+        en_GB: "There was an error accessing the camera.",
+        tr_TR: "Kameraya erişmeye çalışırken bir hata oluştu."
+    },
+    usePhoto: {
+        en_US: "Use Photo",
+        en_GB: "Use Photo",
+        tr_TR: "FOTOĞRAFI KULLAN"
+    },
+    takeNewPhoto: {
+        en_US: "Take New Photo",
+        en_GB: "Take New Photo",
+        tr_TR: "YENİ FOTOĞRAF ÇEK"
+    },
+    waitingPermissions: {
+        en_US: "Waiting for camera permissions...",
+        en_GB: "Waiting for camera permissions...",
+        tr_TR: "Kamera izinleri için bekliyor..."
+    },
+    takePhoto: {
+        en_US: "Take Photo",
+        en_GB: "Take Photo",
+        tr_TR: "FOTOĞRAF ÇEK"
+    },
+    cancel: {
+        en_US: "Cancel",
+        en_GB: "Cancel",
+        tr_TR: "İPTAL"
+    },
+    closePopup: {
+        en_US: "Close Popup",
+        en_GB: "Close Popup",
+        tr_TR: "KAPAT"
+    },
+    permissionsDenied: {
+        en_US: "Camera Permissions Denied",
+        en_GB: "Camera Permissions Denied",
+        tr_TR: "Kamera İzinleri Reddedildi"
+    },
+    permissionsDeniedExp: {
+        en_US: "You have denied this app permission to use your camera. If you would like to allow permissions, follow the directions for your browser below.",
+        en_GB: "You have denied this app permission to use your camera. If you would like to allow permissions, follow the directions for your browser below.",
+        tr_TR: "Bu uygulamanın kameraya erişim iznini reddetmişsiniz. Eğer izinleri kabul etmek istiyorsanız, aşağıdaki yönergeleri izleyiniz."
+    },
+    howToChrome: {
+        en_US: 'Go to Settings > "Show advanced settings..." > "Content settings..." > Media heading > "Manage exceptions...", then find this website in the list and allow video capture.',
+        en_GB: 'Go to Settings > "Show advanced settings..." > "Content settings..." > Media heading > "Manage exceptions...", then find this website in the list and allow video capture.',
+        tr_TR: 'Ayarlar > "Gelişmiş ayarları görüntüle..." > "İçerik ayarları..." > Medya başlığı > "İstisnaları yönet..." gidin, daha sonra websitesini bulup video yakalamaya izin verin.'
+    },
+    howToFirefox: {
+        en_US: "Reload the page and try again.",
+        en_GB: "Reload the page and try again.",
+        tr_TR: "Sayfayı yeniden yükleyin ve tekrar deneyin."
+    },
+    howToOpera: {
+        en_US: 'Go to Preferences > Websites > Media heading > "Manage exceptions...", then find this website in the list and allow video capture.',
+        en_GB: 'Go to Preferences > Websites > Media heading > "Manage exceptions...", then find this website in the list and allow video capture.',
+        tr_TR: 'Tercihler > Websiteleri > Medya başlığı > "İstisnaları yönet..." gidin, daha sonra websitesini bulup video yakalamaya izin verin.'
     }
 }
 
