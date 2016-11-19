@@ -23,5 +23,6 @@ Meteor.subscribe('settings', function() {
     scheduler.locale.labels.week_tab = translations.week[settings.findOne().language];
     scheduler.locale.labels.month_tab = translations.month[settings.findOne().language];
 
-    Router.go('index');
+    scheduler.init("scheduler_here", new Date());
+    scheduler.load("./visits.xml");
 });
