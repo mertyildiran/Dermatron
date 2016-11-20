@@ -5549,6 +5549,21 @@ translations = {
         en_US: 'Go to Preferences > Websites > Media heading > "Manage exceptions...", then find this website in the list and allow video capture.',
         en_GB: 'Go to Preferences > Websites > Media heading > "Manage exceptions...", then find this website in the list and allow video capture.',
         tr_TR: 'Tercihler > Websiteleri > Medya başlığı > "İstisnaları yönet..." gidin, daha sonra websitesini bulup video yakalamaya izin verin.'
+    },
+    future: {
+        en_US: "Future",
+        en_GB: "Future",
+        tr_TR: "Gelecek"
+    },
+    past: {
+        en_US: "Past",
+        en_GB: "Past",
+        tr_TR: "Geçmiş"
+    },
+    now: {
+        en_US: "Now",
+        en_GB: "Now",
+        tr_TR: "Şimdi"
     }
 }
 

@@ -12,8 +12,10 @@ Template.edit_visits.events ({
     'click #save': function(evt, tpl) {
         evt.preventDefault();
 
+        var patientId = $('#input_patientId').val();
         var updated_visits = {
-            patientId: tpl.find('#input_patientId').value,
+            patientId: patientId,
+            patientName: patients.findOne(patientId).name + ' ' + patients.findOne(patientId).surname,
             visitDateTime: tpl.find('#input_visitDate').value + ' ' + tpl.find('#input_visitTime').value,
             lesion: $('#input_lesion').val(),
             symptoms: $('#input_symptoms').val(),

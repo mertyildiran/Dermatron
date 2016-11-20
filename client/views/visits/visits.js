@@ -31,11 +31,11 @@ Template.visits.helpers ({
         var end = d;
         var now = new Date();
         if (start > now) {
-            return "Future";
+            return translations.future[selectedLanguage];
         } else if (end < now) {
-            return "Past";
+            return translations.past[selectedLanguage];
         } else {
-            return "Now";
+            return translations.now[selectedLanguage];
         }
     }
 
@@ -52,7 +52,7 @@ Template.visits.events ({
     // filter function
     'keyup #filter_field': function (evt, tpl) {
         searchTextVisits.set($('#filter_field').val());
-        $('#loadMore').text('Load More');
+        $('#loadMore').text(translations.loadMore[selectedLanguage]);
         $('#loadMore').fadeIn();
     },
 
@@ -85,7 +85,7 @@ Template.visits.events ({
         _deps.changed();
         $('#filter_field').val('');
         searchTextVisits.set('');
-        $('#loadMore').text('Load More');
+        $('#loadMore').text(translations.loadMore[selectedLanguage]);
         $('#loadMore').fadeIn();
     },
 
