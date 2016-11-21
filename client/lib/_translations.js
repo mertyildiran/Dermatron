@@ -5461,8 +5461,8 @@ translations = {
         tr_TR: "YENİ ZIYARET PLANLAYIN"
     },
     medicinesUrl: {
-        en_US: "http://www.accessdata.fda.gov/scripts/cder/drugsatfda/index.cfm",
-        en_GB: "http://www.accessdata.fda.gov/scripts/cder/drugsatfda/index.cfm",
+        en_US: "http://www.accessdata.fda.gov/scripts/cder/daf/",
+        en_GB: "http://www.accessdata.fda.gov/scripts/cder/daf/",
         tr_TR: "http://www.ilacprospektusu.com/ara/ilac"
     },
     "Language": {

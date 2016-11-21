@@ -1,11 +1,38 @@
 # Dermatron
 
+## Features
+
+* Manage visit & patient records
+* Search drugs on your local drug search engine
+* Schedule visits and see on big calendar
+* 140 different lesion type
+* 43 different symptom type
+* 28 different pathophysiology type
+* 59 different anatomical location
+* 727 different diagnosis option
+* All of them in English(United State), English(Great Britain), Turkish languages
+* Easy-to-use interactive anatomical map on base human mesh
+* Image capturing from USB Dermatoscope
+* Web based diagnosis suggestions
+* Artificial intelligence based diagnosis suggestions (AI trained for 12 days)
+
 ### Installation of Node.js & npm & Meteor
 
 ```Shell
 sudo apt-get install nodejs nodejs-legacy npm
 curl https://install.meteor.com/ | sh
 ```
+
+### Install and run Dermatron
+
+```Shell
+git clone https://github.com/mertyildiran/Dermatron.git
+cd Dermatron/
+meteor npm install
+meteor
+```
+
+Then visit [http://localhost:3000/](http://localhost:3000/)
 
 ## Electrified & Materialized Iron Meteor with Alien Recipe
 
