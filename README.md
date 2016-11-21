@@ -1,5 +1,14 @@
 # Dermatron
 
+<p align="center">
+  <img src="http://i.imgur.com/UHnu4dY.png" alt="Alien" height="300px"/>
+  <img src="http://i.imgur.com/ga8YnxZ.png" alt="Alien" height="300px"/>
+</p>
+<p align="center">
+  <img src="http://i.imgur.com/l0qcGh0.png" alt="Alien" height="300px"/>
+  <img src="http://i.imgur.com/QJ5OWYb.png" alt="Alien" height="300px"/>
+</p>
+
 ## Features
 
 * Manage visit & patient records
@@ -10,8 +19,8 @@
 * 28 different pathophysiology type
 * 59 different anatomical location
 * 727 different diagnosis option
-* All of them in English(United State), English(Great Britain), Turkish languages
-* Easy-to-use interactive anatomical map on base human mesh
+* All of them in English(United States), English(Great Britain) and Turkish languages
+* Easy-to-use interactive anatomical map on base human mesh (male and female available)
 * Image capturing from USB Dermatoscope
 * Web based diagnosis suggestions
 * Artificial intelligence based diagnosis suggestions (AI trained for 12 days)
