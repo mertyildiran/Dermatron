@@ -1,12 +1,12 @@
 # Dermatron
 
 <p align="center">
-  <img src="http://i.imgur.com/UHnu4dY.png" alt="Alien" height="300px"/>
-  <img src="http://i.imgur.com/ga8YnxZ.png" alt="Alien" height="300px"/>
+  <img src="http://i.imgur.com/UHnu4dY.png" alt="Alien" height="200px"/>
+  <img src="http://i.imgur.com/ga8YnxZ.png" alt="Alien" height="200px"/>
 </p>
 <p align="center">
-  <img src="http://i.imgur.com/l0qcGh0.png" alt="Alien" height="300px"/>
-  <img src="http://i.imgur.com/QJ5OWYb.png" alt="Alien" height="300px"/>
+  <img src="http://i.imgur.com/l0qcGh0.png" alt="Alien" height="200px"/>
+  <img src="http://i.imgur.com/QJ5OWYb.png" alt="Alien" height="200px"/>
 </p>
 
 ## Features
@@ -14,11 +14,11 @@
 * Manage visit & patient records
 * Search drugs on your local drug search engine
 * Schedule visits and see on big calendar
-* 140 different lesion type
-* 43 different symptom type
-* 28 different pathophysiology type
-* 59 different anatomical location
-* 727 different diagnosis option
+* 140 different lesion types
+* 43 different symptom types
+* 28 different pathophysiology types
+* 59 different anatomical locations
+* 727 different diagnosis options
 * All of them in English(United States), English(Great Britain) and Turkish languages
 * Easy-to-use interactive anatomical map on base human mesh (male and female available)
 * Image capturing from USB Dermatoscope
