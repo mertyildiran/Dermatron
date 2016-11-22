@@ -1,12 +1,12 @@
 # Dermatron
 
 <p align="center">
-  <img src="http://i.imgur.com/UHnu4dY.png" alt="Alien" height="200px"/>
-  <img src="http://i.imgur.com/ga8YnxZ.png" alt="Alien" height="200px"/>
+  <img src="http://i.imgur.com/UHnu4dY.png" alt="Screenshot 1" height="200px"/>
+  <img src="http://i.imgur.com/ga8YnxZ.png" alt="Screenshot 2" height="200px"/>
 </p>
 <p align="center">
-  <img src="http://i.imgur.com/l0qcGh0.png" alt="Alien" height="200px"/>
-  <img src="http://i.imgur.com/QJ5OWYb.png" alt="Alien" height="200px"/>
+  <img src="http://i.imgur.com/l0qcGh0.png" alt="Screenshot 3" height="200px"/>
+  <img src="http://i.imgur.com/QJ5OWYb.png" alt="Screenshot 4" height="200px"/>
 </p>
 
 ## Features
@@ -19,11 +19,17 @@
 * 28 different pathophysiology types
 * 59 different anatomical locations
 * 727 different diagnosis options
-* All of them in English(United States), English(Great Britain) and Turkish languages
+* All of these features available in English(United States), English(Great Britain) and Turkish languages
 * Easy-to-use interactive anatomical map on base human mesh (male and female available)
 * Image capturing from USB Dermatoscope
 * Web based diagnosis suggestions
 * Artificial intelligence based diagnosis suggestions (AI trained for 12 days)
+
+*Using this software with a **USB Dermatoscope is highly recommended** for clinical success.*
+
+<p align="center">
+  <img src="http://i.imgur.com/D7gKTHO.png" alt="USB Dermatoscope" height="200px"/>
+</p>
 
 ### Installation of Node.js & npm & Meteor
 
