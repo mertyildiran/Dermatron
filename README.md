@@ -25,7 +25,7 @@
 * Web based diagnosis suggestions
 * Artificial intelligence based diagnosis suggestions (AI trained for 12 days)
 
-*Using this software with a **USB Dermatoscope is highly recommended** for clinical success.*
+*Using this software with a* **USB Dermatoscope is highly recommended** *for clinical success.*
 
 <p align="center">
   <img src="http://i.imgur.com/D7gKTHO.png" alt="USB Dermatoscope" height="200px"/>

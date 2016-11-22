@@ -1,0 +1,7 @@
+{
+  "name": "my-electrified-app",
+  "main": "index.js",
+  "dependencies": {
+    "electrify": "2.1.4"
+  }
+}
