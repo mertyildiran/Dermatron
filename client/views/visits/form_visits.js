@@ -341,7 +341,7 @@ Template.form_visits.events ({
                     }
                 });
 
-                var pngToMatrix = require('png-to-matrix');
+                var getPixels = require("get-pixels");
                 var smartcrop = require('smartcrop');
                 var Clipper = require('image-clipper');
 
@@ -356,7 +356,29 @@ Template.form_visits.events ({
                             //console.log('cropped!');
                             //$('div#capturedImage img').attr('src', dataUrl);
 
-                            pngToMatrix(dataUrl, (matrix) => {
+                            getPixels(dataUrl, function(err, pixels) {
+
+                                var matrix = []
+                        		var count = 0
+                        		var rgbaIndex = 0
+                        		var currentObj = {}
+
+                        		Object.keys(pixels.data).forEach((k, i) => {
+                        			if (i > pixels.shape[0] * 4 * (count + 1)) count++
+                        			if (rgbaIndex < 3) {
+                        				rgbaIndex++
+                        			} else {
+                        				if (!matrix[count]) matrix[count] = []
+                        				matrix[count].push(currentObj)
+                        				currentObj = {}
+                        				rgbaIndex = 0
+                        			}
+                        			if (rgbaIndex == 0) currentObj.a = pixels.data[k]
+                        			if (rgbaIndex == 1) currentObj.r = pixels.data[k]
+                        			if (rgbaIndex == 2) currentObj.g = pixels.data[k]
+                        			if (rgbaIndex == 3) currentObj.b = pixels.data[k]
+                        		});
+
                                 var image = [];
                                 var flattened = [].concat.apply([], matrix);
                                 //console.log([].concat.apply([], flattened));
