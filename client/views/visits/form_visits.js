@@ -390,7 +390,7 @@ Template.form_visits.events ({
                                 //console.log(image.length);
 
                                 var brain = require("brain");
-                                HTTP.get(Meteor.absoluteUrl("/net.json"), function(err,result) {
+                                HTTP.get(Meteor.absoluteUrl("./net.json"), function(err,result) {
                                     //console.log(result.data);
                                     var net = new brain.NeuralNetwork( { hiddenLayers: [16] } );
                                     net.fromJSON(result.data);

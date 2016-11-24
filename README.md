@@ -47,6 +47,12 @@ meteor npm install
 meteor
 ```
 
+### Pack Dermatron for Linux
+
+```Shell
+rm -rf .electrify/ && electrify && cd .electrify/ && wget https://raw.githubusercontent.com/mertyildiran/Dermatron/master/.electrify/loading.html && rm index.js && wget https://raw.githubusercontent.com/mertyildiran/Dermatron/master/.electrify/index.js && rm package.json && wget https://raw.githubusercontent.com/mertyildiran/Dermatron/master/.electrify/package.json && cd .. && electrify && electrify package
+```
+
 Then visit [http://localhost:3000/](http://localhost:3000/)
 
 ## Electrified & Materialized Iron Meteor with Alien Recipe

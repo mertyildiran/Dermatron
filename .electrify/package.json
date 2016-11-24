@@ -1,5 +1,5 @@
 {
-  "name": "my-electrified-app",
+  "name": "Dermatron",
   "main": "index.js",
   "dependencies": {
     "electrify": "2.1.4"
