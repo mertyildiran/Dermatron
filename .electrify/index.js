@@ -8,7 +8,7 @@ var window    = null;
 var loadingWindow;
 function createLoadingWindow () {
   // Create the browser window.
-  loadingWindow = new browser({width: 800, height: 600, transparent: true, frame: false, icon: NativeImage.createFromPath(__dirname + '/icon-128.png')})
+  loadingWindow = new browser({width: 800, height: 600, transparent: true, frame: false, icon: NativeImage.createFromPath(__dirname + '/icon-128.png'), title: "Loading.."})
 
   // and load the loading.html of the app.
   loadingWindow.loadURL(`file://${__dirname}/loading.html`)
