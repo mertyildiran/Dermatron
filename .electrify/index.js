@@ -7,7 +7,7 @@ var window    = null;
 var loadingWindow;
 function createLoadingWindow () {
   // Create the browser window.
-  loadingWindow = new browser({width: 800, height: 600, transparent: true, frame: false})
+  loadingWindow = new browser({width: 800, height: 600, transparent: true, frame: false, icon: NativeImage.createFromPath(__dirname + '/icon-128.png')})
 
   // and load the loading.html of the app.
   loadingWindow.loadURL(`file://${__dirname}/loading.html`)
@@ -35,6 +35,7 @@ app.on('ready', function() {
     window = new browser({
       width: 1280, height: 768,
       transparent: true, frame: false,
+      icon: NativeImage.createFromPath(__dirname + '/icon-128.png'),
       'node-integration': false // node integration must to be off
     });
 
