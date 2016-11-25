@@ -1,6 +1,7 @@
 var app       = require('app');
 var browser   = require('browser-window');
 var electrify = require('electrify')(__dirname);
+var NativeImage = require('native-image');
 
 var window    = null;
 
