@@ -62,8 +62,14 @@ rm -rf .electrify/ && electrify && cd .electrify/ && wget https://raw.githubuser
 Run Dermatron at least one time with `meteor` command then with PowerShell:
 
 ```Shell
-$(npm install -g rimraf | Out-Host;$?) -and $(rimraf .\electrify\ | Out-Host;$?) -and $(electrify | Out-Host;$?) -and $(cd .\electrify\ | Out-Host;$?) -and $(wget https://raw.githubusercontent.com/mertyildiran/Dermatron/master/.electrify/loading.html -OutFile loading.html | Out-Host;$?) -and $(rm index.js | Out-Host;$?) -and $(wget https://raw.githubusercontent.com/mertyildiran/Dermatron/master/.electrify/index.js -OutFile index.js | Out-Host;$?) -and $(rm package.json | Out-Host;$?) -and $(wget https://raw.githubusercontent.com/mertyildiran/Dermatron/master/.electrify/package.json -OutFile package.json | Out-Host;$?) -and $(wget https://raw.githubusercontent.com/mertyildiran/Dermatron/master/.electrify/icon-128.png -OutFile icon-128.png | Out-Host;$?) -and $(cd .. | Out-Host;$?) -and $(electrify | Out-Host;$?) -and $(electrify package | Out-Host;$?)
+$(npm install -g rimraf | Out-Host;$?) -and $(rimraf .\.electrify\ | Out-Host;$?) -and $(electrify | Out-Host;$?) -and $(cd .\.electrify\ | Out-Host;$?) -and $(wget https://raw.githubusercontent.com/mertyildiran/Dermatron/master/.electrify/loading.html -OutFile loading.html | Out-Host;$?) -and $(rm index.js | Out-Host;$?) -and $(wget https://raw.githubusercontent.com/mertyildiran/Dermatron/master/.electrify/index.js -OutFile index.js | Out-Host;$?) -and $(rm package.json | Out-Host;$?) -and $(wget https://raw.githubusercontent.com/mertyildiran/Dermatron/master/.electrify/package.json -OutFile package.json | Out-Host;$?) -and $(wget https://raw.githubusercontent.com/mertyildiran/Dermatron/master/.electrify/icon-128.png -OutFile icon-128.png | Out-Host;$?) -and $(cd .. | Out-Host;$?) -and $(electrify | Out-Host;$?) -and $(electrify package | Out-Host;$?)
 ```
+
+As of Meteor 1.4, it's using MongoDB version 3.2.6 [(Announcing Meteor 1.4)](http://info.meteor.com/blog/announcing-meteor-1.4)
+
+So you need exactly these binaries: [win32/mongodb-win32-x86_64-2008plus-3.2.6.zip](http://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-3.2.6.zip?_ga=1.141663666.1471383934.1480123448) (Official)
+
+Extract files from the zip archive then copy **mongod** and **mongo** binaries and paste into **./resources/app/bin**
 
 ## Electrified & Materialized Iron Meteor with Alien Recipe
 
