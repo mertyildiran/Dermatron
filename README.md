@@ -57,6 +57,14 @@ Run Dermatron at least one time with `meteor` command then:
 rm -rf .electrify/ && electrify && cd .electrify/ && wget https://raw.githubusercontent.com/mertyildiran/Dermatron/master/.electrify/loading.html && rm index.js && wget https://raw.githubusercontent.com/mertyildiran/Dermatron/master/.electrify/index.js && rm package.json && wget https://raw.githubusercontent.com/mertyildiran/Dermatron/master/.electrify/package.json && wget https://raw.githubusercontent.com/mertyildiran/Dermatron/master/.electrify/icon-128.png && cd .. && electrify && electrify package
 ```
 
+### Pack Dermatron for Windows
+
+Run Dermatron at least one time with `meteor` command then with PowerShell:
+
+```Shell
+$(npm install -g rimraf | Out-Host;$?) -and $(rimraf .\electrify\ | Out-Host;$?) -and $(electrify | Out-Host;$?) -and $(cd .\electrify\ | Out-Host;$?) -and $(wget https://raw.githubusercontent.com/mertyildiran/Dermatron/master/.electrify/loading.html -OutFile loading.html | Out-Host;$?) -and $(rm index.js | Out-Host;$?) -and $(wget https://raw.githubusercontent.com/mertyildiran/Dermatron/master/.electrify/index.js -OutFile index.js | Out-Host;$?) -and $(rm package.json | Out-Host;$?) -and $(wget https://raw.githubusercontent.com/mertyildiran/Dermatron/master/.electrify/package.json -OutFile package.json | Out-Host;$?) -and $(wget https://raw.githubusercontent.com/mertyildiran/Dermatron/master/.electrify/icon-128.png -OutFile icon-128.png | Out-Host;$?) -and $(cd .. | Out-Host;$?) -and $(electrify | Out-Host;$?) -and $(electrify package | Out-Host;$?)
+```
+
 ## Electrified & Materialized Iron Meteor with Alien Recipe
 
 Alien is a bash script for creating Meteor Apps with well organized directory structure & a scaffolding tool.

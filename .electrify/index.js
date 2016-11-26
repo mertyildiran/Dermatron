@@ -41,7 +41,7 @@ app.on('ready', function() {
     });
 
     loadingWindow.close();
-    window.maximize();
+    window.setFullScreen(true);
 
     // open up meteor root url
     window.loadURL(meteor_root_url);
