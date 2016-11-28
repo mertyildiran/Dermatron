@@ -5584,6 +5584,116 @@ translations = {
         en_US: "* Calculate area factor of your Dermatoscope by putting 1 square unit object underneath ( ActualArea ÷ MeasuredArea ) ( Default: 1.0 ) ( Optional )",
         en_GB: "* Calculate area factor of your Dermatoscope by putting 1 square unit object underneath ( ActualArea ÷ MeasuredArea ) ( Default: 1.0 ) ( Optional )",
         tr_TR: "* Dermatoskop'un alan çarpanını altına 1 birim karelik bir obje koyarak hesaplayınız ( GerçekAlan ÷ ÖlçülenAlan ) ( Varsayılan: 1.0 ) ( İsteğe Bağlı )"
+    },
+    "About": {
+        en_US: "About",
+        en_GB: "About",
+        tr_TR: "Hakkında"
+    },
+    softwareDescription: {
+        en_US: '<b>Dermatron</b> is a Dermatology focused medical records software which is augmented with computer vision and artificial intelligence. <i>(a <a href="https://www.meteor.com/">Meteor</a> app packaged with <a href="http://electron.atom.io/">Electron</a>)</i>',
+        en_GB: '<b>Dermatron</b> is a Dermatology focused medical records software which is augmented with computer vision and artificial intelligence. <i>(a <a href="https://www.meteor.com/">Meteor</a> app packaged with <a href="http://electron.atom.io/">Electron</a>)</i>',
+        tr_TR: '<b>Dermatron</b> bilgisayarlı görü ve yapay zeka ile güçlendirilimiş, Dermatoloji odaklı tıbbi kayıt yazılımıdır. <i>(<a href="http://electron.atom.io/">Electron</a> ile paketlenmiş bir <a href="https://www.meteor.com/">Meteor</a> uygulaması)</i>'
+    },
+    version: {
+        en_US: "Version",
+        en_GB: "Version",
+        tr_TR: "Versiyon"
+    },
+    author: {
+        en_US: "Author",
+        en_GB: "Author",
+        tr_TR: "Geliştirici"
+    },
+    settingsContact: {
+        en_US: "Contact",
+        en_GB: "Contact",
+        tr_TR: "İletişim"
+    },
+    "Source Control": {
+        en_US: "Source Control",
+        en_GB: "Source Control",
+        tr_TR: "Kaynak Kontrolü"
+    },
+    "Using this software with": {
+        en_US: "Using this software with a <b>USB Dermatoscope is highly recommended</b> for clinical success.",
+        en_GB: "Using this software with a <b>USB Dermatoscope is highly recommended</b> for clinical success.",
+        tr_TR: "Bu yazılımı bir <b>USB Dermatoskop</b> ile birlikte kullanmak klinik başarı açısından <b>şiddetle tavsiye edilir</b>."
+    },
+    "Features": {
+        en_US: "Features",
+        en_GB: "Features",
+        tr_TR: "Özellikler"
+    },
+    "Manage visit & patient records": {
+        en_US: "Manage visit & patient records",
+        en_GB: "Manage visit & patient records",
+        tr_TR: "Hasta ve ziyaret kayıtlarını yönetin"
+    },
+    "Search drugs on your local drug search engine": {
+        en_US: "Search drugs on your local drug search engine",
+        en_GB: "Search drugs on your local drug search engine",
+        tr_TR: "Yerel ilaç arama motorunda ilaç arayın"
+    },
+    "Schedule visits and see on big calendar": {
+        en_US: "Schedule visits and see on big calendar",
+        en_GB: "Schedule visits and see on big calendar",
+        tr_TR: "Ziyaretleri programlayın ve büyük takvimde görüntüleyin"
+    },
+    "140 different lesion types": {
+        en_US: "140 different lesion types",
+        en_GB: "140 different lesion types",
+        tr_TR: "140 farklı lezyon tipi"
+    },
+    "43 different symptom types": {
+        en_US: "43 different symptom types",
+        en_GB: "43 different symptom types",
+        tr_TR: "43 farklı semptom tipi"
+    },
+    "28 different pathophysiology types": {
+        en_US: "28 different pathophysiology types",
+        en_GB: "28 different pathophysiology types",
+        tr_TR: "28 farklı Patofizyoloji türü"
+    },
+    "59 different anatomical locations": {
+        en_US: "59 different anatomical locations",
+        en_GB: "59 different anatomical locations",
+        tr_TR: "59 farklı anatomik konum"
+    },
+    "727 different diagnosis options": {
+        en_US: "727 different diagnosis options",
+        en_GB: "727 different diagnosis options",
+        tr_TR: "727 farklı teşhis seçeneği"
+    },
+    "All of these features available in English(United States), English(Great Britain) and Turkish languages": {
+        en_US: "All of these features available in English(United States), English(Great Britain) and Turkish languages",
+        en_GB: "All of these features available in English(United States), English(Great Britain) and Turkish languages",
+        tr_TR: "Tüm bu gördüğünüz özellikler İngilizce ve Türkçe dillerinde mevcut"
+    },
+    "Easy-to-use interactive anatomical map on base human mesh (male and female available)": {
+        en_US: "Easy-to-use interactive anatomical map on base human mesh (male and female available)",
+        en_GB: "Easy-to-use interactive anatomical map on base human mesh (male and female available)",
+        tr_TR: "Kullanımı kolay interaktif anatomik harita (kız ve erkek versiyonları mevcut)"
+    },
+    "Image capturing from USB Dermatoscope": {
+        en_US: "Image capturing from USB Dermatoscope",
+        en_GB: "Image capturing from USB Dermatoscope",
+        tr_TR: "USB Dermatoskop ile resim çekme"
+    },
+    "Web based diagnosis suggestions": {
+        en_US: "Web based diagnosis suggestions",
+        en_GB: "Web based diagnosis suggestions",
+        tr_TR: "Web tabanlı teşhis önerme"
+    },
+    "Artificial intelligence based diagnosis suggestions (AI trained for 12 days)": {
+        en_US: "Artificial intelligence based diagnosis suggestions (AI trained for 12 days)",
+        en_GB: "Artificial intelligence based diagnosis suggestions (AI trained for 12 days)",
+        tr_TR: "Yapay zeka tabanlı teşhis önerme (Yapay zeka 12 gün boyunca eğitilmiştir)"
+    },
+    "License": {
+        en_US: "License",
+        en_GB: "License",
+        tr_TR: "Lisans"
     }
 }
 
