@@ -49,6 +49,8 @@ meteor
 
 Then visit [http://localhost:3000/](http://localhost:3000/)
 
+Before packaging, install `electrify` globally with `sudo npm install -g electrify`
+
 ### Pack Dermatron for Linux
 
 Run Dermatron at least one time with `meteor` command then:
@@ -70,6 +72,21 @@ As of Meteor 1.4, it's using MongoDB version 3.2.6 [(Announcing Meteor 1.4)](htt
 So you need exactly these binaries: [win32/mongodb-win32-x86_64-2008plus-3.2.6.zip](http://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-3.2.6.zip?_ga=1.141663666.1471383934.1480123448) (Official)
 
 Extract files from the zip archive then copy **mongod** and **mongo** binaries and paste into **./resources/app/bin**
+
+### Pack Dermatron for macOS
+
+Run Dermatron at least one time with `meteor` command then with Terminal:
+
+```Shell
+rm -rf .electrify/ && electrify && cd .electrify/ && wget https://raw.githubusercontent.com/mertyildiran/Dermatron/master/.electrify/loading.html && rm index.js && wget https://raw.githubusercontent.com/mertyildiran/Dermatron/master/.electrify/index.js && rm package.json && wget https://raw.githubusercontent.com/mertyildiran/Dermatron/master/.electrify/package.json && wget https://raw.githubusercontent.com/mertyildiran/Dermatron/master/.electrify/icon-128.png && wget https://raw.githubusercontent.com/mertyildiran/Dermatron/master/.electrify/icon-128.icns && cd .. && electrify && electrify package -- --icon=.electrify/icon-128.icns
+```
+
+Don't forget to install **wget** with brew `brew install wget` or, use a bash alias:
+
+```Shell
+function _wget() { curl "${1}" -o $(basename "${1}") ; };
+alias wget='_wget'
+```
 
 ## Electrified & Materialized Iron Meteor with Alien Recipe
 
