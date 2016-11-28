@@ -20,7 +20,9 @@ Template.settings.events ({
         evt.preventDefault();
 
         var updated_settings = {
-            language: tpl.find('#input_language').value
+            language: tpl.find('#input_language').value,
+            unitOfLength: tpl.find('#input_unitOfLength').value,
+            dermatoscopeFactor: tpl.find('#input_dermatoscopeFactor').value
         };
 
         // the method returns the new object id after saving it into the db

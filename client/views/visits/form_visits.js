@@ -249,7 +249,9 @@ Template.form_visits.events ({
                 img.onload = function() {
                     ctx.drawImage(img, 0, 0, canv.width, canv.height);
                     areaOfCaptured = drawContour(canv);
-                    $('div#capturedImage figcaption#captured p').html(translations['Area'][selectedLanguage] + ': ' + areaOfCaptured + ' px<sup>2</sup>');
+                    dermatoscopeFactor = parseFloat(settings.findOne().dermatoscopeFactor);
+                    if (isNaN(dermatoscopeFactor)) dermatoscopeFactor = 1.0;
+                    $('div#capturedImage figcaption#captured p').html(translations['Area'][selectedLanguage] + ': ' + areaOfCaptured * dermatoscopeFactor + ' ' + settings.findOne().unitOfLength + '<sup>2</sup>');
                     compareImages();
                 }
                 img.src = data;
@@ -270,7 +272,9 @@ Template.form_visits.events ({
                         img2.onload = function() {
                             ctx2.drawImage(img2, 0, 0, canv2.width, canv2.height);
                             areaOfLastVisit = drawContour(canv2);
-                            $('div#capturedImage figcaption#last-visit p').html('Area: ' + areaOfLastVisit + ' px<sup>2</sup>');
+                            dermatoscopeFactor = parseFloat(settings.findOne().dermatoscopeFactor);
+                            if (isNaN(dermatoscopeFactor)) dermatoscopeFactor = 1.0;
+                            $('div#capturedImage figcaption#last-visit p').html('Area: ' + areaOfLastVisit * dermatoscopeFactor + ' ' + settings.findOne().unitOfLength + '<sup>2</sup>');
                             compareImages();
                         }
                         img2.src = visits.findOne({ patientId: $('#input_patientId').val() }, { sort: { visitDateTime: -1 } }).image;
@@ -471,6 +475,7 @@ function drawContour(canv){
 var imageCounter = 0;
 var areaOfCaptured;
 var areaOfLastVisit;
+var dermatoscopeFactor;
 
 function compareImages() {
     imageCounter++;

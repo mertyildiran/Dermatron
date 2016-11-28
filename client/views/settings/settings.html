@@ -12,6 +12,31 @@
                     <option value="tr_TR">{{codeToLanguage "tr_TR"}}</option>
                 </select>
             </div>
+            <div class="form-group">
+                <label for="input_unitOfLength">{{tr "Unit of Length"}}</label>
+                <select class="form-control" id="input_unitOfLength">
+                    <option value="{{unitOfLength}}" selected>{{unitOfLength}}</option>
+                    <option value="px">px (pixel)</option>
+                    <option value="m">m (meter 10^0)</option>
+                    <option value="dm">dm (deci 10^-1)</option>
+                    <option value="cm">cm (centi 10^-2)</option>
+                    <option value="mm">mm (mili 10^-3)</option>
+                    <option value="μm">μm (micro 10^-6)</option>
+                    <option value="nm">nm (nano 10^-9)</option>
+                    <option value="pm">pm (pico 10^-12)</option>
+                    <option value="fm">fm (femto 10^-15)</option>
+                    <option value="am">am (atto 10^-18)</option>
+                    <option value="zm">zm (zepto 10^-21)</option>
+                    <option value="ym">ym (yocto 10^-24)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="input_dermatoscopeFactor">{{tr "Dermatoscope Factor"}}</label> <i style="color: #6e6e6e;">{{tr "Calculate area factor"}}</i>
+                <input type="text" class="form-control"
+                    placeholder="{{tr "Dermatoscope Factor"}}"
+                    id="input_dermatoscopeFactor"
+                    value="{{dermatoscopeFactor}}">
+            </div>
         </form>
         <br><br><br><br>
         <button type="button" class="btn btn-primary btn-xs" id="save">{{tr "Save"}}</button>

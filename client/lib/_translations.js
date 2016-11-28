@@ -5569,6 +5569,21 @@ translations = {
         en_US: "Exit from Dermatron",
         en_GB: "Exit from Dermatron",
         tr_TR: "DERMATRON'DAN ÇIK"
+    },
+    "Unit of Length": {
+        en_US: "Unit of Length",
+        en_GB: "Unit of Length",
+        tr_TR: "Uzunluk Birimi"
+    },
+    "Dermatoscope Factor": {
+        en_US: "Dermatoscope Factor",
+        en_GB: "Dermatoscope Factor",
+        tr_TR: "Dermatoskop Çarpanı"
+    },
+    "Calculate area factor": {
+        en_US: "* Calculate area factor of your Dermatoscope by putting 1 square unit object underneath ( ActualArea ÷ MeasuredArea ) ( Default: 1.0 ) ( Optional )",
+        en_GB: "* Calculate area factor of your Dermatoscope by putting 1 square unit object underneath ( ActualArea ÷ MeasuredArea ) ( Default: 1.0 ) ( Optional )",
+        tr_TR: "* Dermatoskop'un alan çarpanını altına 1 birim karelik bir obje koyarak hesaplayınız ( GerçekAlan ÷ ÖlçülenAlan ) ( Varsayılan: 1.0 ) ( İsteğe Bağlı )"
     }
 }
 
