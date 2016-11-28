@@ -76,6 +76,12 @@ app.on('will-quit', function terminate_and_quit(event) {
   }
 });
 
+electrify.methods({
+    'exit': function() {
+        app.quit();
+    }
+});
+
 //
 // =============================================================================
 //

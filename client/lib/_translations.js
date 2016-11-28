@@ -5564,6 +5564,11 @@ translations = {
         en_US: "Now",
         en_GB: "Now",
         tr_TR: "Şimdi"
+    },
+    "Exit from Dermatron": {
+        en_US: "Exit from Dermatron",
+        en_GB: "Exit from Dermatron",
+        tr_TR: "DERMATRON'DAN ÇIK"
     }
 }
 

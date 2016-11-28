@@ -39,5 +39,11 @@ Template.settings.events ({
 
         Router.go('index');
 
+    },
+    'click #exit': function(evt, tpl) {
+        evt.preventDefault();
+        Electrify.call('exit', [], function(err, msg) {
+            console.log(msg);
+        });
     }
 });
