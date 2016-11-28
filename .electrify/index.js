@@ -2,6 +2,7 @@ var app       = require('app');
 var browser   = require('browser-window');
 var electrify = require('electrify')(__dirname);
 var NativeImage = require('native-image');
+const electron = require('electron');
 
 var window    = null;
 
@@ -29,6 +30,7 @@ app.on('ready', function() {
 
   createLoadingWindow();
 
+  const height = electron.screen.getPrimaryDisplay().workAreaSize.height;
   // electrify start
   electrify.start(function(meteor_root_url) {
 
@@ -36,6 +38,7 @@ app.on('ready', function() {
     window = new browser({
       width: 1280, height: 768,
       transparent: true, frame: false,
+      webPreferences: {zoomFactor: 1.0 * (height / 1080)},
       icon: NativeImage.createFromPath(__dirname + '/icon-128.png'),
       'node-integration': false // node integration must to be off
     });
